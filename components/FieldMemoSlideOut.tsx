@@ -103,7 +103,7 @@ export default function FieldMemoSlideOut() {
       </ul>
 
       <p className="text-sm text-slate-500">
-        <em>Tip:</em> the wheel remembers your last stop. Click to open a thread, hover to preview.
+        <em>The wheel remembers</em>
       </p>
 
       <p id="wheel-hint" className="sr-only">
