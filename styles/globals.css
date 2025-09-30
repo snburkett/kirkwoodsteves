@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+:root,
+[data-theme="bright"] {
+  --surface-bg: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-border: #e2e8f0;
+  --text-color: #0f172a;
+  --link-color: #0b63ce;
+}
+
+body {
+  background: var(--surface-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  scroll-padding-top: 80px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration-color: color-mix(in srgb, var(--link-color) 60%, transparent);
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes oneup-float {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.85);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -20px) scale(0.95);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -140px) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -220px) scale(1.1);
+  }
+}
+
+.oneup-float {
+  animation: oneup-float 2.4s ease-out forwards;
+}
