@@ -99,6 +99,48 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
 
   const idPrefix = useId();
 
+  const awardOneUp = useCallback(
+    (section: SectionName) => {
+      const quadrant = QUADRANTS.find((item) => item.id === section);
+      if (!quadrant) return;
+      const mid = midpointAngle(quadrant.startAngle, quadrant.endAngle);
+      const globalAngle = normalizeAngle(mid + angleRef.current);
+      const point = polarToCartesian(svgCenter.x, svgCenter.y, radius * 0.5, globalAngle);
+
+      const id = powerUpIdRef.current++;
+      setPowerUps((prev) => [...prev, { id, x: point.x, y: point.y, section }]);
+
+      if (typeof window !== "undefined") {
+        const timeoutId = window.setTimeout(() => {
+          setPowerUps((current) => current.filter((item) => item.id !== id));
+          powerUpTimersRef.current.delete(id);
+        }, 2400);
+        powerUpTimersRef.current.set(id, timeoutId);
+      }
+
+      playPowerUpSound();
+    },
+    [radius, svgCenter.x, svgCenter.y],
+  );
+
+  const getTargetVelocity = useCallback(
+    (timestamp: number): number => {
+      if (prefersReducedMotionRef.current) {
+        return 0;
+      }
+      if (!hoverRef.current) {
+        return BASE_SPEED;
+      }
+      if (hoverStartRef.current == null) {
+        hoverStartRef.current = timestamp;
+      }
+      const hoverSeconds = Math.max(0, (timestamp - hoverStartRef.current) / 1000);
+      const accelerated = BASE_SPEED + hoverSeconds * HOVER_ACCEL_PER_SEC;
+      return Math.min(accelerated, MAX_HOVER_SPEED);
+    },
+    [],
+  );
+
   useEffect(() => {
     onSelectRef.current = onSelect;
   }, [onSelect]);
@@ -124,7 +166,7 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
       velocityRef.current = getTargetVelocity(now);
     }
     lastTimeRef.current = null;
-  }, [prefersReducedMotion]);
+  }, [getTargetVelocity, prefersReducedMotion]);
 
   useEffect(() => {
     hoverRef.current = isHovering;
@@ -205,7 +247,7 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
         window.clearTimeout(glowTimeoutRef.current);
       }
     };
-  }, [applyTransform]);
+  }, [applyTransform, awardOneUp, getTargetVelocity]);
 
   useEffect(() => {
     applyTransform(angleRef.current);
@@ -501,42 +543,6 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
     };
     velocityRef.current = 0;
     lastTimeRef.current = null;
-  }
-
-  function awardOneUp(section: SectionName) {
-    const quadrant = QUADRANTS.find((item) => item.id === section);
-    if (!quadrant) return;
-    const mid = midpointAngle(quadrant.startAngle, quadrant.endAngle);
-    const globalAngle = normalizeAngle(mid + angleRef.current);
-    const point = polarToCartesian(svgCenter.x, svgCenter.y, radius * 0.5, globalAngle);
-
-    const id = powerUpIdRef.current++;
-    setPowerUps((prev) => [...prev, { id, x: point.x, y: point.y, section }]);
-
-    if (typeof window !== "undefined") {
-      const timeoutId = window.setTimeout(() => {
-        setPowerUps((current) => current.filter((item) => item.id !== id));
-        powerUpTimersRef.current.delete(id);
-      }, 2400);
-      powerUpTimersRef.current.set(id, timeoutId);
-    }
-
-    playPowerUpSound();
-  }
-
-  function getTargetVelocity(timestamp: number): number {
-    if (prefersReducedMotionRef.current) {
-      return 0;
-    }
-    if (!hoverRef.current) {
-      return BASE_SPEED;
-    }
-    if (hoverStartRef.current == null) {
-      hoverStartRef.current = timestamp;
-    }
-    const hoverSeconds = Math.max(0, (timestamp - hoverStartRef.current) / 1000);
-    const accelerated = BASE_SPEED + hoverSeconds * HOVER_ACCEL_PER_SEC;
-    return Math.min(accelerated, MAX_HOVER_SPEED);
   }
 
   function showTooltip(quadrant: Quadrant, midAngle: number) {

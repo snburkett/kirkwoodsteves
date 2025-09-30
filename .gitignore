@@ -2,3 +2,4 @@ node_modules
 .next
 .env
 content/_index/all.json
+tsconfig.tsbuildinfo
