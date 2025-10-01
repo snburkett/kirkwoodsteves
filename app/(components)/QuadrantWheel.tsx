@@ -397,9 +397,10 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
                       alignmentBaseline="middle"
                       fontSize={radius * 0.24}
                       transform={`rotate(${mid} ${iconPoint.x} ${iconPoint.y})`}
-                    >
-                      {quadrant.icon}
-                    </text>
+                  onMouseDown={(event) => event.preventDefault()}
+                >
+                  {quadrant.icon}
+                </text>
                     <text
                       fontSize={radius * 0.14}
                       fontWeight={600}
