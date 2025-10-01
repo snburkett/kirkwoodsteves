@@ -372,6 +372,8 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
                   onBlur={(event) => handleBlur(event, quadrant)}
                   onMouseEnter={(event) => handleMouseEnter(event, quadrant, mid)}
                   onMouseLeave={(event) => handleMouseLeave(event, quadrant)}
+                  onMouseDown={(event) => event.preventDefault()}
+                  style={{ outline: "none" }}
                 >
                   <path
                     d={path}

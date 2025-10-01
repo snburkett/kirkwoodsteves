@@ -93,7 +93,7 @@ export default function HeaderTitle() {
 
   return (
     <div aria-label="Site title" className="flex items-center gap-3">
-      <span className="relative inline-flex h-12 w-12 overflow-hidden rounded-full border border-slate-200 shadow-sm lg:h-14 lg:w-14">
+      <span className="relative inline-flex h-14 w-14 overflow-hidden rounded-full border border-slate-200 shadow-sm lg:h-[62px] lg:w-[62px]">
         <Image
           src={bruised ? bruisedAvatarSrc : avatarSrc}
           alt="Steven's avatar"
@@ -105,7 +105,9 @@ export default function HeaderTitle() {
 
         <button
           type="button"
-          className="absolute left-[64%] top-[38%] h-4 w-4 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-transparent focus-visible:outline-none"
+          className={`absolute left-[64%] top-[38%] h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-transparent focus-visible:outline-none ${
+            bruised ? "cursor-default pointer-events-none" : "cursor-pointer"
+          }`}
           onClick={handlePunch}
           aria-label="Tap to poke right eye"
         />

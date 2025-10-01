@@ -11,6 +11,7 @@ interface LockedQuadrantWheelProps {
   activeSection: SectionName;
   onSelect?: (section: SectionName) => void;
   onHome?: () => void;
+  homeIconClassName?: string;
 }
 
 const targetAngle = 135;
@@ -34,6 +35,7 @@ export default function LockedQuadrantWheel({
   activeSection,
   onSelect,
   onHome,
+  homeIconClassName,
 }: LockedQuadrantWheelProps) {
   const router = useRouter();
 
@@ -117,7 +119,7 @@ export default function LockedQuadrantWheel({
               <Fragment key={`${quadrant.id}-overlay`}>
                 <path id={labelPathId} d={labelPath} fill="none" stroke="none" />
                 <text
-                  fontSize={15}
+                  fontSize={13}
                   fontWeight={500}
                   fill="#ffffff"
                   style={{ pointerEvents: "none" }}
@@ -130,7 +132,7 @@ export default function LockedQuadrantWheel({
                 <text
                   x={iconPoint.x}
                   y={iconPoint.y}
-                  fontSize={20}
+                  fontSize={28}
                   textAnchor="middle"
                   style={{ pointerEvents: "none" }}
                   transform={`rotate(${midpointAngle(quadrant.startAngle, quadrant.endAngle)} ${iconPoint.x} ${iconPoint.y})`}
@@ -146,7 +148,7 @@ export default function LockedQuadrantWheel({
       <button
         type="button"
         onClick={handleHome}
-        className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-white text-2xl text-slate-700 shadow-lg transition hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+        className={`absolute left-1/2 top-1/2 flex h-18 w-18 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-white text-slate-700 shadow-lg transition hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 ${homeIconClassName ?? "text-3xl"}`}
         style={{ transform: "translate(-50%, -50%)" }}
         aria-label="Back to home"
       >
