@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kirkwood Steve's",
   description: "An experimental emporium of artifacts, signals, and AI tinkering.",
+  icons: {
+    icon: "/img/favicon.ico",
+    shortcut: "/img/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
