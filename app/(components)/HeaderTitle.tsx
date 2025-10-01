@@ -35,14 +35,14 @@ export default function HeaderTitle() {
     const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
     if (synth && typeof SpeechSynthesisUtterance !== "undefined") {
       const speak = () => {
-        const utterance = new SpeechSynthesisUtterance("Ow!");
+        const utterance = new SpeechSynthesisUtterance("Ow");
         const voices = synth.getVoices();
         const preferred = voices.find((voice) => /male|david|daniel|alex|fred/i.test(voice.name));
         if (preferred) {
           utterance.voice = preferred;
         }
-        utterance.pitch = 0.75;
-        utterance.rate = 1.05;
+        utterance.pitch = 1.2;
+        utterance.rate = 1.4;
         utterance.volume = 0.9;
         synth.cancel();
         synth.speak(utterance);
