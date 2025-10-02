@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type MutableRefObject } from "react";
 
 type BugInstance = {
   id: number;
@@ -11,14 +11,16 @@ type BugInstance = {
   styleElement: HTMLStyleElement;
   size: number;
   startTransform: string;
+  squished?: boolean;
+  frozenTransform?: string;
 };
 
 const BUG_EMOJIS = ["🐞", "🪲", "🕷️", "🐜", "🐛", "🦟", "🦂"];
 
 const MIN_WAVE_DELAY = 14000;
 const MAX_WAVE_DELAY = 32000;
-const MIN_DURATION = 6000;
-const MAX_DURATION = 10500;
+const MIN_DURATION = 7500;
+const MAX_DURATION = 13500;
 const MIN_BUGS = 1;
 const MAX_BUGS = 3;
 
@@ -164,6 +166,7 @@ export default function ScurryingBugs() {
   const timeoutRef = useRef<number | null>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
   const mountedRef = useRef(true);
+  const audioContextRef = useRef<AudioContext | null>(null);
 
   useEffect(() => {
     return () => {
@@ -262,17 +265,59 @@ export default function ScurryingBugs() {
     return null;
   }
 
+  const handleSquish = (bugId: number, target: HTMLSpanElement) => {
+    const match = bugsRef.current.find((bug) => bug.id === bugId);
+    if (!match || match.squished) return;
+
+    const computed = window.getComputedStyle(target);
+    const frozen = computed.transform !== "none" ? computed.transform : match.startTransform;
+    match.styleElement.remove();
+
+    playSquishSound(audioContextRef);
+
+    setBugs((current) =>
+      current.map((bug) =>
+        bug.id === bugId
+          ? { ...bug, squished: true, frozenTransform: frozen, emoji: "💥" }
+          : bug,
+      ),
+    );
+
+    window.setTimeout(() => {
+      setBugs((current) => current.map((bug) => (bug.id === bugId ? { ...bug, emoji: "" } : bug)));
+    }, 1200);
+
+    window.setTimeout(() => {
+      setBugs((current) => current.filter((bug) => bug.id !== bugId));
+    }, 2000);
+  };
+
   return (
     <div className="pointer-events-none fixed inset-0 z-[60] overflow-visible">
       {bugs.map((bug) => (
         <span
           key={bug.id}
           className="absolute left-0 top-0 select-none"
+          role="button"
+          aria-label="Squish bug"
           style={{
-            animation: `${bug.animationName} ${bug.duration}ms linear ${bug.delay}ms forwards`,
-            transform: bug.startTransform,
+            animation: bug.squished
+              ? "none"
+              : `${bug.animationName} ${bug.duration}ms linear ${bug.delay}ms forwards`,
+            transform: bug.squished
+              ? `${bug.frozenTransform ?? bug.startTransform} scale(0.55)`
+              : bug.startTransform,
             fontSize: `${bug.size * 1.65}rem`,
             filter: "drop-shadow(0 2px 2px rgba(15, 23, 42, 0.35))",
+            pointerEvents: "auto",
+            cursor: "pointer",
+            transition: bug.squished ? "transform 0.2s ease-out, opacity 0.2s ease-out" : undefined,
+            opacity: bug.squished ? 0.3 : 1,
+          }}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            handleSquish(bug.id, event.currentTarget);
           }}
         >
           {bug.emoji}
@@ -296,4 +341,58 @@ function usePrefersReducedMotion() {
   }, []);
 
   return prefers;
+}
+
+function playSquishSound(audioContextRef: MutableRefObject<AudioContext | null>) {
+  try {
+    const Ctor = window.AudioContext || (window as any).webkitAudioContext;
+    if (!Ctor) return;
+
+    const ctx = audioContextRef.current ?? new Ctor();
+    audioContextRef.current = ctx;
+
+    if (ctx.state === "suspended") {
+      ctx.resume().catch(() => {});
+    }
+
+    const now = ctx.currentTime;
+
+    const burst = ctx.createBuffer(1, ctx.sampleRate * 0.08, ctx.sampleRate);
+    const data = burst.getChannelData(0);
+    for (let i = 0; i < data.length; i += 1) {
+      data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (data.length * 0.55));
+    }
+    const noise = ctx.createBufferSource();
+    noise.buffer = burst;
+
+    const osc = ctx.createOscillator();
+    osc.type = "square";
+    osc.frequency.setValueAtTime(420, now);
+    osc.frequency.exponentialRampToValueAtTime(110, now + 0.18);
+
+    const noiseGain = ctx.createGain();
+    noiseGain.gain.setValueAtTime(0.6, now);
+    noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.22);
+
+    const toneGain = ctx.createGain();
+    toneGain.gain.setValueAtTime(0.35, now);
+    toneGain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+
+    const master = ctx.createGain();
+    master.gain.setValueAtTime(0.5, now);
+    master.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+
+    noise.connect(noiseGain);
+    noiseGain.connect(master);
+    osc.connect(toneGain);
+    toneGain.connect(master);
+    master.connect(ctx.destination);
+
+    noise.start(now);
+    noise.stop(now + 0.25);
+    osc.start(now);
+    osc.stop(now + 0.3);
+  } catch (error) {
+    console.warn("Unable to play squish sound", error);
+  }
 }
