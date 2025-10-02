@@ -571,6 +571,35 @@ export default function ScurryingBugs() {
     };
   }, [prefersReducedMotion, clearScheduled, resetDifficulty, scheduleNextWave]);
 
+  const handleDismissGameOver = useCallback(() => {
+    setGameOver(false);
+    setShowScore(false);
+    setScore(0);
+    gameOverRef.current = false;
+    playingRef.current = false;
+    gameStartedRef.current = false;
+    difficultyRef.current = createInitialDifficulty();
+    waveStateRef.current = createInitialWaveState();
+    clearScheduled();
+    scheduleNextWave();
+  }, [clearScheduled, scheduleNextWave]);
+
+  const handleRestartGame = useCallback(() => {
+    if (prefersReducedMotion) return;
+    setGameOver(false);
+    setScore(0);
+    setShowScore(false);
+    clearScheduled();
+    bugsRef.current = [];
+    setBugs([]);
+    gameOverRef.current = false;
+    playingRef.current = true;
+    gameStartedRef.current = false;
+    difficultyRef.current = createInitialDifficulty();
+    waveStateRef.current = createInitialWaveState();
+    spawnWave();
+  }, [prefersReducedMotion, clearScheduled, spawnWave]);
+
   if (prefersReducedMotion) {
     return null;
   }
@@ -638,35 +667,6 @@ export default function ScurryingBugs() {
 
   const formattedScore = score.toString().padStart(5, "0");
   const formattedHighScore = highScore > 0 ? highScore.toString().padStart(5, "0") : null;
-
-  const handleDismissGameOver = useCallback(() => {
-    setGameOver(false);
-    setShowScore(false);
-    setScore(0);
-    gameOverRef.current = false;
-    playingRef.current = false;
-    gameStartedRef.current = false;
-    difficultyRef.current = createInitialDifficulty();
-    waveStateRef.current = createInitialWaveState();
-    clearScheduled();
-    scheduleNextWave();
-  }, [clearScheduled, scheduleNextWave]);
-
-  const handleRestartGame = useCallback(() => {
-    if (prefersReducedMotion) return;
-    setGameOver(false);
-    setScore(0);
-    setShowScore(false);
-    clearScheduled();
-    bugsRef.current = [];
-    setBugs([]);
-    gameOverRef.current = false;
-    playingRef.current = true;
-    gameStartedRef.current = false;
-    difficultyRef.current = createInitialDifficulty();
-    waveStateRef.current = createInitialWaveState();
-    spawnWave();
-  }, [prefersReducedMotion, clearScheduled, spawnWave]);
 
   return (
     <>
