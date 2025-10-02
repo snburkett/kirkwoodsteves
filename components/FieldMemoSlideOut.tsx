@@ -92,7 +92,7 @@ export default function FieldMemoSlideOut() {
           <span className="font-semibold">Emporium</span> — salvaged gear, vinyl, and repairs with short stories attached.
         </li>
         <li>
-          <span className="font-semibold">Pulse</span> — municipal signals: agendas, quick takes, and neighborhood notes.
+          <span className="font-semibold">Kirkwood Pulse</span> — municipal signals: agendas, quick takes, and neighborhood notes.
         </li>
         <li>
           <span className="font-semibold">AI Lab</span> — orchestration notes and in-progress runbooks (working drafts).

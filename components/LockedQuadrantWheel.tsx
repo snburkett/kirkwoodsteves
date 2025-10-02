@@ -25,7 +25,7 @@ const quadrants: Array<{
   endAngle: number;
 }> = [
   { id: "emporium", label: "Emporium", icon: "🛒", color: wheelColors[0], startAngle: 270, endAngle: 360 },
-  { id: "pulse", label: "Pulse", icon: "📡", color: wheelColors[1], startAngle: 0, endAngle: 90 },
+  { id: "pulse", label: "Kirkwood Pulse", icon: "📡", color: wheelColors[1], startAngle: 0, endAngle: 90 },
   { id: "ai", label: "AI", icon: "🤖", color: wheelColors[2], startAngle: 90, endAngle: 180 },
   { id: "oddities", label: "Oddities", icon: "🔮", color: wheelColors[3], startAngle: 180, endAngle: 270 },
 ];
@@ -84,7 +84,6 @@ export default function LockedQuadrantWheel({
                 }
               }
             };
-
             return (
               <path
                 key={quadrant.id}
@@ -114,7 +113,6 @@ export default function LockedQuadrantWheel({
             const labelPathId = `locked-${quadrant.id}-label`;
             const labelPath = describeArc(100, 100, 78, quadrant.startAngle, quadrant.endAngle);
             const iconPoint = polarToCartesian(100, 100, 50, midpointAngle(quadrant.startAngle, quadrant.endAngle));
-
             return (
               <Fragment key={`${quadrant.id}-overlay`}>
                 <path id={labelPathId} d={labelPath} fill="none" stroke="none" />

@@ -99,7 +99,7 @@ function sectionLabel(section: SectionName) {
     case "emporium":
       return "Emporium";
     case "pulse":
-      return "Pulse";
+      return "Kirkwood Pulse";
     case "ai":
       return "AI";
     case "oddities":

@@ -5,7 +5,7 @@ import type { SectionName } from "@/lib/types";
 
 const titles: Record<SectionName, string> = {
   emporium: "Emporium",
-  pulse: "Pulse",
+  pulse: "Kirkwood Pulse",
   ai: "AI",
   oddities: "Oddities",
 };

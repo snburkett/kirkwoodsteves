@@ -50,7 +50,7 @@ const TOOLTIP_TEXT: Record<SectionName, string> = {
 
 const QUADRANTS: Quadrant[] = [
   { id: "emporium", label: "Emporium", color: wheelColors[0], icon: "🛒", startAngle: 270, endAngle: 360 },
-  { id: "pulse", label: "Pulse", color: wheelColors[1], icon: "📡", startAngle: 0, endAngle: 90 },
+  { id: "pulse", label: "Kirkwood Pulse", color: wheelColors[1], icon: "📡", startAngle: 0, endAngle: 90 },
   { id: "ai", label: "AI", color: wheelColors[2], icon: "🤖", startAngle: 90, endAngle: 180 },
   { id: "oddities", label: "Oddities", color: wheelColors[3], icon: "🔮", startAngle: 180, endAngle: 270 },
 ];

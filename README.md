@@ -18,7 +18,7 @@ All posts are stored under `/content/<section>/<slug>.mdx`. Front-matter must in
 - `title`, `slug`, `date` (ISO string), optional `tags`
 - Section-specific fields:
   - **Emporium**: `type: "emporium"`, `priceUSD`, `condition`, optional `images`, `status`
-  - **Pulse**: `type: "pulse"`, `sourceUrl`
+  - **Kirkwood Pulse**: `type: "pulse"`, `sourceUrl`
   - **AI**: `type: "ai"`, optional `attachments`
   - **Oddities**: `type: "oddities"`
 
@@ -46,7 +46,7 @@ Available flags:
 - `--tags` comma-separated list
 - Section fields:
   - Emporium: `--price`, `--condition`, optional `--status`
-  - Pulse: `--source`
+  - Kirkwood Pulse: `--source`
   - AI: `--attachments` (comma-separated paths)
 
 The script writes a stub MDX file with validated front-matter and a `TODO` body.
