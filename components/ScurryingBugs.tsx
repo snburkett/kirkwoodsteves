@@ -58,7 +58,7 @@ const BUG_ORIENTATION_OFFSET: Record<BugEmoji, number> = {
   "🪲": 90,
   "🕷️": 90,
   "🐜": 180,
-  "🐛": 90,
+  "🐛": 135,
   "🦟": 180,
   "🦂": -90,
 };
@@ -84,12 +84,15 @@ const BUG_POINTS: Record<BugEmoji, number> = (() => {
   return result;
 })();
 
-const BASE_MIN_WAVE_DELAY = 14000;
-const BASE_MAX_WAVE_DELAY = 32000;
+const PASSIVE_MIN_WAVE_DELAY = 16000;
+const PASSIVE_MAX_WAVE_DELAY = 24000;
 const MAX_BUGS_PER_WAVE = 5;
-const SPEED_SCALE_FLOOR = 0.55;
-const DELAY_FLOOR = 5000;
-const GAME_OVER_RESET_DELAY = 2600;
+const SPEED_SCALE_FLOOR = 0.7;
+const DELAY_FLOOR = 1800;
+const ACTIVE_DURATION_SCALE = 0.6;
+const ACTIVE_MIN_DURATION = 2200;
+const ACTIVE_BASE_MIN_DELAY = 2500;
+const ACTIVE_BASE_MAX_DELAY = 3500;
 const SCORE_KEY = "ks_bug_score";
 
 interface DifficultyState {
@@ -109,8 +112,8 @@ function createInitialDifficulty(): DifficultyState {
   return {
     bugsPerWave: 1,
     speedScale: 1,
-    minDelay: BASE_MIN_WAVE_DELAY,
-    maxDelay: BASE_MAX_WAVE_DELAY,
+    minDelay: ACTIVE_BASE_MIN_DELAY,
+    maxDelay: ACTIVE_BASE_MAX_DELAY,
     streak: 0,
   };
 }
@@ -277,6 +280,8 @@ export default function ScurryingBugs() {
   const difficultyRef = useRef<DifficultyState>(createInitialDifficulty());
   const waveStateRef = useRef<WaveState>(createInitialWaveState());
   const gameOverRef = useRef(false);
+  const gameStartedRef = useRef(false);
+  const playingRef = useRef(false);
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -329,6 +334,7 @@ export default function ScurryingBugs() {
   const resetDifficulty = useCallback(() => {
     difficultyRef.current = createInitialDifficulty();
     waveStateRef.current = { remaining: 0, id: waveStateRef.current.id + 1 };
+    gameStartedRef.current = false;
   }, []);
 
   const advanceDifficulty = useCallback(() => {
@@ -337,9 +343,10 @@ export default function ScurryingBugs() {
     if (state.streak % 3 === 0 && state.bugsPerWave < MAX_BUGS_PER_WAVE) {
       state.bugsPerWave += 1;
     }
-    state.speedScale = Math.max(SPEED_SCALE_FLOOR, state.speedScale * 0.92);
-    state.minDelay = Math.max(DELAY_FLOOR, state.minDelay * 0.92);
-    state.maxDelay = Math.max(state.minDelay + 2500, state.maxDelay * 0.92);
+    state.speedScale = Math.max(SPEED_SCALE_FLOOR, state.speedScale * 0.97);
+    state.minDelay = Math.max(DELAY_FLOOR, state.minDelay * 0.96);
+    const nextMax = state.maxDelay * 0.94;
+    state.maxDelay = Math.max(state.minDelay + 600, nextMax);
   }, []);
 
   const spawnWaveRef = useRef<() => void>(() => {});
@@ -348,8 +355,23 @@ export default function ScurryingBugs() {
     (delayOverride?: number) => {
       if (prefersReducedMotion || gameOverRef.current) return;
       clearScheduled();
-      const state = difficultyRef.current;
-      const delay = delayOverride ?? randomBetween(state.minDelay, state.maxDelay);
+      const playing = playingRef.current;
+      let delay = delayOverride;
+
+      if (delay == null) {
+        if (playing) {
+          const state = difficultyRef.current;
+          const minDelay = Math.max(ACTIVE_BASE_MIN_DELAY, state.minDelay);
+          const maxDelay = Math.max(minDelay + 400, state.maxDelay);
+          delay = randomBetween(minDelay, maxDelay);
+        } else {
+          delay = randomBetween(PASSIVE_MIN_WAVE_DELAY, PASSIVE_MAX_WAVE_DELAY);
+        }
+      }
+
+      if (delay == null) {
+        delay = PASSIVE_MIN_WAVE_DELAY;
+      }
       timeoutRef.current = window.setTimeout(() => {
         spawnWaveRef.current();
       }, delay);
@@ -364,21 +386,17 @@ export default function ScurryingBugs() {
     updateHighScore(score);
     setGameOver(true);
 
+    playGameOverSound(audioContextRef);
+
     bugsRef.current.forEach((bug) => bug.styleElement.remove());
     bugsRef.current = [];
     setBugs([]);
 
     resetDifficulty();
-    setScore(0);
+    playingRef.current = false;
+    gameStartedRef.current = false;
     setShowScore(false);
-
-    window.setTimeout(() => {
-      if (!mountedRef.current) return;
-      setGameOver(false);
-      gameOverRef.current = false;
-      scheduleNextWave();
-    }, GAME_OVER_RESET_DELAY);
-  }, [clearScheduled, resetDifficulty, scheduleNextWave, score, updateHighScore]);
+  }, [clearScheduled, resetDifficulty, score, updateHighScore]);
 
   const handleBugResolved = useCallback(
     (waveId: number, squished: boolean) => {
@@ -386,19 +404,39 @@ export default function ScurryingBugs() {
       if (waveId !== waveState.id) return;
       if (waveState.remaining > 0) {
         waveState.remaining -= 1;
-        if (waveState.remaining === 0 && squished && !gameOverRef.current) {
+        const isPlaying = playingRef.current;
+        if (!squished) {
+          if (isPlaying) {
+            triggerGameOver();
+          } else if (waveState.remaining === 0 && !gameOverRef.current) {
+            scheduleNextWave();
+          }
+          return;
+        }
+        if (waveState.remaining === 0 && !gameOverRef.current) {
+          if (!isPlaying) {
+            scheduleNextWave();
+            return;
+          }
+          if (!gameStartedRef.current) {
+            gameStartedRef.current = true;
+            difficultyRef.current = createInitialDifficulty();
+            scheduleNextWave(1500);
+            return;
+          }
           advanceDifficulty();
           scheduleNextWave();
         }
       }
     },
-    [advanceDifficulty, scheduleNextWave],
+    [advanceDifficulty, scheduleNextWave, triggerGameOver],
   );
 
   const spawnWave = useCallback(() => {
     if (prefersReducedMotion || gameOverRef.current) return;
     const difficulty = difficultyRef.current;
-    const bugCount = Math.max(1, difficulty.bugsPerWave);
+    const isPlaying = playingRef.current;
+    const bugCount = isPlaying ? Math.max(1, difficulty.bugsPerWave) : 1;
     const waveId = waveStateRef.current.id + 1;
     waveStateRef.current = { remaining: bugCount, id: waveId };
 
@@ -411,7 +449,11 @@ export default function ScurryingBugs() {
 
       const behavior = BUG_BEHAVIOR[emoji] ?? DEFAULT_BEHAVIOR;
       const baseDuration = randomBetween(behavior.minDuration, behavior.maxDuration);
-      const duration = Math.max(2500, baseDuration * difficulty.speedScale);
+      const durationScale = isPlaying
+        ? Math.max(SPEED_SCALE_FLOOR * ACTIVE_DURATION_SCALE, difficulty.speedScale * ACTIVE_DURATION_SCALE)
+        : 1;
+      const minDuration = isPlaying ? ACTIVE_MIN_DURATION : 2500;
+      const duration = Math.max(minDuration, baseDuration * durationScale);
       const path = makePath({
         stepMultiplier: behavior.stepMultiplier,
         curveVariance: behavior.curveVariance,
@@ -441,31 +483,63 @@ export default function ScurryingBugs() {
         element.remove();
       }, duration + delay + 2000);
 
-      window.setTimeout(() => {
-        if (!mountedRef.current) return;
-        let shouldGameOver = false;
-
-        setBugs((current) => {
-          const target = current.find((item) => item.id === bugId);
-          if (!target) return current;
-          if (!target.squished && !gameOverRef.current) {
-            shouldGameOver = true;
-          }
-          return current.filter((item) => item.id !== bugId);
-        });
-
-        if (shouldGameOver) {
-          triggerGameOver();
-        }
-      }, duration + delay);
     }
 
     setBugs((current) => [...current, ...newBugs]);
-  }, [prefersReducedMotion, triggerGameOver]);
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
     spawnWaveRef.current = spawnWave;
   }, [spawnWave]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return undefined;
+
+    const handleVisibility = () => {
+      if (document.visibilityState === "hidden") {
+        clearScheduled();
+        return;
+      }
+
+      if (prefersReducedMotion || gameOverRef.current) return;
+      if (bugsRef.current.length > 0) return;
+      if (timeoutRef.current !== null) return;
+
+      scheduleNextWave(800);
+    };
+
+    const handleIdle = () => {
+      if (prefersReducedMotion || gameOverRef.current) return;
+      if (document.visibilityState === "hidden") return;
+      if (bugsRef.current.length > 0) return;
+      if (timeoutRef.current !== null) return;
+
+      scheduleNextWave();
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
+    window.addEventListener("focus", handleVisibility);
+    const idleTimer = window.setInterval(handleIdle, PASSIVE_MAX_WAVE_DELAY + 2000);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibility);
+      window.removeEventListener("focus", handleVisibility);
+      window.clearInterval(idleTimer);
+    };
+  }, [clearScheduled, scheduleNextWave, prefersReducedMotion]);
+
+  const handleBugAnimationEnd = useCallback(
+    (bugId: number) => {
+      const escapingBug = bugsRef.current.find((item) => item.id === bugId);
+      if (!escapingBug) return;
+      if (escapingBug.resolved || escapingBug.squished || gameOverRef.current) return;
+
+      bugsRef.current = bugsRef.current.filter((item) => item.id !== bugId);
+      setBugs((current) => current.filter((item) => item.id !== bugId));
+      handleBugResolved(escapingBug.waveId, false);
+    },
+    [handleBugResolved],
+  );
 
   useEffect(() => {
     return () => {
@@ -485,6 +559,9 @@ export default function ScurryingBugs() {
       setShowScore(false);
       resetDifficulty();
       gameOverRef.current = false;
+      playingRef.current = false;
+      gameStartedRef.current = false;
+      bugsRef.current = [];
       setGameOver(false);
       return;
     }
@@ -492,7 +569,7 @@ export default function ScurryingBugs() {
     return () => {
       clearScheduled();
     };
-  }, [prefersReducedMotion, scheduleNextWave, clearScheduled, resetDifficulty]);
+  }, [prefersReducedMotion, clearScheduled, resetDifficulty, scheduleNextWave]);
 
   if (prefersReducedMotion) {
     return null;
@@ -505,6 +582,13 @@ export default function ScurryingBugs() {
     const computed = window.getComputedStyle(target);
     const frozen = computed.transform !== "none" ? computed.transform : match.startTransform;
     match.styleElement.remove();
+    match.squished = true;
+    match.resolved = true;
+
+    if (!playingRef.current) {
+      playingRef.current = true;
+      gameStartedRef.current = false;
+    }
 
     playSquishSound(audioContextRef);
 
@@ -555,6 +639,35 @@ export default function ScurryingBugs() {
   const formattedScore = score.toString().padStart(5, "0");
   const formattedHighScore = highScore > 0 ? highScore.toString().padStart(5, "0") : null;
 
+  const handleDismissGameOver = useCallback(() => {
+    setGameOver(false);
+    setShowScore(false);
+    setScore(0);
+    gameOverRef.current = false;
+    playingRef.current = false;
+    gameStartedRef.current = false;
+    difficultyRef.current = createInitialDifficulty();
+    waveStateRef.current = createInitialWaveState();
+    clearScheduled();
+    scheduleNextWave();
+  }, [clearScheduled, scheduleNextWave]);
+
+  const handleRestartGame = useCallback(() => {
+    if (prefersReducedMotion) return;
+    setGameOver(false);
+    setScore(0);
+    setShowScore(false);
+    clearScheduled();
+    bugsRef.current = [];
+    setBugs([]);
+    gameOverRef.current = false;
+    playingRef.current = true;
+    gameStartedRef.current = false;
+    difficultyRef.current = createInitialDifficulty();
+    waveStateRef.current = createInitialWaveState();
+    spawnWave();
+  }, [prefersReducedMotion, clearScheduled, spawnWave]);
+
   return (
     <>
       {showScore ? (
@@ -576,14 +689,58 @@ export default function ScurryingBugs() {
       ) : null}
 
       {gameOver ? (
-        <div className="pointer-events-none fixed inset-0 z-[75] flex items-center justify-center">
-          <div className="rounded-xl border border-white/35 bg-slate-950/85 px-6 py-4 text-center text-lime-200 shadow-2xl">
-            <div className="text-3xl font-bold tracking-[0.4em]">GAME OVER</div>
-            {formattedHighScore ? (
-              <div className="mt-2 text-xs font-semibold tracking-[0.45em] text-lime-200/80">
-                HI {formattedHighScore}
+        <div className="pointer-events-auto fixed inset-0 z-[75] flex items-center justify-center bg-slate-950/85 backdrop-blur-sm">
+          <div
+            className="flex w-[min(320px,90vw)] flex-col items-center gap-4 rounded-lg border border-lime-200/35 bg-slate-950 px-6 py-5 text-center text-lime-200 shadow-[0_0_40px_rgba(148,163,184,0.35)]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="bugs-game-over-title"
+            aria-describedby="bugs-game-over-body"
+            style={{
+              imageRendering: "pixelated",
+              fontFamily: '"Press Start 2P", "VT323", "Share Tech Mono", monospace',
+            }}
+          >
+            <div className="text-xs uppercase tracking-[0.45em] text-lime-200/70">Mission Failed</div>
+            <div className="w-full rounded-md border border-lime-200/45 bg-black px-4 py-3 shadow-[inset_0_0_12px_rgba(163,230,53,0.35)]">
+              <div
+                id="bugs-game-over-title"
+                className="text-3xl font-bold uppercase tracking-[0.48em] text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.45)]"
+              >
+                Game Over
               </div>
-            ) : null}
+            </div>
+            <div
+              id="bugs-game-over-body"
+              className="grid w-full grid-cols-2 gap-3 text-left text-[10px] font-semibold uppercase tracking-[0.35em] text-lime-200/80"
+            >
+              <div className="rounded-sm border border-lime-400/45 bg-slate-950/90 px-3 py-2">
+                <div className="text-lime-400/70">Your Score</div>
+                <div className="mt-2 font-mono text-2xl tracking-[0.32em] text-lime-200">{formattedScore}</div>
+              </div>
+              <div className="rounded-sm border border-lime-400/45 bg-slate-950/90 px-3 py-2">
+                <div className="text-lime-400/70">Hi Score</div>
+                <div className="mt-2 font-mono text-2xl tracking-[0.32em] text-lime-200">
+                  {formattedHighScore ?? formattedScore}
+                </div>
+              </div>
+            </div>
+            <div className="flex w-full gap-3">
+              <button
+                type="button"
+                onClick={handleRestartGame}
+                className="flex-1 rounded-sm border border-lime-300/70 bg-lime-300/20 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-lime-100 shadow-[0_0_12px_rgba(163,230,53,0.45)] transition hover:bg-lime-300/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-300/70"
+              >
+                Play Again
+              </button>
+              <button
+                type="button"
+                onClick={handleDismissGameOver}
+                className="flex-1 rounded-sm border border-slate-400/60 bg-slate-800/60 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-200 transition hover:bg-slate-700/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-200/60"
+              >
+                Dismiss
+              </button>
+            </div>
           </div>
         </div>
       ) : null}
@@ -613,6 +770,7 @@ export default function ScurryingBugs() {
           onPointerDown={(event) => handlePointerSquish(event, bug.id)}
           onClick={(event) => handlePointerSquish(event, bug.id)}
           onKeyDown={(event) => handleKeySquish(event, bug.id)}
+          onAnimationEnd={() => handleBugAnimationEnd(bug.id)}
         >
           {bug.emoji}
         </span>
@@ -689,5 +847,59 @@ function playSquishSound(audioContextRef: MutableRefObject<AudioContext | null>)
     osc.stop(now + 0.3);
   } catch (error) {
     console.warn("Unable to play squish sound", error);
+  }
+}
+
+function playGameOverSound(audioContextRef: MutableRefObject<AudioContext | null>) {
+  try {
+    const Ctor = window.AudioContext || (window as any).webkitAudioContext;
+    if (!Ctor) return;
+
+    const ctx = audioContextRef.current ?? new Ctor();
+    audioContextRef.current = ctx;
+
+    if (ctx.state === "suspended") {
+      ctx.resume().catch(() => {});
+    }
+
+    const now = ctx.currentTime;
+
+    const osc = ctx.createOscillator();
+    osc.type = "sawtooth";
+    osc.frequency.setValueAtTime(660, now);
+    osc.frequency.exponentialRampToValueAtTime(110, now + 0.5);
+
+    const noiseBuffer = ctx.createBuffer(1, ctx.sampleRate * 0.2, ctx.sampleRate);
+    const channel = noiseBuffer.getChannelData(0);
+    for (let i = 0; i < channel.length; i += 1) {
+      channel[i] = (Math.random() * 2 - 1) * Math.exp(-i / (channel.length * 0.6));
+    }
+    const noise = ctx.createBufferSource();
+    noise.buffer = noiseBuffer;
+
+    const oscGain = ctx.createGain();
+    oscGain.gain.setValueAtTime(0.4, now);
+    oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.55);
+
+    const noiseGain = ctx.createGain();
+    noiseGain.gain.setValueAtTime(0.3, now);
+    noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+
+    const master = ctx.createGain();
+    master.gain.setValueAtTime(0.5, now);
+    master.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+
+    osc.connect(oscGain);
+    noise.connect(noiseGain);
+    oscGain.connect(master);
+    noiseGain.connect(master);
+    master.connect(ctx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.6);
+    noise.start(now);
+    noise.stop(now + 0.4);
+  } catch (error) {
+    console.warn("Unable to play game over sound", error);
   }
 }
