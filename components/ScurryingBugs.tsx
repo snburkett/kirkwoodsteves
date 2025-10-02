@@ -242,6 +242,7 @@ export default function ScurryingBugs() {
   const mountedRef = useRef(true);
   const audioContextRef = useRef<AudioContext | null>(null);
   const highScoreRef = useRef(0);
+  const bugIdRef = useRef(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [highScore, setHighScore] = useState(0);
@@ -299,8 +300,10 @@ export default function ScurryingBugs() {
         const delay = i === 0 ? 0 : randomBetween(120, 600) * i;
         const size = randomBetween(0.85, 1.25);
 
+        const bugId = bugIdRef.current++;
+
         newBugs.push({
-          id: animationCounter,
+          id: bugId,
           emoji,
           animationName: name,
           duration,
