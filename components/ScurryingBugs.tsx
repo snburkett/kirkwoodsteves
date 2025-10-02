@@ -1,6 +1,15 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type MutableRefObject } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type MutableRefObject,
+  type PointerEvent as ReactPointerEvent,
+  type MouseEvent as ReactMouseEvent,
+  type KeyboardEvent as ReactKeyboardEvent,
+} from "react";
 
 type BugInstance = {
   id: number;
@@ -15,14 +24,69 @@ type BugInstance = {
   frozenTransform?: string;
 };
 
-const BUG_EMOJIS = ["🐞", "🪲", "🕷️", "🐜", "🐛", "🦟", "🦂"];
+const BUG_EMOJIS = ["🐞", "🪲", "🕷️", "🐜", "🐛", "🦟", "🦂"] as const;
+type BugEmoji = (typeof BUG_EMOJIS)[number];
+
+interface BugBehavior {
+  minDuration: number;
+  maxDuration: number;
+  stepMultiplier?: number;
+  curveVariance?: number;
+}
+
+const DEFAULT_BEHAVIOR: BugBehavior = {
+  minDuration: 7500,
+  maxDuration: 13500,
+  stepMultiplier: 1,
+  curveVariance: 0.35,
+};
+
+const BUG_BEHAVIOR: Record<BugEmoji, BugBehavior> = {
+  "🐞": { minDuration: 13500, maxDuration: 19500, stepMultiplier: 0.9, curveVariance: 0.26 },
+  "🪲": { minDuration: 14500, maxDuration: 21500, stepMultiplier: 0.95, curveVariance: 0.28 },
+  "🕷️": { minDuration: 11500, maxDuration: 17000, stepMultiplier: 1.15, curveVariance: 0.33 },
+  "🐜": { minDuration: 10500, maxDuration: 15000, stepMultiplier: 1.35, curveVariance: 0.36 },
+  "🐛": { minDuration: 22000, maxDuration: 32000, stepMultiplier: 0.7, curveVariance: 0.18 },
+  "🦟": { minDuration: 8000, maxDuration: 11500, stepMultiplier: 1.55, curveVariance: 0.42 },
+  "🦂": { minDuration: 15000, maxDuration: 22000, stepMultiplier: 0.8, curveVariance: 0.22 },
+};
+
+const BUG_ORIENTATION_OFFSET: Record<BugEmoji, number> = {
+  "🐞": 90,
+  "🪲": 90,
+  "🕷️": 90,
+  "🐜": 180,
+  "🐛": 90,
+  "🦟": 180,
+  "🦂": -90,
+};
+
+const BUG_POINTS: Record<BugEmoji, number> = (() => {
+  const entries = Object.entries(BUG_BEHAVIOR) as Array<[BugEmoji, BugBehavior]>;
+  const averages = entries.map(([, behavior]) => (behavior.minDuration + behavior.maxDuration) / 2);
+  const minAvg = Math.min(...averages);
+  const maxAvg = Math.max(...averages);
+  const spread = maxAvg - minAvg || 1;
+  const minPoints = 5;
+  const maxPoints = 35;
+
+  const result = {} as Record<BugEmoji, number>;
+  entries.forEach(([emoji, behavior]) => {
+    const avg = (behavior.minDuration + behavior.maxDuration) / 2;
+    const normalized = (maxAvg - avg) / spread;
+    const rawPoints = minPoints + normalized * (maxPoints - minPoints);
+    const points = Math.max(minPoints, Math.min(maxPoints, Math.round(rawPoints / 5) * 5));
+    result[emoji] = points;
+  });
+
+  return result;
+})();
 
 const MIN_WAVE_DELAY = 14000;
 const MAX_WAVE_DELAY = 32000;
-const MIN_DURATION = 7500;
-const MAX_DURATION = 13500;
 const MIN_BUGS = 1;
 const MAX_BUGS = 3;
+const SCORE_KEY = "ks_bug_score";
 
 function randomBetween(min: number, max: number) {
   return Math.random() * (max - min) + min;
@@ -32,7 +96,7 @@ function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function pickBugEmoji(previous?: string) {
+function pickBugEmoji(previous?: BugEmoji): BugEmoji {
   const choice = BUG_EMOJIS[randomInt(0, BUG_EMOJIS.length - 1)];
   if (choice === previous) {
     return pickBugEmoji(choice);
@@ -46,9 +110,17 @@ type PathDefinition = {
   start: Point;
   steps: Point[];
   end: Point;
+  curveVariance: number;
 };
 
-function makePath(): PathDefinition {
+type PathOptions = {
+  stepMultiplier?: number;
+  curveVariance?: number;
+};
+
+function makePath(options?: PathOptions): PathDefinition {
+  const stepMultiplier = options?.stepMultiplier ?? 1;
+  const curveVariance = options?.curveVariance ?? DEFAULT_BEHAVIOR.curveVariance ?? 0.35;
   const edges = ["top", "right", "bottom", "left"] as const;
   const startEdge = edges[randomInt(0, edges.length - 1)];
   const exitEdge = edges[randomInt(0, edges.length - 1)];
@@ -56,7 +128,8 @@ function makePath(): PathDefinition {
   const start: Point = getEdgePoint(startEdge, true);
   const end: Point = getEdgePoint(exitEdge, false);
 
-  const stepsCount = randomInt(2, 4);
+  const baseSteps = randomInt(2, 4);
+  const stepsCount = Math.max(2, Math.round(baseSteps * stepMultiplier));
   const steps: Point[] = [];
   for (let i = 0; i < stepsCount; i += 1) {
     steps.push({
@@ -65,7 +138,7 @@ function makePath(): PathDefinition {
     });
   }
 
-  return { start, steps, end };
+  return { start, steps, end, curveVariance };
 }
 
 function getEdgePoint(edge: "top" | "right" | "bottom" | "left", isEntry: boolean): Point {
@@ -84,7 +157,7 @@ function getEdgePoint(edge: "top" | "right" | "bottom" | "left", isEntry: boolea
 
 let animationCounter = 0;
 
-function createKeyframes(path: PathDefinition) {
+function createKeyframes(path: PathDefinition, orientationOffset = 0) {
   const name = `bug-scurries-${animationCounter++}`;
   const style = document.createElement("style");
 
@@ -93,7 +166,7 @@ function createKeyframes(path: PathDefinition) {
   const totalSteps = points.length;
   points.forEach((point, index) => {
     const progress = (index / (totalSteps - 1)) * 100;
-    const heading = getHeading(points, index);
+    const heading = getHeading(points, index) + orientationOffset;
     stepParts.push(
       `${progress.toFixed(2)}% { transform: ${pointToTransform(point, heading)}; }`,
     );
@@ -102,7 +175,7 @@ function createKeyframes(path: PathDefinition) {
   style.textContent = `@keyframes ${name} { ${stepParts.join(" ")} }`;
   document.head.appendChild(style);
 
-  const startHeading = getHeading(points, 0);
+  const startHeading = getHeading(points, 0) + orientationOffset;
   return { name, element: style, startTransform: pointToTransform(path.start, startHeading) };
 }
 
@@ -134,7 +207,8 @@ function createSmoothPoints(path: PathDefinition) {
     const distance = Math.hypot(dx, dy) || 1;
     const normalX = -dy / distance;
     const normalY = dx / distance;
-    const curveStrength = randomBetween(-0.35, 0.35);
+    const variance = path.curveVariance ?? DEFAULT_BEHAVIOR.curveVariance ?? 0.35;
+    const curveStrength = randomBetween(-variance, variance);
     const offset = distance * 0.45 * curveStrength;
     const control = {
       x: (current.x + next.x) / 2 + normalX * offset,
@@ -167,6 +241,10 @@ export default function ScurryingBugs() {
   const prefersReducedMotion = usePrefersReducedMotion();
   const mountedRef = useRef(true);
   const audioContextRef = useRef<AudioContext | null>(null);
+  const highScoreRef = useRef(0);
+  const [score, setScore] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [highScore, setHighScore] = useState(0);
 
   useEffect(() => {
     return () => {
@@ -178,6 +256,20 @@ export default function ScurryingBugs() {
     bugsRef.current = bugs;
   }, [bugs]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      const stored = window.localStorage.getItem(SCORE_KEY);
+      const parsed = stored ? Number.parseInt(stored, 10) : 0;
+      if (!Number.isNaN(parsed) && parsed > 0) {
+        highScoreRef.current = parsed;
+        setHighScore(parsed);
+      }
+    } catch (error) {
+      console.warn("Unable to load bug high score", error);
+    }
+  }, []);
+
   const clearScheduled = () => {
     if (timeoutRef.current) {
       window.clearTimeout(timeoutRef.current);
@@ -188,45 +280,50 @@ export default function ScurryingBugs() {
   const spawnWave = useMemo(() => {
     return () => {
       if (prefersReducedMotion) return;
-    const bugCount = randomInt(MIN_BUGS, MAX_BUGS);
-    const newBugs: BugInstance[] = [];
-    let previousEmoji: string | undefined;
+      const bugCount = randomInt(MIN_BUGS, MAX_BUGS);
+      const newBugs: BugInstance[] = [];
+      let previousEmoji: BugEmoji | undefined;
 
-    for (let i = 0; i < bugCount; i += 1) {
-      const duration = randomBetween(MIN_DURATION, MAX_DURATION);
-      const path = makePath();
-      const { name, element, startTransform } = createKeyframes(path);
-      const delay = i === 0 ? 0 : randomBetween(120, 600) * i;
-      const size = randomBetween(0.85, 1.25);
+      for (let i = 0; i < bugCount; i += 1) {
+        const emoji = pickBugEmoji(previousEmoji);
+        previousEmoji = emoji;
 
-      const emoji = pickBugEmoji(previousEmoji);
-      previousEmoji = emoji;
+        const behavior = BUG_BEHAVIOR[emoji] ?? DEFAULT_BEHAVIOR;
+        const duration = randomBetween(behavior.minDuration, behavior.maxDuration);
+        const path = makePath({
+          stepMultiplier: behavior.stepMultiplier,
+          curveVariance: behavior.curveVariance,
+        });
+        const orientationOffset = BUG_ORIENTATION_OFFSET[emoji] ?? 0;
+        const { name, element, startTransform } = createKeyframes(path, orientationOffset);
+        const delay = i === 0 ? 0 : randomBetween(120, 600) * i;
+        const size = randomBetween(0.85, 1.25);
 
-      newBugs.push({
-        id: animationCounter,
-        emoji,
-        animationName: name,
-        duration,
-        delay,
-        styleElement: element,
-        size,
-        startTransform,
+        newBugs.push({
+          id: animationCounter,
+          emoji,
+          animationName: name,
+          duration,
+          delay,
+          styleElement: element,
+          size,
+          startTransform,
+        });
+
+        window.setTimeout(() => {
+          element.remove();
+        }, duration + delay + 2000);
+      }
+
+      setBugs((current) => [...current, ...newBugs]);
+
+      newBugs.forEach((bug) => {
+        window.setTimeout(() => {
+          if (!mountedRef.current) return;
+          setBugs((current) => current.filter((item) => item.id !== bug.id));
+        }, bug.duration + bug.delay);
       });
-
-      window.setTimeout(() => {
-        element.remove();
-      }, duration + delay + 2000);
-    }
-
-    setBugs((current) => [...current, ...newBugs]);
-
-    newBugs.forEach((bug) => {
-      window.setTimeout(() => {
-        if (!mountedRef.current) return;
-        setBugs((current) => current.filter((item) => item.id !== bug.id));
-      }, bug.duration + bug.delay);
-    });
-  };
+    };
   }, [prefersReducedMotion]);
 
   const scheduleNextWave = useMemo(() => {
@@ -265,7 +362,7 @@ export default function ScurryingBugs() {
     return null;
   }
 
-  const handleSquish = (bugId: number, target: HTMLSpanElement) => {
+  const commitSquish = (bugId: number, target: HTMLSpanElement) => {
     const match = bugsRef.current.find((bug) => bug.id === bugId);
     if (!match || match.squished) return;
 
@@ -274,6 +371,25 @@ export default function ScurryingBugs() {
     match.styleElement.remove();
 
     playSquishSound(audioContextRef);
+
+    const originalEmoji = match.emoji as BugEmoji;
+    const points = BUG_POINTS[originalEmoji] ?? 5;
+    setScore((current) => {
+      const next = current + points;
+      if (next > highScoreRef.current) {
+        highScoreRef.current = next;
+        setHighScore(next);
+        try {
+          if (typeof window !== "undefined") {
+            window.localStorage.setItem(SCORE_KEY, String(next));
+          }
+        } catch (error) {
+          console.warn("Unable to persist bug high score", error);
+        }
+      }
+      return next;
+    });
+    setShowScore(true);
 
     setBugs((current) =>
       current.map((bug) =>
@@ -292,14 +408,52 @@ export default function ScurryingBugs() {
     }, 2000);
   };
 
+  const handlePointerSquish = (
+    event: ReactPointerEvent<HTMLSpanElement> | ReactMouseEvent<HTMLSpanElement>,
+    bugId: number,
+  ) => {
+    event.preventDefault();
+    event.stopPropagation();
+    commitSquish(bugId, event.currentTarget);
+  };
+
+  const handleKeySquish = (event: ReactKeyboardEvent<HTMLSpanElement>, bugId: number) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    commitSquish(bugId, event.currentTarget);
+  };
+
+  const formattedScore = score.toString().padStart(5, "0");
+  const formattedHighScore = highScore > 0 ? highScore.toString().padStart(5, "0") : null;
+
   return (
-    <div className="pointer-events-none fixed inset-0 z-[60] overflow-visible">
+    <>
+      {showScore ? (
+        <div className="pointer-events-none fixed top-3 right-3 z-[70] flex flex-col items-end text-lime-300">
+          <span className="text-[9px] font-semibold tracking-[0.45em] text-lime-400/80">SCORE</span>
+          <div
+            className="mt-1 rounded-sm border border-lime-400/35 bg-slate-950/80 px-3 py-0.5 font-mono text-2xl tracking-[0.28em] text-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.2)]"
+            role="status"
+            aria-live="polite"
+          >
+            {formattedScore}
+          </div>
+          {formattedHighScore ? (
+            <span className="mt-1 pr-0.5 text-[9px] font-semibold tracking-[0.32em] text-black/80">
+              HI {formattedHighScore}
+            </span>
+          ) : null}
+        </div>
+      ) : null}
+
+      <div className="pointer-events-none fixed inset-0 z-[60] overflow-visible">
       {bugs.map((bug) => (
         <span
           key={bug.id}
           className="absolute left-0 top-0 select-none"
           role="button"
           aria-label="Squish bug"
+          tabIndex={0}
           style={{
             animation: bug.squished
               ? "none"
@@ -314,16 +468,15 @@ export default function ScurryingBugs() {
             transition: bug.squished ? "transform 0.2s ease-out, opacity 0.2s ease-out" : undefined,
             opacity: bug.squished ? 0.3 : 1,
           }}
-          onClick={(event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            handleSquish(bug.id, event.currentTarget);
-          }}
+          onPointerDown={(event) => handlePointerSquish(event, bug.id)}
+          onClick={(event) => handlePointerSquish(event, bug.id)}
+          onKeyDown={(event) => handleKeySquish(event, bug.id)}
         >
           {bug.emoji}
         </span>
       ))}
-    </div>
+      </div>
+    </>
   );
 }
 
