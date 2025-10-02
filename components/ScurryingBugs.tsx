@@ -2,9 +2,9 @@
 
 import {
   useEffect,
-  useMemo,
   useRef,
   useState,
+  useCallback,
   type MutableRefObject,
   type PointerEvent as ReactPointerEvent,
   type MouseEvent as ReactMouseEvent,
@@ -22,6 +22,8 @@ type BugInstance = {
   startTransform: string;
   squished?: boolean;
   frozenTransform?: string;
+  waveId: number;
+  resolved?: boolean;
 };
 
 const BUG_EMOJIS = ["🐞", "🪲", "🕷️", "🐜", "🐛", "🦟", "🦂"] as const;
@@ -82,11 +84,40 @@ const BUG_POINTS: Record<BugEmoji, number> = (() => {
   return result;
 })();
 
-const MIN_WAVE_DELAY = 14000;
-const MAX_WAVE_DELAY = 32000;
-const MIN_BUGS = 1;
-const MAX_BUGS = 3;
+const BASE_MIN_WAVE_DELAY = 14000;
+const BASE_MAX_WAVE_DELAY = 32000;
+const MAX_BUGS_PER_WAVE = 5;
+const SPEED_SCALE_FLOOR = 0.55;
+const DELAY_FLOOR = 5000;
+const GAME_OVER_RESET_DELAY = 2600;
 const SCORE_KEY = "ks_bug_score";
+
+interface DifficultyState {
+  bugsPerWave: number;
+  speedScale: number;
+  minDelay: number;
+  maxDelay: number;
+  streak: number;
+}
+
+interface WaveState {
+  remaining: number;
+  id: number;
+}
+
+function createInitialDifficulty(): DifficultyState {
+  return {
+    bugsPerWave: 1,
+    speedScale: 1,
+    minDelay: BASE_MIN_WAVE_DELAY,
+    maxDelay: BASE_MAX_WAVE_DELAY,
+    streak: 0,
+  };
+}
+
+function createInitialWaveState(): WaveState {
+  return { remaining: 0, id: 0 };
+}
 
 function randomBetween(min: number, max: number) {
   return Math.random() * (max - min) + min;
@@ -243,6 +274,10 @@ export default function ScurryingBugs() {
   const audioContextRef = useRef<AudioContext | null>(null);
   const highScoreRef = useRef(0);
   const bugIdRef = useRef(0);
+  const difficultyRef = useRef<DifficultyState>(createInitialDifficulty());
+  const waveStateRef = useRef<WaveState>(createInitialWaveState());
+  const gameOverRef = useRef(false);
+  const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [highScore, setHighScore] = useState(0);
@@ -271,74 +306,166 @@ export default function ScurryingBugs() {
     }
   }, []);
 
-  const clearScheduled = () => {
+  const updateHighScore = useCallback((candidate: number) => {
+    if (candidate <= highScoreRef.current) return;
+    highScoreRef.current = candidate;
+    setHighScore(candidate);
+    try {
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(SCORE_KEY, String(candidate));
+      }
+    } catch (error) {
+      console.warn("Unable to persist bug high score", error);
+    }
+  }, []);
+
+  const clearScheduled = useCallback(() => {
     if (timeoutRef.current) {
       window.clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
-  };
+  }, []);
 
-  const spawnWave = useMemo(() => {
-    return () => {
-      if (prefersReducedMotion) return;
-      const bugCount = randomInt(MIN_BUGS, MAX_BUGS);
-      const newBugs: BugInstance[] = [];
-      let previousEmoji: BugEmoji | undefined;
+  const resetDifficulty = useCallback(() => {
+    difficultyRef.current = createInitialDifficulty();
+    waveStateRef.current = { remaining: 0, id: waveStateRef.current.id + 1 };
+  }, []);
 
-      for (let i = 0; i < bugCount; i += 1) {
-        const emoji = pickBugEmoji(previousEmoji);
-        previousEmoji = emoji;
+  const advanceDifficulty = useCallback(() => {
+    const state = difficultyRef.current;
+    state.streak += 1;
+    if (state.streak % 3 === 0 && state.bugsPerWave < MAX_BUGS_PER_WAVE) {
+      state.bugsPerWave += 1;
+    }
+    state.speedScale = Math.max(SPEED_SCALE_FLOOR, state.speedScale * 0.92);
+    state.minDelay = Math.max(DELAY_FLOOR, state.minDelay * 0.92);
+    state.maxDelay = Math.max(state.minDelay + 2500, state.maxDelay * 0.92);
+  }, []);
 
-        const behavior = BUG_BEHAVIOR[emoji] ?? DEFAULT_BEHAVIOR;
-        const duration = randomBetween(behavior.minDuration, behavior.maxDuration);
-        const path = makePath({
-          stepMultiplier: behavior.stepMultiplier,
-          curveVariance: behavior.curveVariance,
-        });
-        const orientationOffset = BUG_ORIENTATION_OFFSET[emoji] ?? 0;
-        const { name, element, startTransform } = createKeyframes(path, orientationOffset);
-        const delay = i === 0 ? 0 : randomBetween(120, 600) * i;
-        const size = randomBetween(0.85, 1.25);
+  const spawnWaveRef = useRef<() => void>(() => {});
 
-        const bugId = bugIdRef.current++;
-
-        newBugs.push({
-          id: bugId,
-          emoji,
-          animationName: name,
-          duration,
-          delay,
-          styleElement: element,
-          size,
-          startTransform,
-        });
-
-        window.setTimeout(() => {
-          element.remove();
-        }, duration + delay + 2000);
-      }
-
-      setBugs((current) => [...current, ...newBugs]);
-
-      newBugs.forEach((bug) => {
-        window.setTimeout(() => {
-          if (!mountedRef.current) return;
-          setBugs((current) => current.filter((item) => item.id !== bug.id));
-        }, bug.duration + bug.delay);
-      });
-    };
-  }, [prefersReducedMotion]);
-
-  const scheduleNextWave = useMemo(() => {
-    return () => {
-      if (prefersReducedMotion) return;
-      const delay = randomBetween(MIN_WAVE_DELAY, MAX_WAVE_DELAY);
+  const scheduleNextWave = useCallback(
+    (delayOverride?: number) => {
+      if (prefersReducedMotion || gameOverRef.current) return;
+      clearScheduled();
+      const state = difficultyRef.current;
+      const delay = delayOverride ?? randomBetween(state.minDelay, state.maxDelay);
       timeoutRef.current = window.setTimeout(() => {
-        spawnWave();
-        scheduleNextWave();
+        spawnWaveRef.current();
       }, delay);
-    };
-  }, [prefersReducedMotion, spawnWave]);
+    },
+    [prefersReducedMotion, clearScheduled],
+  );
+
+  const triggerGameOver = useCallback(() => {
+    if (gameOverRef.current) return;
+    gameOverRef.current = true;
+    clearScheduled();
+    updateHighScore(score);
+    setGameOver(true);
+
+    bugsRef.current.forEach((bug) => bug.styleElement.remove());
+    bugsRef.current = [];
+    setBugs([]);
+
+    resetDifficulty();
+    setScore(0);
+    setShowScore(false);
+
+    window.setTimeout(() => {
+      if (!mountedRef.current) return;
+      setGameOver(false);
+      gameOverRef.current = false;
+      scheduleNextWave();
+    }, GAME_OVER_RESET_DELAY);
+  }, [clearScheduled, resetDifficulty, scheduleNextWave, score, updateHighScore]);
+
+  const handleBugResolved = useCallback(
+    (waveId: number, squished: boolean) => {
+      const waveState = waveStateRef.current;
+      if (waveId !== waveState.id) return;
+      if (waveState.remaining > 0) {
+        waveState.remaining -= 1;
+        if (waveState.remaining === 0 && squished && !gameOverRef.current) {
+          advanceDifficulty();
+          scheduleNextWave();
+        }
+      }
+    },
+    [advanceDifficulty, scheduleNextWave],
+  );
+
+  const spawnWave = useCallback(() => {
+    if (prefersReducedMotion || gameOverRef.current) return;
+    const difficulty = difficultyRef.current;
+    const bugCount = Math.max(1, difficulty.bugsPerWave);
+    const waveId = waveStateRef.current.id + 1;
+    waveStateRef.current = { remaining: bugCount, id: waveId };
+
+    const newBugs: BugInstance[] = [];
+    let previousEmoji: BugEmoji | undefined;
+
+    for (let i = 0; i < bugCount; i += 1) {
+      const emoji = pickBugEmoji(previousEmoji);
+      previousEmoji = emoji;
+
+      const behavior = BUG_BEHAVIOR[emoji] ?? DEFAULT_BEHAVIOR;
+      const baseDuration = randomBetween(behavior.minDuration, behavior.maxDuration);
+      const duration = Math.max(2500, baseDuration * difficulty.speedScale);
+      const path = makePath({
+        stepMultiplier: behavior.stepMultiplier,
+        curveVariance: behavior.curveVariance,
+      });
+      const orientationOffset = BUG_ORIENTATION_OFFSET[emoji] ?? 0;
+      const { name, element, startTransform } = createKeyframes(path, orientationOffset);
+      const delay = i === 0 ? 0 : randomBetween(180, 520) * i;
+      const size = randomBetween(0.85, 1.25);
+
+      const bugId = bugIdRef.current++;
+
+      newBugs.push({
+        id: bugId,
+        emoji,
+        animationName: name,
+        duration,
+        delay,
+        styleElement: element,
+        size,
+        startTransform,
+        waveId,
+        squished: false,
+        resolved: false,
+      });
+
+      window.setTimeout(() => {
+        element.remove();
+      }, duration + delay + 2000);
+
+      window.setTimeout(() => {
+        if (!mountedRef.current) return;
+        let shouldGameOver = false;
+
+        setBugs((current) => {
+          const target = current.find((item) => item.id === bugId);
+          if (!target) return current;
+          if (!target.squished && !gameOverRef.current) {
+            shouldGameOver = true;
+          }
+          return current.filter((item) => item.id !== bugId);
+        });
+
+        if (shouldGameOver) {
+          triggerGameOver();
+        }
+      }, duration + delay);
+    }
+
+    setBugs((current) => [...current, ...newBugs]);
+  }, [prefersReducedMotion, triggerGameOver]);
+
+  useEffect(() => {
+    spawnWaveRef.current = spawnWave;
+  }, [spawnWave]);
 
   useEffect(() => {
     return () => {
@@ -348,20 +475,26 @@ export default function ScurryingBugs() {
       });
       bugsRef.current = [];
     };
-  }, []);
+  }, [clearScheduled]);
 
   useEffect(() => {
     if (prefersReducedMotion) {
-      return () => {};
+      clearScheduled();
+      setBugs([]);
+      setScore(0);
+      setShowScore(false);
+      resetDifficulty();
+      gameOverRef.current = false;
+      setGameOver(false);
+      return;
     }
-    spawnWave();
     scheduleNextWave();
     return () => {
       clearScheduled();
     };
-  }, [prefersReducedMotion, scheduleNextWave, spawnWave]);
+  }, [prefersReducedMotion, scheduleNextWave, clearScheduled, resetDifficulty]);
 
-  if (prefersReducedMotion || bugs.length === 0) {
+  if (prefersReducedMotion) {
     return null;
   }
 
@@ -377,19 +510,10 @@ export default function ScurryingBugs() {
 
     const originalEmoji = match.emoji as BugEmoji;
     const points = BUG_POINTS[originalEmoji] ?? 5;
+    const waveId = match.waveId;
     setScore((current) => {
       const next = current + points;
-      if (next > highScoreRef.current) {
-        highScoreRef.current = next;
-        setHighScore(next);
-        try {
-          if (typeof window !== "undefined") {
-            window.localStorage.setItem(SCORE_KEY, String(next));
-          }
-        } catch (error) {
-          console.warn("Unable to persist bug high score", error);
-        }
-      }
+      updateHighScore(next);
       return next;
     });
     setShowScore(true);
@@ -397,10 +521,12 @@ export default function ScurryingBugs() {
     setBugs((current) =>
       current.map((bug) =>
         bug.id === bugId
-          ? { ...bug, squished: true, frozenTransform: frozen, emoji: "💥" }
+          ? { ...bug, squished: true, resolved: true, frozenTransform: frozen, emoji: "💥" }
           : bug,
       ),
     );
+
+    handleBugResolved(waveId, true);
 
     window.setTimeout(() => {
       setBugs((current) => current.map((bug) => (bug.id === bugId ? { ...bug, emoji: "" } : bug)));
@@ -442,15 +568,28 @@ export default function ScurryingBugs() {
             {formattedScore}
           </div>
           {formattedHighScore ? (
-            <span className="mt-1 pr-0.5 text-[9px] font-semibold tracking-[0.32em] text-black/80">
+            <span className="mt-1 rounded-sm bg-white/85 px-2 py-0.5 text-[9px] font-semibold tracking-[0.32em] text-black">
               HI {formattedHighScore}
             </span>
           ) : null}
         </div>
       ) : null}
 
+      {gameOver ? (
+        <div className="pointer-events-none fixed inset-0 z-[75] flex items-center justify-center">
+          <div className="rounded-xl border border-white/35 bg-slate-950/85 px-6 py-4 text-center text-lime-200 shadow-2xl">
+            <div className="text-3xl font-bold tracking-[0.4em]">GAME OVER</div>
+            {formattedHighScore ? (
+              <div className="mt-2 text-xs font-semibold tracking-[0.45em] text-lime-200/80">
+                HI {formattedHighScore}
+              </div>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
+
       <div className="pointer-events-none fixed inset-0 z-[60] overflow-visible">
-      {bugs.map((bug) => (
+        {bugs.map((bug) => (
         <span
           key={bug.id}
           className="absolute left-0 top-0 select-none"
@@ -477,7 +616,7 @@ export default function ScurryingBugs() {
         >
           {bug.emoji}
         </span>
-      ))}
+        ))}
       </div>
     </>
   );
