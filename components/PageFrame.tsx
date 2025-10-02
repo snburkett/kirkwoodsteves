@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import LockedQuadrantWheel from "@/components/LockedQuadrantWheel";
 import RollingTrain from "@/components/RollingTrain";
+import ScurryingBugs from "@/components/ScurryingBugs";
 import type { SectionName } from "@/lib/types";
 import { wheelColors } from "../app/(theme)/tokens";
 
@@ -84,6 +85,7 @@ export default function PageFrame({ children }: { children: React.ReactNode }) {
         </div>
       </div>
       {activeSection === "pulse" ? <RollingTrain /> : null}
+      {activeSection === "oddities" ? <ScurryingBugs /> : null}
     </>
   );
 }
