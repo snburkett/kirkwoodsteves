@@ -66,6 +66,7 @@ export default function HeaderTitle() {
   const [steakUnlocked, setSteakUnlocked] = useState(false);
   const [steakPosition, setSteakPosition] = useState<{ x: number; y: number } | null>(null);
   const [steakDragging, setSteakDragging] = useState(false);
+  const [initialized, setInitialized] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const eyeButtonRef = useRef<HTMLButtonElement | null>(null);
   const steakOffsetRef = useRef<{ x: number; y: number } | null>(null);
@@ -78,38 +79,30 @@ export default function HeaderTitle() {
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        setBruised(stored === "true");
+      if (stored !== null) {
+        const isBruised = stored === "true";
+        setBruised(isBruised);
+        setSteakUnlocked(isBruised);
       }
     } catch (error) {
       console.warn("Unable to read avatar state", error);
     }
+    setInitialized(true);
   }, []);
 
   useEffect(() => {
+    if (!initialized) return;
     try {
       window.localStorage.setItem(STORAGE_KEY, String(bruised));
     } catch (error) {
       console.warn("Unable to persist avatar state", error);
     }
-  }, [bruised]);
+  }, [bruised, initialized]);
 
   useEffect(() => {
-    if (!bruised) {
-      setSteakUnlocked(false);
-      setSteakPosition(null);
-      setSteakDragging(false);
-      if (typeof window !== "undefined") {
-        try {
-          window.localStorage.removeItem(STEAK_STORAGE_KEY);
-        } catch (error) {
-          console.warn("Unable to clear steak position", error);
-        }
-      }
+    if (!steakUnlocked) {
       return;
     }
-
-    setSteakUnlocked(true);
 
     if (typeof window === "undefined") {
       return;
@@ -144,7 +137,7 @@ export default function HeaderTitle() {
         window.cancelAnimationFrame(frameId);
       }
     };
-  }, [bruised]);
+  }, [steakUnlocked]);
 
   useEffect(() => {
     if (!steakUnlocked) return;
@@ -381,7 +374,7 @@ export default function HeaderTitle() {
         <button
           type="button"
           ref={steakButtonRef}
-          className={`fixed bottom-6 left-6 inline-flex select-none items-center justify-center text-3xl leading-none transition-opacity z-[999] ${
+          className={`fixed bottom-[67px] left-[38px] inline-flex select-none items-center justify-center text-3xl leading-none transition-opacity z-[999] ${
             steakDragging ? "cursor-grabbing" : "cursor-grab"
           }`}
           style={
