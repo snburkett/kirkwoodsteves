@@ -64,8 +64,8 @@ export default async function HomePage() {
           subtitle="Dispatch"
           href="https://kirkwoodgadfly.com/"
           ariaLabel="Read the latest Kirkwood Gadfly dispatch"
-          imageSrc="/images/landing/gadfly.svg"
-          imageAlt="Illustration of the Kirkwood Gadfly"
+          imageSrc="/img/gadfly.webp"
+          imageAlt="Kirkwood Gadfly"
           variant="spark"
           backgroundColor="#7c3aed"
         />
@@ -88,8 +88,15 @@ export default async function HomePage() {
           variant="nova"
           backgroundColor="#facc15"
           textClassName="text-slate-900"
+          childClassName="scale-[0.9] -rotate-6"
         >
-          <RetroVibeGauge score={vibeScore} />
+          <RetroVibeGauge
+            score={vibeScore}
+            showTitle={false}
+            showLabels={false}
+            compact
+            className="rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm"
+          />
         </StarburstCallout>
       ),
     },

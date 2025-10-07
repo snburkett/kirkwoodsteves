@@ -4,6 +4,11 @@ import { useEffect, useMemo, useState } from "react";
 
 interface RetroVibeGaugeProps {
   score?: number | null;
+  rationale?: string;
+  showTitle?: boolean;
+  showLabels?: boolean;
+  className?: string;
+  compact?: boolean;
 }
 
 const clampScore = (value: number) => {
@@ -28,7 +33,14 @@ const BAND_SEGMENTS = [
   { start: 30, end: 90, color: "#ef4444" },
 ];
 
-export default function RetroVibeGauge({ score }: RetroVibeGaugeProps) {
+export default function RetroVibeGauge({
+  score,
+  rationale,
+  showTitle = true,
+  showLabels = true,
+  className = "",
+  compact = false,
+}: RetroVibeGaugeProps) {
   const [angle, setAngle] = useState(0);
   const targetScore = clampScore(score ?? 0);
   const targetAngle = useMemo(() => {
@@ -48,15 +60,23 @@ export default function RetroVibeGauge({ score }: RetroVibeGaugeProps) {
     return Array.from({ length: steps }, (_, index) => -90 + (index * 180) / (steps - 1));
   }, []);
 
+  const baseContainer = compact
+    ? "flex w-full flex-col items-center gap-2 border-0 bg-transparent px-0 py-0 shadow-none"
+    : "flex w-full flex-col items-center gap-3 rounded-2xl border border-white/40 bg-white/80 px-4 py-5 shadow-lg backdrop-blur-sm";
+
+  const containerClassName = [baseContainer, className].filter(Boolean).join(" ");
+
   return (
-    <div className="flex w-full flex-col items-center gap-3 rounded-2xl border border-white/40 bg-white/80 px-4 py-5 shadow-lg backdrop-blur-sm">
-      <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-600">
-        Kirkwood Vibe-O-Meter
-      </p>
+    <div className={containerClassName}>
+      {showTitle ? (
+        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-600">
+          Kirkwood Vibe-O-Meter
+        </p>
+      ) : null}
       <div
         role="img"
         aria-label={`Vibe-O-Meter score ${targetScore}`}
-        className="relative w-full max-w-xs"
+        className={`relative w-full ${compact ? "" : showLabels ? "max-w-xs" : "max-w-md"}`}
       >
         <svg viewBox="0 0 240 150" className="w-full">
           <path
@@ -109,11 +129,16 @@ export default function RetroVibeGauge({ score }: RetroVibeGaugeProps) {
             />
           </g>
         </svg>
-        <div className="mt-2 flex w-full justify-between text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">
-          <span>Janky</span>
-          <span>Vibing</span>
-        </div>
+        {showLabels ? (
+          <div className="mt-2 flex w-full justify-between text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">
+            <span>Janky</span>
+            <span>Vibing</span>
+          </div>
+        ) : null}
       </div>
+      {rationale ? (
+        <p className="text-xs text-slate-600">{rationale}</p>
+      ) : null}
     </div>
   );
 }

@@ -58,6 +58,7 @@ interface StarburstCalloutProps {
   backgroundColor?: string;
   textClassName?: string;
   children?: ReactNode;
+  childClassName?: string;
 }
 
 export default function StarburstCallout({
@@ -71,6 +72,7 @@ export default function StarburstCallout({
   backgroundColor = "#f97316",
   textClassName = "text-black",
   children,
+  childClassName,
 }: StarburstCalloutProps) {
   const clipPath = useMemo(() => {
     const hash = hashString(`${variant}-${label}`);
@@ -80,7 +82,7 @@ export default function StarburstCallout({
   const rotation = useMemo(() => {
     const base = hashString(`${label}-${variant}-tilt`);
     const rand = mulberry32(base + 13);
-    return (rand() - 0.5) * 24; // approx -12deg to +12deg
+    return (rand() - 0.5) * 60; // approx -30deg to +30deg
   }, [label, variant]);
 
   return (
@@ -123,6 +125,15 @@ export default function StarburstCallout({
               style={{ transform: "scale(0.6)" }}
               priority={false}
             />
+          </div>
+        ) : null}
+        {children ? (
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div
+              className={`max-w-[65%] transition-transform duration-300 ease-out ${childClassName ?? ""}`.trim()}
+            >
+              {children}
+            </div>
           </div>
         ) : null}
         <svg
