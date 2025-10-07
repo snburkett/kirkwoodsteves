@@ -1,0 +1,21 @@
+{
+  "generated_at": null,
+  "window_hours": 36,
+  "stories_considered": 0,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse is warming up",
+  "overview": "The daily briefing system is setting up. Once the first scheduled run completes, summaries from local sources within the last 36 hours will appear here.",
+  "items": [],
+  "vibe": {
+    "score": 55,
+    "label": "Even keel",
+    "rationale": "Awaiting the first automated scan.",
+    "raw_score": 0
+  },
+  "sentiment": {
+    "score": 0,
+    "label": "Even keel",
+    "rationale": "Awaiting the first automated scan."
+  },
+  "call_to_action": "Check back after the next morning run for fresh civic signals."
+}

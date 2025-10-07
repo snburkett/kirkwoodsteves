@@ -1,0 +1,28 @@
+window_hours: 36  # How far back to look for fresh items
+max_items_per_source: 8  # Optional per-source cap before summarizing
+
+sources:
+  # Feel free to add/remove sources. Supported types today: rss, html.
+  - name: "City of Kirkwood – News"
+    type: rss
+    url: "https://www.kirkwoodmo.org/Home/Components/RssFeeds/RssFeed/View?ctID=5&cateIDs=1&an=1"
+
+  - name: "City of Kirkwood – Calendar"
+    type: rss
+    url: "https://www.kirkwoodmo.org/Home/Components/RssFeeds/RssFeed/View?ctID=5&cateIDs=3&an=1"
+
+  - name: "Kirkwood City Council – Agendas & Minutes"
+    type: html
+    url: "https://www.kirkwoodmo.org/government/city-council/council-meetings-agendas-minutes"
+
+  - name: "Webster-Kirkwood Times – News"
+    type: rss
+    url: "https://www.timesnewspapers.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k=Kirkwood"
+
+  - name: "St. Louis County – Press Releases"
+    type: rss
+    url: "https://stlouiscountymo.gov/press-releases/feed/"
+
+  - name: "Kirkwood Gadfly"
+    type: html
+    url: "https://kirkwoodgadfly.substack.com/"
