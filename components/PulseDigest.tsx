@@ -1,4 +1,4 @@
-import VibeOMeter from "@/components/VibeOMeter";
+import RetroVibeGauge from "@/components/RetroVibeGauge";
 import type { PulseDigest, PulseStory } from "@/lib/pulse";
 
 function formatPublished(input?: string) {
@@ -42,13 +42,23 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
   return (
     <div className="space-y-6">
       <div className="grid gap-6 lg:grid-cols-[minmax(240px,300px)_1fr]">
-        <VibeOMeter
-          vibe={digest.vibe}
-          updatedAt={digest.generated_at}
-          windowHours={digest.window_hours}
-          storiesFeatured={digest.stories_featured}
-          variant="full"
-        />
+        <div className="space-y-4">
+          <RetroVibeGauge
+            score={digest.sentiment?.score ?? digest.vibe.raw_score ?? digest.vibe.score ?? 0}
+          />
+          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-600 shadow-sm">
+            <p className="font-semibold uppercase tracking-[0.25em] text-slate-500">Rationale</p>
+            <p className="mt-2 leading-relaxed">{digest.vibe.rationale}</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+            <span className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2">
+              {digest.stories_featured} stories
+            </span>
+            <span className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2">
+              Window {digest.window_hours}h
+            </span>
+          </div>
+        </div>
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
             Latest Pulse
