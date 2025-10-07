@@ -31,7 +31,7 @@ export default async function HomePage() {
         <StarburstCallout
           label="Sheila"
           subtitle="For Kirkwood CC"
-          href="https://www.kirkwoodmo.org/government/city-council"
+          href="https://burkettforkcc.com/"
           ariaLabel="Visit Sheila's City Council page"
           imageSrc="/img/sheila.png"
           imageAlt="Sheila city council member"
@@ -62,7 +62,7 @@ export default async function HomePage() {
         <StarburstCallout
           label="Gadfly"
           subtitle="Dispatch"
-          href="https://kirkwoodgadfly.substack.com/"
+          href="https://kirkwoodgadfly.com/"
           ariaLabel="Read the latest Kirkwood Gadfly dispatch"
           imageSrc="/images/landing/gadfly.svg"
           imageAlt="Illustration of the Kirkwood Gadfly"
