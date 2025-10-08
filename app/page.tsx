@@ -38,6 +38,7 @@ export default async function HomePage() {
           variant="sunburst"
           backgroundColor="#f97316"
           textClassName="text-black"
+          childClassName="rotate-[25deg]"
         />
       ),
     },
@@ -53,6 +54,7 @@ export default async function HomePage() {
           imageAlt="Sansui stereo"
           variant="flare"
           backgroundColor="#0ea5e9"
+          childClassName="-rotate-[40deg]"
         />
       ),
     },

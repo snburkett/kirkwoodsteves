@@ -80,10 +80,13 @@ export default function StarburstCallout({
   }, [label, variant]);
 
   const rotation = useMemo(() => {
+    if (childClassName?.includes("rotate")) {
+      return 0;
+    }
     const base = hashString(`${label}-${variant}-tilt`);
     const rand = mulberry32(base + 13);
     return (rand() - 0.5) * 60; // approx -30deg to +30deg
-  }, [label, variant]);
+  }, [label, variant, childClassName]);
 
   const isTextChild = typeof children === "string" || typeof children === "number";
   const overlayChild = isTextChild ? null : children;
