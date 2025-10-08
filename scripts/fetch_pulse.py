@@ -170,6 +170,13 @@ def load_sources_config() -> tuple[int, int, List[SourceConfig]]:
   if not sources:
     raise ValueError("No valid sources found in sources.yml.")
 
+  if not DEBUG:
+    print(
+      f"Loaded {len(sources)} sources (window={window_hours}h, default max_items={default_max_items}).",
+    )
+    for source in sources:
+      print(f"  • {source.name} [{source.type}] ({source.url})")
+
   debug_log(
     f"Loaded {len(sources)} sources (window={window_hours}h, default max_items={default_max_items}).",
   )
@@ -354,6 +361,8 @@ def html_source_items(source: SourceConfig, cutoff: datetime) -> List[Story]:
       )
     )
 
+  if not DEBUG:
+    print(f"Processed {len(stories)} entries from {source.name} (HTML).")
   return stories
 
 
@@ -415,6 +424,8 @@ def rss_source_items(source: SourceConfig, cutoff: datetime) -> List[Story]:
     count += 1
 
   items.sort(key=lambda story: story.published, reverse=True)
+  if not DEBUG:
+    print(f"Processed {count} entries from {source.name} (RSS).")
   return items
 
 
@@ -739,6 +750,11 @@ def run(fetch_limit: Optional[int] = None) -> int:
   new_stories = select_new_stories(stories, seen)
   if fetch_limit is not None:
     new_stories = new_stories[:fetch_limit]
+
+  if not DEBUG:
+    print(
+      f"Fresh stories selected: {len(new_stories)} (considered {considered}, limit {fetch_limit or MAX_FEATURED_STORIES})."
+    )
 
   debug_log(
     f"Fresh stories selected: {len(new_stories)} (limit={fetch_limit or MAX_FEATURED_STORIES}).",
