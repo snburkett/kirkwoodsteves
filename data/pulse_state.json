@@ -1,4 +1,8 @@
 {
-  "last_run": null,
-  "seen": {}
+  "last_run": "2025-10-08T20:25:54.420786+00:00",
+  "seen": {
+    "kirkwood-gadfly:1fc47a0afdfb": "2025-10-08T20:25:54.420786+00:00",
+    "kirkwood-gadfly:9eb949bea20d": "2025-10-08T20:21:55.016758+00:00",
+    "kirkwood-gadfly:d0d4a612ec31": "2025-10-08T20:19:09.213471+00:00"
+  }
 }

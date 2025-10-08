@@ -1,5 +1,8 @@
 import type { ReactNode } from "react";
 
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
 import MDXContent from "@/components/MDXContent";
 import { loadPost, loadSection, listSections } from "@/lib/content";
 import type { Post, SectionName } from "@/lib/types";
@@ -23,7 +26,7 @@ function assertSectionName(section: string): SectionName {
   if ((sections as readonly string[]).includes(section)) {
     return section as SectionName;
   }
-  throw new Error(`Unknown section: ${section}`);
+  return notFound();
 }
 
 export default async function PostPage({
@@ -36,15 +39,27 @@ export default async function PostPage({
 
   return (
     <article className="space-y-8">
+      {section === "pulse" ? (
+        <div className="text-sm">
+          <Link href="/pulse" className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-500">
+            <span aria-hidden="true">←</span>
+            <span>Back to Kirkwood Pulse</span>
+          </Link>
+        </div>
+      ) : null}
       <header className="space-y-3">
-        <p className="text-sm uppercase tracking-wide text-blue-500">{sectionLabel(section)}</p>
+        {section !== "pulse" ? (
+          <p className="text-sm uppercase tracking-wide text-blue-500">{sectionLabel(section)}</p>
+        ) : null}
         <h1 className="text-3xl font-semibold text-slate-900">{post.title}</h1>
         <time className="block text-sm text-slate-500" dateTime={post.date}>
           {new Date(post.date).toLocaleDateString(undefined, { dateStyle: "medium" })}
         </time>
-        <div className="rounded-xl border border-slate-200 bg-slate-100/60 p-4 text-sm text-slate-700">
-          {renderMeta(post)}
-        </div>
+        {section !== "pulse" ? (
+          <div className="rounded-xl border border-slate-200 bg-slate-100/60 p-4 text-sm text-slate-700">
+            {renderMeta(post)}
+          </div>
+        ) : null}
       </header>
       <MDXContent source={post.body} />
     </article>
@@ -63,14 +78,7 @@ function renderMeta(post: Post) {
         </dl>
       );
     case "pulse":
-      return (
-        <p>
-          <span className="font-medium">Source:</span>{" "}
-          <a href={post.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600">
-            {post.sourceUrl}
-          </a>
-        </p>
-      );
+      return null;
     case "ai":
       return post.attachments && post.attachments.length > 0 ? (
         <p>

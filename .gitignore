@@ -3,3 +3,4 @@ node_modules
 .env
 content/_index/all.json
 tsconfig.tsbuildinfo
+.venv/

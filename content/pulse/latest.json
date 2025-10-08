@@ -1,21 +1,40 @@
 {
-  "generated_at": null,
+  "generated_at": "2025-10-08T20:25:54.420786+00:00",
   "window_hours": 36,
-  "stories_considered": 0,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse is warming up",
-  "overview": "The daily briefing system is setting up. Once the first scheduled run completes, summaries from local sources within the last 36 hours will appear here.",
-  "items": [],
+  "stories_considered": 9,
+  "stories_featured": 1,
+  "headline": "Kirkwood Pulse • October 08, 2025",
+  "overview": "project:\n  name: Kirkwood Apartments (tentative 'Pitman Place')\n  location: 300 N. Kirkwood Rd\n  developer: TriStar Properties\n  architect: Stock & Associates\n  status: Scheduled for Planning & Zoning Commission review\n  description:\n  units: 60\n  commercial_space_sqft: 2940\n  parking_spaces: 111\n  stories: 4\n  bedroom_mix: Mostly one and two-bedroom units; previous plan had 14 three-bedroom units\n  commercial_components:\n  retail_1: ~1900 sqft\n  retail_2: ~1000 sqft\n  clubhouse: ~1900 sqft (tenant amenity space)\n  changes_from_previous_proposal:\n  parking_spaces: +1 additional space\n  commercial_space: Reduced from 5300 sqft (restaurant, retail, office) to ~4800 sqft (retail and clubhouse)\n  retail_along_Adams: No commercial space included, mostly parking garage screening\n  site_plan_modification:\n  required: True\n  reason: To maintain pedestrian cut-through access between Adams and Washington\n  approval_likelihood: High\ncommunity_feedback:\n  aesthetics:\n  concerns:\n  -: Design uses broken-up massing leading to incoherent and unattractive appearance\n  -: Lack of commercial activation along Adams street frontage\n  -: Architectural design guidelines may incentivize undesirable aesthetics\n  suggestions:\n  -: Consider re-legalizing modest single-stair buildings to create smaller, cohesive structures\n  -: Architectural Review Board expected to improve design details\n  positive_note: Developer intends to rehabilitate historic stone wall from former Pitman Elementary School\n  cultural_preservation:\n  importance: Preserving Kirkwood’s sense of place amid growth\n  naming_preference: Encourage use of 'Pitman Place' as project name\n  approval_outlook: Near lock for City Council approval",
+  "items": [
+    {
+      "id": "kirkwood-gadfly:1fc47a0afdfb",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood Apartments: Episode II – Return of the Apartments",
+      "link": "https://kirkwoodgadfly.com/kirkwood-apartments-episode-ii-return-of-the-apartments/",
+      "published": "2025-10-08T20:25:45.727619+00:00",
+      "excerpt": "The rumors of the Kirkwood Apartments’ demise are greatly exaggerated. Just a few months after the 300 N. Kirkwood Rd project was finally pronounced dead, a new developer, TriStar Properties, has revived it in much of its original form —60 apartments, 2,940 square feet of retail, and 111 parking spaces across four stories— utilizing the same architectural firm, Stock &",
+      "tags": [],
+      "ai_summary": "project:\n  name: Kirkwood Apartments (tentative 'Pitman Place')\n  location: 300 N. Kirkwood Rd\n  developer: TriStar Properties\n  architect: Stock & Associates\n  status: Scheduled for Planning & Zoning Commission review\n  description:\n  units: 60\n  commercial_space_sqft: 2940\n  parking_spaces: 111\n  stories: 4\n  bedroom_mix: Mostly one and two-bedroom units; previous plan had 14 three-bedroom units\n  commercial_components:\n  retail_1: ~1900 sqft\n  retail_2: ~1000 sqft\n  clubhouse: ~1900 sqft (tenant amenity space)\n  changes_from_previous_proposal:\n  parking_spaces: +1 additional space\n  commercial_space: Reduced from 5300 sqft (restaurant, retail, office) to ~4800 sqft (retail and clubhouse)\n  retail_along_Adams: No commercial space included, mostly parking garage screening\n  site_plan_modification:\n  required: True\n  reason: To maintain pedestrian cut-through access between Adams and Washington\n  approval_likelihood: High\ncommunity_feedback:\n  aesthetics:\n  concerns:\n  -: Design uses broken-up massing leading to incoherent and unattractive appearance\n  -: Lack of commercial activation along Adams street frontage\n  -: Architectural design guidelines may incentivize undesirable aesthetics\n  suggestions:\n  -: Consider re-legalizing modest single-stair buildings to create smaller, cohesive structures\n  -: Architectural Review Board expected to improve design details\n  positive_note: Developer intends to rehabilitate historic stone wall from former Pitman Elementary School\n  cultural_preservation:\n  importance: Preserving Kirkwood’s sense of place amid growth\n  naming_preference: Encourage use of 'Pitman Place' as project name\n  approval_outlook: Near lock for City Council approval",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
-    "score": 55,
-    "label": "Even keel",
-    "rationale": "Awaiting the first automated scan.",
+    "score": 50,
+    "label": "Even Keel",
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
-    "label": "Even keel",
-    "rationale": "Awaiting the first automated scan."
+    "label": "Even Keel",
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back after the next morning run for fresh civic signals."
+  "call_to_action": "Keep an eye on Kirkwood Apartments: Episode II – Return of the Apartments from Kirkwood Gadfly."
 }

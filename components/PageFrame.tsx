@@ -33,10 +33,19 @@ export default function PageFrame({ children }: { children: React.ReactNode }) {
 
   const handleSelect = useCallback(
     (section: SectionName) => {
-      if (section === activeSection) return;
+      if (section === activeSection) {
+        if (section === "pulse" && pathname !== "/pulse") {
+          router.push("/pulse");
+        }
+        return;
+      }
+      if (section === "pulse") {
+        router.push("/pulse");
+        return;
+      }
       router.push(`/${section}`);
     },
-    [router, activeSection],
+    [router, activeSection, pathname],
   );
 
   if (!activeSection) {

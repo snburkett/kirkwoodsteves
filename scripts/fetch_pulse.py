@@ -29,6 +29,7 @@ from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 from openai import OpenAI
 from tenacity import retry, stop_after_attempt, wait_exponential
+import traceback
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT_DIR / "scripts" / "sources.yml"
@@ -40,6 +41,7 @@ USER_AGENT = "KirkwoodPulseBot/2.0 (+https://kirkwoodsteves.com)"
 OPENAI_MODEL = os.environ.get("PULSE_MODEL", "gpt-4.1-mini")
 MAX_FEATURED_STORIES = int(os.environ.get("PULSE_MAX_FEATURED", "10"))
 REQUEST_TIMEOUT = 20
+DEBUG = False
 
 SUMMARY_SCHEMA = {
   "name": "PulseStorySummary",
@@ -120,6 +122,12 @@ SESSION.headers.update(
 )
 
 
+def debug_log(message: str) -> None:
+  if DEBUG:
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    print(f"[debug {timestamp}] {message}")
+
+
 def slugify(value: str) -> str:
   slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
   return slug or "source"
@@ -162,6 +170,9 @@ def load_sources_config() -> tuple[int, int, List[SourceConfig]]:
   if not sources:
     raise ValueError("No valid sources found in sources.yml.")
 
+  debug_log(
+    f"Loaded {len(sources)} sources (window={window_hours}h, default max_items={default_max_items}).",
+  )
   return window_hours, default_max_items, sources
 
 
@@ -417,7 +428,9 @@ def collect_stories(sources: Iterable[SourceConfig], cutoff: datetime) -> Tuple[
       stories = rss_source_items(source, cutoff)
     collected.extend(stories)
     considered += len(stories)
+    debug_log(f"{source.name}: gathered {len(stories)} candidate stories.")
   collected.sort(key=lambda story: story.published, reverse=True)
+  debug_log(f"Total candidates gathered: {len(collected)} (considered={considered}).")
   return collected, considered
 
 
@@ -451,11 +464,10 @@ def summarize_story(client: OpenAI, story: Story) -> StorySummary:
   response = client.responses.create(
     model=OPENAI_MODEL,
     input=[
-      {"role": "system", "content": "You are a civic analyst helping residents stay informed."},
+      {"role": "system", "content": "You are a civic analyst helping residents stay informed. Always respond with a single JSON object matching the required schema."},
       {"role": "user", "content": prompt},
     ],
     temperature=0.2,
-    response_format={"type": "json_schema", "json_schema": SUMMARY_SCHEMA},
   )
 
   json_payload = getattr(response, "output_text", None)
@@ -480,14 +492,58 @@ def summarize_story(client: OpenAI, story: Story) -> StorySummary:
   if not json_payload:
     raise RuntimeError("OpenAI response did not return JSON payload.")
 
-  data = json.loads(json_payload)
+  cleaned_payload = json_payload.strip()
+  if cleaned_payload.startswith("```"):
+    lines = cleaned_payload.splitlines()
+    # Drop the opening ```json (or ```), and the closing ``` if present.
+    if len(lines) >= 2:
+      if lines[0].startswith("```"):
+        lines = lines[1:]
+      if lines and lines[-1].startswith("```"):
+        lines = lines[:-1]
+      cleaned_payload = "\n".join(lines).strip()
+
+  if DEBUG:
+    debug_log(f"OpenAI payload for '{story.title}': {cleaned_payload}")
+
+  data = json.loads(cleaned_payload)
+
+  summary_field = data.get("summary", "")
+  if isinstance(summary_field, dict):
+    # Convert nested structures to bullet-style text.
+    parts: List[str] = []
+
+    def flatten(prefix: str, value: Any) -> None:
+      if isinstance(value, dict):
+        parts.append(f"{prefix}:")
+        for key, child in value.items():
+          flatten(f"  {key}", child)
+      elif isinstance(value, list):
+        parts.append(f"{prefix}:")
+        for item in value:
+          flatten("  -", item)
+      else:
+        parts.append(f"{prefix}: {value}")
+
+    for key, value in summary_field.items():
+      flatten(key, value)
+    summary_text = "\n".join(parts)
+  else:
+    summary_text = str(summary_field).strip()
+
+  sentiment_label = data.get("sentiment_label", "neutral")
+  sentiment_score = int(data.get("sentiment_score", 0))
+  community_impact = str(data.get("community_impact", "")).strip() or "Impact unclear based on automatically extracted text."
+  priority = data.get("priority", "medium")
+  suggested_action = data.get("suggested_action", None) or None
+
   return StorySummary(
-    summary=data["summary"].strip(),
-    sentiment_label=data["sentiment_label"],
-    sentiment_score=int(data["sentiment_score"]),
-    community_impact=data["community_impact"].strip(),
-    priority=data["priority"],
-    suggested_action=data.get("suggested_action", None) or None,
+    summary=summary_text or story.excerpt,
+    sentiment_label=sentiment_label,
+    sentiment_score=sentiment_score,
+    community_impact=community_impact,
+    priority=priority,
+    suggested_action=suggested_action,
   )
 
 
@@ -495,6 +551,9 @@ def safe_summarize(client: OpenAI, story: Story) -> StorySummary:
   try:
     return summarize_story(client, story)
   except Exception as error:
+    if DEBUG:
+      print(f"[debug] Exception while summarizing '{story.title}': {error}", file=sys.stderr)
+      traceback.print_exc()
     fallback_summary = StorySummary(
       summary=" ".join(story.excerpt.split()[:80]) or story.title,
       sentiment_label="neutral",
@@ -664,6 +723,8 @@ def aggregate_overview(items: List[Dict[str, Any]]) -> str:
 
 
 def run(fetch_limit: Optional[int] = None) -> int:
+  global DEBUG
+  # DEBUG value will be set in main when args are parsed.
   openai_api_key = os.environ.get("OPENAI_API_KEY")
   if not openai_api_key:
     print("OPENAI_API_KEY is not set. Aborting.", file=sys.stderr)
@@ -679,9 +740,14 @@ def run(fetch_limit: Optional[int] = None) -> int:
   if fetch_limit is not None:
     new_stories = new_stories[:fetch_limit]
 
+  debug_log(
+    f"Fresh stories selected: {len(new_stories)} (limit={fetch_limit or MAX_FEATURED_STORIES}).",
+  )
+
   client = OpenAI()
   enriched_items: List[Dict[str, Any]] = []
   for story in new_stories:
+    debug_log(f"Summarizing story: {story.title} ({story.source_name})")
     summary = safe_summarize(client, story)
     enriched_items.append(build_item_payload(story, summary))
 
@@ -712,6 +778,8 @@ def run(fetch_limit: Optional[int] = None) -> int:
   update_state_with_stories(state, new_stories, generated_at)
   save_state(state)
 
+  debug_log(f"Wrote latest.json with {len(enriched_items)} items and sentiment {sentiment_score}.")
+
   print(
     f"Generated pulse with {len(enriched_items)} stories (considered {considered}) "
     f"and sentiment {sentiment_score}.",
@@ -723,11 +791,20 @@ def run(fetch_limit: Optional[int] = None) -> int:
 def parse_args(argv: List[str]) -> argparse.Namespace:
   parser = argparse.ArgumentParser(description="Generate the Kirkwood Pulse daily digest.")
   parser.add_argument("--limit", type=int, default=None, help="Limit the number of stories summarized.")
+  parser.add_argument(
+    "--debug",
+    action="store_true",
+    help="Print detailed progress information while fetching and summarizing stories.",
+  )
   return parser.parse_args(argv)
 
 
 def main(argv: List[str]) -> int:
   args = parse_args(argv)
+  global DEBUG
+  DEBUG = args.debug
+  if DEBUG:
+    debug_log("Debug logging enabled.")
   return run(fetch_limit=args.limit)
 
 

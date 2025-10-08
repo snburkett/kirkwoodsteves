@@ -27,6 +27,10 @@ export default function QuadrantWheelNav() {
   }, []);
 
   const handleSelect = (section: SectionName) => {
+    if (section === "pulse") {
+      router.push("/pulse");
+      return;
+    }
     router.push(`/${section}`);
   };
 
