@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 import PostCard from "@/components/PostCard";
 import PulseDigest from "@/components/PulseDigest";
 import SectionHeader from "@/components/SectionHeader";
@@ -27,7 +29,7 @@ function assertSectionName(section: string): SectionName {
   if ((listSections() as readonly string[]).includes(section)) {
     return section as SectionName;
   }
-  throw new Error(`Unknown section: ${section}`);
+  return notFound();
 }
 
 export default async function SectionPage({ params }: { params: { section: string } }) {

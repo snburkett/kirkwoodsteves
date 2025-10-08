@@ -85,6 +85,10 @@ export default function StarburstCallout({
     return (rand() - 0.5) * 60; // approx -30deg to +30deg
   }, [label, variant]);
 
+  const isTextChild = typeof children === "string" || typeof children === "number";
+  const overlayChild = isTextChild ? null : children;
+  const textChild = isTextChild ? children : null;
+
   return (
     <Link
       href={href}
@@ -94,7 +98,7 @@ export default function StarburstCallout({
       rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
     >
       <div
-        className="relative flex aspect-square w-full min-w-[180px] items-center justify-center p-5 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-slate-200"
+        className="relative flex aspect-square w-full min-w-[220px] items-center justify-center p-6 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.85]"
         style={{ transform: `rotate(${rotation}deg)` }}
       >
         <div
@@ -120,19 +124,19 @@ export default function StarburstCallout({
               src={imageSrc}
               alt={imageAlt ?? ""}
               fill
-              sizes="180px"
+              sizes="240px"
               className="object-contain drop-shadow-[0_12px_18px_rgba(15,23,42,0.35)] transition-transform duration-500 ease-out"
               style={{ transform: "scale(0.6)" }}
               priority={false}
             />
           </div>
         ) : null}
-        {children ? (
+        {overlayChild ? (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div
-              className={`max-w-[65%] transition-transform duration-300 ease-out ${childClassName ?? ""}`.trim()}
+              className={`max-w-[75%] transition-transform duration-300 ease-out ${childClassName ?? ""}`.trim()}
             >
-              {children}
+              {overlayChild}
             </div>
           </div>
         ) : null}
@@ -142,9 +146,9 @@ export default function StarburstCallout({
           aria-hidden="true"
         >
           <defs>
-            <path id="starburst-top" d="M 22 68 Q 100 12 178 68" />
-            <path id="starburst-bottom" d="M 22 140 Q 100 212 178 140" />
-            <path id="starburst-bottom-inner" d="M 32 154 Q 100 202 168 154" />
+            <path id="starburst-top" d="M 18 60 Q 120 0 182 72" />
+            <path id="starburst-bottom" d="M 18 140 Q 120 216 182 132" />
+            <path id="starburst-bottom-inner" d="M 26 156 Q 120 208 174 148" />
           </defs>
           <text className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}>
             <textPath xlinkHref="#starburst-top" startOffset="50%" textAnchor="middle">
@@ -158,10 +162,10 @@ export default function StarburstCallout({
               </textPath>
             </text>
           ) : null}
-          {children ? (
+          {textChild ? (
             <text className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-800">
               <textPath xlinkHref="#starburst-bottom-inner" startOffset="50%" textAnchor="middle">
-                {children}
+                {textChild}
               </textPath>
             </text>
           ) : null}

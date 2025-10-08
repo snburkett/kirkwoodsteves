@@ -49,8 +49,8 @@ export default async function HomePage() {
           subtitle="Stereo"
           href="/emporium"
           ariaLabel="See the Sansui stereo in the Emporium"
-          imageSrc="/images/landing/sansui.svg"
-          imageAlt="Illustration of a Sansui stereo system"
+          imageSrc="/img/sansui.png"
+          imageAlt="Sansui stereo"
           variant="flare"
           backgroundColor="#0ea5e9"
         />
@@ -73,8 +73,9 @@ export default async function HomePage() {
     },
   ];
 
-  const topStoryLabel = topStory ? truncate(topStory.title, 32) : "Catch the latest";
-  const topStoryHref = topStory?.link ?? "/pulse";
+  const topStoryLabel = topStory ? truncate(topStory.title, 32) : "AI News";
+  const topStorySubtitle = topStory ? topStory.source?.name ?? "Pulse" : "with Steve";
+  const topStoryHref = topStory?.link ?? "/ai";
 
   const rightCallouts: CalloutConfig[] = [
     {
@@ -104,12 +105,12 @@ export default async function HomePage() {
       key: "top-story",
       render: () => (
         <StarburstCallout
-          label="Top"
-          subtitle={topStoryLabel}
+          label={topStory ? topStoryLabel : "AI News"}
+          subtitle={topStorySubtitle}
           href={topStoryHref}
           ariaLabel={topStory ? `Read the top story: ${topStory.title}` : "View the latest top story"}
-          imageSrc="/images/landing/top-story.svg"
-          imageAlt="Illustration of a news clipping"
+          imageSrc={topStory ? "/images/landing/top-story.svg" : "/img/terminator.png"}
+          imageAlt={topStory ? "Illustration of a news clipping" : "AI terminator icon"}
           variant="punch"
           backgroundColor="#1d4ed8"
         />
@@ -119,9 +120,9 @@ export default async function HomePage() {
       key: "event",
       render: () => (
         <StarburstCallout
-          label="Event"
-          subtitle="Coming Up"
-          href="https://www.kirkwoodmo.org/community/calendar"
+          label="Kirkwood"
+          subtitle="Coming Events"
+          href="https://www.kirkwoodmo.org/home#Events"
           ariaLabel="Browse the upcoming community event calendar"
           imageSrc="/images/landing/event.svg"
           imageAlt="Illustration of a calendar"
@@ -152,14 +153,14 @@ export default async function HomePage() {
             "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><g fill='%230f172a' fill-opacity='0.06'><circle cx='6' cy='6' r='1'/><circle cx='86' cy='24' r='0.8'/><circle cx='48' cy='58' r='0.6'/><circle cx='108' cy='94' r='0.7'/><circle cx='30' cy='104' r='0.9'/></g></svg>\")",
         }}
       />
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-16">
-        <div className="hidden gap-10 lg:grid lg:grid-cols-12">
-          <aside className="lg:col-span-3 lg:sticky lg:top-24 lg:flex lg:h-[70vh] lg:w-full lg:flex-col lg:items-center lg:justify-between">
+      <div className="relative z-10 mx-auto flex w-full max-w-[100rem] flex-col gap-12 px-6 py-16">
+        <div className="hidden gap-16 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,640px)_minmax(0,1fr)]">
+          <aside className="lg:sticky lg:top-24 lg:flex lg:h-[70vh] lg:w-full lg:flex-col lg:items-center lg:justify-between">
             {leftCallouts.map((item) => (
               <div key={item.key}>{item.render()}</div>
             ))}
           </aside>
-          <section className="lg:col-span-6 flex min-h-[75vh] flex-col items-center justify-center gap-8 text-center">
+          <section className="flex min-h-[75vh] flex-col items-center justify-center gap-8 text-center">
             <div className="flex w-full justify-center">
               <div className="max-w-xl">
                 <HeaderTitle />
@@ -167,7 +168,7 @@ export default async function HomePage() {
             </div>
             <LandingWheel />
           </section>
-          <aside className="lg:col-span-3 lg:sticky lg:top-24 lg:flex lg:h-[70vh] lg:w-full lg:flex-col lg:items-center lg:justify-between">
+          <aside className="lg:sticky lg:top-24 lg:flex lg:h-[70vh] lg:w-full lg:flex-col lg:items-center lg:justify-between">
             {rightCallouts.map((item) => (
               <div key={item.key}>{item.render()}</div>
             ))}
