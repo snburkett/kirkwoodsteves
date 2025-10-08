@@ -26,7 +26,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TZ: America/Chicago
         run: |
-          python scripts/fetch_pulse.py
+          python scripts/fetch_pulse.py --debug
 
       - name: Commit & push (if changes)
         run: |
