@@ -261,9 +261,14 @@ def extract_article(url: str, default_title: str = "") -> Optional[Tuple[str, Op
   published = None
 
   if extraction:
-    text = (extraction.get("text") or "").strip()
-    title = extraction.get("title") or title
-    published = parse_datetime(extraction.get("date"))
+    if isinstance(extraction, dict):
+      text = (extraction.get("text") or "").strip()
+      title = extraction.get("title") or title
+      published = parse_datetime(extraction.get("date"))
+    else:
+      text = (getattr(extraction, "text", "") or "").strip()
+      title = getattr(extraction, "title", None) or title
+      published = parse_datetime(getattr(extraction, "date", None))
 
   if not text:
     soup = BeautifulSoup(html, "html.parser")
