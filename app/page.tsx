@@ -75,8 +75,8 @@ export default async function HomePage() {
     },
   ];
 
-  const topStoryLabel = topStory ? truncate(topStory.title, 32) : "AI News";
-  const topStorySubtitle = topStory ? topStory.source?.name ?? "Pulse" : "with Steve";
+  const topStoryLabel = topStory ? truncate(topStory.title, 32) : "AI Chat";
+  const topStorySubtitle = topStory ? topStory.source?.name ?? "Pulse" : "With Steve";
   const topStoryHref = topStory?.link ?? "/ai";
 
   const rightCallouts: CalloutConfig[] = [
@@ -107,14 +107,15 @@ export default async function HomePage() {
       key: "top-story",
       render: () => (
         <StarburstCallout
-          label={topStory ? topStoryLabel : "AI News"}
-          subtitle={topStorySubtitle}
-          href={topStoryHref}
-          ariaLabel={topStory ? `Read the top story: ${topStory.title}` : "View the latest top story"}
-          imageSrc={topStory ? "/images/landing/top-story.svg" : "/img/terminator.png"}
-          imageAlt={topStory ? "Illustration of a news clipping" : "AI terminator icon"}
+          label="AI Chat"
+          subtitle="With Steve"
+          href="/ai"
+          ariaLabel="Catch the latest AI chatter with Steve"
+          imageSrc="/img/terminator.png"
+          imageAlt="Terminator AI illustration"
           variant="punch"
           backgroundColor="#1d4ed8"
+          textClassName="text-white"
         />
       ),
     },
