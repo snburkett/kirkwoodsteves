@@ -74,7 +74,7 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
       </div>
 
       <section>
-        <h3 className="text-lg font-semibold text-slate-900">Stories worth a look</h3>
+        <h3 className="text-lg font-semibold text-slate-900">Today&apos;s Headlines</h3>
         <div className="mt-4 space-y-4">
           {digest.items.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">

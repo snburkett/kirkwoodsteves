@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+import { unstable_noStore as noStore } from "next/cache";
 import { z } from "zod";
 
 const PULSE_JSON_PATH = path.join(process.cwd(), "content", "pulse", "latest.json");
@@ -35,7 +36,7 @@ const storySchema = z
     sentiment_score: z.coerce.number().min(-100).max(100).default(0),
     community_impact: z.string().default(""),
     priority: z.enum(["high", "medium", "low"]).default("medium"),
-    suggested_action: z.string().optional(),
+    suggested_action: z.string().nullable().optional(),
   })
   .transform((story) => ({
     ...story,
@@ -94,6 +95,7 @@ const FALLBACK_DIGEST: PulseDigest = {
 };
 
 export async function loadPulseDigest(): Promise<PulseDigest> {
+  noStore();
   try {
     const raw = await fs.readFile(PULSE_JSON_PATH, "utf8");
     const data = JSON.parse(raw);
