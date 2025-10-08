@@ -61,12 +61,14 @@ function fromNormalizedPoint(point: NormalizedPoint, width: number, height: numb
   return clampWithinViewport(rawX, rawY, width, height);
 }
 
+
 export default function HeaderTitle() {
   const [bruised, setBruised] = useState(false);
   const [steakUnlocked, setSteakUnlocked] = useState(false);
   const [steakPosition, setSteakPosition] = useState<{ x: number; y: number } | null>(null);
   const [steakDragging, setSteakDragging] = useState(false);
   const [initialized, setInitialized] = useState(false);
+
   const audioContextRef = useRef<AudioContext | null>(null);
   const eyeButtonRef = useRef<HTMLButtonElement | null>(null);
   const steakOffsetRef = useRef<{ x: number; y: number } | null>(null);
@@ -75,6 +77,56 @@ export default function HeaderTitle() {
   const previousBodyTouchActionRef = useRef<string | null>(null);
   const previousBodyOverscrollRef = useRef<string | null>(null);
   const previousRootOverscrollRef = useRef<string | null>(null);
+
+  const isOverSheila = (box: { left: number; right: number; top: number; bottom: number }) => {
+    if (typeof document === "undefined") {
+      return false;
+    }
+    const candidates = Array.from(
+      document.querySelectorAll('[data-starburst-id="sheila-starburst"], #sheila-starburst'),
+    );
+    let rect: DOMRect | null = null;
+    for (const node of candidates) {
+      const candidateRect = node.getBoundingClientRect();
+      if (candidateRect.width > 0 && candidateRect.height > 0) {
+        rect = candidateRect;
+        break;
+      }
+    }
+    if (!rect) {
+      return false;
+    }
+    const faceInset = Math.min(rect.width, rect.height) * 0.25;
+    const faceRect = {
+      left: rect.left + faceInset,
+      right: rect.right - faceInset,
+      top: rect.top + faceInset,
+      bottom: rect.bottom - faceInset,
+    };
+    return !(
+      box.right < faceRect.left ||
+      box.left > faceRect.right ||
+      box.bottom < faceRect.top ||
+      box.top > faceRect.bottom
+    );
+  };
+
+  const clearSteakPosition = () => {
+    const buttonEl = steakButtonRef.current;
+    if (buttonEl) {
+      buttonEl.style.transform = '';
+    }
+    setSteakPosition(null);
+    setSteakDragging(false);
+    if (typeof window !== 'undefined') {
+      try {
+        window.localStorage.removeItem(STEAK_STORAGE_KEY);
+      } catch (error) {
+        console.warn('Unable to clear steak position', error);
+      }
+    }
+  };
+
 
   useEffect(() => {
     try {
@@ -116,24 +168,34 @@ export default function HeaderTitle() {
       const parsed = JSON.parse(stored);
       if (!isNormalizedPoint(parsed)) return;
 
-      const applyPosition = () => {
+      const restore = () => {
         const buttonEl = steakButtonRef.current;
         if (!buttonEl) {
-          frameId = window.requestAnimationFrame(applyPosition);
+          frameId = window.requestAnimationFrame(restore);
           return;
         }
         const rect = buttonEl.getBoundingClientRect();
         const restored = fromNormalizedPoint(parsed, rect.width || STEAK_FALLBACK_SIZE, rect.height || STEAK_FALLBACK_SIZE);
+        const box = {
+          left: restored.x,
+          right: restored.x + (rect.width || STEAK_FALLBACK_SIZE),
+          top: restored.y,
+          bottom: restored.y + (rect.height || STEAK_FALLBACK_SIZE),
+        };
+        if (isOverSheila(box)) {
+          clearSteakPosition();
+          return;
+        }
         setSteakPosition(restored);
       };
 
-      frameId = window.requestAnimationFrame(applyPosition);
+      frameId = window.requestAnimationFrame(restore);
     } catch (error) {
       console.warn("Unable to restore steak position", error);
     }
 
     return () => {
-      if (frameId !== null && typeof window !== "undefined") {
+      if (frameId !== null) {
         window.cancelAnimationFrame(frameId);
       }
     };
@@ -271,15 +333,8 @@ export default function HeaderTitle() {
   const healBruise = () => {
     setBruised(false);
     setSteakUnlocked(false);
-    setSteakPosition(null);
     setSteakDragging(false);
-    if (typeof window !== "undefined") {
-      try {
-        window.localStorage.removeItem(STEAK_STORAGE_KEY);
-      } catch (error) {
-        console.warn("Unable to clear steak position", error);
-      }
-    }
+    clearSteakPosition();
   };
 
   const handleSteakPointerDown = (event: ReactPointerEvent<HTMLButtonElement>) => {
@@ -311,18 +366,8 @@ export default function HeaderTitle() {
     setSteakPosition(clamped);
   };
 
-  const handleSteakPointerEnd = (event: ReactPointerEvent<HTMLButtonElement>) => {
-    if (!steakDragging) return;
-    event.preventDefault();
-    setSteakDragging(false);
-    steakPointerTypeRef.current = null;
-    try {
-      event.currentTarget.releasePointerCapture(event.pointerId);
-    } catch {
-      // ignore environments without pointer capture
-    }
-
-    const steakRect = event.currentTarget.getBoundingClientRect();
+  const finishSteakPlacement = (buttonEl: HTMLButtonElement) => {
+    const steakRect = buttonEl.getBoundingClientRect();
     const eyeRect = eyeButtonRef.current?.getBoundingClientRect();
 
     if (
@@ -334,13 +379,86 @@ export default function HeaderTitle() {
     ) {
       healBruise();
       steakOffsetRef.current = null;
-      setSteakPosition(null);
+      clearSteakPosition();
       return;
     }
 
     steakOffsetRef.current = null;
     const settled = clampWithinViewport(steakRect.left, steakRect.top, steakRect.width, steakRect.height);
-    setSteakPosition(settled);
+    const finalBox = {
+      left: settled.x,
+      right: settled.x + steakRect.width,
+      top: settled.y,
+      bottom: settled.y + steakRect.height,
+    };
+    if (isOverSheila(finalBox)) {
+      alert("DO NOT PLACE STEAK ON SHEILA");
+      clearSteakPosition();
+      return;
+    }
+    setSteakPosition({
+      x: settled.x,
+      y: settled.y,
+    });
+  };
+
+  const handleSteakPointerEnd = (event: ReactPointerEvent<HTMLButtonElement>) => {
+    if (!steakDragging) return;
+    event.preventDefault();
+    setSteakDragging(false);
+    steakPointerTypeRef.current = null;
+    try {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    } catch {
+      // ignore environments without pointer capture
+    }
+
+    finishSteakPlacement(event.currentTarget);
+  };
+
+  const handleSteakTouchStart = (event: ReactTouchEvent<HTMLButtonElement>) => {
+    if (typeof window !== 'undefined' && 'PointerEvent' in window) return;
+    if (!steakUnlocked) return;
+    const touch = event.touches[0];
+    if (!touch) return;
+    event.preventDefault();
+    const rect = event.currentTarget.getBoundingClientRect();
+    steakOffsetRef.current = {
+      x: touch.clientX - rect.left,
+      y: touch.clientY - rect.top,
+    };
+    const initial = clampWithinViewport(rect.left, rect.top, rect.width, rect.height);
+    setSteakPosition(initial);
+    setSteakDragging(true);
+    steakPointerTypeRef.current = 'touch';
+  };
+
+  const handleSteakTouchMove = (event: ReactTouchEvent<HTMLButtonElement>) => {
+    if (typeof window !== 'undefined' && 'PointerEvent' in window) return;
+    if (!steakDragging || !steakOffsetRef.current) return;
+    const touch = event.touches[0];
+    if (!touch) return;
+    event.preventDefault();
+    const rect = event.currentTarget.getBoundingClientRect();
+    const nextX = touch.clientX - steakOffsetRef.current.x;
+    const nextY = touch.clientY - steakOffsetRef.current.y;
+    const clamped = clampWithinViewport(nextX, nextY, rect.width, rect.height);
+    setSteakPosition(clamped);
+  };
+
+  const handleSteakTouchEnd = (event: ReactTouchEvent<HTMLButtonElement>) => {
+    if (typeof window !== 'undefined' && 'PointerEvent' in window) return;
+    if (!steakDragging) return;
+    setSteakDragging(false);
+    finishSteakPlacement(event.currentTarget);
+    steakPointerTypeRef.current = null;
+  };
+
+  const handleSteakTouchCancel = () => {
+    if (typeof window !== 'undefined' && 'PointerEvent' in window) return;
+    steakPointerTypeRef.current = null;
+    clearSteakPosition();
+    steakOffsetRef.current = null;
   };
 
   return (
@@ -387,6 +505,10 @@ export default function HeaderTitle() {
           onPointerMove={handleSteakPointerMove}
           onPointerUp={handleSteakPointerEnd}
           onPointerCancel={handleSteakPointerEnd}
+          onTouchStart={handleSteakTouchStart}
+          onTouchMove={handleSteakTouchMove}
+          onTouchEnd={handleSteakTouchEnd}
+          onTouchCancel={handleSteakTouchCancel}
         >
           🥩
         </button>
