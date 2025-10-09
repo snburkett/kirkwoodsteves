@@ -65,7 +65,7 @@ a:hover {
   top: 0;
   right: 1.5rem;
   width: 200px;
-  height: 220px;
+  height: 60px;
   z-index: 200;
   cursor: pointer;
   display: flex;
