@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 type ChatRole = "system" | "user" | "assistant";
 
@@ -66,7 +66,7 @@ export default function AIRobotChatBubble() {
   }, []);
 
   const updateAnchorPosition = useCallback(() => {
-    if (!isOpen) return;
+    if (!isOpenRef.current) return;
 
     const anchorElement = activeClickableRef.current ?? activeTriggerRef.current;
     if (!anchorElement) return;
@@ -77,17 +77,32 @@ export default function AIRobotChatBubble() {
     }
 
     const rect = anchorElement.getBoundingClientRect();
-    const proposedLeft = rect.right + EDGE_GAP;
+    const bubbleRect = bubbleRef.current?.getBoundingClientRect();
+    const bubbleHeight = bubbleRect?.height ?? 400;
+
     const maxLeft = window.innerWidth - DESKTOP_WIDTH - EDGE_GAP;
-    const left = Math.min(Math.max(proposedLeft, EDGE_GAP), maxLeft);
-    const top = Math.max(EDGE_GAP, Math.min(rect.top, window.innerHeight - 280));
+    const maxTop = window.innerHeight - bubbleHeight - EDGE_GAP;
+    const spaceLeft = rect.left - EDGE_GAP;
+    const spaceRight = window.innerWidth - rect.right - EDGE_GAP;
+
+    const prefersLeftSide = spaceLeft >= DESKTOP_WIDTH && (spaceLeft >= spaceRight || spaceRight < DESKTOP_WIDTH);
+    const proposedLeft = prefersLeftSide
+      ? rect.left - DESKTOP_WIDTH - EDGE_GAP
+      : rect.right + EDGE_GAP;
+    const clampedLeftUpperBound = Math.max(maxLeft, EDGE_GAP);
+    const left = Math.min(Math.max(proposedLeft, EDGE_GAP), clampedLeftUpperBound);
+
+    const anchorCenterY = rect.top + rect.height / 2;
+    const proposedTop = anchorCenterY - bubbleHeight / 2;
+    const clampedTopUpperBound = Math.max(maxTop, EDGE_GAP);
+    const top = Math.min(Math.max(proposedTop, EDGE_GAP), clampedTopUpperBound);
 
     setAnchorStyle({
       top: `${top}px`,
       left: `${left}px`,
       width: `${DESKTOP_WIDTH}px`,
     });
-  }, [isOpen]);
+  }, []);
 
   const scrollToLatestMessage = useCallback(() => {
     if (!isOpen) return;
@@ -110,6 +125,11 @@ export default function AIRobotChatBubble() {
       window.removeEventListener("resize", updateViewportWidth);
     };
   }, [updateViewportWidth]);
+
+  useLayoutEffect(() => {
+    if (!isOpen) return;
+    updateAnchorPosition();
+  }, [isOpen, updateAnchorPosition]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -476,7 +496,7 @@ export default function AIRobotChatBubble() {
       aria-modal="false"
       aria-label="Chat with Steve about AI"
       className={[
-        "fixed z-50 flex flex-col rounded-2xl border border-slate-200 bg-white shadow-2xl",
+        "fixed z-[120] flex flex-col rounded-2xl border border-slate-200 bg-white shadow-2xl",
         "md:max-h-[75vh]",
         "max-md:bottom-4 max-md:left-4 max-md:right-4 max-md:max-h-[60vh]",
       ].join(" ")}
