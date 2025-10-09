@@ -107,7 +107,7 @@ export default function StarburstCallout({
       <div
         id={id}
         data-starburst-id={id}
-        className="relative aspect-square w-full min-w-[220px] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.05] focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.85]"
+        className="relative aspect-square w-full min-w-[220px] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.05] focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.95]"
         {...(dataAttributes ?? {})}
       >
         <div
