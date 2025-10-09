@@ -95,6 +95,8 @@ export default function StarburstCallout({
   const isTextChild = typeof children === "string" || typeof children === "number";
   const overlayChild = isTextChild ? null : children;
   const textChild = isTextChild ? children : null;
+  const textStroke = "rgba(255, 255, 255, 0.85)";
+  const textStrokeWidth = 5;
 
   return (
     <Link
@@ -159,11 +161,16 @@ export default function StarburstCallout({
             aria-hidden="true"
           >
             <defs>
-              <path id="starburst-top" d="M 18 60 Q 120 0 182 72" />
-              <path id="starburst-bottom" d="M 18 140 Q 120 216 182 132" />
-              <path id="starburst-bottom-inner" d="M 26 156 Q 120 208 174 148" />
+              <path id="starburst-top" d="M 18 57 Q 120 0 182 69" />
+              <path id="starburst-bottom" d="M 18 148 Q 120 222 182 140" />
+              <path id="starburst-bottom-inner" d="M 26 166 Q 120 216 174 154" />
             </defs>
-            <text className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}>
+            <text
+              className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}
+              stroke={textStroke}
+              strokeWidth={textStrokeWidth}
+              style={{ paintOrder: "stroke fill" }}
+            >
               <textPath xlinkHref="#starburst-top" startOffset="50%" textAnchor="middle">
                 {label}
               </textPath>
@@ -171,6 +178,9 @@ export default function StarburstCallout({
             {subtitle ? (
               <text
                 className={`text-[12px] font-semibold uppercase tracking-[0.35em] ${textClassName}`}
+                stroke={textStroke}
+                strokeWidth={textStrokeWidth}
+                style={{ paintOrder: "stroke fill" }}
               >
                 <textPath xlinkHref="#starburst-bottom" startOffset="50%" textAnchor="middle">
                   {subtitle}
@@ -178,7 +188,12 @@ export default function StarburstCallout({
               </text>
             ) : null}
             {textChild ? (
-              <text className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-800">
+              <text
+                className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-800"
+                stroke={textStroke}
+                strokeWidth={textStrokeWidth}
+                style={{ paintOrder: "stroke fill" }}
+              >
                 <textPath xlinkHref="#starburst-bottom-inner" startOffset="50%" textAnchor="middle">
                   {textChild}
                 </textPath>
