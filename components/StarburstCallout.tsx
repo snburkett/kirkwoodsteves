@@ -107,79 +107,85 @@ export default function StarburstCallout({
       <div
         id={id}
         data-starburst-id={id}
-        className="relative flex aspect-square w-full min-w-[220px] items-center justify-center p-6 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.85]"
-        style={{ transform: `rotate(${rotation}deg)` }}
+        className="relative aspect-square w-full min-w-[220px] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.05] focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.85]"
         {...(dataAttributes ?? {})}
       >
         <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            clipPath,
-            WebkitClipPath: clipPath,
-            backgroundColor,
-          }}
+          className="relative flex h-full w-full items-center justify-center p-6 text-left"
+          style={{ transform: `rotate(${rotation}deg)` }}
         >
           <div
-            aria-hidden="true"
-            className="absolute inset-0 opacity-35 mix-blend-overlay"
+            className="pointer-events-none absolute inset-0"
             style={{
-              backgroundImage:
-                "repeating-linear-gradient(135deg, rgba(255,255,255,0.22) 0, rgba(255,255,255,0.22) 10px, transparent 10px, transparent 20px)",
+              clipPath,
+              WebkitClipPath: clipPath,
+              backgroundColor,
             }}
-          />
-        </div>
-        {imageSrc ? (
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <Image
-              src={imageSrc}
-              alt={imageAlt ?? ""}
-              fill
-              sizes="240px"
-              className="object-contain drop-shadow-[0_12px_18px_rgba(15,23,42,0.35)] transition-transform duration-500 ease-out"
-              style={{ transform: "scale(0.6)" }}
-              priority={false}
+          >
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 opacity-35 mix-blend-overlay"
+              style={{
+                backgroundImage:
+                  "repeating-linear-gradient(135deg, rgba(255,255,255,0.22) 0, rgba(255,255,255,0.22) 10px, transparent 10px, transparent 20px)",
+              }}
             />
           </div>
-        ) : null}
-        {overlayChild ? (
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <div
-              className={`max-w-[75%] transition-transform duration-300 ease-out ${childClassName ?? ""}`.trim()}
-            >
-              {overlayChild}
+          {imageSrc ? (
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <Image
+                src={imageSrc}
+                alt={imageAlt ?? ""}
+                fill
+                sizes="240px"
+                className="object-contain drop-shadow-[0_12px_18px_rgba(15,23,42,0.35)] transition-transform duration-500 ease-out"
+                style={{ transform: "scale(0.6)" }}
+                priority={false}
+              />
             </div>
-          </div>
-        ) : null}
-        <svg
-          className="pointer-events-none absolute inset-0 h-full w-full"
-          viewBox="0 0 200 200"
-          aria-hidden="true"
-        >
-          <defs>
-            <path id="starburst-top" d="M 18 60 Q 120 0 182 72" />
-            <path id="starburst-bottom" d="M 18 140 Q 120 216 182 132" />
-            <path id="starburst-bottom-inner" d="M 26 156 Q 120 208 174 148" />
-          </defs>
-          <text className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}>
-            <textPath xlinkHref="#starburst-top" startOffset="50%" textAnchor="middle">
-              {label}
-            </textPath>
-          </text>
-          {subtitle ? (
-            <text className={`text-[12px] font-semibold uppercase tracking-[0.35em] ${textClassName}`}>
-              <textPath xlinkHref="#starburst-bottom" startOffset="50%" textAnchor="middle">
-                {subtitle}
+          ) : null}
+          {overlayChild ? (
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <div
+                className={`max-w-[75%] transition-transform duration-300 ease-out ${childClassName ?? ""}`.trim()}
+              >
+                {overlayChild}
+              </div>
+            </div>
+          ) : null}
+          <svg
+            className="pointer-events-none absolute inset-0 h-full w-full"
+            viewBox="0 0 200 200"
+            aria-hidden="true"
+          >
+            <defs>
+              <path id="starburst-top" d="M 18 60 Q 120 0 182 72" />
+              <path id="starburst-bottom" d="M 18 140 Q 120 216 182 132" />
+              <path id="starburst-bottom-inner" d="M 26 156 Q 120 208 174 148" />
+            </defs>
+            <text className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}>
+              <textPath xlinkHref="#starburst-top" startOffset="50%" textAnchor="middle">
+                {label}
               </textPath>
             </text>
-          ) : null}
-          {textChild ? (
-            <text className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-800">
-              <textPath xlinkHref="#starburst-bottom-inner" startOffset="50%" textAnchor="middle">
-                {textChild}
-              </textPath>
-            </text>
-          ) : null}
-        </svg>
+            {subtitle ? (
+              <text
+                className={`text-[12px] font-semibold uppercase tracking-[0.35em] ${textClassName}`}
+              >
+                <textPath xlinkHref="#starburst-bottom" startOffset="50%" textAnchor="middle">
+                  {subtitle}
+                </textPath>
+              </text>
+            ) : null}
+            {textChild ? (
+              <text className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-800">
+                <textPath xlinkHref="#starburst-bottom-inner" startOffset="50%" textAnchor="middle">
+                  {textChild}
+                </textPath>
+              </text>
+            ) : null}
+          </svg>
+        </div>
       </div>
     </Link>
   );
