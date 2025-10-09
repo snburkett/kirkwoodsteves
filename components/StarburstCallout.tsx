@@ -60,6 +60,7 @@ interface StarburstCalloutProps {
   children?: ReactNode;
   childClassName?: string;
   id?: string;
+  dataAttributes?: Record<string, string>;
 }
 
 export default function StarburstCallout({
@@ -75,6 +76,7 @@ export default function StarburstCallout({
   children,
   childClassName,
   id,
+  dataAttributes,
 }: StarburstCalloutProps) {
   const clipPath = useMemo(() => {
     const hash = hashString(`${variant}-${label}`);
@@ -107,6 +109,7 @@ export default function StarburstCallout({
         data-starburst-id={id}
         className="relative flex aspect-square w-full min-w-[220px] items-center justify-center p-6 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.85]"
         style={{ transform: `rotate(${rotation}deg)` }}
+        {...(dataAttributes ?? {})}
       >
         <div
           className="pointer-events-none absolute inset-0"

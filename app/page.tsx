@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import AIRobotChatBubble from "@/components/AIRobotChatBubble";
 import FieldMemoSlideOut from "@/components/FieldMemoSlideOut";
 import LandingWheel from "@/components/LandingWheel";
 import RetroVibeGauge from "@/components/RetroVibeGauge";
@@ -117,6 +118,7 @@ export default async function HomePage() {
           variant="punch"
           backgroundColor="#1d4ed8"
           textClassName="text-white"
+          dataAttributes={{ "data-ai-chat-trigger": "true" }}
         />
       ),
     },
@@ -196,6 +198,7 @@ export default async function HomePage() {
         </div>
       </div>
       <FieldMemoSlideOut />
+      <AIRobotChatBubble />
     </main>
   );
 }
