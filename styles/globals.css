@@ -74,6 +74,12 @@ a:hover {
   outline: none;
 }
 
+@media (max-width: 640px) {
+  .chat-bat-trigger {
+    right: -30px;
+  }
+}
+
 .chat-bat-trigger:focus-visible {
   outline: 2px solid #fb7185;
   outline-offset: 4px;
