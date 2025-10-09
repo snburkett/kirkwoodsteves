@@ -8,27 +8,24 @@
 // Vercel deploy: add env vars in Project Settings; no additional setup needed.
 
 import OpenAI from "openai";
+import type {
+  EasyInputMessage,
+  Tool,
+} from "openai/resources/responses/responses";
 import { NextRequest } from "next/server";
 
 export const runtime = "nodejs";
 
 type ChatRole = "system" | "user" | "assistant";
 
-type ChatMessage = {
-  role: ChatRole;
-  content: string;
-};
-
-type ToolDefinition = unknown;
-
 const DEFAULT_MODEL = "gpt-4o-mini";
 
-function normalizeMessages(value: unknown): ChatMessage[] | null {
+function normalizeMessages(value: unknown): EasyInputMessage[] | null {
   if (!Array.isArray(value) || value.length === 0) {
     return null;
   }
 
-  const normalized: ChatMessage[] = [];
+  const normalized: EasyInputMessage[] = [];
 
   for (const entry of value) {
     if (!entry || typeof entry !== "object") {
@@ -47,7 +44,7 @@ function normalizeMessages(value: unknown): ChatMessage[] | null {
     }
 
     normalized.push({
-      role,
+      role: role as ChatRole,
       content: content.slice(0, 16_000),
     });
   }
@@ -94,8 +91,8 @@ export async function POST(request: NextRequest) {
       ? model.trim()
       : DEFAULT_MODEL;
 
-  const toolDefinitions: ToolDefinition[] | undefined = Array.isArray(tools)
-    ? tools
+  const toolDefinitions: Tool[] | undefined = Array.isArray(tools)
+    ? (tools as Tool[])
     : undefined;
 
   const client = new OpenAI({
