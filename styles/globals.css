@@ -59,3 +59,136 @@ a:hover {
 .oneup-float {
   animation: oneup-float 2.4s ease-out forwards;
 }
+
+.chat-bat-trigger {
+  position: fixed;
+  top: 0;
+  right: 1.5rem;
+  width: 200px;
+  height: 220px;
+  z-index: 200;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  outline: none;
+}
+
+.chat-bat-trigger:focus-visible {
+  outline: 2px solid #fb7185;
+  outline-offset: 4px;
+  border-radius: 9999px;
+}
+
+.chat-bat-shell {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform: translateY(-68%);
+  transform-origin: top center;
+  pointer-events: none;
+}
+
+.chat-bat-shell--animating {
+  animation: chat-bat-drop 2.4s ease-in-out forwards;
+}
+
+.chat-bat-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.chat-bat-image--open,
+.chat-bat-image--mouth {
+  opacity: 0;
+}
+
+.chat-bat-shell--animating .chat-bat-image--closed {
+  animation: chat-bat-closed 2.4s linear forwards;
+}
+
+.chat-bat-shell--animating .chat-bat-image--open {
+  animation: chat-bat-open 2.4s linear forwards;
+}
+
+.chat-bat-shell--animating .chat-bat-image--mouth {
+  animation: chat-bat-mouth 2.4s linear forwards;
+}
+
+@keyframes chat-bat-drop {
+  0%,
+  100% {
+    transform: translateY(-68%);
+  }
+  15% {
+    transform: translateY(-57%);
+  }
+  30%,
+  52% {
+    transform: translateY(-25%);
+  }
+  65% {
+    transform: translateY(-47%);
+  }
+  80% {
+    transform: translateY(-72%);
+  }
+}
+
+@keyframes chat-bat-open {
+  0%,
+  24%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  34% {
+    opacity: 1;
+  }
+  38%,
+  42% {
+    opacity: 0;
+  }
+  46%,
+  50% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+}
+
+@keyframes chat-bat-closed {
+  0%,
+  24%,
+  38%,
+  54%,
+  100% {
+    opacity: 1;
+  }
+  30%,
+  34%,
+  46%,
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes chat-bat-mouth {
+  0%,
+  32%,
+  100% {
+    opacity: 0;
+  }
+  36%,
+  48% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+}

@@ -6,6 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import LockedQuadrantWheel from "@/components/LockedQuadrantWheel";
 import RollingTrain from "@/components/RollingTrain";
 import ScurryingBugs from "@/components/ScurryingBugs";
+import ChatBat from "@/components/ChatBat";
 import type { SectionName } from "@/lib/types";
 import { wheelColors } from "../app/(theme)/tokens";
 
@@ -49,13 +50,19 @@ export default function PageFrame({ children }: { children: React.ReactNode }) {
   );
 
   if (!activeSection) {
-    return <>{children}</>;
+    return (
+      <>
+        <ChatBat />
+        {children}
+      </>
+    );
   }
 
   const surface = sectionColors[activeSection];
 
   return (
     <>
+      <ChatBat />
       <div className="min-h-screen bg-slate-50">
         <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 pb-12 pt-6 sm:px-6 lg:px-10">
           <div className="relative hidden md:block">
