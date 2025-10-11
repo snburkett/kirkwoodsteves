@@ -42,7 +42,7 @@ export async function GET(
   try {
     const data = await fs.readFile(normalizedPath);
 
-    return new NextResponse(data, {
+    return new NextResponse(data as any, {
       status: 200,
       headers: {
         "Content-Type": contentType,
