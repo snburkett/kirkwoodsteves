@@ -11,7 +11,6 @@ export interface EmporiumFrontMatter extends BaseFrontMatter {
   type: "emporium";
   priceUSD: number;
   condition: string;
-  images: string[];
   status: "available" | "pending" | "sold";
 }
 
@@ -35,10 +34,17 @@ export type FrontMatter =
   | AIFrontMatter
   | OdditiesFrontMatter;
 
+export interface PostImage {
+  src: string;
+  fileName: string;
+}
+
 export type Post = FrontMatter & {
   section: SectionName;
   body: string;
   filePath: string;
+  heroImage?: PostImage;
+  galleryImages: PostImage[];
 };
 
 export interface SearchIndexItem {

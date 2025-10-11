@@ -1,3 +1,4 @@
+import type { Dirent } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -15,6 +16,8 @@ import type {
 } from "./types";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
+const CONTENT_IMAGE_ROUTE_PREFIX = "/api/content-images";
+const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"]);
 const SLUG_REGEX = /^[a-z0-9-]+$/;
 
 const isoDate = z
@@ -41,7 +44,6 @@ const emporiumSchema = baseFrontMatter.extend({
   type: z.literal("emporium"),
   priceUSD: z.coerce.number(),
   condition: z.string().min(1, "condition is required"),
-  images: z.array(z.string()).default([]),
   status: z.enum(["available", "pending", "sold"]).default("available"),
 });
 
@@ -106,7 +108,6 @@ function applyDefaults(data: ParsedFrontMatter): FrontMatter {
     case "emporium": {
       const hydrated: EmporiumFrontMatter = {
         ...data,
-        images: data.images ?? [],
         status: data.status ?? "available",
       };
       return hydrated;
@@ -174,10 +175,71 @@ export async function loadPost(section: SectionName, slug: string): Promise<Post
     throw new Error(`Front-matter slug mismatch for ${filePath}`);
   }
 
+  const { heroImage, galleryImages } = await loadPostImages(section, slug);
+
   return {
     ...frontMatter,
     section,
     body,
     filePath,
+    heroImage,
+    galleryImages,
+  };
+}
+
+function createContentImageSrc(section: SectionName, slug: string, fileName: string): string {
+  const encodedSegments = [section, slug, fileName].map((segment) => encodeURIComponent(segment));
+  return `${CONTENT_IMAGE_ROUTE_PREFIX}/${encodedSegments.join("/")}`;
+}
+
+async function loadPostImages(
+  section: SectionName,
+  slug: string,
+): Promise<{ heroImage?: Post["heroImage"]; galleryImages: Post["galleryImages"] }> {
+  const imageDir = path.join(resolveSection(section), slug);
+  let entries: Dirent[];
+
+  try {
+    entries = await fs.readdir(imageDir, { withFileTypes: true });
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      return { heroImage: undefined, galleryImages: [] };
+    }
+    throw new Error(`Unable to read image directory for ${section}/${slug}: ${String(error)}`);
+  }
+
+  const files = entries
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name)
+    .filter((name) => IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b));
+
+  if (files.length === 0) {
+    return { heroImage: undefined, galleryImages: [] };
+  }
+
+  const heroFile =
+    files.find((file) => path.parse(file).name.toLowerCase() === "main") ?? files[0];
+
+  const heroImage = {
+    src: createContentImageSrc(section, slug, heroFile),
+    fileName: heroFile,
+  };
+
+  const galleryImages = files.map((file) => ({
+    src: createContentImageSrc(section, slug, file),
+    fileName: file,
+  }));
+
+  if (!heroFile) {
+    return { heroImage: undefined, galleryImages };
+  }
+
+  const heroEntry = galleryImages.find((image) => image.fileName === heroFile);
+  const remaining = galleryImages.filter((image) => image.fileName !== heroFile);
+
+  return {
+    heroImage,
+    galleryImages: heroEntry ? [heroEntry, ...remaining] : galleryImages,
   };
 }

@@ -1,9 +1,12 @@
 import type { ReactNode } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { wheelColors } from "@/app/(theme)/tokens";
 import MDXContent from "@/components/MDXContent";
+import PostGallery from "@/components/PostGallery";
 import { loadPost, loadSection, listSections } from "@/lib/content";
 import type { Post, SectionName } from "@/lib/types";
 
@@ -36,32 +39,63 @@ export default async function PostPage({
 }) {
   const section = assertSectionName(params.section);
   const post = await loadPost(section, params.slug);
+  const sectionTitle = sectionLabel(section);
+  const parentHref = `/${section}`;
+  const heroImage = post.heroImage;
+  const galleryImages = post.galleryImages;
+  const heroAccent = sectionAccent(section);
+  const heroCardStyle = heroImage
+    ? {
+        backgroundColor: heroAccent,
+        borderColor: heroAccent,
+      }
+    : undefined;
 
   return (
-    <article className="space-y-8">
-      {section === "pulse" ? (
-        <div className="text-sm">
-          <Link href="/pulse" className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-500">
-            <span aria-hidden="true">←</span>
-            <span>Back to Kirkwood Pulse</span>
-          </Link>
-        </div>
-      ) : null}
-      <header className="space-y-3">
-        {section !== "pulse" ? (
-          <p className="text-sm uppercase tracking-wide text-blue-500">{sectionLabel(section)}</p>
-        ) : null}
-        <h1 className="text-3xl font-semibold text-slate-900">{post.title}</h1>
-        <time className="block text-sm text-slate-500" dateTime={post.date}>
-          {new Date(post.date).toLocaleDateString(undefined, { dateStyle: "medium" })}
-        </time>
-        {section !== "pulse" ? (
-          <div className="rounded-xl border border-slate-200 bg-slate-100/60 p-4 text-sm text-slate-700">
-            {renderMeta(post)}
+    <article className="relative space-y-8 md:space-y-10">
+      <div className="text-sm">
+        <Link href={parentHref} className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-500">
+          <span aria-hidden="true">←</span>
+          <span>Back to {sectionTitle}</span>
+        </Link>
+      </div>
+      {heroImage ? (
+        <aside className="md:absolute md:right-full md:top-6 md:mr-12 md:block md:w-72 lg:w-80">
+          <div className="rounded-3xl border p-[10px]" style={heroCardStyle}>
+            <figure className="overflow-hidden rounded-2xl bg-slate-100">
+              <div className="relative w-full">
+                <Image
+                  src={heroImage.src}
+                  alt={`${post.title} thumbnail`}
+                  width={768}
+                  height={1024}
+                  className="mx-auto h-auto w-full max-w-full object-contain"
+                  sizes="(min-width: 1024px) 320px, (min-width: 768px) 45vw, 100vw"
+                  priority={section === "emporium"}
+                />
+              </div>
+            </figure>
           </div>
-        ) : null}
-      </header>
-      <MDXContent source={post.body} />
+        </aside>
+      ) : null}
+      <div className="space-y-8">
+        <header className="space-y-3">
+          {section !== "pulse" ? (
+            <p className="text-sm uppercase tracking-wide text-blue-500">{sectionTitle}</p>
+          ) : null}
+          <h1 className="text-3xl font-semibold text-slate-900">{post.title}</h1>
+          <time className="block text-sm text-slate-500" dateTime={post.date}>
+            {new Date(post.date).toLocaleDateString(undefined, { dateStyle: "medium" })}
+          </time>
+          {section !== "pulse" ? (
+            <div className="rounded-xl border border-slate-200 bg-slate-100/60 p-4 text-sm text-slate-700">
+              {renderMeta(post)}
+            </div>
+          ) : null}
+        </header>
+        <MDXContent source={post.body} />
+        {galleryImages.length > 0 ? <PostGallery title={post.title} images={galleryImages} /> : null}
+      </div>
     </article>
   );
 }
@@ -74,7 +108,7 @@ function renderMeta(post: Post) {
           <MetaRow label="Price">${post.priceUSD.toFixed(2)} USD</MetaRow>
           <MetaRow label="Condition">{post.condition}</MetaRow>
           <MetaRow label="Status">{post.status}</MetaRow>
-          {post.images.length > 0 ? <MetaRow label="Images">{post.images.length}</MetaRow> : null}
+          {post.galleryImages.length > 0 ? <MetaRow label="Gallery">{post.galleryImages.length}</MetaRow> : null}
         </dl>
       );
     case "pulse":
@@ -116,3 +150,15 @@ function sectionLabel(section: SectionName) {
       return section;
   }
 }
+
+function sectionAccent(section: SectionName) {
+  const baseColor = sectionBaseColors[section];
+  return baseColor;
+}
+
+const sectionBaseColors: Record<SectionName, string> = {
+  emporium: wheelColors[0],
+  pulse: wheelColors[1],
+  ai: wheelColors[2],
+  oddities: wheelColors[3],
+};
