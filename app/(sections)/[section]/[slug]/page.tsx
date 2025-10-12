@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { wheelColors } from "@/app/(theme)/tokens";
+import HeroLightboxTrigger from "@/components/HeroLightboxTrigger";
 import MDXContent from "@/components/MDXContent";
 import PostGallery from "@/components/PostGallery";
 import { loadPost, loadSection, listSections } from "@/lib/content";
@@ -42,7 +43,10 @@ export default async function PostPage({
   const sectionTitle = sectionLabel(section);
   const parentHref = `/${section}`;
   const heroImage = post.heroImage;
-  const galleryImages = post.galleryImages;
+  const galleryImages =
+    heroImage != null
+      ? post.galleryImages.filter((image) => image.fileName !== heroImage.fileName)
+      : post.galleryImages;
   const heroAccent = sectionAccent(section);
   const heroCardStyle = heroImage
     ? {
@@ -61,7 +65,12 @@ export default async function PostPage({
       </div>
       {heroImage ? (
         <aside className="md:absolute md:right-full md:top-6 md:mr-12 md:block md:w-72 lg:w-80">
-          <div className="rounded-3xl border p-[10px]" style={heroCardStyle}>
+          <HeroLightboxTrigger
+            fileName={heroImage.fileName}
+            title={post.title}
+            className="cursor-zoom-in rounded-3xl border p-[10px] transition hover:-translate-y-1 hover:shadow-lg focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            style={heroCardStyle}
+          >
             <figure className="overflow-hidden rounded-2xl bg-slate-100">
               <div className="relative w-full">
                 <Image
@@ -75,7 +84,7 @@ export default async function PostPage({
                 />
               </div>
             </figure>
-          </div>
+          </HeroLightboxTrigger>
         </aside>
       ) : null}
       <div className="space-y-8">
@@ -94,7 +103,9 @@ export default async function PostPage({
           ) : null}
         </header>
         <MDXContent source={post.body} />
-        {galleryImages.length > 0 ? <PostGallery title={post.title} images={galleryImages} /> : null}
+        {heroImage != null || galleryImages.length > 0 ? (
+          <PostGallery title={post.title} heroImage={heroImage} images={galleryImages} />
+        ) : null}
       </div>
     </article>
   );
