@@ -1,10 +1,12 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 import AIRobotChatBubble from "@/components/AIRobotChatBubble";
 import FieldMemoSlideOut from "@/components/FieldMemoSlideOut";
 import LandingWheel from "@/components/LandingWheel";
 import RetroVibeGauge from "@/components/RetroVibeGauge";
 import StarburstCallout from "@/components/StarburstCallout";
+import SpeechBubbleTooltip from "@/components/SpeechBubbleTooltip";
 import { loadPulseDigest } from "@/lib/pulse";
 import HeaderTitle from "./(components)/HeaderTitle";
 
@@ -40,7 +42,7 @@ export default async function HomePage() {
           variant="sunburst"
           backgroundColor="#f97316"
           textClassName="text-black"
-          childClassName="rotate-[25deg]"
+          hoverBubbleText="Vote for me!"
         />
       ),
     },
@@ -56,7 +58,7 @@ export default async function HomePage() {
           imageAlt="Sansui stereo"
           variant="flare"
           backgroundColor="#0ea5e9"
-          childClassName="-rotate-[40deg]"
+          hoverBubbleText="You know you want it"
         />
       ),
     },
@@ -181,23 +183,47 @@ export default async function HomePage() {
           </aside>
         </div>
 
-        <div className="flex min-h-[70vh] flex-col items-center justify-center gap-10 lg:hidden">
+        <div className="flex min-h-[70vh] flex-col items-center lg:hidden">
           <div className="flex w-full justify-center text-center">
             <div className="max-w-md">
-              <HeaderTitle />
+              <HeaderTitle steakPortalId="mobile-steak-slot" />
             </div>
           </div>
-          <LandingWheel />
-          <div className="flex w-full gap-6 overflow-x-auto pb-4">
+          <div className="flex w-full flex-1 items-center justify-center py-6">
+            <LandingWheel />
+          </div>
+          <div className="mt-4 flex w-full gap-6 overflow-x-auto overflow-y-hidden pb-4">
             {mobileCallouts.map((item) => (
-              <div key={`mobile-${item.key}`} className="w-[220px] shrink-0">
+              <div key={`mobile-${item.key}`} className="w-[200px] shrink-0">
                 {item.render()}
               </div>
             ))}
           </div>
+          <div className="mt-4 flex w-full items-center justify-between gap-6 sm:hidden">
+            <div className="flex flex-none items-center gap-3">
+              <Image
+                src="/img/vibebadge.png"
+                alt="Vibe badge"
+                width={60}
+                height={60}
+                className="h-[60px] w-[60px]"
+              />
+              <div id="mobile-steak-slot" className="relative flex h-14 w-14 items-center justify-center" />
+            </div>
+            <FieldMemoSlideOut variant="inline" className="flex-1" />
+          </div>
         </div>
       </div>
-      <FieldMemoSlideOut />
+      <SpeechBubbleTooltip
+        text="100% Organic CMS Free!"
+        placement="right"
+        className="fixed bottom-12 left-6 z-40 hidden sm:inline-block"
+      >
+        <div className="flex items-center justify-center rounded-full border border-slate-200 bg-white p-2 shadow-md">
+          <Image src="/img/vibebadge.png" alt="Vibe badge" width={60} height={60} className="h-[60px] w-[60px]" />
+        </div>
+      </SpeechBubbleTooltip>
+      <FieldMemoSlideOut className="hidden sm:flex" />
       <AIRobotChatBubble />
     </main>
   );

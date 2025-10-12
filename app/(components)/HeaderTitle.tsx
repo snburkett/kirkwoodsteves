@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import type { PointerEvent as ReactPointerEvent, TouchEvent as ReactTouchEvent } from "react";
 import Image from "next/image";
 
@@ -62,12 +63,18 @@ function fromNormalizedPoint(point: NormalizedPoint, width: number, height: numb
 }
 
 
-export default function HeaderTitle() {
+interface HeaderTitleProps {
+  steakPortalId?: string;
+}
+
+export default function HeaderTitle(props: HeaderTitleProps = {}) {
+  const { steakPortalId } = props;
   const [bruised, setBruised] = useState(false);
   const [steakUnlocked, setSteakUnlocked] = useState(false);
   const [steakPosition, setSteakPosition] = useState<{ x: number; y: number } | null>(null);
   const [steakDragging, setSteakDragging] = useState(false);
   const [initialized, setInitialized] = useState(false);
+  const [steakPortalHost, setSteakPortalHost] = useState<HTMLElement | null>(null);
 
   const audioContextRef = useRef<AudioContext | null>(null);
   const eyeButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -77,6 +84,20 @@ export default function HeaderTitle() {
   const previousBodyTouchActionRef = useRef<string | null>(null);
   const previousBodyOverscrollRef = useRef<string | null>(null);
   const previousRootOverscrollRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!steakPortalId) {
+      setSteakPortalHost(null);
+      return;
+    }
+    if (typeof document === "undefined") {
+      return;
+    }
+    const node = document.getElementById(steakPortalId);
+    setSteakPortalHost(node ?? null);
+  }, [steakPortalId]);
+
+  const steakIsInline = steakPortalHost != null;
 
   const isOverSheila = (box: { left: number; right: number; top: number; bottom: number }) => {
     if (typeof document === "undefined") {
@@ -152,7 +173,7 @@ export default function HeaderTitle() {
   }, [bruised, initialized]);
 
   useEffect(() => {
-    if (!steakUnlocked) {
+    if (!steakUnlocked || steakIsInline) {
       return;
     }
 
@@ -199,10 +220,10 @@ export default function HeaderTitle() {
         window.cancelAnimationFrame(frameId);
       }
     };
-  }, [steakUnlocked]);
+  }, [steakUnlocked, steakIsInline]);
 
   useEffect(() => {
-    if (!steakUnlocked) return;
+    if (!steakUnlocked || steakIsInline) return;
     if (typeof window === "undefined") return;
 
     if (!steakPosition) {
@@ -220,7 +241,7 @@ export default function HeaderTitle() {
     } catch (error) {
       console.warn("Unable to persist steak position", error);
     }
-  }, [steakPosition, steakUnlocked]);
+  }, [steakPosition, steakUnlocked, steakIsInline]);
 
   useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") {
@@ -268,7 +289,7 @@ export default function HeaderTitle() {
         previousRootOverscrollRef.current = null;
       }
     };
-  }, [steakDragging]);
+  }, [steakDragging, steakIsInline]);
 
   const playOw = () => {
     const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
@@ -488,31 +509,78 @@ export default function HeaderTitle() {
         Kirkwood Steve&apos;s
       </span>
       </div>
-      {steakUnlocked && (
-        <button
-          type="button"
-          ref={steakButtonRef}
-          className={`fixed bottom-[67px] left-[38px] inline-flex select-none items-center justify-center text-3xl leading-none transition-opacity z-[999] ${
-            steakDragging ? "cursor-grabbing" : "cursor-grab"
-          }`}
-          style={
-            steakPosition
-              ? { top: steakPosition.y, left: steakPosition.x, bottom: "auto", right: "auto", zIndex: 999, touchAction: "none" }
-              : { zIndex: 999, touchAction: "none" }
-          }
-          aria-label={bruised ? "Drag steak to heal black eye" : "Steak"}
-          onPointerDown={handleSteakPointerDown}
-          onPointerMove={handleSteakPointerMove}
-          onPointerUp={handleSteakPointerEnd}
-          onPointerCancel={handleSteakPointerEnd}
-          onTouchStart={handleSteakTouchStart}
-          onTouchMove={handleSteakTouchMove}
-          onTouchEnd={handleSteakTouchEnd}
-          onTouchCancel={handleSteakTouchCancel}
-        >
-          🥩
-        </button>
-      )}
+      {steakUnlocked
+        ? steakPortalHost && steakIsInline
+          ? createPortal(
+              <button
+                type="button"
+                ref={steakButtonRef}
+                className={[
+                  steakPosition ? "fixed" : "relative",
+                  "inline-flex h-12 w-12 select-none items-center justify-center text-3xl leading-none text-red-600 sm:hidden",
+                  steakDragging ? "cursor-grabbing" : "cursor-pointer",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+                style={
+                  steakPosition
+                    ? {
+                        top: steakPosition.y,
+                        left: steakPosition.x,
+                        bottom: "auto",
+                        right: "auto",
+                        zIndex: 999,
+                        touchAction: "none",
+                      }
+                    : { touchAction: "none" }
+                }
+                aria-label={bruised ? "Drag steak to heal black eye" : "Steak"}
+                onPointerDown={handleSteakPointerDown}
+                onPointerMove={handleSteakPointerMove}
+                onPointerUp={handleSteakPointerEnd}
+                onPointerCancel={handleSteakPointerEnd}
+                onTouchStart={handleSteakTouchStart}
+                onTouchMove={handleSteakTouchMove}
+                onTouchEnd={handleSteakTouchEnd}
+                onTouchCancel={handleSteakTouchCancel}
+              >
+                🥩
+              </button>,
+              steakPortalHost
+            )
+          : (
+              <button
+                type="button"
+                ref={steakButtonRef}
+                className={`hidden sm:inline-flex fixed bottom-[67px] left-[120px] select-none items-center justify-center text-3xl leading-none transition-opacity z-[999] ${
+                  steakDragging ? "cursor-grabbing" : "cursor-grab"
+                }`}
+                style={
+                  steakPosition
+                    ? {
+                        top: steakPosition.y,
+                        left: steakPosition.x,
+                        bottom: "auto",
+                        right: "auto",
+                        zIndex: 999,
+                        touchAction: "none",
+                      }
+                    : { zIndex: 999, touchAction: "none" }
+                }
+                aria-label={bruised ? "Drag steak to heal black eye" : "Steak"}
+                onPointerDown={handleSteakPointerDown}
+                onPointerMove={handleSteakPointerMove}
+                onPointerUp={handleSteakPointerEnd}
+                onPointerCancel={handleSteakPointerEnd}
+                onTouchStart={handleSteakTouchStart}
+                onTouchMove={handleSteakTouchMove}
+                onTouchEnd={handleSteakTouchEnd}
+                onTouchCancel={handleSteakTouchCancel}
+              >
+                🥩
+              </button>
+            )
+        : null}
     </>
   );
 }

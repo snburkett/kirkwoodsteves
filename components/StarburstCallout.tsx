@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useMemo } from "react";
 import type { ReactNode } from "react";
 
+import SpeechBubbleTooltip from "@/components/SpeechBubbleTooltip";
+
 type StarburstVariant = "sunburst" | "punch" | "flare" | "nova" | "spark" | "flash";
 function hashString(value: string): number {
   let hash = 0;
@@ -61,6 +63,7 @@ interface StarburstCalloutProps {
   childClassName?: string;
   id?: string;
   dataAttributes?: Record<string, string>;
+  hoverBubbleText?: string;
 }
 
 export default function StarburstCallout({
@@ -77,6 +80,7 @@ export default function StarburstCallout({
   childClassName,
   id,
   dataAttributes,
+  hoverBubbleText,
 }: StarburstCalloutProps) {
   const clipPath = useMemo(() => {
     const hash = hashString(`${variant}-${label}`);
@@ -98,18 +102,18 @@ export default function StarburstCallout({
   const textStroke = "rgba(255, 255, 255, 0.85)";
   const textStrokeWidth = 5;
 
-  return (
+  const calloutLink = (
     <Link
       href={href}
       aria-label={ariaLabel ?? label}
-      className="group relative block max-w-[220px]"
+      className="group relative block max-w-[200px] sm:max-w-[220px]"
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
     >
       <div
         id={id}
         data-starburst-id={id}
-        className="relative aspect-square w-full min-w-[220px] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.05] focus-within:ring-2 focus-within:ring-slate-200 sm:scale-[0.95]"
+        className="relative aspect-square w-full min-w-[200px] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.05] focus-within:ring-2 focus-within:ring-slate-200 sm:min-w-[220px] sm:scale-[0.95]"
         {...(dataAttributes ?? {})}
       >
         <div
@@ -203,5 +207,13 @@ export default function StarburstCallout({
         </div>
       </div>
     </Link>
+  );
+
+  return hoverBubbleText ? (
+    <SpeechBubbleTooltip text={hoverBubbleText} placement="top" className="block w-max">
+      {calloutLink}
+    </SpeechBubbleTooltip>
+  ) : (
+    calloutLink
   );
 }

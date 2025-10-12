@@ -3,13 +3,18 @@
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
+interface FieldMemoSlideOutProps {
+  variant?: "floating" | "inline";
+  className?: string;
+}
+
 function CompassBadge() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 120 120"
-      width="70"
-      height="70"
+      width="60"
+      height="60"
       aria-hidden="true"
       focusable="false"
     >
@@ -64,9 +69,28 @@ function CompassBadge() {
   );
 }
 
-export default function FieldMemoSlideOut() {
+export default function FieldMemoSlideOut({ variant = "floating", className }: FieldMemoSlideOutProps) {
   const [open, setOpen] = useState(false);
   const reduceMotion = useReducedMotion();
+  const isInline = variant === "inline";
+
+  const containerClass = [
+    "flex items-end gap-3",
+    isInline ? "relative justify-end" : "fixed bottom-12 right-6 z-40",
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const buttonClass = [
+    "relative inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-2 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const panelClass = isInline
+    ? "absolute right-0 top-full mt-3 w-[min(320px,90vw)] rounded-3xl border border-slate-200 bg-white/95 p-5 text-base leading-relaxed text-slate-800 shadow-xl"
+    : "max-w-prose rounded-3xl border border-slate-200 bg-white/95 p-6 text-lg leading-relaxed text-slate-800 shadow-xl";
 
   const panel = (
     <motion.aside
@@ -78,7 +102,8 @@ export default function FieldMemoSlideOut() {
       role="region"
       aria-labelledby="field-memo-title"
       aria-describedby="wheel-hint"
-      className="max-w-prose rounded-3xl border border-slate-200 bg-white/95 p-6 text-lg leading-relaxed text-slate-800 shadow-xl"
+      id="field-memo-panel"
+      className={panelClass}
     >
       <p className="mb-3">
         <span className="mr-2 inline-block text-amber-600" aria-hidden="true">
@@ -113,11 +138,11 @@ export default function FieldMemoSlideOut() {
   );
 
   return (
-    <div className="fixed bottom-12 right-6 z-40 flex items-end gap-3">
+    <div className={containerClass}>
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="relative inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-2 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+        className={buttonClass}
         aria-expanded={open}
         aria-controls="field-memo-panel"
         aria-label={open ? "Hide field memo" : "Show field memo"}
