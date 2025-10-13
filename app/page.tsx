@@ -215,7 +215,7 @@ export default async function HomePage() {
         </div>
       </div>
       <SpeechBubbleTooltip
-        text="100% Organic CMS Free!"
+        text="100% Organic!  CMS Free!"
         placement="right"
         className="fixed bottom-12 left-6 z-40 hidden sm:inline-block"
       >
