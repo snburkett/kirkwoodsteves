@@ -18,7 +18,7 @@ export const runtime = "nodejs";
 
 type ChatRole = "system" | "user" | "assistant";
 
-const DEFAULT_MODEL = "gpt-4o-mini";
+const DEFAULT_MODEL = "ft:gpt-4.1-2025-04-14:personal:aisteve:CQUL1AGs";
 
 function normalizeMessages(value: unknown): EasyInputMessage[] | null {
   if (!Array.isArray(value) || value.length === 0) {

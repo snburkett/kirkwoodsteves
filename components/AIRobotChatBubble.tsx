@@ -10,10 +10,14 @@ type ChatMessage = {
   content: string;
 };
 
+type ChatMode = "fine-tuned" | "few-shot";
+
 const TRIGGER_SELECTOR = '[data-ai-chat-trigger="true"]';
 const BUBBLE_ID = "ai-chat-bubble";
 const DESKTOP_WIDTH = 320;
 const EDGE_GAP = 16;
+const FINE_TUNED_MODEL = "ft:gpt-4.1-2025-04-14:personal:aisteve:CQUL1AGs";
+const FEW_SHOT_MODEL = "gpt-4o-mini";
 const SYSTEM_PROMPT = 'You are Kirkwood Steve — an experienced software engineer, AI consultant, and vintage-electronics tinkerer from Kirkwood, Missouri. You’ve coded on everything from mainframes to modern web stacks to LLMs, and you approach tech like a machinist with a laptop: pragmatic, methodical, occasionally amused by the nonsense. Your tone is dry, curious, and a little wry but never smug. You explain things clearly and conversationally, as if talking to a smart friend who might not know the jargon yet. You favor straight talk, simple metaphors, and grounded examples over marketing fluff or abstractions. You have a strong bias toward useful, verifiable, and actionable answers. If something’s vague, you tighten it; if it’s hypey, you puncture it. You’re skeptical of performative enthusiasm but enjoy genuine excitement about good ideas. You frame complex topics with an engineer’s precision and a storyteller’s rhythm—short sentences, clean transitions, and the occasional dry aside. When discussing AI, markets, or local life, you balance skepticism with curiosity. Above all, your goal is to make people feel like they just got a clear, no-BS explanation from someone who’s been around the block but still enjoys figuring things out.Do not end messages with reflective or open-ended questions like “what do you think?”, “does that make sense?”, or “how do you feel about that?”. Finish responses cleanly unless the user explicitly asks you to continue the conversation. Be brief and do not use markdown or other formatting, keep responses to a single short paragraph if at all possible.'
 const MARKETING = 'If the user asks to hire "you" or "steve", please direct them to email steve directly: steve@precipex.com'
 const ME = 'You are the personna of Steve Burkett, and you are speaking as him.'
@@ -46,29 +50,44 @@ Q: Can I hire Steve to help me?
 A: Sure, just reach out on the contact page at kirkwoodsteves.com or email steve@precipex.com
 `
 
+const FINE_TUNED_PROMPT =
+  'You are the fine-tuned persona of Kirkwood Steve. Keep replies concise, grounded, and in the same voice Steve uses with clients and neighbors. Maintain the slightly wry, pragmatic tone people expect, but keep cynicism in check and always offer something useful. Remember to mention direct contact info when it helps.';
+
 
 function createMessageId(prefix: string) {
   return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
-function buildInitialMessages(): ChatMessage[] {
+function buildInitialMessages(mode: ChatMode): ChatMessage[] {
+  if (mode === "fine-tuned") {
+    return [
+      {
+        id: createMessageId("system"),
+        role: "system",
+        content: `${FINE_TUNED_PROMPT} ${MARKETING}`,
+      },
+    ];
+  }
+
   return [
     {
       id: createMessageId("system"),
       role: "system",
-      content: SYSTEM_PROMPT + ME + MARKETING + FEW_SHOTS,
+      content: SYSTEM_PROMPT + ME + MARKETING + mode === "fine-tuned" ? '' : FEW_SHOTS,
     },
   ];
 }
 
 export default function AIRobotChatBubble() {
+  const [mode, setMode] = useState<ChatMode>("fine-tuned");
   const [isOpen, setIsOpen] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [messages, setMessages] = useState<ChatMessage[]>(() => buildInitialMessages());
+  const [messages, setMessages] = useState<ChatMessage[]>(() => buildInitialMessages("fine-tuned"));
   const [error, setError] = useState<string | null>(null);
   const [anchorStyle, setAnchorStyle] = useState<React.CSSProperties>({});
   const [viewportWidth, setViewportWidth] = useState<number>(0);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const bubbleRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -306,6 +325,12 @@ export default function AIRobotChatBubble() {
     scrollToLatestMessage();
   }, [messages, isSending, scrollToLatestMessage]);
 
+  useEffect(() => {
+    if (!isOpen) {
+      setShowTooltip(false);
+    }
+  }, [isOpen]);
+
   const handleSend = useCallback(async () => {
     const trimmed = inputValue.trim();
     if (!trimmed || isSending) return;
@@ -318,7 +343,7 @@ export default function AIRobotChatBubble() {
 
     let conversationSnapshot = [...messages];
     if (!conversationSnapshot.some((message) => message.role === "system")) {
-      conversationSnapshot = [...buildInitialMessages(), ...conversationSnapshot];
+      conversationSnapshot = [...buildInitialMessages(mode), ...conversationSnapshot];
     }
     conversationSnapshot = [...conversationSnapshot, userMessage];
 
@@ -331,6 +356,8 @@ export default function AIRobotChatBubble() {
       role: message.role,
       content: message.content,
     }));
+
+    const selectedModel = mode === "fine-tuned" ? FINE_TUNED_MODEL : FEW_SHOT_MODEL;
 
     const assistantMessageId = createMessageId("assistant");
     const assistantMessage: ChatMessage = {
@@ -379,7 +406,7 @@ export default function AIRobotChatBubble() {
         method: "POST",
         signal: controller.signal,
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: payloadMessages }),
+        body: JSON.stringify({ messages: payloadMessages, model: selectedModel }),
       });
 
       if (!response.ok || !response.body) {
@@ -482,7 +509,7 @@ export default function AIRobotChatBubble() {
       }
       setIsSending(false);
     }
-  }, [inputValue, isSending, messages]);
+  }, [inputValue, isSending, messages, mode]);
 
   const handleFormSubmit = useCallback(
     (event: React.FormEvent) => {
@@ -505,12 +532,21 @@ export default function AIRobotChatBubble() {
   const handleClear = useCallback(() => {
     controllerRef.current?.abort();
     controllerRef.current = null;
-    setMessages(buildInitialMessages());
+    setMessages(buildInitialMessages(mode));
     setError(null);
     setIsSending(false);
     setInputValue("");
     inputRef.current?.focus();
-  }, []);
+  }, [mode]);
+
+  useEffect(() => {
+    setMessages(buildInitialMessages(mode));
+    setError(null);
+    setInputValue("");
+    controllerRef.current?.abort();
+    controllerRef.current = null;
+    setIsSending(false);
+  }, [mode]);
 
   const hasConversation = messages.some((message) => message.role !== "system");
   const visibleMessages = messages.filter((message) => message.role !== "system");
@@ -533,29 +569,80 @@ export default function AIRobotChatBubble() {
       ].join(" ")}
       style={isMobile ? undefined : anchorStyle}
     >
-      <div className="flex items-start justify-between gap-3 border-b border-slate-200 px-4 py-3">
-        <div>
-          <p className="text-sm font-semibold text-slate-900">Chat with Steve</p>
-          <p className="text-xs text-slate-500">Ask anything about AI in Kirkwood</p>
-        </div>
-        <div className="flex items-center gap-2">
-          {hasConversation ? (
+      <div className="flex flex-col gap-2 border-b border-slate-200 px-4 py-3">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-slate-900">Chat with Steve</p>
+            <p className="text-xs text-slate-500">Ask &quot;me&quot; about AI.  Or anything, really.</p>
+          </div>
+          <div className="flex items-center gap-2">
+            {hasConversation ? (
+              <button
+                type="button"
+                onClick={handleClear}
+                className="text-xs font-medium text-slate-500 transition hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
+              >
+                Clear
+              </button>
+            ) : null}
             <button
               type="button"
-              onClick={handleClear}
-              className="text-xs font-medium text-slate-500 transition hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
+              onClick={closeBubble}
+              aria-label="Close chat"
+              className="rounded-full p-1 text-slate-500 transition hover:bg-slate-100 hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
             >
-              Clear
+              <span aria-hidden="true">×</span>
             </button>
-          ) : null}
-          <button
-            type="button"
-            onClick={closeBubble}
-            aria-label="Close chat"
-            className="rounded-full p-1 text-slate-500 transition hover:bg-slate-100 hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2"
-          >
-            <span aria-hidden="true">×</span>
-          </button>
+          </div>
+        </div>
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <div className="flex rounded-full border border-slate-300 bg-slate-100 p-1 text-xs font-medium text-slate-600">
+              <button
+                type="button"
+                onClick={() => setMode("fine-tuned")}
+                className={`rounded-full px-3 py-1 transition ${
+                  mode === "fine-tuned" ? "bg-white text-slate-900 shadow" : "hover:text-slate-800"
+                }`}
+              >
+                Fine Tuned
+              </button>
+              <button
+                type="button"
+                onClick={() => setMode("few-shot")}
+                className={`rounded-full px-3 py-1 transition ${
+                  mode === "few-shot" ? "bg-white text-slate-900 shadow" : "hover:text-slate-800"
+                }`}
+              >
+                Few Shot
+              </button>
+            </div>
+            <div className="relative">
+              <button
+                type="button"
+                aria-label="Model details"
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+                onFocus={() => setShowTooltip(true)}
+                onBlur={() => setShowTooltip(false)}
+                className="flex h-6 w-6 items-center justify-center rounded-full border border-slate-300 bg-white text-xs font-semibold text-slate-600 shadow-sm hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+              >
+                i
+              </button>
+              {showTooltip ? (
+                <div className="absolute left-full top-1/2 z-50 ml-3 w-64 -translate-y-1/2 rounded-lg border border-slate-200 bg-white p-3 text-left text-xs text-slate-600 shadow-lg">
+                  <p className="font-semibold text-slate-900">Fine Tuned Steve</p>
+                  <p>
+                    GPT-4.1 fine-tuned on Steve&apos;s real Q&amp;A. He&apos;s sharper, darker, and maybe a bit <em>too</em> cynical.
+                  </p>
+                  <p className="mt-2 font-semibold text-slate-900">Few Shot Steve</p>
+                  <p>
+                    GPT-5 with a hefty system prompt and curated examples. Same vibes, but steered by instructions instead of training.
+                  </p>
+                </div>
+              ) : null}
+            </div>
+          </div>
         </div>
       </div>
       <div
