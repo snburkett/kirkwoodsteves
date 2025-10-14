@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { wheelColors } from "@/app/(theme)/tokens";
+import EmporiumBuyCallout from "@/components/EmporiumBuyCallout";
 import HeroLightboxTrigger from "@/components/HeroLightboxTrigger";
 import MDXContent from "@/components/MDXContent";
 import PostGallery from "@/components/PostGallery";
@@ -87,7 +88,7 @@ export default async function PostPage({
           </HeroLightboxTrigger>
         </aside>
       ) : null}
-      <div className="space-y-8">
+      <div className={section === "emporium" ? "space-y-8" : "space-y-8"}>
         <header className="space-y-3">
           {section !== "pulse" ? (
             <p className="text-sm uppercase tracking-wide text-blue-500">{sectionTitle}</p>
@@ -102,6 +103,7 @@ export default async function PostPage({
             </div>
           ) : null}
         </header>
+        {section === "emporium" ? <EmporiumBuyCallout className="fixed -top-2 right-0  flex justify-end md:hidden" /> : null}
         <MDXContent source={post.body} />
         {heroImage != null || galleryImages.length > 0 ? (
           <PostGallery title={post.title} heroImage={heroImage} images={galleryImages} />

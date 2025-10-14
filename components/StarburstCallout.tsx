@@ -64,6 +64,7 @@ interface StarburstCalloutProps {
   id?: string;
   dataAttributes?: Record<string, string>;
   hoverBubbleText?: string;
+  onClick?: () => void;
 }
 
 export default function StarburstCallout({
@@ -81,6 +82,7 @@ export default function StarburstCallout({
   id,
   dataAttributes,
   hoverBubbleText,
+  onClick,
 }: StarburstCalloutProps) {
   const clipPath = useMemo(() => {
     const hash = hashString(`${variant}-${label}`);
@@ -102,14 +104,9 @@ export default function StarburstCallout({
   const textStroke = "rgba(255, 255, 255, 0.85)";
   const textStrokeWidth = 5;
 
-  const calloutLink = (
-    <Link
-      href={href}
-      aria-label={ariaLabel ?? label}
-      className="group relative block max-w-[200px] sm:max-w-[220px]"
-      target={href.startsWith("http") ? "_blank" : undefined}
-      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-    >
+  const rootClassName = "group relative block max-w-[200px] sm:max-w-[220px]";
+
+  const content = (
       <div
         id={id}
         data-starburst-id={id}
@@ -206,14 +203,29 @@ export default function StarburstCallout({
           </svg>
         </div>
       </div>
+  );
+
+  const core = onClick ? (
+    <button type="button" aria-label={ariaLabel ?? label} className={rootClassName} onClick={onClick}>
+      {content}
+    </button>
+  ) : (
+    <Link
+      href={href}
+      aria-label={ariaLabel ?? label}
+      className={rootClassName}
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+    >
+      {content}
     </Link>
   );
 
   return hoverBubbleText ? (
     <SpeechBubbleTooltip text={hoverBubbleText} placement="top" className="block w-max">
-      {calloutLink}
+      {core}
     </SpeechBubbleTooltip>
   ) : (
-    calloutLink
+    core
   );
 }

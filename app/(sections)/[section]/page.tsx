@@ -48,9 +48,11 @@ export default async function SectionPage({ params }: { params: { section: strin
 
   return (
     <div>
-      <SectionHeader title={titles[section]} description={descriptions[section]}>
-        {headerStatus}
-      </SectionHeader>
+      <div>
+        <SectionHeader title={titles[section]} description={descriptions[section]}>
+          {headerStatus}
+        </SectionHeader>
+      </div>
       {section === "pulse" ? (
         <div className="space-y-10">
           {digest ? <PulseDigest digest={digest} /> : null}

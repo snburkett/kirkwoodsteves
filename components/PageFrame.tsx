@@ -94,8 +94,12 @@ export default function PageFrame({ children }: { children: React.ReactNode }) {
             className="relative -mt-[60px] flex-1 rounded-[38px] border-4 border-white/80 shadow-2xl md:mt-8 md:pl-[180px] md:pt-16"
             style={{ backgroundColor: surface }}
           >
-            <div className="max-w-4xl px-6 pb-14 pt-10 text-slate-900 sm:px-10 md:px-16 md:py-16">
-              {children}
+            <div className="relative max-w-4xl px-6 pb-14 pt-10 text-slate-900 sm:px-10 md:px-16 md:py-16">
+              <div
+                id="page-callout-slot"
+                className="absolute right-10 -top-10 z-50"
+              />
+              <div>{children}</div>
             </div>
           </div>
         </div>
