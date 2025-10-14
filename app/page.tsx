@@ -52,7 +52,7 @@ export default async function HomePage() {
         <StarburstCallout
           label="Sansui"
           subtitle="Stereo"
-          href="/emporium"
+          href="/emporium/sansui-receiver-1960s"
           ariaLabel="See the Sansui stereo in the Emporium"
           imageSrc="/img/sansui.png"
           imageAlt="Sansui stereo"
