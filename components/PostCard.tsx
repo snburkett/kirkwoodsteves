@@ -27,7 +27,7 @@ export default function PostCard({ post }: PostCardProps) {
   return (
     <Link
       href={href}
-      className="relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg no-underline hover:no-underline md:min-h-[220px] md:p-8"
+      className="relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg no-underline hover:no-underline md:min-h-[220px] md:p-4"
     >
       {hero ? (
         <>
@@ -45,7 +45,7 @@ export default function PostCard({ post }: PostCardProps) {
               </figure>
             </div>
           </div>
-          <div className="absolute hidden md:right-full md:top-6 md:bottom-6 md:block md:mr-16 md:w-[260px]">
+          <div className="absolute hidden md:right-full md:h-full md:top-0 md:bottom-0 md:block md:mr-12 md:w-[260px]">
             <div className="flex h-full w-full items-center rounded-3xl border p-[10px]" style={heroStyle}>
               <figure className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-2xl" style={{ backgroundColor: accent }}>
                 <Image

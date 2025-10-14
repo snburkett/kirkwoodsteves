@@ -49,7 +49,11 @@ export default async function SectionPage({ params }: { params: { section: strin
   return (
     <div>
       <div>
-        <SectionHeader title={titles[section]} description={descriptions[section]}>
+        <SectionHeader
+          title={titles[section]}
+          description={descriptions[section]}
+          highlightTone={section === "emporium" || section === "pulse" || section === "ai" || section === "oddities" ? "light" : "default"}
+        >
           {headerStatus}
         </SectionHeader>
       </div>

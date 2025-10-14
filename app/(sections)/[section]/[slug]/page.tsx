@@ -88,8 +88,14 @@ export default async function PostPage({
           </HeroLightboxTrigger>
         </aside>
       ) : null}
-      <div className={section === "emporium" ? "space-y-8" : "space-y-8"}>
-        <header className="space-y-3">
+      <div className="space-y-8">
+        <header
+          className={
+            section === "emporium" || section === "ai" || section === "oddities"
+              ? "space-y-3 rounded-3xl border border-white/60 bg-white/80 px-6 py-5 shadow-sm backdrop-blur md:px-8"
+              : "space-y-3"
+          }
+        >
           {section !== "pulse" ? (
             <p className="text-sm uppercase tracking-wide text-blue-500">{sectionTitle}</p>
           ) : null}
