@@ -27,7 +27,7 @@ export default function PostCard({ post }: PostCardProps) {
   return (
     <Link
       href={href}
-      className="relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg md:min-h-[220px] md:p-8"
+      className="relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg no-underline hover:no-underline md:min-h-[220px] md:p-8"
     >
       {hero ? (
         <>
