@@ -58,8 +58,11 @@ export default async function PostPage({
 
   return (
     <article className="relative space-y-8 md:space-y-10">
-      <div className="text-sm">
-        <Link href={parentHref} className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-500">
+      <div>
+        <Link
+          href={parentHref}
+          className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur transition hover:bg-white hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        >
           <span aria-hidden="true">←</span>
           <span>Back to {sectionTitle}</span>
         </Link>
