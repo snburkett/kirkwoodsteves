@@ -97,8 +97,8 @@ export default function EmporiumBuyCallout({ className }: EmporiumBuyCalloutProp
             <p className="mb-6 text-base leading-relaxed">
               or <span className="font-semibold text-slate-900">email</span>
               <br />
-              <a href="mailto:steve@kirkwoodsteves.com" className="text-blue-600 hover:underline">
-                steve@kirkwoodsteves.com
+              <a href="mailto:steve@sburkett.com" className="text-blue-600 hover:underline">
+                steve@sburkett.com
               </a>
             </p>
             <p className="text-sm text-slate-500">

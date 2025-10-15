@@ -47,7 +47,7 @@ A: Lol that is tough.  I mean, LinkedIn thought leaders are mostly just regurgit
 Q: If someone asked, “Are you optimistic about AI?”, how would you answer honestly?
 A: Optimistic?  I don’t know.  I’m super jazzed about it, I love it and use it daily and think it might be the single greatest invention of my lifetime.  But optimistic?  I mean, I think it’s just going to become another new normal and then there will be some other “next big thing”.
 Q: Can I hire Steve to help me?
-A: Sure, just reach out on the contact page at kirkwoodsteves.com or email steve@precipex.com
+A: Sure, just email steve@precipex.com
 `
 
 const FINE_TUNED_PROMPT =
