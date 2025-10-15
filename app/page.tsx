@@ -63,15 +63,15 @@ export default async function HomePage() {
       ),
     },
     {
-      key: "gadfly",
+      key: "precipex",
       render: () => (
         <StarburstCallout
-          label="Gadfly"
-          subtitle="Dispatch"
-          href="https://kirkwoodgadfly.com/"
-          ariaLabel="Read the latest Kirkwood Gadfly dispatch"
-          imageSrc="/img/gadfly.webp"
-          imageAlt="Kirkwood Gadfly"
+          label="Visit"
+          subtitle="precipex.com"
+          href="https://precipex.com/"
+          ariaLabel="Visit precipex.com"
+          imageSrc="/images/landing/precipex-logo.png"
+          imageAlt="Precipex logo"
           variant="spark"
           backgroundColor="#7c3aed"
         />

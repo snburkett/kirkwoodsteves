@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 
 import { wheelColors } from "@/app/(theme)/tokens";
 import EmporiumBuyCallout from "@/components/EmporiumBuyCallout";
+import PulseGadflyCallout from "@/components/PulseGadflyCallout";
 import HeroLightboxTrigger from "@/components/HeroLightboxTrigger";
 import MDXContent from "@/components/MDXContent";
 import PostGallery from "@/components/PostGallery";
@@ -58,7 +59,7 @@ export default async function PostPage({
 
   return (
     <article className="relative space-y-8 md:space-y-10">
-      <div>
+      <div className="relative md:pt-0">
         <Link
           href={parentHref}
           className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur transition hover:bg-white hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
@@ -66,6 +67,7 @@ export default async function PostPage({
           <span aria-hidden="true">←</span>
           <span>Back to {sectionTitle}</span>
         </Link>
+        {section === "pulse" ? <PulseGadflyCallout className="absolute right-0 top-0" /> : null}
       </div>
       {heroImage ? (
         <aside className="md:absolute md:right-full md:top-6 md:mr-12 md:block md:w-72 lg:w-80">

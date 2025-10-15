@@ -64,6 +64,7 @@ interface StarburstCalloutProps {
   id?: string;
   dataAttributes?: Record<string, string>;
   hoverBubbleText?: string;
+  hoverBubbleSize?: "small" | "default" | "big";
   onClick?: () => void;
 }
 
@@ -82,6 +83,7 @@ export default function StarburstCallout({
   id,
   dataAttributes,
   hoverBubbleText,
+  hoverBubbleSize,
   onClick,
 }: StarburstCalloutProps) {
   const clipPath = useMemo(() => {
@@ -221,8 +223,16 @@ export default function StarburstCallout({
     </Link>
   );
 
+  const derivedBubbleSize =
+    hoverBubbleSize ?? (hoverBubbleText && hoverBubbleText.length > 20 ? "big" : "default");
+
   return hoverBubbleText ? (
-    <SpeechBubbleTooltip text={hoverBubbleText} placement="top" className="block w-max">
+    <SpeechBubbleTooltip
+      text={hoverBubbleText}
+      placement="top"
+      className="block w-max"
+      size={derivedBubbleSize}
+    >
       {core}
     </SpeechBubbleTooltip>
   ) : (

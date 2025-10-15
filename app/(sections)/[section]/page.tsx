@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import PostCard from "@/components/PostCard";
 import PulseDigest from "@/components/PulseDigest";
 import SectionHeader from "@/components/SectionHeader";
+import PulseGadflyCallout from "@/components/PulseGadflyCallout";
 import { loadSection, listSections } from "@/lib/content";
 import { loadPulseDigest } from "@/lib/pulse";
 import type { SectionName } from "@/lib/types";
@@ -48,7 +50,18 @@ export default async function SectionPage({ params }: { params: { section: strin
 
   return (
     <div>
-      <div>
+      <div className="relative pt-24 md:pt-0">
+        {section === "pulse" ? (
+          <Image
+            src="/images/pulseUnderConstruction.png"
+            alt="Pulse under construction"
+            width={320}
+            height={320}
+            priority
+            className="pointer-events-none fixed z-10 left-0 top-30 w-32 md:w-52 lg:w-72"
+            sizes="(max-width: 768px) rem, (max-width: 1024px) 13rem, 16rem"
+          />
+        ) : null}
         <SectionHeader
           title={titles[section]}
           description={descriptions[section]}
@@ -56,6 +69,7 @@ export default async function SectionPage({ params }: { params: { section: strin
         >
           {headerStatus}
         </SectionHeader>
+        {section === "pulse" ? <PulseGadflyCallout className="absolute right-0 -mt-20 md:top-0" /> : null}
       </div>
       {section === "pulse" ? (
         <div className="space-y-10">
