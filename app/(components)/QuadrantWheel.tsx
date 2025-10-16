@@ -9,7 +9,7 @@ import {
   useId,
   type KeyboardEvent,
   type FocusEvent,
-  type MouseEvent,
+  type PointerEvent,
 } from "react";
 
 import { brand, motion, wheelColors } from "../(theme)/tokens";
@@ -40,6 +40,7 @@ const BASE_SPEED = motion.idleSpeed;
 const SNAP_DURATION = 450; // ms
 const MAX_HOVER_SPEED = motion.maxHoverSpeed;
 const HOVER_ACCEL_PER_SEC = motion.hoverAcceleration;
+const TOUCH_LONG_PRESS_THRESHOLD = 350;
 
 const TOOLTIP_TEXT: Record<SectionName, string> = {
   emporium: "Retro tech & vinyl",
@@ -96,6 +97,12 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
   const powerUpIdRef = useRef(0);
   const powerUpTimersRef = useRef<Map<number, number>>(new Map());
   const audioContextRef = useRef<AudioContext | null>(null);
+  const touchPressRef = useRef<{ pointerId: number; start: number } | null>(null);
+  const suppressClickRef = useRef(false);
+  const suppressResetTimerRef = useRef<number | null>(null);
+  const touchHoldActiveRef = useRef(false);
+  const touchHoldTimerRef = useRef<number | null>(null);
+  const touchHoldTargetRef = useRef<SectionName | null>(null);
 
   const idPrefix = useId();
 
@@ -150,6 +157,14 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
       window.clearTimeout(timer);
     });
     powerUpTimersRef.current.clear();
+    if (suppressResetTimerRef.current != null) {
+      window.clearTimeout(suppressResetTimerRef.current);
+      suppressResetTimerRef.current = null;
+    }
+    if (touchHoldTimerRef.current != null) {
+      window.clearTimeout(touchHoldTimerRef.current);
+      touchHoldTimerRef.current = null;
+    }
   }, []);
 
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -302,21 +317,30 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
   return (
     <div
       className="relative"
-      style={{ width: size, height: size }}
+      style={{ width: size, height: size, touchAction: "none" }}
       onPointerEnter={(event) => {
         if (event.pointerType === "touch") return;
-        setScale(1.03);
-        hoverStartRef.current = typeof performance !== "undefined" ? performance.now() : Date.now();
-        setIsHovering(true);
+        beginHover();
       }}
-      onPointerLeave={() => {
-        setScale(1);
-        setIsHovering(false);
-        setTooltipTarget(null);
-        setTooltipRender(null);
-        hoverStartRef.current = null;
-        hoveredQuadrantRef.current = null;
-        hoverRotationRef.current = 0;
+      onPointerLeave={(event) => {
+        if (event.pointerType === "touch") {
+          cancelTouchInteraction();
+          return;
+        }
+        clearHoverState();
+      }}
+      onPointerDown={(event) => {
+        if (event.pointerType !== "touch") return;
+        beginHover();
+        startTouchInteraction(event);
+      }}
+      onPointerUp={(event) => {
+        if (event.pointerType !== "touch") return;
+        endTouchInteraction(event);
+      }}
+      onPointerCancel={(event) => {
+        if (event.pointerType !== "touch") return;
+        cancelTouchInteraction();
       }}
     >
       <div
@@ -370,9 +394,9 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
                   onKeyDown={(event) => handleKeyDown(event, quadrant, mid)}
                   onFocus={(event) => handleFocus(event, quadrant, mid)}
                   onBlur={(event) => handleBlur(event, quadrant)}
-                  onMouseEnter={(event) => handleMouseEnter(event, quadrant, mid)}
-                  onMouseLeave={(event) => handleMouseLeave(event, quadrant)}
-                  onMouseDown={(event) => event.preventDefault()}
+                  onPointerEnter={(event) => handlePointerEnter(event, quadrant, mid)}
+                  onPointerLeave={(event) => handlePointerLeave(event, quadrant)}
+                  onPointerDown={(event) => handleQuadrantPointerDown(event, quadrant, mid)}
                   style={{ outline: "none" }}
                 >
                   <path
@@ -399,7 +423,6 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
                       alignmentBaseline="middle"
                       fontSize={radius * 0.24}
                       transform={`rotate(${mid} ${iconPoint.x} ${iconPoint.y})`}
-                  onMouseDown={(event) => event.preventDefault()}
                 >
                   {quadrant.icon}
                 </text>
@@ -452,6 +475,161 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
     </div>
   );
 
+  function beginHover() {
+    setScale(1.03);
+    setIsHovering(true);
+    hoverStartRef.current = typeof performance !== "undefined" ? performance.now() : Date.now();
+  }
+
+  function clearHoverState() {
+    setScale(1);
+    setIsHovering(false);
+    setTooltipTarget(null);
+    setTooltipRender(null);
+    hoverStartRef.current = null;
+    hoveredQuadrantRef.current = null;
+    hoverRotationRef.current = 0;
+  }
+
+  function startTouchInteraction(event: PointerEvent<HTMLDivElement>) {
+    const now = typeof performance !== "undefined" ? performance.now() : Date.now();
+    touchPressRef.current = { pointerId: event.pointerId, start: now };
+    suppressClickRef.current = false;
+    touchHoldActiveRef.current = false;
+    if (touchHoldTimerRef.current != null && typeof window !== "undefined") {
+      window.clearTimeout(touchHoldTimerRef.current);
+    }
+    if (typeof window !== "undefined" && suppressResetTimerRef.current != null) {
+      window.clearTimeout(suppressResetTimerRef.current);
+      suppressResetTimerRef.current = null;
+    }
+    if (typeof window !== "undefined") {
+      touchHoldTimerRef.current = window.setTimeout(() => {
+        touchHoldActiveRef.current = true;
+        if (process.env.NODE_ENV !== "production") {
+          console.log("[QuadrantWheel] touch hold engaged", {
+            section: touchHoldTargetRef.current,
+          });
+        }
+        touchHoldTimerRef.current = null;
+      }, TOUCH_LONG_PRESS_THRESHOLD);
+    }
+  }
+
+  function endTouchInteraction(event: PointerEvent<HTMLDivElement>) {
+    const interaction = touchPressRef.current;
+    const now = typeof performance !== "undefined" ? performance.now() : Date.now();
+    const duration =
+      interaction && interaction.pointerId === event.pointerId
+        ? now - interaction.start
+          : interaction
+            ? now - interaction.start
+            : 0;
+    const longPress = duration >= TOUCH_LONG_PRESS_THRESHOLD;
+    if (touchHoldTimerRef.current != null && typeof window !== "undefined") {
+      window.clearTimeout(touchHoldTimerRef.current);
+      touchHoldTimerRef.current = null;
+    }
+    if (longPress && !touchHoldActiveRef.current) {
+      touchHoldActiveRef.current = true;
+      if (process.env.NODE_ENV !== "production") {
+        console.log("[QuadrantWheel] touch hold engaged (late)", {
+          section: touchHoldTargetRef.current,
+        });
+      }
+    }
+    if (longPress) {
+      suppressClickRef.current = true;
+      if (typeof window !== "undefined") {
+        if (suppressResetTimerRef.current != null) {
+          window.clearTimeout(suppressResetTimerRef.current);
+        }
+        suppressResetTimerRef.current = window.setTimeout(() => {
+          suppressClickRef.current = false;
+          suppressResetTimerRef.current = null;
+        }, 0);
+      }
+    } else {
+      suppressClickRef.current = false;
+    }
+    if (process.env.NODE_ENV !== "production") {
+      console.log("[QuadrantWheel] touch hold release", {
+        section: touchHoldTargetRef.current,
+        longPress,
+        duration,
+      });
+    }
+    touchPressRef.current = null;
+    touchHoldActiveRef.current = false;
+    touchHoldTargetRef.current = null;
+    clearHoverState();
+  }
+
+  function cancelTouchInteraction() {
+    touchPressRef.current = null;
+    suppressClickRef.current = false;
+    touchHoldActiveRef.current = false;
+    if (process.env.NODE_ENV !== "production") {
+      console.log("[QuadrantWheel] touch hold canceled", {
+        section: touchHoldTargetRef.current,
+      });
+    }
+    if (typeof window !== "undefined" && suppressResetTimerRef.current != null) {
+      window.clearTimeout(suppressResetTimerRef.current);
+      suppressResetTimerRef.current = null;
+    }
+    if (touchHoldTimerRef.current != null && typeof window !== "undefined") {
+      window.clearTimeout(touchHoldTimerRef.current);
+      touchHoldTimerRef.current = null;
+    }
+    touchHoldTargetRef.current = null;
+    clearHoverState();
+  }
+
+  function handlePointerEnter(
+    event: PointerEvent<SVGGElement>,
+    quadrant: Quadrant,
+    midAngle: number,
+  ) {
+    hoveredQuadrantRef.current = quadrant.id;
+    hoverRotationRef.current = 0;
+    hoverStartRef.current = typeof performance !== "undefined" ? performance.now() : Date.now();
+    showTooltip(quadrant, midAngle);
+    if (event.pointerType === "touch") {
+      touchHoldTargetRef.current = quadrant.id;
+    }
+  }
+
+  function handlePointerLeave(
+    event: PointerEvent<SVGGElement>,
+    quadrant: Quadrant,
+  ) {
+    if (hoveredQuadrantRef.current === quadrant.id) {
+      hoveredQuadrantRef.current = null;
+      hoverRotationRef.current = 0;
+      hoverStartRef.current = null;
+    }
+    hideTooltip(quadrant);
+    if (event.pointerType === "touch" && touchHoldTargetRef.current === quadrant.id) {
+      touchHoldTargetRef.current = null;
+    }
+  }
+
+  function handleQuadrantPointerDown(
+    event: PointerEvent<SVGGElement>,
+    quadrant: Quadrant,
+    midAngle: number,
+  ) {
+    event.preventDefault();
+    if (event.pointerType === "touch") {
+      hoveredQuadrantRef.current = quadrant.id;
+      hoverRotationRef.current = 0;
+      hoverStartRef.current = typeof performance !== "undefined" ? performance.now() : Date.now();
+      showTooltip(quadrant, midAngle);
+      touchHoldTargetRef.current = quadrant.id;
+    }
+  }
+
   function handleKeyDown(
     event: KeyboardEvent<SVGGElement>,
     quadrant: Quadrant,
@@ -486,28 +664,17 @@ export default function QuadrantWheel({ size = 240, onSelect }: QuadrantWheelPro
     hideTooltip(quadrant);
   }
 
-  function handleMouseEnter(
-    _event: MouseEvent<SVGGElement>,
-    quadrant: Quadrant,
-    midAngle: number,
-  ) {
-    hoveredQuadrantRef.current = quadrant.id;
-    hoverRotationRef.current = 0;
-    hoverStartRef.current = typeof performance !== "undefined" ? performance.now() : Date.now();
-    showTooltip(quadrant, midAngle);
-  }
-
-  function handleMouseLeave(_event: MouseEvent<SVGGElement>, quadrant: Quadrant) {
-    if (hoveredQuadrantRef.current === quadrant.id) {
-      hoveredQuadrantRef.current = null;
-      hoverRotationRef.current = 0;
-      hoverStartRef.current = null;
-    }
-    hideTooltip(quadrant);
-  }
-
   function handleQuadrantClick(quadrant: Quadrant) {
     if (snapStateRef.current) {
+      return;
+    }
+
+    if (suppressClickRef.current) {
+      suppressClickRef.current = false;
+      if (typeof window !== "undefined" && suppressResetTimerRef.current != null) {
+        window.clearTimeout(suppressResetTimerRef.current);
+        suppressResetTimerRef.current = null;
+      }
       return;
     }
 
