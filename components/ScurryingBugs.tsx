@@ -286,6 +286,7 @@ export default function ScurryingBugs() {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [highScore, setHighScore] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -309,6 +310,25 @@ export default function ScurryingBugs() {
     } catch (error) {
       console.warn("Unable to load bug high score", error);
     }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined;
+
+    const query = window.matchMedia("(min-width: 1024px)");
+    const handleChange = (event: MediaQueryListEvent) => {
+      setIsDesktop(event.matches);
+    };
+
+    setIsDesktop(query.matches);
+
+    if (typeof query.addEventListener === "function") {
+      query.addEventListener("change", handleChange);
+      return () => query.removeEventListener("change", handleChange);
+    }
+
+    query.addListener(handleChange);
+    return () => query.removeListener(handleChange);
   }, []);
 
   const updateHighScore = useCallback((candidate: number) => {
@@ -448,7 +468,7 @@ export default function ScurryingBugs() {
       previousEmoji = emoji;
 
       const behavior = BUG_BEHAVIOR[emoji] ?? DEFAULT_BEHAVIOR;
-      const baseDuration = randomBetween(behavior.minDuration, behavior.maxDuration);
+      const baseDuration = randomBetween(behavior.minDuration, behavior.maxDuration) * (isDesktop ? 2 : 1);
       const durationScale = isPlaying
         ? Math.max(SPEED_SCALE_FLOOR * ACTIVE_DURATION_SCALE, difficulty.speedScale * ACTIVE_DURATION_SCALE)
         : 1;
@@ -747,33 +767,33 @@ export default function ScurryingBugs() {
 
       <div className="pointer-events-none fixed inset-0 z-[60] overflow-visible">
         {bugs.map((bug) => (
-        <span
-          key={bug.id}
-          className="absolute left-0 top-0 select-none"
-          role="button"
-          aria-label="Squish bug"
-          tabIndex={0}
-          style={{
-            animation: bug.squished
-              ? "none"
-              : `${bug.animationName} ${bug.duration}ms linear ${bug.delay}ms forwards`,
-            transform: bug.squished
-              ? `${bug.frozenTransform ?? bug.startTransform} scale(0.55)`
-              : bug.startTransform,
-            fontSize: `${bug.size * 1.65}rem`,
-            filter: "drop-shadow(0 2px 2px rgba(15, 23, 42, 0.35))",
-            pointerEvents: "auto",
-            cursor: "pointer",
-            transition: bug.squished ? "transform 0.2s ease-out, opacity 0.2s ease-out" : undefined,
-            opacity: bug.squished ? 0.3 : 1,
-          }}
-          onPointerDown={(event) => handlePointerSquish(event, bug.id)}
-          onClick={(event) => handlePointerSquish(event, bug.id)}
-          onKeyDown={(event) => handleKeySquish(event, bug.id)}
-          onAnimationEnd={() => handleBugAnimationEnd(bug.id)}
-        >
-          {bug.emoji}
-        </span>
+          <span
+            key={bug.id}
+            className="absolute left-0 top-0 select-none"
+            role="button"
+            aria-label="Squish bug"
+            tabIndex={0}
+            style={{
+              animation: bug.squished
+                ? "none"
+                : `${bug.animationName} ${bug.duration}ms linear ${bug.delay}ms forwards`,
+              transform: bug.squished
+                ? `${bug.frozenTransform ?? bug.startTransform} scale(0.55)`
+                : bug.startTransform,
+              fontSize: `${bug.size * 1.65 * (isDesktop ? 1.25 : 1)}rem`,
+              filter: "drop-shadow(0 2px 2px rgba(15, 23, 42, 0.35))",
+              pointerEvents: "auto",
+              cursor: "pointer",
+              transition: bug.squished ? "transform 0.2s ease-out, opacity 0.2s ease-out" : undefined,
+              opacity: bug.squished ? 0.3 : 1,
+            }}
+            onPointerDown={(event) => handlePointerSquish(event, bug.id)}
+            onClick={(event) => handlePointerSquish(event, bug.id)}
+            onKeyDown={(event) => handleKeySquish(event, bug.id)}
+            onAnimationEnd={() => handleBugAnimationEnd(bug.id)}
+          >
+            {bug.emoji}
+          </span>
         ))}
       </div>
     </>
