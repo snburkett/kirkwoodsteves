@@ -1,21 +1,166 @@
 {
-  "generated_at": "2025-10-26T12:06:09.292033+00:00",
+  "generated_at": "2025-10-27T12:08:45.642281+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • October 26, 2025",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • October 27, 2025",
+  "overview": "subject: Harry Weber, sculptor\nkey_points:\n  -: Harry Weber began his sculpting career after age 50 and is now in his 80s with a vast portfolio.\n  -: His work includes over 150 large commissioned sculptures displayed publicly in 20 states, the Caribbean, China, and Africa.\n  -: Notable sculptures include sports figures at major stadiums like Busch Stadium and Kauffman Stadium, and historical figures such as Harriet and Dred Scott.\n  -: Weber was honored with a star on the St. Louis Walk of Fame in 2023 for his cultural impact.\n  -: He held a show at McCaughen & Burr Fine Arts in Webster Groves from October 10 through the end of October 2025.\n  -: Weber has a background as an English major at Princeton and served six years in the U.S. Navy, earning a Bronze Star with valor.\n  -: His sculptures also feature literary figures like Tennessee Williams and Joseph Conrad, and he created a personal sculpture of poet Walt Whitman.\n  -: Weber emphasizes the importance of preserving sculptures for historical education, advocating relocation rather than destruction of controversial works.\n  -: He lives on a farm near Wright City and has a passion for horses and fox hunting. Des Peres:\n  -:\n  date: 2025-10-13\n  incidents:\n  -: Subject turned themselves in at West County Center substation for a municipal warrant.\n  -: Subject stole shoes from Dick’s Sporting Goods at West County Center and was taken into custody.\n  -: Subject issued trespass ban for exposing himself near Great American Cookies at West County Center.\n  -:\n  date: 2025-10-15\n  incidents:\n  -: Subject taken into custody for stealing from Dick’s Sporting Goods at West County Center.\nGlendale:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Resident reported unknown male charging cell phone on front porch at 3 a.m.; advised to call if he returns.\n  -: Suspicious occupied vehicle reported; identified as Walmart delivery driver.\n  -:\n  date: 2025-10-15\n  incidents:\n  -: Reckless juvenile driver reported; juvenile located and parents advised.\n  -:\n  date: 2025-10-16\n  incidents:\n  -: Loud noises from construction site investigated; crew advised on allowable work hours.\n  -:\n  date: 2025-10-17\n  incidents:\n  -: Resident reported attempted break-in notification; residence checked secure with no forced entry.\n  -:\n  date: 2025-10-18\n  incidents:\n  -: Loud explosion reported; large party with fireworks found and warned to cease.\n  -: Shots fired report investigated; no evidence found; two large parties located.\n  -:\n  date: 2025-10-19\n  incidents:\n  -: Resident reported doorbell ringing; Richmond Heights officer contacted resident about missing elderly woman who was later found and returned to care facility.\n  -: Suspicious person at Glendale Chrysler Jeep Dodge identified as customer photographing vehicle for insurance.\n  -: Headphones reported lost/stolen; no formal report or prosecution pursued.\n  -: Suspicious person ringing doorbell and requesting phone left when refused entry.\n  -: Another suspicious person reported at front door; matched previous description and left before arrival.\n  -:\n  date: 2025-10-20\n  incidents:\n  -: Suspicious person knocking on door identified as unhoused man seeking shelter; conveyed to Metrolink Station.\nKirkwood/Oakland:\n  -:\n  note: No report submitted this week.\nRock Hill:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Speeding teal blue GMC Yukon stopped; driver arrested for two outstanding felony warrants.\n  -:\n  date: 2025-10-16\n  incidents:\n  -: Identity theft reported by resident of 9700 block of Greenwood Terrace.\n  -:\n  date: 2025-10-17\n  incidents:\n  -: Missing juvenile reported; juvenile located at nearby gas station.\nShrewsbury:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Domestic disturbance between 20-year-old man and 19-year-old woman under influence of alcohol; parties separated. location: 2345 Dougherty Ferry Road, Des Peres\nproperty_size: 43 acres\nformer_use: St. Luke’s Des Peres Hospital (closed Aug 1, 2025)\ncurrent_zoning: Single family residential\nmeeting_date: 2025-10-15\nmeeting_purpose: To gather community input on future use of the former hospital site and provide transparency on city plans\nkey_points:\n  -: The hospital closed after a one-month notice to the city.\n  -: City Administrator Scott Schaefer emphasized transparency and correcting misinformation.\n  -: A market feasibility study by PGAV Planners is ongoing to determine best use considering market trends, environmental impact, city services, tax implications, and community input.\n  -: Lion Health Systems, a New Jersey private equity group, proposed converting the site into a for-profit wellness facility focused on substance abuse treatment with secured inpatient detox and rehab services, excluding general healthcare and emergency services.\n  -: The city denied Lion Health Systems’ permit request as incompatible with the hospital definition; an appeal is pending review by the Des Peres Board of Adjustment.\n  -: The city’s comprehensive plan currently limits the site to hospital or institutional uses but may be updated based on study findings and community feedback.\n  -: Community members participated in an interactive session tagging potential uses on an aerial map, including residential, retail, and green space options.\n  -: This meeting was the first of several planned to keep residents informed.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:583cc7d06f2d",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Sculptor Harry Weber",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/sculptor-harry-weber/article_3b8232a9-b90c-4ff8-9194-0e3989b81c92.html",
+      "published": "2025-10-27T05:05:00+00:00",
+      "excerpt": "Harry Weber didn’t give up his day job to be a sculptor until he had passed the half-century mark. Now in octogenarian age territory, Weber has a vast and definitive array of artwork showing an unimaginable range. Some of it was on display during an Oct. 10 opening at McCaughen & Burr Fine Arts, 117 W. Lockwood Ave. in Webster",
+      "tags": [],
+      "ai_summary": "subject: Harry Weber, sculptor\nkey_points:\n  -: Harry Weber began his sculpting career after age 50 and is now in his 80s with a vast portfolio.\n  -: His work includes over 150 large commissioned sculptures displayed publicly in 20 states, the Caribbean, China, and Africa.\n  -: Notable sculptures include sports figures at major stadiums like Busch Stadium and Kauffman Stadium, and historical figures such as Harriet and Dred Scott.\n  -: Weber was honored with a star on the St. Louis Walk of Fame in 2023 for his cultural impact.\n  -: He held a show at McCaughen & Burr Fine Arts in Webster Groves from October 10 through the end of October 2025.\n  -: Weber has a background as an English major at Princeton and served six years in the U.S. Navy, earning a Bronze Star with valor.\n  -: His sculptures also feature literary figures like Tennessee Williams and Joseph Conrad, and he created a personal sculpture of poet Walt Whitman.\n  -: Weber emphasizes the importance of preserving sculptures for historical education, advocating relocation rather than destruction of controversial works.\n  -: He lives on a farm near Wright City and has a passion for horses and fox hunting.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:dc880cf379a8",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Area Crime Reports – Published October 24, 2025",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/area-crime-reports-published-october-24-2025/article_efd52b53-df7d-4780-9019-6d66a33a0d5d.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "Des Peres",
+      "tags": [],
+      "ai_summary": "Des Peres:\n  -:\n  date: 2025-10-13\n  incidents:\n  -: Subject turned themselves in at West County Center substation for a municipal warrant.\n  -: Subject stole shoes from Dick’s Sporting Goods at West County Center and was taken into custody.\n  -: Subject issued trespass ban for exposing himself near Great American Cookies at West County Center.\n  -:\n  date: 2025-10-15\n  incidents:\n  -: Subject taken into custody for stealing from Dick’s Sporting Goods at West County Center.\nGlendale:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Resident reported unknown male charging cell phone on front porch at 3 a.m.; advised to call if he returns.\n  -: Suspicious occupied vehicle reported; identified as Walmart delivery driver.\n  -:\n  date: 2025-10-15\n  incidents:\n  -: Reckless juvenile driver reported; juvenile located and parents advised.\n  -:\n  date: 2025-10-16\n  incidents:\n  -: Loud noises from construction site investigated; crew advised on allowable work hours.\n  -:\n  date: 2025-10-17\n  incidents:\n  -: Resident reported attempted break-in notification; residence checked secure with no forced entry.\n  -:\n  date: 2025-10-18\n  incidents:\n  -: Loud explosion reported; large party with fireworks found and warned to cease.\n  -: Shots fired report investigated; no evidence found; two large parties located.\n  -:\n  date: 2025-10-19\n  incidents:\n  -: Resident reported doorbell ringing; Richmond Heights officer contacted resident about missing elderly woman who was later found and returned to care facility.\n  -: Suspicious person at Glendale Chrysler Jeep Dodge identified as customer photographing vehicle for insurance.\n  -: Headphones reported lost/stolen; no formal report or prosecution pursued.\n  -: Suspicious person ringing doorbell and requesting phone left when refused entry.\n  -: Another suspicious person reported at front door; matched previous description and left before arrival.\n  -:\n  date: 2025-10-20\n  incidents:\n  -: Suspicious person knocking on door identified as unhoused man seeking shelter; conveyed to Metrolink Station.\nKirkwood/Oakland:\n  -:\n  note: No report submitted this week.\nRock Hill:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Speeding teal blue GMC Yukon stopped; driver arrested for two outstanding felony warrants.\n  -:\n  date: 2025-10-16\n  incidents:\n  -: Identity theft reported by resident of 9700 block of Greenwood Terrace.\n  -:\n  date: 2025-10-17\n  incidents:\n  -: Missing juvenile reported; juvenile located at nearby gas station.\nShrewsbury:\n  -:\n  date: 2025-10-14\n  incidents:\n  -: Domestic disturbance between 20-year-old man and 19-year-old woman under influence of alcohol; parties separated.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ce03247e6412",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Citizens Give Input Into Future Of Hospital Property",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/citizens-give-input-into-future-of-hospital-property/article_08607a0e-690e-4fe3-88e2-b840f665bf06.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "More than 100 people crowded into the Lodge Des Peres to hear the city’s plan for the 43-acre site formerly occupied by St. Luke’s Des Peres Hospital. The hospital ceased operations on Aug. 1 after giving the city a one-month notice. City Administrator Scott Schaefer opened the Oct. 15 meeting by noting it was not a public hearing, but an",
+      "tags": [],
+      "ai_summary": "location: 2345 Dougherty Ferry Road, Des Peres\nproperty_size: 43 acres\nformer_use: St. Luke’s Des Peres Hospital (closed Aug 1, 2025)\ncurrent_zoning: Single family residential\nmeeting_date: 2025-10-15\nmeeting_purpose: To gather community input on future use of the former hospital site and provide transparency on city plans\nkey_points:\n  -: The hospital closed after a one-month notice to the city.\n  -: City Administrator Scott Schaefer emphasized transparency and correcting misinformation.\n  -: A market feasibility study by PGAV Planners is ongoing to determine best use considering market trends, environmental impact, city services, tax implications, and community input.\n  -: Lion Health Systems, a New Jersey private equity group, proposed converting the site into a for-profit wellness facility focused on substance abuse treatment with secured inpatient detox and rehab services, excluding general healthcare and emergency services.\n  -: The city denied Lion Health Systems’ permit request as incompatible with the hospital definition; an appeal is pending review by the Des Peres Board of Adjustment.\n  -: The city’s comprehensive plan currently limits the site to hospital or institutional uses but may be updated based on study findings and community feedback.\n  -: Community members participated in an interactive session tagging potential uses on an aerial map, including residential, retail, and green space options.\n  -: This meeting was the first of several planned to keep residents informed.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b3a8891f460c",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Budget Process Begins Under New Administrator",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/budget-process-begins-under-new-administrator/article_1a0907f2-add9-4948-8ff1-86e36aa68bc8.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "First on the agenda for new City Administrator Dustin Ziebold is leading Shrewsbury through the 2026 budgeting process. Ziebold unveiled an initial budget proposal at the Oct. 14 board of aldermen meeting. The city’s next fiscal year begins in January, and Ziebold said he’s working with the other department heads to ensure the city will run a balanced budget. The",
+      "tags": [],
+      "ai_summary": "new_administrator: Dustin Ziebold\nbudget_year: 2026\nbudget_status: balanced or surplussed in all funds\nkey_expenses: public safety departments (72% of general fund expenditures)\nbudget_process:\n  initial_proposal_date: 2025-10-14\n  board_meeting_discussion_start: 2025-10-28\n  public_hearing_date: 2025-11-11\n  final_approval_expected: December 2025\nfinancial_notes:\n  reserves: available in two of three major funds\n  deficit: being eliminated in the third fund\n  emergency_fund_usage: may dip into reserves if major emergency occurs\npersonnel_policy_update:\n  approved_expenditure: 19152\n  vendor: Lexipol\n  purpose: create digital personnel policy & procedure manual with online training and management\n  annual_fee_after_first_year: 5000\n  rationale: current general personnel policies not updated since 2016; ongoing updates needed for police and fire departments\n  benefit: helps keep policies up to date and benefits all city staff",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:08635f7ee82c",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Honoring New Members Of The Webster Groves High School Alumni Wall Of Fame",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/honoring-new-members-of-the-webster-groves-high-school-alumni-wall-of-fame/article_3a28c945-3ab6-451c-addd-cb75205a2a64.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "Fourteen Webster Groves High School alumni will be inducted into the school’s Wall of Fame this Friday. The Webster Groves High School Alumni Wall of Fame, established in 1989, recognizes the outstanding accomplishments of its graduates. The inductees have made remarkable contributions to their communities and beyond, leaving an indelible mark in their respective fields. This year’s inductees will be",
+      "tags": [],
+      "ai_summary": "event: Induction of 14 Webster Groves High School alumni into the Wall of Fame\ndate_of_event: 2025-10-24\nlocation: Moss Field at Alumni Stadium and luncheon\npurpose: To recognize outstanding accomplishments of Webster Groves High School graduates who have made significant contributions to their communities and fields.\nwall_of_fame_established: 1989\ninductees:\n  -:\n  name: John Coonrod\n  class_year: 1969\n  achievements: Global leader in sustainable hunger solutions, former Princeton physicist, executive VP of The Hunger Project, founder of Movement for Community-led Development, author of memoir 'How the Road Built Me'.\n  residence: Washington, D.C.\n  -:\n  name: Rev. Phillip G. Duvall\n  class_year: 1981\n  achievements: Over 30 years in civil and human rights advocacy, U.S. Army and Navy veteran, diversion specialist for St. Louis Circuit Attorney’s Office, ministry leadership, social justice advocate.\n  collaborations:\n  -: NAACP\n  -: ACLU\n  -:\n  name: Jere Stuart French\n  class_year: 1947\n  achievements: CIA intelligence officer, founder of landscape architecture program at California Polytechnic Institute, author of five books, recipient of Bradford Williams Medal, Fellow of American Society of Landscape Architects.\n  -:\n  name: Pamela Gerhardt\n  class_year: 1979\n  achievements: Award-winning writer and educator, author of memoir 'Lucky That Way', contributor to major national newspapers, principal lecturer at University of Maryland.\n  -:\n  name: Meghan C. Gray\n  class_year: 2003\n  achievements: Commander of USS Charleston (LCS-18), Surface Warfare Officer, Naval Postgraduate School graduate, extensive naval deployments and leadership roles.\n  -:\n  name: Drew Hanlen\n  class_year: 2008\n  achievements: NBA skills coach, bestselling author, founder of Pure Sweat Basketball, former standout player, keynote speaker, and peak performance strategist.\n  -:\n  name: Jaime (Baranyai) Mowers\n  class_year: 2000\n  achievements: Owner and editor-in-chief of Webster-Kirkwood Times, Missouri Press Association treasurer, author, kindness project founder, first Woman of the Year by local Chamber of Commerce, triathlete.\n  -:\n  name: Daniel Paschen\n  class_year: 2000\n  achievements: Primetime Emmy Award-winning television producer, supervising NBC’s 'The Voice', career start at Comedy Central and William Morris.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:f8a37535b86e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "While Enrollment In Foreign Languages Appears Unstable,  Kirkwood German School Remains A Constant",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/while-enrollment-in-foreign-languages-appears-unstable-kirkwood-german-school-remains-a-constant/article_75864d84-7f2b-4f38-ad38-22413b14a84a.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "“Morgen.” That’s how Eric Hasselschwert greets students — both children and adults — at Concordia Lutheran Church in Kirkwood nearly every Saturday morning during the school year. By the end of May, the more than 200 students who attend the German School Association of Greater St. Louis at the Kirkwood church, in person or online, will know “Guten Morgen” is",
+      "tags": [],
+      "ai_summary": "overview: The German School Association of Greater St. Louis, located at Concordia Lutheran Church in Kirkwood, continues to maintain stable enrollment despite a nationwide decline in foreign language studies. Founded in 1962, the school teaches German language and culture to over 200 students, both children and adults, through in-person and online classes.\nkey_points:\n  -: German remains the third most studied foreign language in the U.S., behind Spanish and French.\n  -: Eric Hasselschwert, a longtime German teacher, emphasizes the importance of cultural exchange programs and local trips to promote German language learning.\n  -: National data shows a decline in foreign language enrollment, but local figures suggest more stability, especially in Kirkwood where German classes have strong participation.\n  -: The Goethe-Institut, a German cultural institution, has shifted U.S. classes online due to budget cuts, though in-person classes continue in Germany.\n  -: Adult learners, like Jim Deutschmann of Crestwood, benefit from the school by improving communication with German-speaking family members.\n  -: The school moved to Concordia Lutheran Church in Kirkwood in 2017, previously held at St. Paul’s Lutheran Church in Des Peres.\ncultural_context: The Midwest has a strong German heritage, reflected in local place names and cultural institutions, which supports ongoing interest in German language education.\nenrollment:\n  current_students: 200\n  demographics: Children and adults\n  delivery_modes:\n  -: in-person\n  -: online\nchallenges:\n  -: Stigma around German language post-World War II historically affected usage.\n  -: Foreign language enrollment nationwide is at historic lows according to the Modern Language Association.\n  -: Budget cuts have impacted cultural institutions like the Goethe-Institut in St. Louis.\npositive_outlook: Despite challenges, the Kirkwood German School Association remains a stable and valued resource for German language education in the region.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:1bb4e6c73c38",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Schrödinger’s Gift Box",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/schr-dinger-s-gift-box/article_96f3d597-f542-4a3e-98bf-d7726752464f.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "I am what you might call a gifter. Enter my closet and you will find artisanal cutting boards, novelty socks and baguette-scented candles, all designated for someone, someday. Time has no grasp on me. If I see the perfect thing for someone, I will buy it immediately and hold onto it for the next appropriate occasion. I have gifts for",
+      "tags": [],
+      "ai_summary": "The article is a personal reflection by a self-described avid gift giver who collects unique and quirky presents well in advance for various occasions. The author shares anecdotes about the challenges and joys of gift giving, including the uncertainty of whether gifts are appreciated or unused, likening them to 'Schrödinger’s Gift Box.' A visit to the author's sister's home revealed that all the gifts given over the years were cherished and displayed, leading to a heartfelt realization about the value of thoughtful giving and familial love. The piece ends on a warm note anticipating the upcoming Christmas celebration.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:489e627d94c2",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "SEND US YOUR RECIPES!",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/send-us-your-recipes/article_9ed1cd2e-aa66-448f-a6d7-550e1ffca902.html",
+      "published": "2025-10-27T05:00:00+00:00",
+      "excerpt": "The Webster-Kirkwood Times is again soliciting recipes for publication in its annual Holiday Gift & Recipe Guide to be published on Nov. 21. The deadline for recipes is 5 p.m. Friday, Oct. 31. Along with favorite recipes, readers are encouraged to share stories, memories and photos connected to their recipes. Baking temperatures, cooking times and other instructions should also be",
+      "tags": [],
+      "ai_summary": "The Webster-Kirkwood Times is inviting readers to submit recipes for its annual Holiday Gift & Recipe Guide, which will be published on November 21. The deadline for submissions is 5 p.m. on Friday, October 31. Contributors are encouraged to include detailed cooking instructions, as well as stories, memories, and photos related to their recipes. Submissions must include the sender's name, address, email, and phone number, but only the submitter's name and town will be published. Recipes and photos can be sent via email to advertising@timesnewspapers.com or mailed to Webster-Kirkwood Times at 122 W. Lockwood Ave., 2nd Floor, St. Louis, Missouri, 63119.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Sculptor Harry Weber from Webster-Kirkwood Times – News."
 }
