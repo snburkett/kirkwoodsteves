@@ -1,21 +1,166 @@
 {
-  "generated_at": "2025-10-29T12:06:44.414777+00:00",
+  "generated_at": "2025-10-30T12:07:47.697823+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • October 29, 2025",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • October 30, 2025",
+  "overview": "Kirkwood is finalizing its application for a $6.8 million federal Safer Streets for All (SS4A) grant aimed at improving traffic calming, sidewalk infill, and pedestrian upgrades citywide. However, concerns have been raised that the grant application disproportionately focuses on a single area, potentially neglecting broader citywide safety improvements. grant:\n  name: Safer Streets for All (SS4A)\n  total_amount: 6804817.25\n  federal_funding: 5443853.8\n  local_match: 1360963.45\n  purpose: Traffic calming, sidewalk infill, and pedestrian upgrades across Kirkwood\nkey_issue: More than half (52%) of the grant funds are allocated to a single half-mile stretch of Ann Avenue, raising concerns about neglecting higher-need neighborhoods and the citywide mission of the grant.\nbackground:\n  vision_zero_plan: Adopted in 2022 aiming for zero traffic-related deaths citywide.\n  previous_ss4a_funding: 480000\n  studies_informed:\n  -: Southeast Kirkwood Connectivity Study\n  -: Safer Routes to Schools Study\n  -: Citywide Speed Study\nproject_breakdown:\n  -:\n  name: Ann Ave Utility Relocation\n  location: Ballas to Couch\n  type: Utility Relocation\n  cost: 3300000.0\n  -:\n  name: N Kirkwood Traffic Calming\n  location: Bodley to Swan\n  type: Traffic Calming\n  cost: 208585.0\n  -:\n  name: Washington Traffic Calming\n  location: Harrison to Fillmore\n  type: Traffic Calming\n  cost: 246589.6\n  -:\n  name: Rose Hill Traffic Calming\n  location: Couch to Fillmore\n  type: Traffic Calming\n  cost: 631218.4\n  -:\n  name: Couch Traffic Calming\n  location: Big Bend to Adams\n  type: Traffic Calming\n  cost: 546555.2\n  -:\n  name: Ann Ave Traffic Calming\n  location: Ballas to Couch\n  type: Traffic Calming\n  cost: 258250.5\n  -:\n  name: Dougherty Ferry Traffic Calming\n  location: Essex to Geyer\n  type: Traffic Calming\n  cost: 491686.8\n  -:\n  name: Peeke Ave Sidewalks\n  location: Geyer to Simmons\n  type: New Sidewalk\n  cost: 55289.45\n  -:\n  name: Romine Sidewalks\n  location: Manchester to Kirkshire\n  type: New Sidewalk\n  cost: 242958.2\n  -:\n  name: Milwaukee Traffic Calming\n  location: Big Bend to Memphis\n  type: Traffic Calming\n  cost: 203577.3\n  -:\n  name: Essex Traffic Calming\n  location: Dougherty Ferry to Geyer\n  type: Traffic Calming\n  cost: 440041.0\n  -:\n  name: Orleans Traffic Calming\n  location: Attucks to Memphis\n  type: Traffic Calming\n  cost: 180065.8\nconcerns:\n  -: The Ann Avenue utility relocation project is the most expensive and accounts for over half the grant funds.\n  -: The solution to bury electric lines on Ann Avenue may not be cost-effective compared to alternatives.\n  -: Other neighborhoods with higher needs may be overlooked due to the funding concentration on Ann Avenue.\n  -: Details on project selection and specific improvements remain limited.\ncommunity_input: Projects were chosen based on rankings from citywide speed and connectivity studies and public engagement through Safe Routes to School.\nnext_steps: Further examination of individual projects is planned, especially the Ann Avenue improvements. project_status: Revived by new developer TriStar Properties after previous project was declared dead\nlocation: 300 N. Kirkwood Rd\nproject_details:\n  apartments: 60\n  retail_space_sqft: 2940\n  parking_spaces: 111\n  stories: 4\n  architectural_firm: Stock & Associates\ncommercial_space_changes:\n  previous_plan:\n  restaurant_sqft: 2000\n  retail_sqft: 2000\n  office_sqft: 1300\n  total_sqft: 5300\n  new_plan:\n  commercial_spaces_sqft:\n  -: 1900\n  -: 1000\n  clubhouse_sqft: 1900\nresidential_mix:\n  likely_units:\n  -: one-bedroom\n  -: two-bedroom\n  uncertain: three-bedroom units inclusion hoped for\napproval_status: Likely approved by Council with minor site-plan modification for pedestrian access\ndesign_and_aesthetics:\n  concerns:\n  -: Lack of commercial space activation along Adams Street\n  -: Parking garage screening dominates facades\n  -: Use of broken-up massing design leads to incoherent appearance\n  -: Architectural Review Board expected to improve design\n  suggestions:\n  -: Consider re-legalizing modest single-stair buildings for smaller, cohesive design\n  -: Improve architectural design guidelines\n  historic_preservation: Developer intends to rehabilitate historic stone wall from Pitman Elementary School\n  project_naming: Hope Council encourages use of 'Pitman Place' to preserve local identity\nupcoming_events: Project scheduled for Planning & Zoning Commission review on Wednesday",
+  "items": [
+    {
+      "id": "kirkwood-gadfly:d0d4a612ec31",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Safer Streets for Kirkwood",
+      "link": "https://kirkwoodgadfly.com/tag/safer-streets-for-kirkwood/",
+      "published": "2025-10-30T12:06:39.165795+00:00",
+      "excerpt": "For a grant designed to make our streets safer for all, Kirkwood’s SS4A application focuses an awful lot on just one. Kirkwood is finalizing its application for a $6.8 million federal Safer Streets for All (SS4A) grant — funding that could support traffic calming, sidewalk infill, and pedestrian upgrades across the city. But a closer… Continue reading The $3.5 Million",
+      "tags": [],
+      "ai_summary": "Kirkwood is finalizing its application for a $6.8 million federal Safer Streets for All (SS4A) grant aimed at improving traffic calming, sidewalk infill, and pedestrian upgrades citywide. However, concerns have been raised that the grant application disproportionately focuses on a single area, potentially neglecting broader citywide safety improvements.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:9eb949bea20d",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "The $3.5 Million Sidewalk: How Kirkwood’s SS4A Grant Lost the Plot",
+      "link": "https://kirkwoodgadfly.com/the-3-5-million-sidewalk-how-kirkwoods-ss4a-grant-lost-the-plot/",
+      "published": "2025-10-30T12:06:38.706029+00:00",
+      "excerpt": "For a grant designed to make our streets safer for all, Kirkwood’s SS4A application focuses an awful lot on just one. Kirkwood is finalizing its application for a $6.8 million federal Safer Streets for All (SS4A) grant — funding that could support traffic calming, sidewalk infill, and pedestrian upgrades across the city. But a closer look at the proposal reveals",
+      "tags": [],
+      "ai_summary": "grant:\n  name: Safer Streets for All (SS4A)\n  total_amount: 6804817.25\n  federal_funding: 5443853.8\n  local_match: 1360963.45\n  purpose: Traffic calming, sidewalk infill, and pedestrian upgrades across Kirkwood\nkey_issue: More than half (52%) of the grant funds are allocated to a single half-mile stretch of Ann Avenue, raising concerns about neglecting higher-need neighborhoods and the citywide mission of the grant.\nbackground:\n  vision_zero_plan: Adopted in 2022 aiming for zero traffic-related deaths citywide.\n  previous_ss4a_funding: 480000\n  studies_informed:\n  -: Southeast Kirkwood Connectivity Study\n  -: Safer Routes to Schools Study\n  -: Citywide Speed Study\nproject_breakdown:\n  -:\n  name: Ann Ave Utility Relocation\n  location: Ballas to Couch\n  type: Utility Relocation\n  cost: 3300000.0\n  -:\n  name: N Kirkwood Traffic Calming\n  location: Bodley to Swan\n  type: Traffic Calming\n  cost: 208585.0\n  -:\n  name: Washington Traffic Calming\n  location: Harrison to Fillmore\n  type: Traffic Calming\n  cost: 246589.6\n  -:\n  name: Rose Hill Traffic Calming\n  location: Couch to Fillmore\n  type: Traffic Calming\n  cost: 631218.4\n  -:\n  name: Couch Traffic Calming\n  location: Big Bend to Adams\n  type: Traffic Calming\n  cost: 546555.2\n  -:\n  name: Ann Ave Traffic Calming\n  location: Ballas to Couch\n  type: Traffic Calming\n  cost: 258250.5\n  -:\n  name: Dougherty Ferry Traffic Calming\n  location: Essex to Geyer\n  type: Traffic Calming\n  cost: 491686.8\n  -:\n  name: Peeke Ave Sidewalks\n  location: Geyer to Simmons\n  type: New Sidewalk\n  cost: 55289.45\n  -:\n  name: Romine Sidewalks\n  location: Manchester to Kirkshire\n  type: New Sidewalk\n  cost: 242958.2\n  -:\n  name: Milwaukee Traffic Calming\n  location: Big Bend to Memphis\n  type: Traffic Calming\n  cost: 203577.3\n  -:\n  name: Essex Traffic Calming\n  location: Dougherty Ferry to Geyer\n  type: Traffic Calming\n  cost: 440041.0\n  -:\n  name: Orleans Traffic Calming\n  location: Attucks to Memphis\n  type: Traffic Calming\n  cost: 180065.8\nconcerns:\n  -: The Ann Avenue utility relocation project is the most expensive and accounts for over half the grant funds.\n  -: The solution to bury electric lines on Ann Avenue may not be cost-effective compared to alternatives.\n  -: Other neighborhoods with higher needs may be overlooked due to the funding concentration on Ann Avenue.\n  -: Details on project selection and specific improvements remain limited.\ncommunity_input: Projects were chosen based on rankings from citywide speed and connectivity studies and public engagement through Safe Routes to School.\nnext_steps: Further examination of individual projects is planned, especially the Ann Avenue improvements.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:1fc47a0afdfb",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood Apartments: Episode II – Return of the Apartments",
+      "link": "https://kirkwoodgadfly.com/kirkwood-apartments-episode-ii-return-of-the-apartments/",
+      "published": "2025-10-30T12:06:38.184620+00:00",
+      "excerpt": "The rumors of the Kirkwood Apartments’ demise are greatly exaggerated. Just a few months after the 300 N. Kirkwood Rd project was finally pronounced dead, a new developer, TriStar Properties, has revived it in much of its original form —60 apartments, 2,940 square feet of retail, and 111 parking spaces across four stories— utilizing the same architectural firm, Stock &",
+      "tags": [],
+      "ai_summary": "project_status: Revived by new developer TriStar Properties after previous project was declared dead\nlocation: 300 N. Kirkwood Rd\nproject_details:\n  apartments: 60\n  retail_space_sqft: 2940\n  parking_spaces: 111\n  stories: 4\n  architectural_firm: Stock & Associates\ncommercial_space_changes:\n  previous_plan:\n  restaurant_sqft: 2000\n  retail_sqft: 2000\n  office_sqft: 1300\n  total_sqft: 5300\n  new_plan:\n  commercial_spaces_sqft:\n  -: 1900\n  -: 1000\n  clubhouse_sqft: 1900\nresidential_mix:\n  likely_units:\n  -: one-bedroom\n  -: two-bedroom\n  uncertain: three-bedroom units inclusion hoped for\napproval_status: Likely approved by Council with minor site-plan modification for pedestrian access\ndesign_and_aesthetics:\n  concerns:\n  -: Lack of commercial space activation along Adams Street\n  -: Parking garage screening dominates facades\n  -: Use of broken-up massing design leads to incoherent appearance\n  -: Architectural Review Board expected to improve design\n  suggestions:\n  -: Consider re-legalizing modest single-stair buildings for smaller, cohesive design\n  -: Improve architectural design guidelines\n  historic_preservation: Developer intends to rehabilitate historic stone wall from Pitman Elementary School\n  project_naming: Hope Council encourages use of 'Pitman Place' to preserve local identity\nupcoming_events: Project scheduled for Planning & Zoning Commission review on Wednesday",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:9f8ac860ade1",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Tired of the Speeders? Turn on the Cameras.",
+      "link": "https://kirkwoodgadfly.com/tired-of-the-speeders-turn-on-the-cameras/",
+      "published": "2025-10-30T12:06:37.721727+00:00",
+      "excerpt": "Kirkwood has poured a tremendous amount of sweat and treasure across multiple administrations into becoming a more walkable community. And while I have nits to pick here and there, overall these efforts have been worthwhile and successful. But no amount of curb bump-outs or bike lanes has convinced the blatant rule-breakers to stop blatantly breaking the rules. What The Speed",
+      "tags": [],
+      "ai_summary": "context: Kirkwood has invested heavily in making the city more walkable, including curb bump-outs, bike lanes, and other pedestrian safety measures.\nspeed_study:\n  date: May 2024\n  locations_studied: 75\n  key_metric: 85th percentile speed\n  findings:\n  exceeding_threshold: 55\n  threshold_definition: 85th percentile speed more than 5 mph over the limit\n  recommended_actions:\n  -: lower the speed limit\n  -: redesign the street to slow drivers\n  -: increase enforcement\n  recommended_interventions:\n  -:\n  treatment: Speed Feedback Sign\n  speed_reduction_mph: 3\n  crash_reduction_percent: 70\n  -:\n  treatment: Roundabouts\n  speed_reduction_mph: 6\n  crash_reduction_percent: 75\n  -:\n  treatment: Raised Intersections\n  speed_reduction_mph: 5\n  crash_reduction_percent: 40\n  -:\n  treatment: Horizontal Deflection (e.g., curb extensions)\n  speed_reduction_mph: 3\n  crash_reduction_percent: 30\n  -:\n  treatment: Lower Speed Limits\n  speed_reduction_mph: 4\n  crash_reduction_percent: 25\n  -:\n  treatment: Speed Humps/Tables\n  speed_reduction_mph: 10-20 at placed countermeasure\n  crash_reduction_percent: 40\nongoing_and_planned_projects:\n  -: Raised intersections at Clay & Argonne and Clay & Jefferson\n  -: Lane reductions in Kirkwood Road project Phase I and II\n  -: Mid-block crossing between The James and Global Foods\n  -: Curb bump-outs on Lindeman, South Geyer Big Bend, and West Essex\n  -: Sidewalk infill on East Essex between Dickson and Hill Drive (in partnership with Glendale)\n  -: Purchase of eleven speed feedback cameras costing $59,815\n  -: Speed limit reductions on West Monroe (25 to 20 mph) and West Jefferson (20 to 15 mph)\nanalysis:\n  effectiveness: Interventions expected to reduce 85th percentile speeds by 3-6 mph and improve pedestrian safety significantly.\n  limitations: Concerns remain about extreme speeders (99th percentile) who drive dangerously fast, with some recorded speeds possibly due to errors.\n  criticisms:\n  -: Lane reductions should extend further south on Kirkwood Road.\n  -: Frustration over removal of sidewalks to avoid stop signs and opposition to some speed limit reductions.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:34068fd306f0",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood minimum lot size",
+      "link": "https://kirkwoodgadfly.com/tag/kirkwood-minimum-lot-size/",
+      "published": "2025-10-30T12:06:37.279162+00:00",
+      "excerpt": "I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
+      "tags": [],
+      "ai_summary": "The article discusses Kirkwood's tear-down crisis, attributing it to the high cost of land. It highlights that after spending around $500,000 to buy a lot, the additional $200,000 cost to tear down an existing small home and build a larger one seems relatively minor. The piece suggests that this trend is driven by expensive land prices rather than just housing demand.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:0d6cd5268efe",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "How To Revive the Starter Home",
+      "link": "https://kirkwoodgadfly.com/how-to-revive-the-starter-home/",
+      "published": "2025-10-30T12:06:36.855255+00:00",
+      "excerpt": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
+      "tags": [],
+      "ai_summary": "The article discusses Kirkwood's housing challenge where expensive land drives the demolition of small starter homes in favor of larger, costly replacements. It argues that simply mandating smaller, affordable homes won't preserve starter homes unless land costs are addressed. Two main strategies to reduce land costs are increasing supply or reducing demand, with the article favoring supply increase through multi-family buildings or townhomes. However, many residents prefer detached single-family homes with yards, which complicates solutions. Another proposed solution is subdividing land into smaller parcels to lower individual lot prices, making homeownership more accessible. Yet, Kirkwood's zoning laws impose minimum lot sizes (ranging from 7,500 sqft to 1 acre), preventing lot splits and encouraging large home builds. An example at 511 W Rose Hill Ave illustrates how zoning restrictions forced a teardown and large home build instead of subdividing the lot for multiple modest homes. The article implies that zoning reform is needed to revive affordable starter homes in Kirkwood.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:0b2d54260b53",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "String of Errors Leads to Rejection of Parking Solution",
+      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
+      "published": "2025-10-30T12:06:36.434729+00:00",
+      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
+      "tags": [],
+      "ai_summary": "event: Kirkwood City Council unanimously voted down a contract with Fybr for a parking technology solution on September 4, 2025.\ntechnology:\n  provider: Fybr\n  description: Sensors placed under parking spaces to provide real-time occupancy data, accessible via the Park Kirkwood app and used for parking enforcement.\n  benefits:\n  -: Real-time parking availability for visitors\n  -: Automated alerts for parking limit violations\n  -: Reduced labor-intensive enforcement\nbackground:\n  original_contract:\n  period: December 3, 2020 to December 2, 2021\n  scope: 275 parking sensors installed at no cost to Kirkwood\n  purpose: Proof of concept for Fybr\n  miscommunication:\n  error: City staff incorrectly reported the original contract as covering 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  impact: This mistake led to confusion and misunderstandings in the council's decision-making process.\ncontract_lapse_and_issues:\n  contract_expiration: December 2, 2021\n  maintenance: Responsibility transferred to city after contract expiration\n  system_problems: Gateways went offline due to power issues, causing sensor battery drain and reduced functionality.\n  reactivation_request: City requested reactivation in January 2025\n  sensor_relocation:\n  quantity: 69\n  fee: 14973\n  purpose: Replace dead sensors on Argonne Street until a new contract could be agreed upon\nconclusion: The council rejected the new contract proposal amid confusion and lack of clear alternatives, despite the technology's potential benefits.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:906773a73af3",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Pitman Place Heads Back to P&Z",
+      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
+      "published": "2025-10-30T12:06:35.742917+00:00",
+      "excerpt": "Last Thursday, Kirkwood City Council was supposed to decide the fate of a 60-apartment development proposed for 300 N. Kirkwood Rd, but instead of voting to approve the project, the Council and developer instead agreed on an alternative: The developer would pull the proposal just ahead of the vote, and completely restart the approval process, beginning with a Planning &",
+      "tags": [],
+      "ai_summary": "project:\n  location: 300 N. Kirkwood Rd\n  developer: TriStar Properties and Stock & Associates\n  original_plan:\n  apartments: 60\n  unit_mix:\n  1_bed_1_bath: 27\n  2_bed_2_bath: 27\n  3_bed_2_bath: 6\n  features:\n  retail_space: original amount\n  clubhouse_size: original size\n  parking_spaces: original number\n  revised_plan:\n  apartments: 60\n  unit_mix:\n  1_bed: 23\n  2_bed: 24\n  3_bed: 13\n  features:\n  retail_space: a couple hundred square feet more than original\n  clubhouse_size: slightly smaller\n  parking_spaces: six fewer but still compliant\n  design: Concept P with gabled facade, balconies, and direct-entrance apartments on Adams facade\n  historical_features:\n  -: plaque next to old Pitman School fence\n  -: development named after Pitman School\nprocess:\n  status: Developer withdrew proposal before Council vote to restart approval process\n  next_steps:\n  -: Planning & Zoning hearing on October 15th\n  -: Likely public hearing for zoning text change\n  -: Return to City Council for final approval\n  zoning_change:\n  description: Allow residential use on first floor, currently banned\n  informal_agreement: Council agreed to zoning code change in exchange for developer restarting process\n  impact: Enables preferred design and more family-suitable larger apartments\ncommunity_feedback:\n  initial_reaction: Negative feedback on original flat, bulky design\n  council_preference: Preferred Concept P design aesthetically\n  author_opinion: Supports removing strict ground-floor retail mandate to allow more and larger homes\nzoning_context:\n  current_code: Requires mixed-use with commercial on ground floor in Downtown Kirkwood main streets\n  author_analysis: Strict retail mandate can be counterproductive; developers naturally include retail where viable\n  parking_and_foot_traffic: Retail often requires more parking and may not be viable where foot traffic is low",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Safer Streets for Kirkwood from Kirkwood Gadfly."
 }
