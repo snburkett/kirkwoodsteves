@@ -1,148 +1,21 @@
 {
-  "generated_at": "2025-11-08T12:12:44.413028+00:00",
+  "generated_at": "2025-11-09T12:05:49.768923+00:00",
   "window_hours": 36,
-  "stories_considered": 15,
-  "stories_featured": 7,
-  "headline": "Kirkwood Pulse • November 08, 2025",
-  "overview": "Greenway Goods celebrate local artists and makers AND give back to the Greenways. Hand- poured candles, tea, stickers, beautiful art and more! See the full line of unique, locally made goods at GreenwayGoods.com. Available online, at Procure at City Foundry, REI and Missouri History Museum too! Experience the captivating elegance of this 14K Tri-Color Filigree Diamond Ring. With swirling artistry in yellow, white, and rose gold, this wide band is meticulously set with brilliant diamonds—a true statement piece for any collection. Blust's Jewelers The 39th annual Old Webster Holiday Open House, a day of family fun and holiday magic, is set for Sunday, Nov. 9, from 10 a.m. to 4 p.m.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:6b99b3dff359",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Local Gifts that Support the Greenways!",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/local-gifts-that-support-the-greenways/article_0496c34e-f003-4068-b2e1-9a9fa9f21c96.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "Greenway Goods celebrate local artists and makers AND give back to the Greenways. Hand- poured candles, tea, stickers, beautiful art and more! See the full line of unique, locally made goods at GreenwayGoods.com. Available online, at Procure at City Foundry, REI and Missouri History Museum too!",
-      "tags": [],
-      "ai_summary": "Greenway Goods celebrate local artists and makers AND give back to the Greenways. Hand- poured candles, tea, stickers, beautiful art and more! See the full line of unique, locally made goods at GreenwayGoods.com. Available online, at Procure at City Foundry, REI and Missouri History Museum too!",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:a5963017c06f",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Captivating Elegance",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/captivating-elegance/article_b7d5d778-138c-4707-8212-e63693938b4e.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "Experience the captivating elegance of this 14K Tri-Color Filigree Diamond Ring. With swirling artistry in yellow, white, and rose gold, this wide band is meticulously set with brilliant diamonds—a true statement piece for any collection. Blust's Jewelers",
-      "tags": [],
-      "ai_summary": "Experience the captivating elegance of this 14K Tri-Color Filigree Diamond Ring. With swirling artistry in yellow, white, and rose gold, this wide band is meticulously set with brilliant diamonds—a true statement piece for any collection. Blust's Jewelers",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:fa31f387f19a",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Old Webster Holiday Open House Nov. 9",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/old-webster-holiday-open-house-nov-9/article_b267c1b8-51dd-4344-ada2-012afc0b3043.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "The 39th annual Old Webster Holiday Open House, a day of family fun and holiday magic, is set for Sunday, Nov. 9, from 10 a.m. to 4 p.m.",
-      "tags": [],
-      "ai_summary": "The 39th annual Old Webster Holiday Open House, a day of family fun and holiday magic, is set for Sunday, Nov. 9, from 10 a.m. to 4 p.m.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:ed424fef1ab9",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Feed The Masses Food Drive",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/feed-the-masses-food-drive/article_2cb5f6f9-6a37-46a0-800d-4d4bad68d6ff.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "Several local municipalities are participating in the annual Feed the Masses Food Drive this November. This annual campaign aims to stock local food pantries for the holidays. It is also a friendly competition for area parks and recreation departments to see which one can collect the most non-perishable food items. Through Nov. 30, donate canned and non-perishable goods at the",
-      "tags": [],
-      "ai_summary": "Several local municipalities are participating in the annual Feed the Masses Food Drive this November. This annual campaign aims to stock local food pantries for the holidays. It is also a friendly competition for area parks and recreation departments to see which one can collect the most non-perishable food items. Through Nov. 30, donate canned and non-perishable goods at the",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:447b1611b457",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "“Webster Sings” Nov. 8 At Community School Concert Hall",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-sings-nov-8-at-community-school-concert-hall/article_4b88b49b-a2d6-461d-a322-37b6ebcf1d38.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "“Webster Sings,” a singing talent show exclusively for the community’s amateur singers, will be held Saturday, Nov. 8, from 7 to 9 p.m., at the Community Music School Concert Hall at Webster University.",
-      "tags": [],
-      "ai_summary": "“Webster Sings,” a singing talent show exclusively for the community’s amateur singers, will be held Saturday, Nov. 8, from 7 to 9 p.m., at the Community Music School Concert Hall at Webster University.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:e4eacead4b32",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "St. Louis International Film Festival",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/st-louis-international-film-festival/article_f1cd708c-3500-47d0-a00e-5dcb4de2b7be.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "It’s showtime for two budding local filmmakers who are honored to be a part of the St. Louis International Film Festival, which runs Nov. 6-16. The short films by Joshua Matejka of Webster Groves and Kirkwood High School graduate Allison Kertz are among those scheduled for Saturday and Sunday on the last weekend of the festival. Matejka’s documentary short, “Frijoles”",
-      "tags": [],
-      "ai_summary": "It’s showtime for two budding local filmmakers who are honored to be a part of the St. Louis International Film Festival, which runs Nov. 6-16. The short films by Joshua Matejka of Webster Groves and Kirkwood High School graduate Allison Kertz are among those scheduled for Saturday and Sunday on the last weekend of the festival. Matejka’s documentary short, “Frijoles”",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:c7bfa55632df",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "WG Love ... For Life",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/wg-love-for-life/article_8927e1fd-094f-40c6-99e2-33d0714b14e3.html",
-      "published": "2025-11-07T06:00:00+00:00",
-      "excerpt": "Long before I graduated, I knew there was a lot of love at Webster Groves High School. I could feel it as I walked through the halls, and every time I stepped on the football field to perform a halftime show. That love was most evident in the best friends I made, and the incredible teachers I had. Even then,",
-      "tags": [],
-      "ai_summary": "Long before I graduated, I knew there was a lot of love at Webster Groves High School. I could feel it as I walked through the halls, and every time I stepped on the football field to perform a halftime show. That love was most evident in the best friends I made, and the incredible teachers I had. Even then,",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • November 09, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 7 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 7 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Local Gifts that Support the Greenways! from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
