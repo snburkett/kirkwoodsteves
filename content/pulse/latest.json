@@ -1,21 +1,166 @@
 {
-  "generated_at": "2025-11-09T12:05:49.768923+00:00",
+  "generated_at": "2025-11-10T12:15:02.348587+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • November 09, 2025",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • November 10, 2025",
+  "overview": "The Webster Groves Police Department recently recognized the heroic and life-saving actions of Sgt. Jonathan Bachmann and First Relief Officer Ian Eigelberger. While on patrol on Aug. 7, Bachmann was alerted to an unresponsive individual in a running motor vehicle inside a closed residential garage. Bachmann entered the home through an elevated window, located the victim, ventilated the garage and Downtown Kirkwood will host its annual Holiday Walk on Saturday, Nov. 22. Holiday shopping, free entertainment, and refreshments will make this day a festive way to begin the celebration of the holiday season. Kirkwood leaders have settled on a basic plan to redevelop the former site of the city’s public works department into more than 200 new housing units. The 5.9-acre site, located between Taylor and Fillmore avenues, will be developed into six, four-story multifamily housing units totaling 275,000 square feet, with both attached and detached parking. The proposal also calls for a",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:a71610256d7a",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Webster Police Officers Receive Certificate Of Merit",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-police-officers-receive-certificate-of-merit/article_fadf37e0-d131-4834-aaa3-d76546f3c389.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "The Webster Groves Police Department recently recognized the heroic and life-saving actions of Sgt. Jonathan Bachmann and First Relief Officer Ian Eigelberger. While on patrol on Aug. 7, Bachmann was alerted to an unresponsive individual in a running motor vehicle inside a closed residential garage. Bachmann entered the home through an elevated window, located the victim, ventilated the garage and",
+      "tags": [],
+      "ai_summary": "The Webster Groves Police Department recently recognized the heroic and life-saving actions of Sgt. Jonathan Bachmann and First Relief Officer Ian Eigelberger. While on patrol on Aug. 7, Bachmann was alerted to an unresponsive individual in a running motor vehicle inside a closed residential garage. Bachmann entered the home through an elevated window, located the victim, ventilated the garage and",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:d23b63359ee2",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Annual Downtown Kirkwood Holiday Walk Saturday, Nov. 22",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/annual-downtown-kirkwood-holiday-walk-saturday-nov-22/article_eb114c19-0dba-42f5-a2ea-fb97510b5829.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "Downtown Kirkwood will host its annual Holiday Walk on Saturday, Nov. 22. Holiday shopping, free entertainment, and refreshments will make this day a festive way to begin the celebration of the holiday season.",
+      "tags": [],
+      "ai_summary": "Downtown Kirkwood will host its annual Holiday Walk on Saturday, Nov. 22. Holiday shopping, free entertainment, and refreshments will make this day a festive way to begin the celebration of the holiday season.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:6266fce295a1",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Former Public Works Site To Become Housing Development",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/former-public-works-site-to-become-housing-development/article_3529155b-9a24-42b8-92ae-710980e2dbfd.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "Kirkwood leaders have settled on a basic plan to redevelop the former site of the city’s public works department into more than 200 new housing units. The 5.9-acre site, located between Taylor and Fillmore avenues, will be developed into six, four-story multifamily housing units totaling 275,000 square feet, with both attached and detached parking. The proposal also calls for a",
+      "tags": [],
+      "ai_summary": "Kirkwood leaders have settled on a basic plan to redevelop the former site of the city’s public works department into more than 200 new housing units. The 5.9-acre site, located between Taylor and Fillmore avenues, will be developed into six, four-story multifamily housing units totaling 275,000 square feet, with both attached and detached parking. The proposal also calls for a",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:4ba67e8fafd2",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Law Firm Threatens Lawsuit Over LGBTQ+ History Month Video Shown At Middle School",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/law-firm-threatens-lawsuit-over-lgbtq-history-month-video-shown-at-middle-school/article_e2ab974f-3edc-462c-8621-39c9a27448cf.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "The Kirkwood School District received a demand letter on Oct. 30 from the Thomas More Society asserting the district violated the First Amendment rights of parents after showing a video to North Kirkwood Middle School students that acknowledges October as LGBTQ+ History Month. The Thomas More Society is a conservative Roman Catholic national interest law firm headquartered in Chicago. According",
+      "tags": [],
+      "ai_summary": "The Kirkwood School District received a demand letter on Oct. 30 from the Thomas More Society asserting the district violated the First Amendment rights of parents after showing a video to North Kirkwood Middle School students that acknowledges October as LGBTQ+ History Month. The Thomas More Society is a conservative Roman Catholic national interest law firm headquartered in Chicago. According",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:5b7a757f4cee",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Construction Underway For New Oxford Bend Park",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/construction-underway-for-new-oxford-bend-park/article_734e001e-3ebc-49d9-ae88-8fdae07ce7a2.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "The northeast entrance to Webster Groves is getting a makeover thanks to a partnership between Great Rivers Greenway and the city of Webster Groves. Construction is now underway on Oxford Bend Park at the intersection of Oxford Boulevard and Big Bend in Webster Groves, which is near Maplewood. The new park will occupy vacant land that was previously the site",
+      "tags": [],
+      "ai_summary": "The northeast entrance to Webster Groves is getting a makeover thanks to a partnership between Great Rivers Greenway and the city of Webster Groves. Construction is now underway on Oxford Bend Park at the intersection of Oxford Boulevard and Big Bend in Webster Groves, which is near Maplewood. The new park will occupy vacant land that was previously the site",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:4c8f1a7f746c",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Make My Day",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/make-my-day/article_010839ee-3530-453d-b21f-b239e79ac37d.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "Wow, it sure doesn’t take much to get some liberals upset. My friends look forward to the Shrewsbury crime report. In fact, most of us read that report first.",
+      "tags": [],
+      "ai_summary": "Wow, it sure doesn’t take much to get some liberals upset. My friends look forward to the Shrewsbury crime report. In fact, most of us read that report first.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:5ca1d554cc72",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Webster Holds Open House On Possible New Performance Facility",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-holds-open-house-on-possible-new-performance-facility/article_614a7784-b1a0-4a06-86b3-9325fe7b5f73.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "The chances of a new performance facility and enhanced skatepark in Webster Groves took another step forward last week during a community open house designed to garner public feedback on the proposed project. The project is part of the city’s $22.1 million Prop W “Destination WG” initiative approved by Webster Groves voters in April 2024. Prop W includes an extensive",
+      "tags": [],
+      "ai_summary": "The chances of a new performance facility and enhanced skatepark in Webster Groves took another step forward last week during a community open house designed to garner public feedback on the proposed project. The project is part of the city’s $22.1 million Prop W “Destination WG” initiative approved by Webster Groves voters in April 2024. Prop W includes an extensive",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:844de9be0856",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Shrewsbury Crime Report A Must-Read",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/shrewsbury-crime-report-a-must-read/article_fac3091a-d3e1-43f7-8096-32a14174e112.html",
+      "published": "2025-11-10T06:00:00+00:00",
+      "excerpt": "I respectfully disagree with Deborah DaLay, who finds the Shrewsbury crime reports disturbing (WKT Mailbag, Oct. 24). They are one of my “must reads” each week.",
+      "tags": [],
+      "ai_summary": "I respectfully disagree with Deborah DaLay, who finds the Shrewsbury crime reports disturbing (WKT Mailbag, Oct. 24). They are one of my “must reads” each week.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Webster Police Officers Receive Certificate Of Merit from Webster-Kirkwood Times – News."
 }
