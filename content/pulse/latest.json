@@ -1,202 +1,21 @@
 {
-  "generated_at": "2025-11-21T12:16:35.440743+00:00",
+  "generated_at": "2025-11-22T12:05:38.941198+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 10,
-  "headline": "Kirkwood Pulse • November 21, 2025",
-  "overview": "The rumors of the Kirkwood Apartments’ demise are greatly exaggerated. Just a few months after the 300 N. Kirkwood Rd project was finally pronounced dead, a new developer, TriStar Properties, has revived it in much of its original form —60 apartments, 2,940 square feet of retail, and 111 parking spaces across four stories— utilizing the same architectural firm, Stock & Kirkwood has poured a tremendous amount of sweat and treasure across multiple administrations into becoming a more walkable community. And while I have nits to pick here and there, overall these efforts have been worthwhile and successful. But no amount of curb bump-outs or bike lanes has convinced the blatant rule-breakers to stop blatantly breaking the rules. What The Speed I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:1fc47a0afdfb",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Kirkwood Apartments: Episode II – Return of the Apartments",
-      "link": "https://kirkwoodgadfly.com/kirkwood-apartments-episode-ii-return-of-the-apartments/",
-      "published": "2025-11-21T12:06:44.387913+00:00",
-      "excerpt": "The rumors of the Kirkwood Apartments’ demise are greatly exaggerated. Just a few months after the 300 N. Kirkwood Rd project was finally pronounced dead, a new developer, TriStar Properties, has revived it in much of its original form —60 apartments, 2,940 square feet of retail, and 111 parking spaces across four stories— utilizing the same architectural firm, Stock &",
-      "tags": [],
-      "ai_summary": "The rumors of the Kirkwood Apartments’ demise are greatly exaggerated. Just a few months after the 300 N. Kirkwood Rd project was finally pronounced dead, a new developer, TriStar Properties, has revived it in much of its original form —60 apartments, 2,940 square feet of retail, and 111 parking spaces across four stories— utilizing the same architectural firm, Stock &",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:9f8ac860ade1",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Tired of the Speeders? Turn on the Cameras.",
-      "link": "https://kirkwoodgadfly.com/tired-of-the-speeders-turn-on-the-cameras/",
-      "published": "2025-11-21T12:06:43.924949+00:00",
-      "excerpt": "Kirkwood has poured a tremendous amount of sweat and treasure across multiple administrations into becoming a more walkable community. And while I have nits to pick here and there, overall these efforts have been worthwhile and successful. But no amount of curb bump-outs or bike lanes has convinced the blatant rule-breakers to stop blatantly breaking the rules. What The Speed",
-      "tags": [],
-      "ai_summary": "Kirkwood has poured a tremendous amount of sweat and treasure across multiple administrations into becoming a more walkable community. And while I have nits to pick here and there, overall these efforts have been worthwhile and successful. But no amount of curb bump-outs or bike lanes has convinced the blatant rule-breakers to stop blatantly breaking the rules. What The Speed",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:34068fd306f0",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Kirkwood minimum lot size",
-      "link": "https://kirkwoodgadfly.com/tag/kirkwood-minimum-lot-size/",
-      "published": "2025-11-21T12:06:43.458968+00:00",
-      "excerpt": "I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
-      "tags": [],
-      "ai_summary": "I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:0d6cd5268efe",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "How To Revive the Starter Home",
-      "link": "https://kirkwoodgadfly.com/how-to-revive-the-starter-home/",
-      "published": "2025-11-21T12:06:43.015489+00:00",
-      "excerpt": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
-      "tags": [],
-      "ai_summary": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:0b2d54260b53",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "String of Errors Leads to Rejection of Parking Solution",
-      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
-      "published": "2025-11-21T12:06:42.553653+00:00",
-      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
-      "tags": [],
-      "ai_summary": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:906773a73af3",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Pitman Place Heads Towards Approval",
-      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
-      "published": "2025-11-21T12:06:42.028167+00:00",
-      "excerpt": "After winding itself through the approval process three times, final approval seems to be in sight for Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road. The Council will vote on first reading approval at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the",
-      "tags": [],
-      "ai_summary": "After winding itself through the approval process three times, final approval seems to be in sight for Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road. The Council will vote on first reading approval at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:2b2b43797f62",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Kirkwood Holiday Walk Saturday",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-holiday-walk-saturday/article_077b6c4c-d1d2-488c-a574-947b4955ca6e.html",
-      "published": "2025-11-21T06:00:00+00:00",
-      "excerpt": "Downtown Kirkwood will host its annual Holiday Walk on Saturday, Nov. 22, beginning at 8:40 a.m. Holiday shopping, free entertainment, and refreshments will make this day a festive way to begin the celebration of the holiday season.",
-      "tags": [],
-      "ai_summary": "Downtown Kirkwood will host its annual Holiday Walk on Saturday, Nov. 22, beginning at 8:40 a.m. Holiday shopping, free entertainment, and refreshments will make this day a festive way to begin the celebration of the holiday season.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:44faabf73286",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "TURKEY DAY ’25",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/turkey-day-25/article_d1e17701-a6f6-4680-a6c8-1f7d84f2448e.html",
-      "published": "2025-11-21T06:00:00+00:00",
-      "excerpt": "WEBSTER GROVES To kick off 2025 Turkey Day festivities, Webster Groves High School students held the annual Friendship Dance on Nov. 1. Across the Webster Groves School District, schools are hosting spirit days, community gatherings, a run and service projects. During Thanksgiving week, community members are invited to join the celebration and show their Statesmen pride at the following events:",
-      "tags": [],
-      "ai_summary": "WEBSTER GROVES To kick off 2025 Turkey Day festivities, Webster Groves High School students held the annual Friendship Dance on Nov. 1. Across the Webster Groves School District, schools are hosting spirit days, community gatherings, a run and service projects. During Thanksgiving week, community members are invited to join the celebration and show their Statesmen pride at the following events:",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:7dc6d7e4a900",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "WKT Early Deadlines For Thanksgiving",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/wkt-early-deadlines-for-thanksgiving/article_6506a264-1b92-4324-8739-844c1b264882.html",
-      "published": "2025-11-21T06:00:00+00:00",
-      "excerpt": "Due to the Thanksgiving holiday, the deadline for submitting a classified ad or an obituary is Monday, Nov. 24, at 10 a.m. for publication in the Nov. 28 issue of the Webster-Kirkwood Times. Letters to the editor should be submitted…",
-      "tags": [],
-      "ai_summary": "Due to the Thanksgiving holiday, the deadline for submitting a classified ad or an obituary is Monday, Nov. 24, at 10 a.m. for publication in the Nov. 28 issue of the Webster-Kirkwood Times. Letters to the editor should be submitted…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:3d87d4f2bf4b",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Cardinals announce 2026 Cardinal Caravan Cities and Dates",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/cardinals-announce-2026-cardinal-caravan-cities-and-dates/article_d7f92092-fbf7-5072-8c23-9c609a61e04b.html",
-      "published": "2025-11-20T18:52:40+00:00",
-      "excerpt": "The Cardinals also announced the return of the Cardinals Caravan, presented by Missouri Farm Bureau Insurance. The annual traveling roadshow will bring current players, Alumni, and broadcasters to 15 cities across six states throughout Cardinals Nation over [...]The post Cardinals…",
-      "tags": [],
-      "ai_summary": "The Cardinals also announced the return of the Cardinals Caravan, presented by Missouri Farm Bureau Insurance. The annual traveling roadshow will bring current players, Alumni, and broadcasters to 15 cities across six states throughout Cardinals Nation over [...]The post Cardinals…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • November 22, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 10 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 10 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Kirkwood Apartments: Episode II – Return of the Apartments from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
