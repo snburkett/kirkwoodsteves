@@ -395,14 +395,18 @@ function simulateWheelStrategy(prices: number[], params: MonteCarloParams): Whee
     const optionExpired = daysUntilExpiry <= 0;
 
     if (optionExpired) {
-      if (optionType === "put" && shares === 0 && price <= strike) {
-        cash -= strike * CONTRACT_SIZE;
-        shares = CONTRACT_SIZE;
-        assignments += 1;
-      } else if (optionType === "call" && shares > 0 && price >= strike) {
-        cash += strike * CONTRACT_SIZE;
-        shares = 0;
-        assignments += 1;
+      if (optionType === "put") {
+        if (shares === 0 && price <= strike) {
+          cash -= strike * CONTRACT_SIZE;
+          shares = CONTRACT_SIZE;
+          assignments += 1;
+        }
+      } else {
+        if (shares > 0 && price >= strike) {
+          cash += strike * CONTRACT_SIZE;
+          shares = 0;
+          assignments += 1;
+        }
       }
 
       if (day < prices.length - 1) {

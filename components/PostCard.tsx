@@ -138,10 +138,12 @@ function renderPulseDetails(post: Post, storyCount: number | null) {
   const effectiveStoryCount = storyCount ?? extractPulseStoryCount(post.body);
   let hostname: string | null = null;
 
-  try {
-    hostname = new URL(post.sourceUrl).hostname;
-  } catch {
-    hostname = null;
+  if ("sourceUrl" in post) {
+    try {
+      hostname = new URL(post.sourceUrl).hostname;
+    } catch {
+      hostname = null;
+    }
   }
 
   if (effectiveStoryCount == null) {
