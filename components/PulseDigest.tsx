@@ -39,6 +39,16 @@ function priorityBadge(priority: PulseStory["priority"]) {
 }
 
 export default function PulseDigest({ digest }: { digest: PulseDigest }) {
+  const storyCount = digest.items.length;
+  const hasStories = storyCount > 0;
+  const summaryTitle = hasStories
+    ? `${storyCount} new ${storyCount === 1 ? "story" : "stories"} today`
+    : "No new stories in the last day";
+  const summaryBody = hasStories
+    ? digest.headline || "Fresh updates from the latest sweep."
+    : "The scanner did not surface anything new this run. Check back after the next pulse.";
+  const detailCopy = hasStories ? digest.overview : "";
+
   return (
     <div className="space-y-6">
       <div className="grid gap-6 lg:grid-cols-[minmax(240px,300px)_1fr]">
@@ -61,11 +71,14 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
         </div>
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Latest Pulse
+            Daily Pulse
           </p>
-          <h2 className="mt-2 text-2xl font-semibold text-slate-900">{digest.headline}</h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">{digest.overview}</p>
-          {digest.call_to_action ? (
+          <h2 className="mt-2 text-2xl font-semibold text-slate-900">{summaryTitle}</h2>
+          <p className="mt-3 text-base font-medium text-slate-700">{summaryBody}</p>
+          {detailCopy ? (
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">{detailCopy}</p>
+          ) : null}
+          {hasStories && digest.call_to_action ? (
             <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
               {digest.call_to_action}
             </div>
@@ -75,13 +88,9 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
 
       <section>
         <h3 className="text-lg font-semibold text-slate-900">Today&apos;s Headlines</h3>
-        <div className="mt-4 space-y-4">
-          {digest.items.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
-              No fresh stories surfaced in the latest window. The bot will try again next run.
-            </div>
-          ) : (
-            digest.items.map((item) => {
+        {hasStories ? (
+          <div className="mt-4 space-y-4">
+            {digest.items.map((item) => {
               const sentiment = sentimentBadge(item.sentiment);
               const priority = priorityBadge(item.priority);
               return (
@@ -139,9 +148,11 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
                   </div>
                 </article>
               );
-            })
-          )}
-        </div>
+            })}
+          </div>
+        ) : (
+          <p className="mt-4 text-sm text-slate-500">No fresh stories surfaced in the latest window.</p>
+        )}
       </section>
     </div>
   );

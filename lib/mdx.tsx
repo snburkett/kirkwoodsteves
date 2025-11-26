@@ -3,6 +3,8 @@ import type { ComponentPropsWithoutRef } from "react";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
+import MonteCarloWheelSimulator from "@/components/MonteCarloWheelSimulator";
+
 const merge = (...classes: Array<string | undefined>) =>
   classes.filter(Boolean).join(" ");
 
@@ -16,6 +18,7 @@ const components = {
       className={merge("rounded bg-slate-100 px-1 py-0.5 font-mono text-sm", props.className)}
     />
   ),
+  MonteCarloWheelSimulator,
 };
 
 export async function renderMdx(source: string) {

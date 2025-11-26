@@ -16,6 +16,12 @@ export default function PostCard({ post }: PostCardProps) {
   const href = `/${post.section}/${post.slug}`;
   const hero = post.heroImage;
   const accent = sectionAccents[post.section];
+  const pulseStoryCount = post.type === "pulse" ? extractPulseStoryCount(post.body) : null;
+  const isPulseEmpty = post.type === "pulse" && pulseStoryCount === 0;
+  const hideDetailsLink = isPulseEmpty;
+  const cardClassName = isPulseEmpty
+    ? "relative block rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+    : "relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg no-underline hover:no-underline md:min-h-[220px] md:p-4";
   const heroStyle =
     hero != null
       ? {
@@ -24,11 +30,8 @@ export default function PostCard({ post }: PostCardProps) {
         }
       : undefined;
 
-  return (
-    <Link
-      href={href}
-      className="relative block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg no-underline hover:no-underline md:min-h-[220px] md:p-4"
-    >
+  const content = (
+    <>
       {hero ? (
         <>
           <div className="mb-6 md:hidden">
@@ -68,20 +71,30 @@ export default function PostCard({ post }: PostCardProps) {
           </time>
         </div>
         <div className="space-y-2 text-sm text-slate-600">
-          {renderDetails(post)}
+          {renderDetails(post, pulseStoryCount)}
           {post.tags && post.tags.length > 0 ? (
             <p>
               <span className="font-medium text-slate-500">Tags:</span> {post.tags.join(", ")}
             </p>
           ) : null}
         </div>
-        <div className="text-sm font-medium text-blue-600">View details →</div>
+        {hideDetailsLink ? null : <div className="text-sm font-medium text-blue-600">View details →</div>}
       </div>
+    </>
+  );
+
+  if (isPulseEmpty) {
+    return <div className={cardClassName}>{content}</div>;
+  }
+
+  return (
+    <Link href={href} className={cardClassName}>
+      {content}
     </Link>
   );
 }
 
-function renderDetails(post: Post) {
+function renderDetails(post: Post, pulseStoryCount: number | null) {
   switch (post.type) {
     case "emporium":
       return (
@@ -98,11 +111,7 @@ function renderDetails(post: Post) {
         </div>
       );
     case "pulse":
-      return (
-        <p>
-          <span className="font-medium text-slate-500">Source:</span> {new URL(post.sourceUrl).hostname}
-        </p>
-      );
+      return renderPulseDetails(post, pulseStoryCount);
     case "ai":
       return post.attachments && post.attachments.length > 0 ? (
         <p>
@@ -124,3 +133,46 @@ const sectionAccents: Record<Post["section"], string> = {
   ai: wheelColors[2],
   oddities: wheelColors[3],
 };
+
+function renderPulseDetails(post: Post, storyCount: number | null) {
+  const effectiveStoryCount = storyCount ?? extractPulseStoryCount(post.body);
+  let hostname: string | null = null;
+
+  try {
+    hostname = new URL(post.sourceUrl).hostname;
+  } catch {
+    hostname = null;
+  }
+
+  if (effectiveStoryCount == null) {
+    return (
+      <p>
+        <span className="font-medium text-slate-500">Source:</span>{" "}
+        {hostname ?? "Kirkwood Pulse"}
+      </p>
+    );
+  }
+
+  if (effectiveStoryCount === 0) {
+    return (
+      <p>
+        No new stories logged today{hostname ? ` • ${hostname}` : ""}.
+      </p>
+    );
+  }
+
+  const label = effectiveStoryCount === 1 ? "story" : "stories";
+  return (
+    <p>
+      {effectiveStoryCount} new {label} summarized{hostname ? ` • ${hostname}` : ""}.
+    </p>
+  );
+}
+
+function extractPulseStoryCount(body: string): number | null {
+  const match = body.match(/•\s*(\d+)\s+stories?/i);
+  if (!match) return null;
+  const parsed = Number.parseInt(match[1], 10);
+  if (Number.isNaN(parsed)) return null;
+  return parsed;
+}
