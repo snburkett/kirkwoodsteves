@@ -1,166 +1,21 @@
 {
-  "generated_at": "2025-11-27T12:07:58.439838+00:00",
+  "generated_at": "2025-11-28T12:07:05.318217+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • November 27, 2025",
-  "overview": "incident: Fatal car accident\ndate_time: 2025-11-25T17:05:00+00:00\nlocation: Interstate 44 near Edgar Road, Webster Groves, Missouri\nvictim:\n  age: 66\n  residence: Fenton\n  vehicle: Kia Rio\n  status: Deceased\n  seatbelt_used: True\n  name_released: False\ncause: Vehicle ran off the right side of the road and struck a guardrail\nresponse: Victim was taken to hospital and later died from injuries name: Michael “Mike” Mullen\nage: 77\nresidence: Kirkwood, Missouri\ndate_of_passing: 2025-11-16\nbiography:\n  birth_date: 1948-01-07\n  family:\n  parents:\n  -: Alfred Mullen (deceased)\n  -: Theresa Mullen (deceased)\n  spouse: Sandy (Santel) Mullen\n  marriage_years: 56\n  children:\n  -: Matt (Debbie Brown)\n  -: Jay (Michelle Moeller)\n  -: Josh (Kelly Swank)\n  grandchildren:\n  -: Sam (Mary)\n  -: Nick (Natalie)\n  -: Claire (Sae)\n  -: Jack (Abi)\n  -: Mike\n  -: Mae\n  -: Scotty\n  great_grandchildren:\n  -: Nora\n  siblings:\n  -: Sandra “Dee”\n  -: Tom (Connie)\n  -: Sharon “Midge” Hagemann (deceased)\n  education:\n  high_school: Vianney High School, graduated 1966\n  college: Southwest Missouri State University (football player)\n  military_service: National Guard, joined 1971\n  career:\n  business: Owner of Mullen Concrete, family business inherited from father Alfred\n  legacy: Passed business operations to his three sons and grandson\n  personal_interests:\n  -: Boating at Cape Coral and Lake of the Ozarks\n  -: Family gatherings at the lake\n  -: Enjoying sunsets on the water\n  -: Supporting wife Sandy's art\n  character: Known for hard work, integrity, family-first values, impish sense of adventure\n  notable_quote: The meaning of life is to find your gift. The purpose of life is to give it away.\nmemorial:\n  celebration_of_life: To be arranged at a later date deceased:\n  full_name: Catherine Ann “Bobbe” Martini\n  date_of_death: 2025-11-08\n  birth_date: 1928-12-04\n  age: 96\n  biography: Born as the youngest of nine children to Alexander and Catherine Meyer, Bobbe attended Rosati-Kain High School and Fontbonne College before marrying Clyde F. Martini in 1949. She lived in St. Ann, Webster Groves, Kirkwood, and later Shrewsbury. After Clyde's death in 1991, she married Leo F. Emmett in 2000. She was an accomplished seamstress, avid golfer, and lover of music, theater, and live performances. She volunteered tutoring children in reading and enjoyed spending time at her lake house in St. Genevieve.\n  family:\n  spouse:\n  current: Leo F. Emmett\n  duration_years: 25\n  previous: Clyde F. Martini\n  children:\n  -: Carolyn (Allen)\n  -: Don (Shawn)\n  -: Jim (Carole)\n  -: Paula (Charlie)\n  -: Laura (Christian)\n  grandchildren:\n  -: Lauren (Aaron)\n  -: Daniel (Suzanne)\n  -: Liz (Nick)\n  -: Will\n  -: Ben\n  great_grandchildren:\n  -: Evie\n  extended_family:\n  -: Anne\n  -: Mary (Bill)\n  -: Joe (Julie)\n  -: Mike (Terrill)\n  -: Patrick (Rosanne)\n  -: Theresa (Richard)\n  community_roles:\n  -: sister\n  -: sister-in-law\n  -: aunt\n  -: great-aunt\n  -: cousin\n  -: neighbor\n  -: friend\n  -: volunteer tutor\n  interests:\n  -: golf\n  -: music\n  -: dance\n  -: theater\n  -: live performances\n  -: reading\n  -: exercise\n  -: visiting the Zoo\n  -: Ted Drewes\n  -: St. Louis Cardinals games\n  -: seamstress work\n  -: hosting\n  -: playing games\n  memorial_info:\n  memorial_mass_date: 2026-01-24\n  location: Annunciation Catholic Church, Webster Groves, Missouri\n  visitation_time: 9:00 AM\n  mass_time: 10:00 AM\n  lunch_following: True\n  donation_request: Please make a donation to your local food bank in her memory.\n  acknowledgements:\n  -: Hawthorne Place\n  -: Mercy Hospice",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:dbf0fb1a80d3",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Man Dies After Car Runs Off Road On I-44 In Webster Groves",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/man-dies-after-car-runs-off-road-on-i-44-in-webster-groves/article_9953bef7-63bd-453f-997b-da4c292cd975.html",
-      "published": "2025-11-26T17:45:00+00:00",
-      "excerpt": "A Fenton man died Tuesday night after his car ran off the road on Interstate 44 in Webster Groves. He was 66 years old. The accident happened at 5:05 p.m. on Nov. 25 when the man was driving westbound on I-44 near Edgar Road and his Kia Rio traveled off the right side of the road and struck a guardrail,",
-      "tags": [],
-      "ai_summary": "incident: Fatal car accident\ndate_time: 2025-11-25T17:05:00+00:00\nlocation: Interstate 44 near Edgar Road, Webster Groves, Missouri\nvictim:\n  age: 66\n  residence: Fenton\n  vehicle: Kia Rio\n  status: Deceased\n  seatbelt_used: True\n  name_released: False\ncause: Vehicle ran off the right side of the road and struck a guardrail\nresponse: Victim was taken to hospital and later died from injuries",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:ddebe27a9b20",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Michael “Mike” Mullen",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/michael-mike-mullen/article_ff85d564-06a9-4e32-b0be-098633a5309d.html",
-      "published": "2025-11-26T15:30:00+00:00",
-      "excerpt": "Mullen, Michael “Mike,” aged 77, lifelong resident of Kirkwood, Missouri, passed away peacefully on Sunday, Nov. 16, 2025, after a long and well-lived life. Born on Jan. 7, 1948, in Kirkwood, Missouri, Mike was the son of the late Alfred and Theresa Mullen. He was the devoted husband to Sandy (Santel) Mullen for 56 years; loving father to Matt (Debbie",
-      "tags": [],
-      "ai_summary": "name: Michael “Mike” Mullen\nage: 77\nresidence: Kirkwood, Missouri\ndate_of_passing: 2025-11-16\nbiography:\n  birth_date: 1948-01-07\n  family:\n  parents:\n  -: Alfred Mullen (deceased)\n  -: Theresa Mullen (deceased)\n  spouse: Sandy (Santel) Mullen\n  marriage_years: 56\n  children:\n  -: Matt (Debbie Brown)\n  -: Jay (Michelle Moeller)\n  -: Josh (Kelly Swank)\n  grandchildren:\n  -: Sam (Mary)\n  -: Nick (Natalie)\n  -: Claire (Sae)\n  -: Jack (Abi)\n  -: Mike\n  -: Mae\n  -: Scotty\n  great_grandchildren:\n  -: Nora\n  siblings:\n  -: Sandra “Dee”\n  -: Tom (Connie)\n  -: Sharon “Midge” Hagemann (deceased)\n  education:\n  high_school: Vianney High School, graduated 1966\n  college: Southwest Missouri State University (football player)\n  military_service: National Guard, joined 1971\n  career:\n  business: Owner of Mullen Concrete, family business inherited from father Alfred\n  legacy: Passed business operations to his three sons and grandson\n  personal_interests:\n  -: Boating at Cape Coral and Lake of the Ozarks\n  -: Family gatherings at the lake\n  -: Enjoying sunsets on the water\n  -: Supporting wife Sandy's art\n  character: Known for hard work, integrity, family-first values, impish sense of adventure\n  notable_quote: The meaning of life is to find your gift. The purpose of life is to give it away.\nmemorial:\n  celebration_of_life: To be arranged at a later date",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:17464f58f157",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Catherine Ann “Bobbe” Martini",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/catherine-ann-bobbe-martini/article_1da1627b-0a67-40f5-95cf-4756234a9171.html",
-      "published": "2025-11-26T15:29:00+00:00",
-      "excerpt": "Martini, Catherine Ann “Bobbe,” passed away on Nov. 8, 2025. She is survived by her devoted husband of 25 years, Leo F. Emmett. She was predeceased by her first husband, Clyde F. Martini. She was the beloved mom of Carolyn (Allen), Don (Shawn), Jim (Carole), Paula (Charlie) and Laura (Christian); the adored grandma of Lauren (Aaron), Daniel (Suzanne), Liz (Nick),",
-      "tags": [],
-      "ai_summary": "deceased:\n  full_name: Catherine Ann “Bobbe” Martini\n  date_of_death: 2025-11-08\n  birth_date: 1928-12-04\n  age: 96\n  biography: Born as the youngest of nine children to Alexander and Catherine Meyer, Bobbe attended Rosati-Kain High School and Fontbonne College before marrying Clyde F. Martini in 1949. She lived in St. Ann, Webster Groves, Kirkwood, and later Shrewsbury. After Clyde's death in 1991, she married Leo F. Emmett in 2000. She was an accomplished seamstress, avid golfer, and lover of music, theater, and live performances. She volunteered tutoring children in reading and enjoyed spending time at her lake house in St. Genevieve.\n  family:\n  spouse:\n  current: Leo F. Emmett\n  duration_years: 25\n  previous: Clyde F. Martini\n  children:\n  -: Carolyn (Allen)\n  -: Don (Shawn)\n  -: Jim (Carole)\n  -: Paula (Charlie)\n  -: Laura (Christian)\n  grandchildren:\n  -: Lauren (Aaron)\n  -: Daniel (Suzanne)\n  -: Liz (Nick)\n  -: Will\n  -: Ben\n  great_grandchildren:\n  -: Evie\n  extended_family:\n  -: Anne\n  -: Mary (Bill)\n  -: Joe (Julie)\n  -: Mike (Terrill)\n  -: Patrick (Rosanne)\n  -: Theresa (Richard)\n  community_roles:\n  -: sister\n  -: sister-in-law\n  -: aunt\n  -: great-aunt\n  -: cousin\n  -: neighbor\n  -: friend\n  -: volunteer tutor\n  interests:\n  -: golf\n  -: music\n  -: dance\n  -: theater\n  -: live performances\n  -: reading\n  -: exercise\n  -: visiting the Zoo\n  -: Ted Drewes\n  -: St. Louis Cardinals games\n  -: seamstress work\n  -: hosting\n  -: playing games\n  memorial_info:\n  memorial_mass_date: 2026-01-24\n  location: Annunciation Catholic Church, Webster Groves, Missouri\n  visitation_time: 9:00 AM\n  mass_time: 10:00 AM\n  lunch_following: True\n  donation_request: Please make a donation to your local food bank in her memory.\n  acknowledgements:\n  -: Hawthorne Place\n  -: Mercy Hospice",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:d7e86532f398",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Julian Cornelius “Budgie/J.C.” Cole",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/julian-cornelius-budgie-j-c-cole/article_d3d95f00-d989-498e-85a4-4ab7ca0c8055.html",
-      "published": "2025-11-26T15:28:00+00:00",
-      "excerpt": "Cole, Julian Cornelius “Budgie/J.C.,” 75, of Kansas City, Missouri, passed away on Nov. 20, 2025, after a period of illness. Born on Feb. 10, 1950, in St. Louis, he attended J. Milton Turner School and graduated from Lindbergh High School in 1968. He proudly served in the U.S. Navy during the Vietnam War until his honorable discharge in 1972. After",
-      "tags": [],
-      "ai_summary": "full_name: Julian Cornelius Cole\nnicknames:\n  -: Budgie\n  -: J.C.\nage: 75\nresidence: Kansas City, Missouri\ndate_of_death: 2025-11-20\nbirth_date: 1950-02-10\nbirth_place: St. Louis, Missouri\neducation:\n  -: J. Milton Turner School\n  -: Lindbergh High School (Graduated 1968)\n  -: St. Louis Community College Meramec (studied photography and counseling)\nmilitary_service:\n  branch: U.S. Navy\n  conflict: Vietnam War\n  service_end_year: 1972\n  discharge: Honorable\ncareer:\n  -: Western Electric\n  -: AT&T (retired 2015)\n  -: Embarq\nfamily:\n  spouse: Patricia Jackson (married 1975-02-10)\n  children:\n  -: Tivonya (with spouse Dwan)\n  -: Ka’Kiesha\n  -: Jyneidra\n  grandchildren:\n  -: Daja\n  -: Hannah\n  -: Jade\n  -: Sydney\n  siblings:\n  -: Rushinell Cole (deceased)\n  -: Morris Cole (deceased)\n  parents:\n  -: Rose Cole (deceased)\n  -: Joe Cole (deceased)\ninterests:\n  -: Tending yard and rose bushes\n  -: Listening to old-school music\n  -: Watching classic shows\n  -: Collecting hats and salt and pepper shakers\n  -: Cheering for Kansas City Chiefs, Georgia Bulldogs, Kansas State Wildcats\n  -: Photography\nrelocation:\n  year: 2022\n  reason: Moved to Kansas City to be closer to family\nfuneral:\n  visitation:\n  date: 2025-12-04\n  time: 3:00 PM - 7:00 PM\n  location: Bopp Chapel\n  service:\n  date: 2025-12-05\n  time: 9:30 AM\n  location: Bopp Chapel",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:1163a674c295",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Simplicity",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/simplicity/article_67c8b817-ce14-46c7-92fd-efcd09f32bc9.html",
-      "published": "2025-11-26T15:15:00+00:00",
-      "excerpt": "It’s that time of year when I, along with the staff of the Webster-Kirkwood Times, get to tell all our readers and advertisers how thankful we are for your support. We couldn’t do it without you, and we are indeed honored to serve. Thank you for keeping the wheels of our communities spinning! I’m also thankful for my family and",
-      "tags": [],
-      "ai_summary": "The author expresses gratitude to readers, advertisers, family, and friends during Thanksgiving. He shares a nostalgic story about gifting his brother a vintage Evel Knievel Stunt Cycle and reflects on a recent vacation where he read 'The Catcher in the Rye' for the first time. The book sparked multiple meaningful connections during the trip, including its publication year, its influence on Paul Simon's song 'America,' and its link to John Lennon's assassin. The column emphasizes appreciating the simplicity of life, family, and friends, wishing readers a happy Thanksgiving.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:03c811e8f1cf",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Zootopia 2",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/arts_and_entertainment/reel_world/zootopia-2/article_3299a91a-b10f-4e64-949d-f28b6a9d2ed9.html",
-      "published": "2025-11-26T14:11:00+00:00",
-      "excerpt": "In theaters November 26",
-      "tags": [],
-      "ai_summary": "release_date: 2025-11-26\nplot_overview: Judy Hopps and Nick Wilde are rookie officers in Zootopia trying to prove their innocence after being framed for kidnapping during an investigation of a smuggling ring targeting the Zootenial Gala.\nkey_characters:\n  -: Judy Hopps (Ginnifer Goodwin)\n  -: Nick Wilde (Jason Bateman)\n  -: Chief Bogo (Idris Elba)\n  -: Gary De’Snake (Ke Huy Quan)\n  -: Milton Lynxley (David Strathairn)\n  -: Pawbert Lynxley (Andy Samberg)\n  -: Nibbles Maplestick (Fortune Feimster)\nreview_highlights:\n  tone: Balanced, fun, and funny\n  audience: Primarily children but with Easter Eggs for adults\n  animation: Vibrant colors and distinctive characters\n  story_complexity: More exposition than typical for animated films, causing some slow moments for kids\n  themes: Teamwork, embracing differences\n  voice_acting: Strong performances\n  director: Jared Bush",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:9065d0ecd7f3",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Eternity",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/arts_and_entertainment/reel_world/eternity/article_f77329a8-4921-470c-b313-8b3ffc55170b.html",
-      "published": "2025-11-26T14:04:00+00:00",
-      "excerpt": "Opens in theaters Nov. 26",
-      "tags": [],
-      "ai_summary": "release_date: 2025-11-26\ngenre: Romantic Comedy\nplot: Joan must decide where to spend eternity within a week, choosing between her first love Luke, who died young, or her second husband Larry, with whom she spent 65 years. The story explores this complicated love triangle in the afterlife.\nkey_cast:\n  Joan: Elizabeth Olsen\n  Luke: Callum Turner\n  Larry: Miles Teller\n  Anna: Da’Vine Joy Randolph\n  Ryan: John Early\n  Older Larry: Barry Primus\n  Older Joan: Betty Buckley\ndirector: David Freyne\nscreenwriters:\n  -: David Freyne\n  -: Patrick Cunnane\nproduction_design: Zazu Myers\nreview_highlights:\n  -: Delightful performances from the main cast with strong chemistry.\n  -: Blends fantastical afterlife elements with real-life relationship complexities.\n  -: Heartfelt and likely to evoke both laughter and tears.\n  -: Clever production design depicting the afterlife's 'Junction' with various whimsical destinations.\n  -: Sentimental and relatable without explicit or shocking content.\nthemes:\n  -: Afterlife and eternity decisions\n  -: Love and relationships\n  -: Reflection on life choices and 'what ifs'\n  -: Balancing fantasy and reality\ntone: Endearing, cozy, and sentimental romantic comedy",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:d8c09a0b1c31",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "2025 Kirkwood Holiday Walk",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/2025-kirkwood-holiday-walk/article_89b3457b-573a-4157-a61f-5219dff4b64d.html",
-      "published": "2025-11-26T06:00:00+00:00",
-      "excerpt": "At last Saturday’s Kirkwood Holiday Walk, adults enjoyed shopping for holiday gifts offered by Downtown Kirkwood’s unique specialty stores. The Lucille Rapp Tumblers and Dancers performed at Station Plaza, and children were delighted by the Amtrak arrival of Santa and…",
-      "tags": [],
-      "ai_summary": "The 2025 Kirkwood Holiday Walk featured holiday shopping at Downtown Kirkwood's specialty stores, a performance by the Lucille Rapp Tumblers and Dancers at Station Plaza, and a special arrival of Santa and Mrs. Claus by Amtrak, delighting children.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • November 28, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Man Dies After Car Runs Off Road On I-44 In Webster Groves from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
