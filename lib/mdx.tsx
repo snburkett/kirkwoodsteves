@@ -4,6 +4,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
 import MonteCarloWheelSimulator from "@/components/MonteCarloWheelSimulator";
+import SimpleMacroTracker from "@/components/SimpleMacroTracker";
 
 const merge = (...classes: Array<string | undefined>) =>
   classes.filter(Boolean).join(" ");
@@ -19,6 +20,7 @@ const components = {
     />
   ),
   MonteCarloWheelSimulator,
+  SimpleMacroTracker,
 };
 
 export async function renderMdx(source: string) {
