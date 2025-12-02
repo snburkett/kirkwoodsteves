@@ -1,166 +1,21 @@
 {
-  "generated_at": "2025-12-01T12:08:42.669543+00:00",
+  "generated_at": "2025-12-02T12:07:16.666127+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • December 01, 2025",
-  "overview": "issue: The Webster Groves Municipal Court discovered that approximately 4,500 arrest warrants are inaccurate and unreliable due to clerical errors and system transition problems.\ncause:\n  -: Transition to new court administration system (Show-Me Courts) in 2020 without proper cancellation of old warrants.\n  -: Use of two separate systems (REJIS and Show-Me Courts) causing discrepancies.\n  -: Inconsistent adherence to procedural standards by previous court personnel.\nactions:\n  -: Cancellation of all 4,500 existing warrants.\n  -: Re-entry of only verified true and accurate warrants.\n  -: Priority review and reissuance of about 300 warrants related to violent and serious offenses (assault, property damage, DWI).\n  -: Comprehensive review cross-referencing REJIS, Show-Me Courts, and paper files.\n  -: Development of standardized workflow to prevent future errors.\nofficials:\n  court_administrator: Tina Flowers\n  municipal_judge: James Leritz\n  police_chief: Vincent Acevez\n  city_manager: Marie Peoples\nsupport:\n  police_department: Supports warrant cancellation and requested officers not arrest based solely on municipal warrants.\n  state_agency: Missouri Office of State Courts Administrator may provide assistance.\ntimeline:\n  discovery: October 30, 2025 (memo date)\n  court_administrator_start: July 2025\n  remediation_duration_estimate: Up to six months\nimpact: Potential risk of false arrests and liability due to inaccurate warrants; some warrants remain active despite case resolution or payment of fines.\nadditional_notes: Two former court clerks from 2020 no longer work for the city; city officials unavailable for further comment before Thanksgiving holiday. retirement:\n  official: Russell Hawes\n  position: Chief Administrative Officer\n  retirement_date: 2025-12-19\n  years_of_service: 11\n  background: 20 years public sector experience from South Carolina\n  interim_replacement: David Weidler, Assistant Chief Administrative Officer\nreplacement_search:\n  status: upcoming\n  process: facilitated by outside firm\n  expected_timeline: hiring hoped by spring 2026\nrecent_related_retirment:\n  official: Mark Petty\n  position: Kirkwood Electric Director\n  retirement_date: mid-October 2025\nachievements_during_tenure:\n  -: Completion of Kirkwood Performing Arts Center\n  -: Adoption of Kirkwood 2035 Comprehensive Plan\n  -: Implementation of Vision Zero Action Plan for transportation safety\nchief_administrator_duties:\n  -: Development and administration of municipal budget\n  -: Operation of all city departments including municipal electric and water utilities\nutilities_update:\n  electric:\n  recent_upgrade: total system upgrade and modernization completed\n  financial_status:\n  deficit: 13000000\n  cause: project costs and rising energy purchase costs\n  rate_increase: 14.8% effective Nov 1, 2025\n  recovery_time_estimate: up to 5 years\n  audit:\n  status: ongoing\n  next_meeting: 2025-12-02\nofficial_comments:\n  mayor:\n  name: Liz Gibbons\n  remarks:\n  -: Russell has done a great job and will be hard to replace\n  -: Assistant Chief Administrative Officer David Weidler to serve interim\n  -: Hope to expedite hiring process due to many ongoing city projects\n  hawes_response: No comment received by press time\ncity_council_meeting:\n  discussion: Neither audit nor Hawes’ retirement discussed\n  attendance: Hawes present and participated event: Open house hosted by Webster Groves Parks and Recreation Department\npurpose: To gather public feedback on proposed upgrades to Ivory Crockett Park\nproposed_upgrades:\n  -: New splash pad\n  -: Shaded area\n  -: Public restrooms replacing existing ones\nproject_goals:\n  -: Improve park flow\n  -: Enhance safety and visibility for parents\n  -: Modernize playground facilities\nlocation: Ivory Crockett Park, Bell and Almentor avenues, northeast Webster Groves\ncommunity_feedback:\n  resident: Emily Jenkins\n  comments: Supports improvements, highlights need for splash pad and playground updates\nfunding:\n  initiative: Prop W 'Destination WG!'\n  bond_amount: 22100000\n  voter_approval: Over 66%\n  estimated_cost_for_ivory_crockett_upgrades: 400000\nbackground:\n  park_creation_year: 1971\n  original_name: Central City Park\n  renamed_for: Ivory Crockett, 1974 world record 100-yard dash track star from Webster Groves High School\ncompleted_projects_under_prop_w:\n  -: New water park\n  -: Upgrades to ice rink facility",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:eeabc961f24c",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Municipal Court To Throw Out 4,500 Arrest Warrants",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/municipal-court-to-throw-out-4-500-arrest-warrants/article_f1a9e1d6-81d5-4dd7-ad9a-12afd20c44bf.html",
-      "published": "2025-12-01T06:05:00+00:00",
-      "excerpt": "A substantial portion of the 4,500 arrest warrants within the Webster Groves Municipal Court are currently “inaccurate and unreliable,” according to an Oct. 30 memo from the court administrator. Webster Groves Municipal Court Administrator Tina Flowers, in a memo to City Manager Marie Peoples, states that the court’s current warrant filings are in such disarray as to present “a significant",
-      "tags": [],
-      "ai_summary": "issue: The Webster Groves Municipal Court discovered that approximately 4,500 arrest warrants are inaccurate and unreliable due to clerical errors and system transition problems.\ncause:\n  -: Transition to new court administration system (Show-Me Courts) in 2020 without proper cancellation of old warrants.\n  -: Use of two separate systems (REJIS and Show-Me Courts) causing discrepancies.\n  -: Inconsistent adherence to procedural standards by previous court personnel.\nactions:\n  -: Cancellation of all 4,500 existing warrants.\n  -: Re-entry of only verified true and accurate warrants.\n  -: Priority review and reissuance of about 300 warrants related to violent and serious offenses (assault, property damage, DWI).\n  -: Comprehensive review cross-referencing REJIS, Show-Me Courts, and paper files.\n  -: Development of standardized workflow to prevent future errors.\nofficials:\n  court_administrator: Tina Flowers\n  municipal_judge: James Leritz\n  police_chief: Vincent Acevez\n  city_manager: Marie Peoples\nsupport:\n  police_department: Supports warrant cancellation and requested officers not arrest based solely on municipal warrants.\n  state_agency: Missouri Office of State Courts Administrator may provide assistance.\ntimeline:\n  discovery: October 30, 2025 (memo date)\n  court_administrator_start: July 2025\n  remediation_duration_estimate: Up to six months\nimpact: Potential risk of false arrests and liability due to inaccurate warrants; some warrants remain active despite case resolution or payment of fines.\nadditional_notes: Two former court clerks from 2020 no longer work for the city; city officials unavailable for further comment before Thanksgiving holiday.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:09ef9b2c4568",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "City’s Chief Administrator To Retire Dec. 19",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/city-s-chief-administrator-to-retire-dec-19/article_af2596f5-d1eb-4c20-846c-c638a267c16b.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "Kirkwood Chief Administrative Officer Russell Hawes is set to retire on Dec. 19 after 11 years of service to the city, and a search for his replacement will begin soon, according to city officials. News of Hawes’ retirement comes about a month after Kirkwood Electric Director Mark Petty’s retirement in mid-October. The city will be hiring for both positions in",
-      "tags": [],
-      "ai_summary": "retirement:\n  official: Russell Hawes\n  position: Chief Administrative Officer\n  retirement_date: 2025-12-19\n  years_of_service: 11\n  background: 20 years public sector experience from South Carolina\n  interim_replacement: David Weidler, Assistant Chief Administrative Officer\nreplacement_search:\n  status: upcoming\n  process: facilitated by outside firm\n  expected_timeline: hiring hoped by spring 2026\nrecent_related_retirment:\n  official: Mark Petty\n  position: Kirkwood Electric Director\n  retirement_date: mid-October 2025\nachievements_during_tenure:\n  -: Completion of Kirkwood Performing Arts Center\n  -: Adoption of Kirkwood 2035 Comprehensive Plan\n  -: Implementation of Vision Zero Action Plan for transportation safety\nchief_administrator_duties:\n  -: Development and administration of municipal budget\n  -: Operation of all city departments including municipal electric and water utilities\nutilities_update:\n  electric:\n  recent_upgrade: total system upgrade and modernization completed\n  financial_status:\n  deficit: 13000000\n  cause: project costs and rising energy purchase costs\n  rate_increase: 14.8% effective Nov 1, 2025\n  recovery_time_estimate: up to 5 years\n  audit:\n  status: ongoing\n  next_meeting: 2025-12-02\nofficial_comments:\n  mayor:\n  name: Liz Gibbons\n  remarks:\n  -: Russell has done a great job and will be hard to replace\n  -: Assistant Chief Administrative Officer David Weidler to serve interim\n  -: Hope to expedite hiring process due to many ongoing city projects\n  hawes_response: No comment received by press time\ncity_council_meeting:\n  discussion: Neither audit nor Hawes’ retirement discussed\n  attendance: Hawes present and participated",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:7b9c83ba9e1a",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Public Input On Ivory Crockett Park Upgrades",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/public-input-on-ivory-crockett-park-upgrades/article_4085cdfe-b4cc-4205-9f82-da1cc76bf085.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "The Webster Groves Parks and Recreation Department hosted an open house earlier this week to garner feedback on proposed improvements to Ivory Crockett Park. City officials and design consultants showcased several options for the upgrades including a new splash pad, shaded area and public restrooms. The existing restrooms at the park would be torn down as part of the project.",
-      "tags": [],
-      "ai_summary": "event: Open house hosted by Webster Groves Parks and Recreation Department\npurpose: To gather public feedback on proposed upgrades to Ivory Crockett Park\nproposed_upgrades:\n  -: New splash pad\n  -: Shaded area\n  -: Public restrooms replacing existing ones\nproject_goals:\n  -: Improve park flow\n  -: Enhance safety and visibility for parents\n  -: Modernize playground facilities\nlocation: Ivory Crockett Park, Bell and Almentor avenues, northeast Webster Groves\ncommunity_feedback:\n  resident: Emily Jenkins\n  comments: Supports improvements, highlights need for splash pad and playground updates\nfunding:\n  initiative: Prop W 'Destination WG!'\n  bond_amount: 22100000\n  voter_approval: Over 66%\n  estimated_cost_for_ivory_crockett_upgrades: 400000\nbackground:\n  park_creation_year: 1971\n  original_name: Central City Park\n  renamed_for: Ivory Crockett, 1974 world record 100-yard dash track star from Webster Groves High School\ncompleted_projects_under_prop_w:\n  -: New water park\n  -: Upgrades to ice rink facility",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:18dc7d7cb1a4",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Lion Health Fails To Meet City’s Definition Of A Hospital",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/lion-health-fails-to-meet-city-s-definition-of-a-hospital/article_181e457a-3e0e-4b61-a5c2-f167573d9071.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "The Des Peres Board of Adjustment unanimously dismissed Lion Health System’s appeal to be recognized as a “hospital” during its recent meeting. Lion Health System sought to convert the former St. Luke’s Hospital site at 2345 Dougherty Ferry Road into a for-profit wellness facility focused on substance abuse treatment. Lion Health’s attorney Tracy Pupillo explained that the company had approached",
-      "tags": [],
-      "ai_summary": "issue: Lion Health System's appeal to be recognized as a hospital was dismissed by the Des Peres Board of Adjustment.\ndetails: Lion Health sought to convert the former St. Luke’s Hospital site into a for-profit wellness facility focused on substance abuse treatment. The city zoning officer determined the facility did not meet the city's definition of a hospital, making it ineligible for a conditional use permit transfer. Lion Health lacked property ownership, which the city argued meant it had no standing to appeal. The board dismissed the appeal citing lack of standing and precedent requiring ownership for permit transfer applications.\ncity_response: City staff recommended a more thorough review due to the facility's unique clinical focus, as current ordinances restrict the site to a general-purpose hospital with emergency room services. The city emphasized that changes in use require planning and zoning commission involvement.\nnext_steps: Lion Health was advised to purchase the property before reapplying for a permit transfer and to expect a more detailed review process.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:db4a38643518",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Public Works Building Renovation Costs Could Double To $9.5 Million",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/public-works-building-renovation-costs-could-double-to-9-5-million/article_651b7fb3-b526-421b-880c-ef6b3936a236.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "Kirkwood officials learned last week that a plan to renovate a building at 545 Leffingwell Ave. for use as the new home of Kirkwood Public Works departments could tally construction costs of more than $9.5 million — nearly double initial cost estimates. In October 2023, the city spent $12.5 million to purchase properties off of Elliott and Leffingwell avenues, including",
-      "tags": [],
-      "ai_summary": "project: Renovation of Public Works building at 545 Leffingwell Ave.\ninitial_purchase_cost: 12500000\ninitial_renovation_estimate: 4000000\nupdated_renovation_cost_estimate:\n  without_dispatch_center: 7850745\n  with_dispatch_center: 9550109\ndesign_services:\n  firm: Archimages\n  contract_increase: 526614\n  total_contract_amount: 862894\n  reason_for_increase: New electrical system, partial roof replacement, and other code compliance upgrades\nconstruction_management:\n  firm: Navigate Building Solutions\n  contract_amount: 421000\n  role: Design and construction phases representative\ntimeline:\n  bid_release: January 2026\n  construction_start: April 2026\nofficial_comments:\n  -:\n  name: Mayor Liz Gibbons\n  comment: Current building is a fire hazard and no longer accepted; contract increase includes necessary upgrades.\n  -:\n  name: City Councilman Mark McLean\n  comment: Need to be very careful with costs going forward.\n  -:\n  name: Public Works Director Chris Krueger\n  comment: Renovation project will go out for bids in January 2026 with construction starting in spring.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:6c0ae4825ad9",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Calls Proposed Webster Sales Tax Hike “Ludicrous”",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/calls-proposed-webster-sales-tax-hike-ludicrous/article_c360ec62-9549-4ad9-b52d-98e92d42b151.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "The proposed Webster Groves sales tax increase seems on its face to be a modest adjustment, until it is noticed that the benefit to the city will increase from 1.5% to 2.25%, which is a 55% increase in tax!",
-      "tags": [],
-      "ai_summary": "James Cunningham from Webster Groves criticizes the proposed sales tax increase from 1.5% to 2.25%, calling the 55% hike 'ludicrous.' He argues that net sales tax revenue should naturally increase with overall sales growth, and if sales are declining, the issue should be addressed through means other than raising taxes.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:5c4d1ce29131",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Thanks For Our Community Events",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/thanks-for-our-community-events/article_bb854d8b-90ac-449d-87e6-96ce5016a256.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "Friends, our small but mighty group of fellow neighbors share our sincere thanks for supporting and joining the fun, enjoyment, appreciation and celebration of our eight annual community events:",
-      "tags": [],
-      "ai_summary": "The Webster Groves community expresses gratitude for the support and participation in their eight annual events, which include art shows, music festivals, and community gatherings. Six of these events focus on the arts, reinforcing Webster's identity as the 'City of the Arts.' The community highlights the unifying and uplifting power of the arts. Plans are underway for a ninth event next year to celebrate the nation's 250th birthday.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:2d59816726fa",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Horticulture Program Cited",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/horticulture-program-cited/article_f27fbe38-7450-4ac1-ac70-9ca5724f5829.html",
-      "published": "2025-12-01T06:00:00+00:00",
-      "excerpt": "Missouri’s marijuana industry has flourished following voter approval of its recreational use in 2022. Missouri already ranks fifth in marijuana sales among states with adult-use programs, surpassing older markets like Colorado in sales. The industry is also not only being accepted, but embraced, among those in higher education. Close to home, St. Louis Community College-Meramec in Kirkwood now has one",
-      "tags": [],
-      "ai_summary": "industry_growth:\n  state: Missouri\n  context: Marijuana industry flourished since 2022 recreational use approval\n  ranking: 5th in marijuana sales among adult-use states\n  comparison: Surpasses Colorado in sales\neducation:\n  institution: St. Louis Community College-Meramec, Kirkwood\n  program: Horticultural program specializing in marijuana cultivation\n  recognition: One of Missouri's best in marijuana horticulture\n  certificate:\n  name: Certificate of Specialization in Cannabis and Hemp Production\n  approval: Missouri Department of Higher Education\n  courses:\n  -: Introduction to Cannabis\n  -: Cannabis and Hemp Cultivation\n  -: Cannabis Extraction\n  features: Hands-on learning with on-site hemp cultivation for labs\n  student_body: Almost 200 students\n  degree_awards: More horticulture degrees annually than all other two- and four-year Missouri schools combined\npanel_discussion:\n  event: St. Louis AgriBusiness Club meeting at Meramec\n  date: October 2025\n  coverage_area: Five Missouri counties and eight Illinois counties\n  panelists:\n  -:\n  name: Ryan Schepers\n  role: Assistant Professor of Horticulture, Meramec\n  focus: Cannabis uses, strains, and medical applications\n  background: Former Bayer Crop Science plant biologist; degrees in environmental science and cellular/molecular biology\n  -:\n  name: Brian Riegel\n  role: Owner, Riegel Dairy Inc. and South Point Hemp Inc.\n  focus: Intersection of traditional farming and hemp industry; pharmaceutical-grade cannabinoid products\n  advocacy: Supports sensible marijuana regulations and hemp grower opportunities; Missouri Hemp Trade Association Board member\n  -:\n  name: Chris Chesley\n  role: Retail Operations Advisor, Proper Cannabis\n  focus: Business development, regulatory compliance, government relations\n  contributions: Helped draft Missouri adult-use cannabis legislation; adjunct professor at Saint Louis University; Missouri Cannabis Trade Association Dispensary Committee representative\nindustry_insights:\n  public_perception: Cannabis still misunderstood and over-regulated by some\n  legal_status:\n  recreational: Legal in 24 states and Washington, D.C.\n  medical: Allowed in 40 states and Washington, D.C.\n  legislative_challenges: Ongoing battles to overturn voter-approved medical marijuana laws; federal classification as dangerous drug\n  taxation:\n  missouri_approach: Moderate taxation praised to avoid driving customers to illicit market\n  advocates: Panelists support sensible regulations and fair taxation",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • December 02, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Municipal Court To Throw Out 4,500 Arrest Warrants from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
