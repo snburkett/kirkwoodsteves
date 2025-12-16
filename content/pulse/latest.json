@@ -1,40 +1,21 @@
 {
-  "generated_at": "2025-12-15T12:07:47.487567+00:00",
+  "generated_at": "2025-12-16T12:07:25.361627+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 1,
-  "headline": "Kirkwood Pulse • December 15, 2025",
-  "overview": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal:\n  homes: 202\n  buildings: 6\n  building_height: four-story\n  parking_spots: 247\n  housing_types:\n  -: ranch\n  -: townhome\n  features:\n  -: covered direct entry front porches\n  -: private attached garages\n  -: elegant finishes\n  -: state of the art amenities (pool, fitness center, lounge, grill stations)\n  -: professionally maintained grounds\n  -: pedestrian-friendly streets and sidewalks\n  -: gathering spaces\n  -: art installations\n  -: robust trees and plantings\n  architecture: Reflects historic Kirkwood homes with modern features\n  new_through_street: Connecting Taylor to Fillmore through the site\n  zoning:\n  new_code: R-7 Planned Multifamily\n  purpose: To run concurrently with project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  negative:\n  -: No hotel included despite original RFP requirement\n  -: No ground-floor retail allowed under new zoning, seen as shortsighted\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Missed opportunity for structured parking and public town square\n  -: Confusion over year-long approval process\n  -: Concerns about lost potential for retail benefiting new residents and trail users\nunknowns:\n  -: Final design details\n  -: Financial terms and city revenue from site sale\n  -: Potential project changes during approval\noverall_tone: Disappointed with current proposal but hopeful for improvements",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:dbf52000fe91",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "202 Homes Proposed for Former Public Works Site",
-      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
-      "published": "2025-12-15T12:07:35.520086+00:00",
-      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
-      "tags": [],
-      "ai_summary": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal:\n  homes: 202\n  buildings: 6\n  building_height: four-story\n  parking_spots: 247\n  housing_types:\n  -: ranch\n  -: townhome\n  features:\n  -: covered direct entry front porches\n  -: private attached garages\n  -: elegant finishes\n  -: state of the art amenities (pool, fitness center, lounge, grill stations)\n  -: professionally maintained grounds\n  -: pedestrian-friendly streets and sidewalks\n  -: gathering spaces\n  -: art installations\n  -: robust trees and plantings\n  architecture: Reflects historic Kirkwood homes with modern features\n  new_through_street: Connecting Taylor to Fillmore through the site\n  zoning:\n  new_code: R-7 Planned Multifamily\n  purpose: To run concurrently with project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  negative:\n  -: No hotel included despite original RFP requirement\n  -: No ground-floor retail allowed under new zoning, seen as shortsighted\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Missed opportunity for structured parking and public town square\n  -: Confusion over year-long approval process\n  -: Concerns about lost potential for retail benefiting new residents and trail users\nunknowns:\n  -: Final design details\n  -: Financial terms and city revenue from site sale\n  -: Potential project changes during approval\noverall_tone: Disappointed with current proposal but hopeful for improvements",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • December 16, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on 202 Homes Proposed for Former Public Works Site from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
