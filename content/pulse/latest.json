@@ -1,21 +1,166 @@
 {
-  "generated_at": "2025-12-21T12:06:13.257975+00:00",
+  "generated_at": "2025-12-22T12:08:14.717825+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • December 21, 2025",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • December 22, 2025",
+  "overview": "subject: J. Travis Schmidt\nkey_points:\n  -: Diagnosed with bladder cancer in 2022, which progressed to metastatic cancer.\n  -: Chemotherapy turned his beard white, inspiring him to wear a Santa suit during treatments.\n  -: Became a professional Santa Claus, bringing joy to hospital staff and patients.\n  -: Created a professional Santa suit with help from local costume designers and businesses.\n  -: Participates in local holiday events in Webster Groves and Camdenton, Missouri.\n  -: Offers visits, video calls, and appearances as Santa; more info at uncletravissantaclaus.com.\n  -: Works at Lydia’s House, a domestic violence shelter, and sells pot pies to support women in need.\n  -: Manages his cancer diagnosis by compartmentalizing emotions and maintaining hope.\n  -: Featured on Siteman Cancer Center’s podcast 'This Is Cancer' to inspire others.\n  -: Views cancer as a catalyst for positive life changes and embraces his role as Santa.\nevents:\n  -:\n  name: Skate with Santa\n  date: 2025-12-23T17:30:00-06:00\n  location: Benny Gordon Recreation Center, 33 E. Glendale, Webster Groves\n  registration: wgparksandrec.com budget_2026:\n  total_revenue: 11824430\n  total_spending: 11189456\n  expected_reserve_growth: True\n  personnel_costs_percentage: 80\n  public_safety_spending_percentage: 70\n  population: 6400\n  city_administrator: Dustin Ziebold\n  tax_increase: False\n  focus: Operational spending control\n2024_audit_findings:\n  general_fund_reserves: 1600000\n  reserve_days_of_operations: 230\n  debt_reduction:\n  amount_paid: 1400000\n  remaining_debt: 8200000\n  timeframe_years: 5\n  expense_increase_percentage: 8\n  expense_drivers:\n  -: employee salaries\n  -: pension payments\n  revenue_growth_sources:\n  -: local sales taxes\n  -: use taxes\n  cash_reserve_increase: 900000\n  financial_progress_since_2020: significant improvement\n  budget_performance_2024:\n  general_fund: under budget\n  park_fund: under budget issue: St. Louis County property tax bills are arriving late and inconsistently in 2025, causing confusion and concern among homeowners, especially seniors.\nkey_points:\n  -: Tax bills, usually mailed in November, are arriving late, some as late as December, risking late payment penalties due by Dec. 31.\n  -: Older residents face challenges with online tax bill access and payments.\n  -: The county is believed to be responsible for delays, with advice to contact county council members or the Department of Revenue if bills are missing.\n  -: The senior homeowner tax freeze program caps tax payments at a base year amount, providing significant relief to seniors, with over $30 million in total relief in 2025.\n  -: Seniors must renew the freeze annually, but the process is simplified and does not require full reapplication.\n  -: Some critics argue the freeze reduces revenue for taxing districts and question its value, but advocates recommend continued participation.\n  -: Younger homeowners express concern about rising appraisals and taxes, but the Assessor’s Office clarifies it only values properties based on fair market value and is independent of tax collection or freeze programs.\ncontacts_and_resources:\n  tax_bill_info_online: https://stlcountymo.gov\n  department_of_revenue_phone: 314-615-5500\n  assessor_office_phone: 314-615-2555",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:24e2b17503b9",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Living His Best Life With Metastatic Cancer",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/living-his-best-life-with-metastatic-cancer/article_8a179d87-c5ea-4f63-9711-6cf32dc5d642.html",
+      "published": "2025-12-22T06:05:00+00:00",
+      "excerpt": "J. Travis Schmidt was diagnosed with bladder cancer in 2022, which later developed into metastatic cancer. When chemotherapy bleached his black beard snowy white, he did what any opportunistic man would do — he got a Santa suit and started wearing it to treatments. “I said, ‘If chemo is going to make me look like Santa, I’ll just lean into",
+      "tags": [],
+      "ai_summary": "subject: J. Travis Schmidt\nkey_points:\n  -: Diagnosed with bladder cancer in 2022, which progressed to metastatic cancer.\n  -: Chemotherapy turned his beard white, inspiring him to wear a Santa suit during treatments.\n  -: Became a professional Santa Claus, bringing joy to hospital staff and patients.\n  -: Created a professional Santa suit with help from local costume designers and businesses.\n  -: Participates in local holiday events in Webster Groves and Camdenton, Missouri.\n  -: Offers visits, video calls, and appearances as Santa; more info at uncletravissantaclaus.com.\n  -: Works at Lydia’s House, a domestic violence shelter, and sells pot pies to support women in need.\n  -: Manages his cancer diagnosis by compartmentalizing emotions and maintaining hope.\n  -: Featured on Siteman Cancer Center’s podcast 'This Is Cancer' to inspire others.\n  -: Views cancer as a catalyst for positive life changes and embraces his role as Santa.\nevents:\n  -:\n  name: Skate with Santa\n  date: 2025-12-23T17:30:00-06:00\n  location: Benny Gordon Recreation Center, 33 E. Glendale, Webster Groves\n  registration: wgparksandrec.com",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:10168398e670",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Shrewsbury Adopts $11 Million Budget For 2026",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/shrewsbury-adopts-11-million-budget-for-2026/article_8a30735f-e1b1-456e-8c17-9f24a1fa6b15.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "Shrewsbury officials have adopted a budget for 2026, the first under the leadership of new City Administrator Dustin Ziebold. The final budget numbers presented at the Dec. 9 board of aldermen meeting detail $11,824,430 in anticipated revenue with $11,189,456 in projected spending, meaning the city expects to grow its reserves in the coming year. “During the 2025 fiscal year, we",
+      "tags": [],
+      "ai_summary": "budget_2026:\n  total_revenue: 11824430\n  total_spending: 11189456\n  expected_reserve_growth: True\n  personnel_costs_percentage: 80\n  public_safety_spending_percentage: 70\n  population: 6400\n  city_administrator: Dustin Ziebold\n  tax_increase: False\n  focus: Operational spending control\n2024_audit_findings:\n  general_fund_reserves: 1600000\n  reserve_days_of_operations: 230\n  debt_reduction:\n  amount_paid: 1400000\n  remaining_debt: 8200000\n  timeframe_years: 5\n  expense_increase_percentage: 8\n  expense_drivers:\n  -: employee salaries\n  -: pension payments\n  revenue_growth_sources:\n  -: local sales taxes\n  -: use taxes\n  cash_reserve_increase: 900000\n  financial_progress_since_2020: significant improvement\n  budget_performance_2024:\n  general_fund: under budget\n  park_fund: under budget",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:172b9b6c95fe",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Homeowners Raise Questions",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/homeowners-raise-questions/article_8a6495da-6b4d-4d43-9136-4fcaa6f0d860.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "St. Louis County property tax bills, usually sent in the mail in early to mid-November, are arriving late — and erratically — this year. The taxman cometh via USPS, but homeowners are complaining that the bills are running behind. “It’s troubling that we have a deadline to get St. Louis County paid, but the county revenue office doesn’t seem to",
+      "tags": [],
+      "ai_summary": "issue: St. Louis County property tax bills are arriving late and inconsistently in 2025, causing confusion and concern among homeowners, especially seniors.\nkey_points:\n  -: Tax bills, usually mailed in November, are arriving late, some as late as December, risking late payment penalties due by Dec. 31.\n  -: Older residents face challenges with online tax bill access and payments.\n  -: The county is believed to be responsible for delays, with advice to contact county council members or the Department of Revenue if bills are missing.\n  -: The senior homeowner tax freeze program caps tax payments at a base year amount, providing significant relief to seniors, with over $30 million in total relief in 2025.\n  -: Seniors must renew the freeze annually, but the process is simplified and does not require full reapplication.\n  -: Some critics argue the freeze reduces revenue for taxing districts and question its value, but advocates recommend continued participation.\n  -: Younger homeowners express concern about rising appraisals and taxes, but the Assessor’s Office clarifies it only values properties based on fair market value and is independent of tax collection or freeze programs.\ncontacts_and_resources:\n  tax_bill_info_online: https://stlcountymo.gov\n  department_of_revenue_phone: 314-615-5500\n  assessor_office_phone: 314-615-2555",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:735108b3fe93",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Waste Connections Official Fields Question",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/waste-connections-official-fields-question/article_86ac47f5-c12b-474c-8d42-b1ecf70daca1.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "Trash collection has been spotty in Des Peres, and a Waste Connections official made a public apology during a recent Des Peres Board of Aldermen meeting. A lack of drivers, heavy yard waste, and the snow and ice storm left many homes without trash pickup for several cycles. “We didn’t get it done, and your residents suffered,” Tony LaMantia, business",
+      "tags": [],
+      "ai_summary": "issue: Spotty trash collection in Des Peres due to driver shortages, heavy yard waste, and a snow and ice storm.\nofficial_response:\n  apology: Tony LaMantia, Waste Connections business development manager, apologized publicly at the Dec. 8 Des Peres Board of Aldermen meeting.\n  actions: Hiring more drivers and planning to overstaff to improve service reliability.\nconcerns_raised:\n  -:\n  by: Alderman Jim Kleinschmidt\n  concern: Lack of communication about missed trash routes; residents had trash out for two weeks without notification.\n  -:\n  by: Alderman Sean Concagh\n  concern: Inconsistent collection of materials, specifically cardboard boxes placed outside bins not being collected; need for clearer communication to residents.\nexplanations:\n  weather_impact: Drivers advised not to leave trucks during snow and ice for safety and insurance reasons.\n  prioritization: Yard waste collection was delayed as trash and recycling were prioritized during adverse weather.\nofficial_comments:\n  -:\n  by: Mayor Mark Becker\n  comment: Appreciated LaMantia’s presence and explanation at the meeting.\n  -:\n  by: City Administrator Scott Schaefer\n  comment: Emphasized that snowfall and yard waste caused the issues, and the city aims to resolve complaints promptly.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:aa5825627f31",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Kirkwood School District To Comply With Religious Rights Of Parents",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-school-district-to-comply-with-religious-rights-of-parents/article_be09f7c5-dfe3-450b-bbd9-1ad57ba1f122.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "A Chicago law firm is touting victory after the Kirkwood School District confirmed it would comply with the rights of religious parents following a threat-to-sue letter sent in late October. The district, however, claims it is simply committed to full compliance with existing laws and legal precedent. The Kirkwood School District on Oct. 30 received a demand letter from the",
+      "tags": [],
+      "ai_summary": "issue: Kirkwood School District received a legal demand to respect religious parents' rights after showing an LGBTQ+ History Month video to middle school students.\nlegal_action:\n  demand_letter_date: 2025-10-30\n  law_firm: Thomas More Society\n  basis: First Amendment rights and Supreme Court decision Mahmoud v. Taylor (2025)\n  request: Remove LGBTQ+ History Month video from Schoology app\n  threat: Potential lawsuit if non-compliant\ndistrict_response:\n  compliance: District confirmed it will comply with Mahmoud v. Taylor ruling and accommodate religious objections.\n  actions:\n  -: Removing video from student devices upon parental request\n  -: Revising notices for e-book software Sora to allow opt-out\n  -: Affirmed commitment to legal compliance and parental involvement\n  statement_by: Steph Deidrick, Chief Communications Officer\nlaw_firm_statement:\n  view: Victory for parental rights and religious freedom\n  monitoring: Will closely monitor district's compliance\n  requirements: Advance notice to parents for content conflicting with religious beliefs\nrelated_lawsuit:\n  case_name: Rawlins v. Ulrich\n  filed: June 2024\n  claims: Kirkwood School District violated Missouri’s Sunshine Law by withholding public records\n  context: Includes controversy over a 2022 student survey on sexual habits linked to a 2023 yearbook article",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:93f1543c5ec8",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Construction Site Blasting Draws Concerns",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/construction-site-blasting-draws-concerns/article_adbeed87-38d0-48e4-8838-55a7a901cc1b.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "Blasting at the site of the Magnolia Ridge Development, 13431 Manchester Road east of Sam’s Club, prompted a concerned Town and Country resident to come before the Des Peres Board of Aldermen on Dec. 15. Cherie Regev of Pingry Place said while she and her husband are in favor of the development, they are worried about the nuisance and potential",
+      "tags": [],
+      "ai_summary": "location: Magnolia Ridge Development, 13431 Manchester Road, east of Sam’s Club, Town and Country\nissue: Blasting at the construction site causing house shaking and potential damage to nearby properties and pools\nconcerned_resident:\n  name: Cherie Regev\n  address: Pingry Place\n  concerns:\n  -: Nuisance from blasting\n  -: Potential structural damage to houses and swimming pools\n  -: Blasting hours earlier than originally communicated\n  -: Lack of response from construction company\nofficial_responses:\n  -:\n  name: Steve Meyer\n  title: Des Peres Public Works Director\n  response: Blasting permits are under St. Louis County jurisdiction; residents within 500 feet are notified, Regevs live beyond that distance.\n  -:\n  name: Scott Schaefer\n  title: City Administrator\n  response: Acknowledged some residents noticed cracks; explained county inspection process with before and after photos; facilitating contact between Regev, county officials, and Brinkman Construction Company.\ndeveloper: Brinkman Construction Company\nnext_steps: Resident advised to follow up with St. Louis County inspector for concerns and possible restitution claims.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ad1e52ed78ff",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Naughty Or Nice",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/naughty-or-nice/article_e95849ae-6bc3-4a80-8ea6-d8d1a22d658b.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "It’s that time once again, when children of Kirkwood, Webster Groves and the surrounding areas ask themselves an important question: Have they been naughty or nice this year? Answers varied — with some more honest than others — according to this year’s batch of letters to Santa. As longtime partners of Jolly Old Saint Nick, the Times has been hard",
+      "tags": [],
+      "ai_summary": "overview: Local children from Kirkwood, Webster Groves, and nearby areas shared their Christmas wishes in letters to Santa, revealing popular toy trends and unique requests.\npopular_toys:\n  -: Labubu bag charms\n  -: Barbie dolls\n  -: American Girl dolls\n  -: Pokémon items\n  -: Slime\n  -: Legos\n  -: Skip-It\n  -: Bop-It\n  -: Fart Blaster (Despicable Me)\nnotable_requests:\n  toys:\n  -: Ken doll\n  -: Hungry Hungry Hippos game\n  -: Vampire teeth\n  -: Bulldozers\n  -: Trains\n  -: Trucks\n  -: Toy bus\n  -: Rolling suitcase\n  -: Barbie house\n  -: Magic portal\n  -: Monster truck\n  vehicles:\n  -: Bicycles\n  -: Scooters\n  -: Motorcycles\n  -: Hoverboards\n  -: Cars (including Porsche 992 GT3 RS)\n  pets:\n  -: Dogs\n  -: Cats\n  -: Bunnies\n  -: Hamsters\n  -: Brown bear\n  -: Dinosaur ride-on toy\n  -: Turtle stegosaurus\n  -: Unicorn\n  -: Horse\n  -: Peregrine falcon costume\n  technology:\n  -: Phones\n  -: Smart watches\n  -: Video game systems\n  -: 3-D printers\n  -: DJ table\n  -: Camera\n  -: Tablet\n  food_and_treats:\n  -: Candy\n  -: Chocolate Santas\n  -: Apple juice\n  -: Pizza\n  -: Chocolate fountain\n  -: Kinder Surprise eggs\n  -: Sour treats\n  unique_requests:\n  -: A man (boyfriend)\n  -: A handsome, God-fearing man\n  -: Social media access (not a gift request)\nchild_quotes:\n  -:\n  name: Dahlia\n  age: 5\n  location: Shrewsbury\n  wishes:\n  -: Ken doll\n  -: Hungry Hungry Hippos\n  -: Vampire teeth\n  quote: I have been very good this year.\n  -:\n  name: Wally\n  location: Kirkwood\n  wishes:\n  -: Monster truck\n  quote: Please don’t forget the monster truck.\n  -:\n  name: Henry\n  location: Kirkwood\n  wishes:\n  -: Baggy jeans\n  -: Gold chain\n  -: Porsche 992 GT3 RS\n  quote: P.S. I’m getting social media; Not asking :) :) :)\n  -:\n  name: Kate\n  location: Webster Groves\n  wishes:\n  -: A handsome, God-fearing man to make my boyfriend\n  -:\n  name: Harper\n  location: Kirkwood\n  wishes:\n  -: Books\n  -: Clothing\n  -: Horse\n  quote: I would never ask for another thing again, not for my birthday, not for Christmas, not for anything. So please! A horse!!!\n  -:\n  name: Jamey\n  location: Kirkwood\n  wishes:\n  -: DJ table\n  -: Camera\n  quote: I have been a good boy when I can. I do like to say bad words and I don’t like to listen, but I try my best.\n  -:\n  name: Gus\n  location: Webster Groves\n  wishes:\n  -: Tablet\n  quote: I play well with my friends at school, say kind words to adults and can also help clean up.\n  -:\n  name: Maybellene\n  location: Webster Groves\n  wishes:\n  -: Unicorn\n  -: New flowers\n  -: New house",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:c36b0a23cc06",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Webster Groves Council Delays Vote On Sales Tax Hike Ballot Measures",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-groves-council-delays-vote-on-sales-tax-hike-ballot-measures/article_d0fd32a9-4b7e-4733-ae33-fd3a35c1652c.html",
+      "published": "2025-12-22T06:00:00+00:00",
+      "excerpt": "After weeks of discussion, the Webster Groves City Council this week decided to delay voting on whether to place two new sales tax increases on the April 2026 ballot. Without any discussion and by a unanimous vote, the council on Tuesday night decided to not vote on the proposals until its next meeting on Jan. 6. “Council members asked for",
+      "tags": [],
+      "ai_summary": "decision: The Webster Groves City Council unanimously voted to delay the vote on two proposed sales tax increases until their next meeting on January 6, 2026.\nreason_for_delay: Council members requested more time to gather feedback from residents and business owners before voting.\ndeadline: The council must approve ballot language by January 27, 2026, to place the measures on the April 7, 2026 municipal election ballot.\nproposed_measures:\n  -:\n  name: Economic Development Sales Tax\n  rate: 0.5%\n  purpose: To fund economic development initiatives including marketing, land acquisition, job creation grants, infrastructure, streetscape improvements, and parking garage repairs.\n  management: A newly created five-member advisory board.\n  estimated_revenue: 1400000\n  -:\n  name: Fire District Protection Tax Increase\n  rate_increase: from 0.25% to 0.5%\n  purpose: To fund fire department operations and reduce pressure on the general fund.\n  estimated_revenue: 700000\n  current_fire_department_expenses: 5400000\ncontext:\n  sales_tax_revenue: 8600000\n  percentage_of_city_revenue: 37\n  total_city_revenue: 23200000\n  budget_deficit: 1100000\n  fiscal_year_start: 2025-07-01\n  reserve_fund: 17900000\n  previous_year_surplus: 3600000\nnext_steps: Council will further discuss and debate the proposals in upcoming meetings before deciding whether to forward one or both measures to the ballot.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Living His Best Life With Metastatic Cancer from Webster-Kirkwood Times – News."
 }
