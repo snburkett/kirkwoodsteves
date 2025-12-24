@@ -1,76 +1,21 @@
 {
-  "generated_at": "2025-12-23T12:07:35.415071+00:00",
+  "generated_at": "2025-12-24T12:07:10.352403+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 3,
-  "headline": "Kirkwood Pulse • December 23, 2025",
-  "overview": "The article honors Doris 'Dorie' Callahan, a beloved St. Louis mother and community member who passed away five years ago. Known for her dedication to family, church, and community, Dorie raised five children with her husband George in Holly Hills. She was active in parish activities, served as an election judge, and worked over 30 years in the fine china department at Famous-Barr. The story was inspired by a brunch strata recipe she submitted to a local high school cookbook, which has been a family tradition for over 50 years. Through interviews with her family and friends, the article paints a portrait of a humble woman whose life positively impacted many, leaving a lasting legacy through her loved ones and cherished recipes. Kirkwood officials have installed a sculpture celebrating Route 66 at the corner of Kirkwood Road and Argonne. A local resident, Kathy M. Widman, expressed confusion about the sculpture's placement, noting that Kirkwood Road (Lindbergh) is associated with U.S. highways 61/67, while Watson Road (Missouri Route 366) is the former section of Route 66. She questions the logic behind the sculpture's location. James W. Whitney, former municipal judge of Webster Groves for over 26 years, responded to recent reports of dysfunction in the Webster Groves municipal court. He emphasized that long-serving court clerks Diane Reinhart and Terry Bales were professional and efficient, and that court issues arose only after their departure. Whitney attributed the court's recent problems to poor hiring practices and high employee turnover during his last three-plus years of service. He highlighted the importance of retaining competent, long-serving employees for the city's benefit.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:cd49cb30334c",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Finding Dorie",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/finding-dorie/article_a341f183-d33a-44c5-8997-890deef849d6.html",
-      "published": "2025-12-22T06:00:00+00:00",
-      "excerpt": "“My mother’s definition of average,” the Hon. Richard G. Callahan says, “was that it is the worst of the best and the best of the worst. And ‘average’ was not something she was willing for her children to be.”",
-      "tags": [],
-      "ai_summary": "The article honors Doris 'Dorie' Callahan, a beloved St. Louis mother and community member who passed away five years ago. Known for her dedication to family, church, and community, Dorie raised five children with her husband George in Holly Hills. She was active in parish activities, served as an election judge, and worked over 30 years in the fine china department at Famous-Barr. The story was inspired by a brunch strata recipe she submitted to a local high school cookbook, which has been a family tradition for over 50 years. Through interviews with her family and friends, the article paints a portrait of a humble woman whose life positively impacted many, leaving a lasting legacy through her loved ones and cherished recipes.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:cfe6a66e7692",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Making Sense  Of Route 66",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/making-sense-of-route-66/article_16025668-19c2-4612-ba82-e136e444f950.html",
-      "published": "2025-12-22T06:00:00+00:00",
-      "excerpt": "According to the Dec. 12-18, 2025, edition of the Times, Kirkwood officials have installed a sculpture celebrating Route 66 at the corner of Kirkwood Road and Argonne.",
-      "tags": [],
-      "ai_summary": "Kirkwood officials have installed a sculpture celebrating Route 66 at the corner of Kirkwood Road and Argonne. A local resident, Kathy M. Widman, expressed confusion about the sculpture's placement, noting that Kirkwood Road (Lindbergh) is associated with U.S. highways 61/67, while Watson Road (Missouri Route 366) is the former section of Route 66. She questions the logic behind the sculpture's location.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:93d6c20edf90",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Webster Court Suffered From Poor Hiring Practices",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-court-suffered-from-poor-hiring-practices/article_189841b8-507a-4440-9464-53148e151fb4.html",
-      "published": "2025-12-22T06:00:00+00:00",
-      "excerpt": "As the municipal judge for the city of Webster Groves for 26-plus years, I read the article in the Times regarding dysfunction in the municipal court (WG Recalls 4,500 Warrants, WKT Nov. 28) with some degree of interest. Let me…",
-      "tags": [],
-      "ai_summary": "James W. Whitney, former municipal judge of Webster Groves for over 26 years, responded to recent reports of dysfunction in the Webster Groves municipal court. He emphasized that long-serving court clerks Diane Reinhart and Terry Bales were professional and efficient, and that court issues arose only after their departure. Whitney attributed the court's recent problems to poor hiring practices and high employee turnover during his last three-plus years of service. He highlighted the importance of retaining competent, long-serving employees for the city's benefit.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • December 24, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Finding Dorie from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
