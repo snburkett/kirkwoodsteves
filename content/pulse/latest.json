@@ -1,21 +1,130 @@
 {
-  "generated_at": "2025-12-24T12:07:10.352403+00:00",
+  "generated_at": "2025-12-25T12:07:44.759588+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • December 24, 2025",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 14,
+  "stories_featured": 6,
+  "headline": "Kirkwood Pulse • December 25, 2025",
+  "overview": "print_schedule_changes:\n  delivery_delay: This week's issue will be delivered later than usual, on Friday and Saturday, Dec. 26 and 27.\n  no_issue: There will be no issue published on Jan. 2, 2026.\n  next_issue: The next issue will be published on Jan. 9, 2026.\n  reason: The newspaper will pause printing between Christmas and New Year's to allow employees time with their families.\noffice_hours:\n  limited_hours: From Dec. 25 through Jan. 1, office hours will be limited.\n  contact: Call 314-968-2699 before visiting to confirm if the office is open.\n  normal_hours_resume: Normal hours will resume on Jan. 2, 2026, from 8 a.m. to 4:30 p.m.\nonline_updates: Breaking news will continue to be posted online at websterkirkwoodtimes.com and on social media.\nholiday_message: The staff thanks readers and advertisers for their support and wishes everyone a safe and happy holiday season. deceased:\n  full_name: Robert Joseph “Bob” Malone\n  age: 85\n  date_of_death: 2025-12-10\n  birth_date: 1940-10-20\n  birth_place: Walnut Grove, Missouri\n  family:\n  parents:\n  -: Sylvester Malone\n  -: Elizabeth Malone\n  siblings:\n  -: Maureen Malone\n  -: Terry Malone\n  survivors:\n  brother: Terry Malone\n  sister_in_law: Sally\n  nieces:\n  -: Shannon Bingham\n  -: Erin DeSisto\n  -: Morgan Malone\n  nephews:\n  -: Ryan Malone\n  -: Colin Malone\n  extended_family:\n  -: Mike Bingham\n  -: Dave DeSisto\n  -: Meg Walsh\n  -: Rebecca Malone\n  great_nieces_nephews: several\n  education:\n  university: Saint Louis University\n  degree: Master’s in Business\n  notable_achievements:\n  -: Member of 1959 and 1960 National Champion Soccer Teams\n  -: Inducted into Billiken Hall of Fame in 1995\n  military_service:\n  branch: Army\n  discharge_status: Honorably Discharged\n  discharge_year: 1968\n  career:\n  -: Built a successful student loan business helping students finance college education\n  -: Later worked in real estate finance\n  personal_life:\n  hobbies:\n  -: Traveling\n  -: Golf\n  -: Spending time with family and friends\n  self_description: Gentleman at Leisure\n  funeral:\n  location: St. Isidore’s Church, Danville, California\n  date: 2026-01-14\n  time: 10:30 a.m.\n  reception_location: St. Isidore Room, across the street\n  memorial_requests:\n  in_lieu_of_flowers: Donations to Saint Louis University High School, Robert J. Malone ’58 Scholarship deceased:\n  name: Thomas “Tom” Coulter\n  age: 84\n  date_of_passing: 2025-12-12\n  cause: passed peacefully in his sleep\n  family_predeceased:\n  -: William Coulter (father)\n  -: Eileen Coulter (mother)\n  -: William Coulter (brother)\n  -: Joanie Martinez (sister)\n  -: Valerie (granddaughter)\n  survived_by:\n  spouse: Rebecca (Hayden) Coulter\n  children:\n  -: Lisa Hastings\n  -: Robin Brewer (John)\n  -: Jill Jones (Kevin)\n  -: Jeff Coulter (Chris)\n  grandchildren:\n  -: Holly (Steven)\n  -: Chad\n  -: Isaac\n  -: Veronica\n  -: Sabrina\n  -: Buddy\n  -: Jesse\n  great_grandchildren:\n  -: Raegan\n  -: Leo\n  -: Landon\npersonal_life:\n  character: Family man, loving, playful with children and grandchildren\n  hobbies:\n  -: Golf (avid golfer, golf league manager, nickname 'TACO')\n  -: Travel (visited China, Peru, Alaska, France, Italy, England, Ireland, Hawai’i)\n  career: Retired from Ralston Purina after 26 years in telecommunications\n  notable_traits: Storyteller, known for sharing family and bartending stories\nmemorial:\n  event: Memorial Mass\n  date: 2026-01-03\n  time: 11:00 AM\n  location: Grace Episcopal Church, 514 E. Argonne Dr., Kirkwood, MO 63122",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:40f51745b666",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Webster-Kirkwood Times Holiday Print Schedule",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/webster-kirkwood-times-holiday-print-schedule/article_9b378655-9f49-4253-8777-722723aaae70.html",
+      "published": "2025-12-25T06:00:00+00:00",
+      "excerpt": "Due to the Christmas holiday, delivery of this week’s issue of the Webster-Kirkwood Times will run a little later than normal. The papers are expected to be delivered on Friday and Saturday, Dec. 26 and 27. There will NOT be a Jan. 2, 2026, issue. The next issue will publish on Jan. 9, 2026. The Times is hitting pause on",
+      "tags": [],
+      "ai_summary": "print_schedule_changes:\n  delivery_delay: This week's issue will be delivered later than usual, on Friday and Saturday, Dec. 26 and 27.\n  no_issue: There will be no issue published on Jan. 2, 2026.\n  next_issue: The next issue will be published on Jan. 9, 2026.\n  reason: The newspaper will pause printing between Christmas and New Year's to allow employees time with their families.\noffice_hours:\n  limited_hours: From Dec. 25 through Jan. 1, office hours will be limited.\n  contact: Call 314-968-2699 before visiting to confirm if the office is open.\n  normal_hours_resume: Normal hours will resume on Jan. 2, 2026, from 8 a.m. to 4:30 p.m.\nonline_updates: Breaking news will continue to be posted online at websterkirkwoodtimes.com and on social media.\nholiday_message: The staff thanks readers and advertisers for their support and wishes everyone a safe and happy holiday season.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:f8591c5b6d8e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Robert Joseph “Bob” Malone",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/robert-joseph-bob-malone/article_ce1e78d8-35be-4d65-91fc-b2dcb21b01e1.html",
+      "published": "2025-12-24T16:43:00+00:00",
+      "excerpt": "Malone, Robert Joseph “Bob,” 85, of St. Louis, passed away on Dec. 10, 2025. Born Oct. 20, 1940, in Walnut Grove, Missouri, Bob was the beloved son of Sylvester and Elizabeth Malone and brother to Maureen and Terry. Bob graduated from Saint Louis University with a master’s degree in business and was a proud member of the 1959 and 1960",
+      "tags": [],
+      "ai_summary": "deceased:\n  full_name: Robert Joseph “Bob” Malone\n  age: 85\n  date_of_death: 2025-12-10\n  birth_date: 1940-10-20\n  birth_place: Walnut Grove, Missouri\n  family:\n  parents:\n  -: Sylvester Malone\n  -: Elizabeth Malone\n  siblings:\n  -: Maureen Malone\n  -: Terry Malone\n  survivors:\n  brother: Terry Malone\n  sister_in_law: Sally\n  nieces:\n  -: Shannon Bingham\n  -: Erin DeSisto\n  -: Morgan Malone\n  nephews:\n  -: Ryan Malone\n  -: Colin Malone\n  extended_family:\n  -: Mike Bingham\n  -: Dave DeSisto\n  -: Meg Walsh\n  -: Rebecca Malone\n  great_nieces_nephews: several\n  education:\n  university: Saint Louis University\n  degree: Master’s in Business\n  notable_achievements:\n  -: Member of 1959 and 1960 National Champion Soccer Teams\n  -: Inducted into Billiken Hall of Fame in 1995\n  military_service:\n  branch: Army\n  discharge_status: Honorably Discharged\n  discharge_year: 1968\n  career:\n  -: Built a successful student loan business helping students finance college education\n  -: Later worked in real estate finance\n  personal_life:\n  hobbies:\n  -: Traveling\n  -: Golf\n  -: Spending time with family and friends\n  self_description: Gentleman at Leisure\n  funeral:\n  location: St. Isidore’s Church, Danville, California\n  date: 2026-01-14\n  time: 10:30 a.m.\n  reception_location: St. Isidore Room, across the street\n  memorial_requests:\n  in_lieu_of_flowers: Donations to Saint Louis University High School, Robert J. Malone ’58 Scholarship",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:50a5c1c96f9f",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Thomas “Tom” Coulter",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/thomas-tom-coulter/article_66f33d00-b0d2-47e7-87a1-8be2a093b810.html",
+      "published": "2025-12-24T16:40:00+00:00",
+      "excerpt": "Coulter, Thomas “Tom,” age 84, passed peacefully in his sleep on Dec. 12, 2025. He was preceded in death by his parents, William and Eileen Coulter; his brother, William Coulter; his sister, Joanie Martinez; and his beloved granddaughter, Valerie. He is survived by his wife, Rebecca (Hayden) Coulter; daughters Lisa Hastings, Robin Brewer (John) and Jill Jones (Kevin); son, Jeff",
+      "tags": [],
+      "ai_summary": "deceased:\n  name: Thomas “Tom” Coulter\n  age: 84\n  date_of_passing: 2025-12-12\n  cause: passed peacefully in his sleep\n  family_predeceased:\n  -: William Coulter (father)\n  -: Eileen Coulter (mother)\n  -: William Coulter (brother)\n  -: Joanie Martinez (sister)\n  -: Valerie (granddaughter)\n  survived_by:\n  spouse: Rebecca (Hayden) Coulter\n  children:\n  -: Lisa Hastings\n  -: Robin Brewer (John)\n  -: Jill Jones (Kevin)\n  -: Jeff Coulter (Chris)\n  grandchildren:\n  -: Holly (Steven)\n  -: Chad\n  -: Isaac\n  -: Veronica\n  -: Sabrina\n  -: Buddy\n  -: Jesse\n  great_grandchildren:\n  -: Raegan\n  -: Leo\n  -: Landon\npersonal_life:\n  character: Family man, loving, playful with children and grandchildren\n  hobbies:\n  -: Golf (avid golfer, golf league manager, nickname 'TACO')\n  -: Travel (visited China, Peru, Alaska, France, Italy, England, Ireland, Hawai’i)\n  career: Retired from Ralston Purina after 26 years in telecommunications\n  notable_traits: Storyteller, known for sharing family and bartending stories\nmemorial:\n  event: Memorial Mass\n  date: 2026-01-03\n  time: 11:00 AM\n  location: Grace Episcopal Church, 514 E. Argonne Dr., Kirkwood, MO 63122",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:717fa8d95538",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Marty Supreme",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/arts_and_entertainment/reel_world/marty-supreme/article_93e1ccc6-9deb-4568-b59f-92d8e757c750.html",
+      "published": "2025-12-24T14:36:00+00:00",
+      "excerpt": "In theaters 12/25.",
+      "tags": [],
+      "ai_summary": "release_date: 2025-12-25\nplot: Set in 1954 New York, Marty Mauser, a top table tennis player and shoe store worker, schemes to live a life of luxury without earning it. His grifting catches up to him as he competes internationally, forcing him to confront his actions and mature.\nkey_characters:\n  -:\n  name: Marty Mauser\n  actor: Timothée Chalamet\n  description: Impatient, self-absorbed table tennis player and con artist.\n  -:\n  name: Kay Stone\n  actor: Gwyneth Paltrow\n  description: Fading starlet whom Marty tries to manipulate.\ndirector: Josh Safdie\nwriters:\n  -: Josh Safdie\n  -: Ronald Bronstein\nthemes:\n  -: grifting and consequences\n  -: toxic masculinity in historical context\n  -: struggle between dishonesty and discipline\n  -: personal growth and humility\nnotable_elements:\n  -: 1950s period setting with modern soundtrack featuring Alphaville, Tears For Fears, and New Order\n  -: blend of dark humor and emotional drama\n  -: strong performances by lead and supporting cast including Fran Drescher and Sandra Bernhard\ncritical_take: The film offers an off-center, emotional journey that balances cringe-worthy moments with humor and tension, effectively portraying Marty’s flawed quest for success.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:cf111d0a62d2",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Song Sung Blue",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/arts_and_entertainment/reel_world/song-sung-blue/article_eb511a48-2d8c-41e5-b70a-b15684d9d27a.html",
+      "published": "2025-12-24T14:23:00+00:00",
+      "excerpt": "In theaters 12/25.",
+      "tags": [],
+      "ai_summary": "event: Movie Release\ndate: 2025-12-25\nlocation: Milwaukie\ndetails:\n  plot: Mike, a musical impersonator, and Claire, a fellow performer, marry and form a Neil Diamond tribute act called Lightening and Thunder. Their journey through success and personal struggles is marked by love, family challenges, and music that connects and sustains them.\n  themes:\n  -: love\n  -: family\n  -: music\n  -: perseverance\n  -: holiday spirit\n  genre: musical comedy/drama\n  key_people:\n  actors:\n  -: Hugh Jackman\n  -: Kate Hudson\n  writer_director: Craig Brewer\n  screenwriter: Greg Kohs\n  review_highlights: A sweet, charming, feel-good holiday movie with a mix of humor, drama, and music. Strong performances by Jackman and Hudson bring heart and energy, making it a compelling love story with toe-tapping moments.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:2cb0b4567c02",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Eight Holiday House Guests",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/eight-holiday-house-guests/article_908b8ec2-f2ee-49f2-9dd6-daaf8c0456d2.html",
+      "published": "2025-12-24T06:00:00+00:00",
+      "excerpt": "“Life is as interesting as you decide to make it” is the mantra of Webster Groves resident Glenn Detrick, who added global spice to his journey through his “Nepali kids” and “the African wing” of his family. Being an avid traveler for decades, the 78-year-old education catalyst admits he’s always been fascinated by other cultures, especially after traveling to 93",
+      "tags": [],
+      "ai_summary": "main_subject: Glenn Detrick, a Webster Groves resident and retired education administrator, hosts two expatriate families in his home during the holidays.\nkey_points:\n  -: Glenn Detrick, 78, has traveled to 93 countries and founded the Chelsea Detrick Experiential Learning Center at Webster Groves High School in 2010.\n  -: He is currently hosting eight guests: a family of three from Nepal (the Uprety/Sitoula family) and a family of five from Burkina Faso (the Zorome family).\n  -: Detrick temporarily stays at a local B&B to accommodate his guests.\n  -: The hosting honors the memory of his late daughter Chelsea Detrick, who died in 2009; he established the experiential learning center and a Chelsea Center at Nepal Orphans Home.\n  -: The Nepali family includes Priyanka Uprety, her husband Rohit Sitoula, and their daughter Jun Chelsea, named after Detrick’s daughter.\n  -: The Uprety/Sitoula family has integrated into the Webster Groves community and is pursuing American citizenship.\n  -: The Zorome family from Burkina Faso arrived in August 2025; the parents have strong academic and professional backgrounds including ties to Webster University and U.S. government agencies.\n  -: The Zorome children attend local schools in Webster Groves.\ncommunity_impact: Detrick’s efforts foster cultural exchange, support immigrant families, and enhance educational opportunities for local students through his experiential learning initiatives.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 6 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 6 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Webster-Kirkwood Times Holiday Print Schedule from Webster-Kirkwood Times – News."
 }
