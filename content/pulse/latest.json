@@ -1,40 +1,21 @@
 {
-  "generated_at": "2025-12-28T12:06:26.044066+00:00",
+  "generated_at": "2025-12-29T12:07:25.232190+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 1,
-  "headline": "Kirkwood Pulse • December 28, 2025",
-  "overview": "issue: Kirkwood City Council approved a 14.8% electricity rate increase and raised the fixed customer charge from $8 to $10 due to rising costs and financial challenges.\nbackground:\n  rate_increase_date: October 17, 2025\n  bill_comparison:\n  July_2021: $97 for 850 kWh\n  July_2026: $142 for 850 kWh\ncauses:\n  -: Significant capital upgrades to Kirkwood’s electrical grid and distribution infrastructure over the past decade, resulting in short-term debt.\n  -: Increased overall electricity costs driven by rising demand from electric vehicles, heat pumps, and data centers.\n  -: A recently discovered $13.8 million cash reserve deficit in Kirkwood Electric.\nactions_taken:\n  -: Hiring of Utility Financial Solutions (UFS) to evaluate the electric department’s financial position and recommend corrective measures.\n  -: Implementation of a recommended 14.8% rate increase to rebuild $13 million in reserves by 2031.\n  -: Engagement of an accounting firm to audit electric department expenditures for the last two fiscal years, with results forthcoming.\n  -: Early retirement of Kirkwood Electric Director Mark Petty amid council concerns.\nfinancial_details:\n  capital_improvements_cost: ~$48.78 million over five years\n  bond_sales_revenue: ~$34.65 million\n  cash_reserve_drawdown: ~$14 million to cover remaining costs\n  debt_financing_ratio: Approximately 71%, typical for municipal utilities\nanalysis: The $13.8 million deficit is primarily a symptom of infrastructure investments and rising electricity costs rather than an independent cause. Kirkwood Electric’s financial health largely depends on electricity purchase and sale prices. Transfers from the electric fund to other city funds have raised questions but are typical for municipal utilities.\nimplications: The rate increase aims to stabilize Kirkwood Electric’s finances and ensure long-term reliability and efficiency of the electric grid amid growing demand and infrastructure needs.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:f17f87576e5c",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Kirkwood Electric’s Problem is Not Unique",
-      "link": "https://kirkwoodgadfly.com/kirkwood-electrics-problem-is-not-unique/",
-      "published": "2025-12-28T12:06:12.544597+00:00",
-      "excerpt": "A couple of weeks back, first-term Kirkwood City Council Member Al Rheinnecker alerted the public via his re-election campaign newsletter that the Council had voted to implement a 14.8% electricity rate increase for the coming year at their October 17th meeting. The department will also increase the fixed “customer charge” portion of electric bills from $8 to $10. This rate",
-      "tags": [],
-      "ai_summary": "issue: Kirkwood City Council approved a 14.8% electricity rate increase and raised the fixed customer charge from $8 to $10 due to rising costs and financial challenges.\nbackground:\n  rate_increase_date: October 17, 2025\n  bill_comparison:\n  July_2021: $97 for 850 kWh\n  July_2026: $142 for 850 kWh\ncauses:\n  -: Significant capital upgrades to Kirkwood’s electrical grid and distribution infrastructure over the past decade, resulting in short-term debt.\n  -: Increased overall electricity costs driven by rising demand from electric vehicles, heat pumps, and data centers.\n  -: A recently discovered $13.8 million cash reserve deficit in Kirkwood Electric.\nactions_taken:\n  -: Hiring of Utility Financial Solutions (UFS) to evaluate the electric department’s financial position and recommend corrective measures.\n  -: Implementation of a recommended 14.8% rate increase to rebuild $13 million in reserves by 2031.\n  -: Engagement of an accounting firm to audit electric department expenditures for the last two fiscal years, with results forthcoming.\n  -: Early retirement of Kirkwood Electric Director Mark Petty amid council concerns.\nfinancial_details:\n  capital_improvements_cost: ~$48.78 million over five years\n  bond_sales_revenue: ~$34.65 million\n  cash_reserve_drawdown: ~$14 million to cover remaining costs\n  debt_financing_ratio: Approximately 71%, typical for municipal utilities\nanalysis: The $13.8 million deficit is primarily a symptom of infrastructure investments and rising electricity costs rather than an independent cause. Kirkwood Electric’s financial health largely depends on electricity purchase and sale prices. Transfers from the electric fund to other city funds have raised questions but are typical for municipal utilities.\nimplications: The rate increase aims to stabilize Kirkwood Electric’s finances and ensure long-term reliability and efficiency of the electric grid amid growing demand and infrastructure needs.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • December 29, 2025",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Kirkwood Electric’s Problem is Not Unique from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
