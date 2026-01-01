@@ -1,40 +1,21 @@
 {
-  "generated_at": "2025-12-31T12:07:21.482829+00:00",
+  "generated_at": "2026-01-01T12:07:23.880421+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 1,
-  "headline": "Kirkwood Pulse • December 31, 2025",
-  "overview": "event: Kirkwood City Council public hearing on Double Eagle Development's proposal\ndate_of_hearing: 2026-01-08\nproposal_overview:\n  developer: Double Eagle Development\n  site: former public works site\n  plan: 203 homes across six all-residential buildings\n  parking: 303 surface parking spots\n  features:\n  -: new through-street connecting Taylor and Fillmore\n  -: traditional-style architecture with pitched roofs, chimneys, covered porches\n  -: townhome-style apartments with ground-floor private entrances\n  -: ‘Breezestak’ layout offering varied floor plans\ncouncil_decision_factors:\n  -: likely most lucrative proposal\n  -: all-residential maximized property value\n  -: met original RFP criteria including street connection\n  -: aligned with Council’s conservative aesthetic preferences\n  -: reference to Double Eagle’s Bemiston Place Apartments work\ncomparisons:\n  apartment_mix: similar to other Kirkwood developments like Pitman Place\n  architecture: traditional vs. modern styles debated\ncriticisms_and_regrets:\n  -: lack of emphasis on Grant’s Trail extension impact\n  -: missed opportunity for phased development to maximize long-term community return\n  -: project is too auto-oriented with excessive surface parking and curb cuts\n  -: would prefer structured parking to allow more apartments and community green space\n  -: hope for future building code flexibility to support walk-up building layouts\nadditional_notes: Council backed off developing KPAC parking lot, preserving prime corner for future development tied to trail completion",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:3fd14899f69d",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "How Double Eagle Won Over the Council",
-      "link": "https://kirkwoodgadfly.com/public-works-site-how-double-eagle-won/",
-      "published": "2025-12-31T12:07:08.949699+00:00",
-      "excerpt": "On January 8th, Kirkwood City Council will hold a public hearing on Double Eagle Development’s proposal for the former public works site. The proposal, the Council’s preferred response of the six they received, calls for 203 homes across six all-residential buildings and 303 surface parking spots. In reviewing each of the RFP responses, a picture of the Council’s decision-making process",
-      "tags": [],
-      "ai_summary": "event: Kirkwood City Council public hearing on Double Eagle Development's proposal\ndate_of_hearing: 2026-01-08\nproposal_overview:\n  developer: Double Eagle Development\n  site: former public works site\n  plan: 203 homes across six all-residential buildings\n  parking: 303 surface parking spots\n  features:\n  -: new through-street connecting Taylor and Fillmore\n  -: traditional-style architecture with pitched roofs, chimneys, covered porches\n  -: townhome-style apartments with ground-floor private entrances\n  -: ‘Breezestak’ layout offering varied floor plans\ncouncil_decision_factors:\n  -: likely most lucrative proposal\n  -: all-residential maximized property value\n  -: met original RFP criteria including street connection\n  -: aligned with Council’s conservative aesthetic preferences\n  -: reference to Double Eagle’s Bemiston Place Apartments work\ncomparisons:\n  apartment_mix: similar to other Kirkwood developments like Pitman Place\n  architecture: traditional vs. modern styles debated\ncriticisms_and_regrets:\n  -: lack of emphasis on Grant’s Trail extension impact\n  -: missed opportunity for phased development to maximize long-term community return\n  -: project is too auto-oriented with excessive surface parking and curb cuts\n  -: would prefer structured parking to allow more apartments and community green space\n  -: hope for future building code flexibility to support walk-up building layouts\nadditional_notes: Council backed off developing KPAC parking lot, preserving prime corner for future development tied to trail completion",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • January 01, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on How Double Eagle Won Over the Council from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
