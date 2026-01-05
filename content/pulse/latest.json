@@ -1,112 +1,21 @@
 {
-  "generated_at": "2026-01-04T12:07:10.565903+00:00",
+  "generated_at": "2026-01-05T12:07:30.139437+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 5,
-  "headline": "Kirkwood Pulse • January 04, 2026",
-  "overview": "context: Kirkwood has invested significantly in making the community more walkable through infrastructure improvements like curb bump-outs and bike lanes, but speeding remains a major issue.\nspeed_study:\n  date: May 2024\n  locations_studied: 75\n  key_metric: 85th percentile speed\n  findings:\n  exceeding_threshold: 55\n  threshold_definition: 85th percentile drivers exceeding speed limit by more than 5 mph\n  recommendations:\n  -: lower speed limits\n  -: redesign streets to slow traffic\n  -: increase enforcement\n  recommended_interventions:\n  -:\n  treatment: Speed Feedback Sign\n  speed_reduction_mph: 3\n  crash_reduction_percent: 70\n  -:\n  treatment: Roundabouts\n  speed_reduction_mph: 6\n  crash_reduction_percent: 75\n  -:\n  treatment: Raised Intersections\n  speed_reduction_mph: 5\n  crash_reduction_percent: 40\n  -:\n  treatment: Horizontal Deflection (e.g., curb extensions)\n  speed_reduction_mph: 3\n  crash_reduction_percent: 30\n  -:\n  treatment: Lower Speed Limits\n  speed_reduction_mph: 4\n  crash_reduction_percent: 25\n  -:\n  treatment: Speed Humps/Tables\n  speed_reduction_mph: 10-20 at countermeasure\n  crash_reduction_percent: 40\nongoing_and_planned_projects:\n  -: Raised intersections at Clay & Argonne and Clay & Jefferson\n  -: Lane reductions in Kirkwood Road Phase I and II projects\n  -: Curb bump-outs on Lindeman, South Geyer Big Bend, and West Essex\n  -: Sidewalk infill on East Essex between Dickson and Hill Drive (in partnership with Glendale)\n  -: Purchase of eleven speed feedback cameras costing $59,815\n  -: Speed limit reductions on West Monroe (25 to 20 mph) and West Jefferson (20 to 15 mph)\nanalysis:\n  effectiveness: Interventions expected to reduce 85th percentile speeds by 3-6 mph and improve pedestrian safety\n  concerns: High-end speeders (99th percentile) driving extremely fast remain a challenge; some recorded top speeds may be errors or emergency vehicles\n  criticisms:\n  -: Lane reductions should extend further south on Kirkwood Road\n  -: Frustration with removal of sidewalks to avoid stop signs\n  -: Opposition to some speed limit reductions The article discusses Kirkwood's tear-down crisis, attributing it to the high cost of land. It highlights that after spending around $500,000 to purchase a lot, the additional $200,000 cost to tear down an existing small home and build a larger one is relatively minor. The piece suggests that the issue is tied to land prices rather than just housing policies. The article discusses Kirkwood's housing affordability crisis, focusing on the high cost of land as the primary barrier to preserving starter homes for young families. It argues that simply mandating smaller, affordable homes is insufficient because land prices dominate property costs. The author suggests two main strategies to reduce land costs: increasing supply by building multi-family or multi-story buildings, and breaking land into smaller parcels to lower individual lot prices. However, Kirkwood's zoning laws, which enforce minimum lot sizes ranging from 7,500 sqft to one acre, prevent lot splitting and thus limit the creation of affordable starter homes. An example is given where a 10,100 sqft lot could not be subdivided to build two modest homes, forcing owners to sell to buyers planning larger, more expensive homes. The article implies that zoning reform is necessary to revive the starter home market in Kirkwood.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:9f8ac860ade1",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Tired of the Speeders? Turn on the Cameras.",
-      "link": "https://kirkwoodgadfly.com/tired-of-the-speeders-turn-on-the-cameras/",
-      "published": "2026-01-04T12:06:31.490445+00:00",
-      "excerpt": "Kirkwood has poured a tremendous amount of sweat and treasure across multiple administrations into becoming a more walkable community. And while I have nits to pick here and there, overall these efforts have been worthwhile and successful. But no amount of curb bump-outs or bike lanes has convinced the blatant rule-breakers to stop blatantly breaking the rules. What The Speed",
-      "tags": [],
-      "ai_summary": "context: Kirkwood has invested significantly in making the community more walkable through infrastructure improvements like curb bump-outs and bike lanes, but speeding remains a major issue.\nspeed_study:\n  date: May 2024\n  locations_studied: 75\n  key_metric: 85th percentile speed\n  findings:\n  exceeding_threshold: 55\n  threshold_definition: 85th percentile drivers exceeding speed limit by more than 5 mph\n  recommendations:\n  -: lower speed limits\n  -: redesign streets to slow traffic\n  -: increase enforcement\n  recommended_interventions:\n  -:\n  treatment: Speed Feedback Sign\n  speed_reduction_mph: 3\n  crash_reduction_percent: 70\n  -:\n  treatment: Roundabouts\n  speed_reduction_mph: 6\n  crash_reduction_percent: 75\n  -:\n  treatment: Raised Intersections\n  speed_reduction_mph: 5\n  crash_reduction_percent: 40\n  -:\n  treatment: Horizontal Deflection (e.g., curb extensions)\n  speed_reduction_mph: 3\n  crash_reduction_percent: 30\n  -:\n  treatment: Lower Speed Limits\n  speed_reduction_mph: 4\n  crash_reduction_percent: 25\n  -:\n  treatment: Speed Humps/Tables\n  speed_reduction_mph: 10-20 at countermeasure\n  crash_reduction_percent: 40\nongoing_and_planned_projects:\n  -: Raised intersections at Clay & Argonne and Clay & Jefferson\n  -: Lane reductions in Kirkwood Road Phase I and II projects\n  -: Curb bump-outs on Lindeman, South Geyer Big Bend, and West Essex\n  -: Sidewalk infill on East Essex between Dickson and Hill Drive (in partnership with Glendale)\n  -: Purchase of eleven speed feedback cameras costing $59,815\n  -: Speed limit reductions on West Monroe (25 to 20 mph) and West Jefferson (20 to 15 mph)\nanalysis:\n  effectiveness: Interventions expected to reduce 85th percentile speeds by 3-6 mph and improve pedestrian safety\n  concerns: High-end speeders (99th percentile) driving extremely fast remain a challenge; some recorded top speeds may be errors or emergency vehicles\n  criticisms:\n  -: Lane reductions should extend further south on Kirkwood Road\n  -: Frustration with removal of sidewalks to avoid stop signs\n  -: Opposition to some speed limit reductions",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:34068fd306f0",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Kirkwood minimum lot size",
-      "link": "https://kirkwoodgadfly.com/tag/kirkwood-minimum-lot-size/",
-      "published": "2026-01-04T12:06:30.959022+00:00",
-      "excerpt": "I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
-      "tags": [],
-      "ai_summary": "The article discusses Kirkwood's tear-down crisis, attributing it to the high cost of land. It highlights that after spending around $500,000 to purchase a lot, the additional $200,000 cost to tear down an existing small home and build a larger one is relatively minor. The piece suggests that the issue is tied to land prices rather than just housing policies.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:0d6cd5268efe",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "How To Revive the Starter Home",
-      "link": "https://kirkwoodgadfly.com/how-to-revive-the-starter-home/",
-      "published": "2026-01-04T12:06:30.485771+00:00",
-      "excerpt": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
-      "tags": [],
-      "ai_summary": "The article discusses Kirkwood's housing affordability crisis, focusing on the high cost of land as the primary barrier to preserving starter homes for young families. It argues that simply mandating smaller, affordable homes is insufficient because land prices dominate property costs. The author suggests two main strategies to reduce land costs: increasing supply by building multi-family or multi-story buildings, and breaking land into smaller parcels to lower individual lot prices. However, Kirkwood's zoning laws, which enforce minimum lot sizes ranging from 7,500 sqft to one acre, prevent lot splitting and thus limit the creation of affordable starter homes. An example is given where a 10,100 sqft lot could not be subdivided to build two modest homes, forcing owners to sell to buyers planning larger, more expensive homes. The article implies that zoning reform is necessary to revive the starter home market in Kirkwood.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:0b2d54260b53",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "String of Errors Leads to Rejection of Parking Solution",
-      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
-      "published": "2026-01-04T12:06:29.955762+00:00",
-      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
-      "tags": [],
-      "ai_summary": "event: Kirkwood City Council unanimously rejected a contract with Fybr for a parking technology solution on September 4th.\ntechnology:\n  provider: Fybr\n  description: Sensors placed under parking spaces to provide real-time occupancy data, integrated with the Park Kirkwood app and enforcement alerts for parking limits.\n  benefits:\n  -: Real-time parking availability for visitors\n  -: Automated alerts for parking limit violations\n  -: Improved enforcement efficiency compared to manual monitoring\nbackground:\n  original_contract:\n  period: December 3, 2020 to December 2, 2021\n  scope: 275 parking sensors installed at no cost to Kirkwood\n  purpose: Proof of concept and demonstration for Fybr\n  miscommunication:\n  error: City staff incorrectly reported the original contract as covering 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  impact: This mistake led to misunderstandings and influenced the council's decision.\ncontract_lapse_and_issues:\n  contract_expiry: December 2, 2021\n  ownership_transfer: Hardware ownership and maintenance responsibility transferred to Kirkwood at no cost.\n  maintenance_problems: Gateways went offline due to power issues, causing sensor battery drain and reduced functionality.\n  reactivation_request: City requested reactivation in January 2025; Fybr identified only 69 sensors with sufficient battery life.\n  replacement_fee: $14,973 charged to relocate and reactivate these 69 sensors.\nconclusion: The council's rejection was influenced by inaccurate information and lack of a clear alternative, despite the technology's potential benefits.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:906773a73af3",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Council Greenlights Pitman Place",
-      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
-      "published": "2026-01-04T12:06:29.424035+00:00",
-      "excerpt": "After winding itself through the approval process three times, the Council finally offered first reading approval to Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road, at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the project in early October, but instead of approving",
-      "tags": [],
-      "ai_summary": "project:\n  name: Pitman Place\n  location: 300 N. Kirkwood Road (former Commerce Bank site)\n  type: 60-apartment mixed-use development\n  developer: TriStar Properties with Stock & Associates\n  approval_status: First reading approval granted by Kirkwood City Council on November 20th\n  zoning_changes:\n  residential_on_first_floor: approved (previously banned)\n  impact: Allows larger apartments and more bedrooms, more retail space, fewer parking spaces but still compliant\n  design_iterations:\n  original:\n  apartments:\n  1_bed_1_bath: 27\n  2_bed_2_bath: 27\n  3_bed_2_bath: 6\n  retail_space: original amount\n  clubhouse_size: larger\n  parking_spaces: original number\n  new_plan:\n  apartments:\n  1_bed: 23\n  2_bed: 24\n  3_bed: 13\n  retail_space: a couple hundred square feet more\n  clubhouse_size: slightly smaller\n  parking_spaces: 6 fewer but compliant\n  design_features:\n  -: Gabled facade (Concept P)\n  -: Balconies and five direct-entrance apartments on Adams facade\n  historical_tribute:\n  plaque: To commemorate historic Pitman School\n  naming: Development named after Pitman School\ncontext:\n  zoning_code:\n  previous_requirement: Mixed-use with commercial on ground floor along main streets\n  rationale: Promote active street front and walkable downtown\n  criticism: Mandate sometimes counterproductive due to parking and foot traffic issues\n  developer_incentive: Retail included if financially viable\n  benefit_of_change: More and larger homes, more affordable housing, less red tape\n  approval_process:\n  timeline:\n  -: Original proposal submitted and scheduled for early October vote\n  -: Developer withdrew proposal before vote to restart process\n  -: Planning & Zoning hearing held October 15th\n  -: Council agreed to zoning change and preferred Concept P design\n  -: First reading approval granted November 20th\n  public_and_council_reaction: Negative feedback on original flat, bulky design\n  developer_response: Presented two new facade options with improved aesthetics",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • January 05, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 5 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 5 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Tired of the Speeders? Turn on the Cameras. from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
