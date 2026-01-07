@@ -1,58 +1,21 @@
 {
-  "generated_at": "2026-01-06T12:07:48.268243+00:00",
+  "generated_at": "2026-01-07T12:07:37.285369+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 2,
-  "headline": "Kirkwood Pulse • January 06, 2026",
-  "overview": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  housing_units: 202\n  building_details: Six four-story buildings\n  parking_spots: 247\n  new_street: A new through street connecting Taylor to Fillmore\n  zoning: Proposed new R-7 Planned Multifamily zoning code\nproject_features:\n  housing_types:\n  -: ranch\n  -: townhome layouts\n  amenities:\n  -: pool\n  -: fitness center\n  -: lounge\n  -: grill stations\n  -: professionally maintained grounds\n  design_elements: Architectural elements reflecting historic Kirkwood homes with modern features\n  community_features:\n  -: pedestrian-friendly streets and sidewalks\n  -: gathering spaces\n  -: art installations\n  -: robust trees/plantings\ncriticisms:\n  hotel_absence: No hotel included despite original RFP requirement\n  retail_exclusion: No ground-floor retail allowed under new zoning, seen as shortsighted\n  building_design: Six blocky, mostly identical buildings lacking human scale\n  parking: Extensive surface parking reminiscent of suburban developments, missed opportunity for structured parking and public spaces\n  development_phasing: Lack of phased development by multiple entities limits diversity in vision\npotential_impact:\n  connectivity: New through street improves downtown Kirkwood walkability\n  economic: Missed opportunity for retail to serve new residents and trail users, impacting local sales tax base\n  unknowns: Details on project appearance and city financial returns remain unclear\noverall_opinion: The proposal has some positive aspects but is generally disappointing with significant concerns about design, zoning, and missed opportunities. context: The article discusses the proposals submitted in response to Kirkwood's Public Works Request for Proposals (RFP) process, focusing on those not selected by the City Council. It provides insight into the Council's preferences and feedback, as well as an overview of the rejected proposals.\ncity_council_preferences:\n  -: Include a hotel in the project\n  -: Majority owner-occupied residential units\n  -: Flexible structure height and unit density with contextual architectural design\n  -: Consider including KPAC surface parking lot with careful phasing and maintaining or increasing public parking\n  -: Consider incentives to increase purchase price (excluding Tax Increment Financing)\n  -: Include structured parking to minimize surface parking\n  -: Preference for traditional architectural design with Council involvement in review\nproposals_overview:\n  Keeley:\n  description: Two-stage project with 233 homes including 32 for-sale townhomes, a 150-unit multifamily building, a 51-unit addition, and a 477-stall parking garage shared with KPAC patrons. Optional third stage for boutique hotel or 24-unit mixed-use building with retail. Included public pocket parks and good integration with Kirkwood street grid.\n  features:\n  residential_units: 233\n  parking_stalls: 477\n  phases: 2\n  optional_third_stage: boutique hotel or 24-unit mixed-use apartment with retail\n  public_parks: True\n  street_grid_integration: True\n  Ridgehouse:\n  description: Proposal included 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC. Total parking spaces 760. Did not include a through-street as requested.\n  features:\n  residential_units: 230\n  retail_sqft: 9000\n  parking_spaces: 760\n  through_street: False\n  Savoy:\n  description: Most retail-heavy bid with a 100-room hotel on KPAC surface lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, a new water feature integrated with adjacent creek for storm runoff retention, and trails/paths.\n  features:\n  hotel_rooms: 100\n  residential_units: 62\n  retail_sqft: 15000\n  stormwater_management: True\n  trails_paths: True\n  Mehlman:\n  description: Plan for a 126-room hotel (Marriot A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots. No revised proposal submitted.\n  features:\n  hotel_rooms: 126\n  retail_sqft: 15000\n  residential_units: 27\n  parking_spots: 148\nadditional_notes: Three hotel-including proposals were rejected despite city leadership's emphasis on attracting a hotel downtown. This follows previous rejections of hotel proposals on city-owned Jefferson lots, highlighting a paradox in Council decisions.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:dbf52000fe91",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "202 Homes Proposed for Former Public Works Site",
-      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
-      "published": "2026-01-06T12:07:23.544471+00:00",
-      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
-      "tags": [],
-      "ai_summary": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  housing_units: 202\n  building_details: Six four-story buildings\n  parking_spots: 247\n  new_street: A new through street connecting Taylor to Fillmore\n  zoning: Proposed new R-7 Planned Multifamily zoning code\nproject_features:\n  housing_types:\n  -: ranch\n  -: townhome layouts\n  amenities:\n  -: pool\n  -: fitness center\n  -: lounge\n  -: grill stations\n  -: professionally maintained grounds\n  design_elements: Architectural elements reflecting historic Kirkwood homes with modern features\n  community_features:\n  -: pedestrian-friendly streets and sidewalks\n  -: gathering spaces\n  -: art installations\n  -: robust trees/plantings\ncriticisms:\n  hotel_absence: No hotel included despite original RFP requirement\n  retail_exclusion: No ground-floor retail allowed under new zoning, seen as shortsighted\n  building_design: Six blocky, mostly identical buildings lacking human scale\n  parking: Extensive surface parking reminiscent of suburban developments, missed opportunity for structured parking and public spaces\n  development_phasing: Lack of phased development by multiple entities limits diversity in vision\npotential_impact:\n  connectivity: New through street improves downtown Kirkwood walkability\n  economic: Missed opportunity for retail to serve new residents and trail users, impacting local sales tax base\n  unknowns: Details on project appearance and city financial returns remain unclear\noverall_opinion: The proposal has some positive aspects but is generally disappointing with significant concerns about design, zoning, and missed opportunities.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:ebc352aa548f",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Public Works Site: The Rejects",
-      "link": "https://kirkwoodgadfly.com/public-works-the-rejects/",
-      "published": "2026-01-06T12:07:21.935542+00:00",
-      "excerpt": "A quick note that today’s story features lots of images that may not show up in the default iPhone email app. If images are not properly displaying, please click here to view the story in your browser. Last week I wrote up how Double Eagle won the Public Works sweepstakes. Ahead of this Thursday’s City Council public hearing on the",
-      "tags": [],
-      "ai_summary": "context: The article discusses the proposals submitted in response to Kirkwood's Public Works Request for Proposals (RFP) process, focusing on those not selected by the City Council. It provides insight into the Council's preferences and feedback, as well as an overview of the rejected proposals.\ncity_council_preferences:\n  -: Include a hotel in the project\n  -: Majority owner-occupied residential units\n  -: Flexible structure height and unit density with contextual architectural design\n  -: Consider including KPAC surface parking lot with careful phasing and maintaining or increasing public parking\n  -: Consider incentives to increase purchase price (excluding Tax Increment Financing)\n  -: Include structured parking to minimize surface parking\n  -: Preference for traditional architectural design with Council involvement in review\nproposals_overview:\n  Keeley:\n  description: Two-stage project with 233 homes including 32 for-sale townhomes, a 150-unit multifamily building, a 51-unit addition, and a 477-stall parking garage shared with KPAC patrons. Optional third stage for boutique hotel or 24-unit mixed-use building with retail. Included public pocket parks and good integration with Kirkwood street grid.\n  features:\n  residential_units: 233\n  parking_stalls: 477\n  phases: 2\n  optional_third_stage: boutique hotel or 24-unit mixed-use apartment with retail\n  public_parks: True\n  street_grid_integration: True\n  Ridgehouse:\n  description: Proposal included 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC. Total parking spaces 760. Did not include a through-street as requested.\n  features:\n  residential_units: 230\n  retail_sqft: 9000\n  parking_spaces: 760\n  through_street: False\n  Savoy:\n  description: Most retail-heavy bid with a 100-room hotel on KPAC surface lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, a new water feature integrated with adjacent creek for storm runoff retention, and trails/paths.\n  features:\n  hotel_rooms: 100\n  residential_units: 62\n  retail_sqft: 15000\n  stormwater_management: True\n  trails_paths: True\n  Mehlman:\n  description: Plan for a 126-room hotel (Marriot A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots. No revised proposal submitted.\n  features:\n  hotel_rooms: 126\n  retail_sqft: 15000\n  residential_units: 27\n  parking_spots: 148\nadditional_notes: Three hotel-including proposals were rejected despite city leadership's emphasis on attracting a hotel downtown. This follows previous rejections of hotel proposals on city-owned Jefferson lots, highlighting a paradox in Council decisions.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 0,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • January 07, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on 202 Homes Proposed for Former Public Works Site from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
