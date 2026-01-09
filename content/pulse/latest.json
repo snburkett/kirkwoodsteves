@@ -1,21 +1,166 @@
 {
-  "generated_at": "2026-01-08T12:07:35.021392+00:00",
+  "generated_at": "2026-01-09T12:08:51.501519+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • January 08, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • January 09, 2026",
+  "overview": "event: Prevagen U.S. Figure Skating Championships\nlocation: Enterprise Center, St. Louis\ndates: Through January 11, 2026\nparticipants: Approximately 90 top figure skaters from across the U.S.\ndisciplines:\n  -: men’s singles\n  -: women’s singles\n  -: pairs\n  -: ice dance\npurpose: To select Team USA representatives for the 2026 Milano Cortina Olympic Winter Games\nlocal_involvement:\n  notable_figures:\n  -:\n  name: Evangeline Whitlock\n  role: Assistant professor at Webster University, former competitive figure skater\n  background: Gold medalist in Ice Dance and Moves in the Field, inspired by father and Olympic rivalry\n  connection: Webster Groves\n  -:\n  name: Charity Hendrickson\n  role: Figure skating coach and producer/director of Nutcracker On Ice\n  connection: Former Shrewsbury resident, Webster Groves\n  young_skater_volunteers:\n  -:\n  name: Maggie Driscoll\n  age: 11\n  hometown: Glendale\n  -:\n  name: Ava Clisbee\n  age: 13\n  hometown: Kirkwood\n  -:\n  name: Audrey Young\n  age: 12\n  hometown: Webster Groves\n  roles_of_young_skater_volunteers: Ice sweepers collecting gifts and stuffed animals on the ice during performances\nsignificance:\n  economic_impact: Brings around 5,000 visitors during a typically slow tourist season, benefiting hospitality, hotels, restaurants, and attractions\n  media_exposure: National television coverage on NBC\n  historical_context: Celebrates St. Louis’ legacy as host of the 1904 Summer Olympics, reinforcing its status as an Olympic city\n  quote: Once an Olympic city, always an Olympic city deceased:\n  name: Lois Ann (Goldman) Weir-Jungers\n  age: 80\n  residence: Kirkwood, Missouri\n  date_of_passing: 2025-12-24\n  cause: Alzheimer’s disease\n  birth_date: 1945-06-12\n  birth_place: St. Louis, Missouri\n  family:\n  husband: William \"Bill\" Jungers\n  former_husband: John \"Jack\" Weir\n  son: Andrew Weir\n  daughter_in_law: Jessica Weir\n  stepson: Jeffery Jungers\n  stepson_spouse: Kathy Jungers\n  grandchildren:\n  -: Calvin Weir\n  -: Eliza Weir\n  -: Ava Jungers\n  siblings:\n  -:\n  name: Stuart Goldman\n  spouse: Harriet\n  location: Yardley, Pennsylvania\n  -:\n  name: Sandra Goldman\n  relation: sister-in-law\n  location: Chatham, Massachusetts\n  deceased_sibling: Steven Goldman\n  career:\n  education: Harris Teachers College\n  professions:\n  -: Public school teacher\n  -: Director of kids marketing at KPLR-TV\n  notable_work: St. Louis 11 Kids Club\n  awards:\n  -: Emmy Award\n  personal_traits:\n  -: Outgoing\n  -: Loving\n  -: Social\n  -: Community-oriented\n  interests:\n  -: Music (supported son's musical talent)\n  -: Animals (cats and Scottish terriers)\n  -: Community engagement\n  marriage:\n  spouse: William Jungers\n  year: 2003\n  location: Chatham, Cape Cod\n  duration_years: 22\n  care:\n  caregiver: Nataly Sanchez\n  husband_care: True\nmemorial:\n  celebration_of_life:\n  planned_timeframe: Spring or Summer 2026\n  details: To be shared later\n  donation_requests:\n  -: Kids in the Middle\n  -: Alzheimer’s Association\n  -: American Diabetes Association\n  funeral_arrangements:\n  provider: Bopp Chapel\n  website: www.boppchapel.com subject: Glennon W. Travers\nevent: Obituary\ndate_of_passing: 2025-12-27\nfamily:\n  spouse: Elizabeth Ann “Libby” (Snyders) Travers\n  parents:\n  -: Robert J. Travers\n  -: Regina (Charlier) Travers\n  siblings:\n  -: Timothy Travers\n  -: Laurie Christman\n  deceased_sibling: Robyn Bosworth\n  children:\n  -: Christopher W. Travers\n  -: John P. Travers\n  -: Michael G. Travers\n  grandchildren:\n  -: Jacob\n  -: Samuel\n  -: Holly\n  -: William\n  -: Leo\n  -: Matthew\n  -: Mary\n  -: Audrey\n  -: Josephine\n  -: Amelia\n  -: Timothy\n  -: Joseph Travers\nbiography:\n  early_life_interests:\n  -: motorcycles\n  -: sports cars\n  -: speedboats\n  -: airplanes\n  pilot: True\n  notable_incident: Survived a plane crash in 1983 (not as pilot)\n  career:\n  -: Started at Six Flags\n  -: Joined father's insurance agency in 1970s\n  -: Founded Travers & Associates Aviation Insurance in 1978\n  -: Sons joined company in 1990s\n  personal_traits:\n  -: relationship expert\n  -: generous\n  -: mentor\n  -: family-oriented\n  nicknames:\n  -: Rocket\n  -: Grumpy Grandpa Glen\n  -: GGG\nlegacy: Known for his generosity, humor, fearless approach to life, and deep family connections. Left a lasting impact on family, friends, and community.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:d91a6aa0f461",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "“Once An Olympic City, Always An Olympic City”",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/once-an-olympic-city-always-an-olympic-city/article_e28d907b-c5b5-4b7b-9c2c-ec5233c2a431.html",
+      "published": "2026-01-09T06:00:00+00:00",
+      "excerpt": "The city of St. Louis is currently playing a high-profile role in this year’s Olympics. Through Jan. 11, the Gateway City plays host to the Prevagen U.S. Figure Skating Championships at the Enterprise Center — and skaters from the Kirkwood-Webster Groves area couldn’t be more excited about it. Roughly 90 of the top skaters from around the country will compete",
+      "tags": [],
+      "ai_summary": "event: Prevagen U.S. Figure Skating Championships\nlocation: Enterprise Center, St. Louis\ndates: Through January 11, 2026\nparticipants: Approximately 90 top figure skaters from across the U.S.\ndisciplines:\n  -: men’s singles\n  -: women’s singles\n  -: pairs\n  -: ice dance\npurpose: To select Team USA representatives for the 2026 Milano Cortina Olympic Winter Games\nlocal_involvement:\n  notable_figures:\n  -:\n  name: Evangeline Whitlock\n  role: Assistant professor at Webster University, former competitive figure skater\n  background: Gold medalist in Ice Dance and Moves in the Field, inspired by father and Olympic rivalry\n  connection: Webster Groves\n  -:\n  name: Charity Hendrickson\n  role: Figure skating coach and producer/director of Nutcracker On Ice\n  connection: Former Shrewsbury resident, Webster Groves\n  young_skater_volunteers:\n  -:\n  name: Maggie Driscoll\n  age: 11\n  hometown: Glendale\n  -:\n  name: Ava Clisbee\n  age: 13\n  hometown: Kirkwood\n  -:\n  name: Audrey Young\n  age: 12\n  hometown: Webster Groves\n  roles_of_young_skater_volunteers: Ice sweepers collecting gifts and stuffed animals on the ice during performances\nsignificance:\n  economic_impact: Brings around 5,000 visitors during a typically slow tourist season, benefiting hospitality, hotels, restaurants, and attractions\n  media_exposure: National television coverage on NBC\n  historical_context: Celebrates St. Louis’ legacy as host of the 1904 Summer Olympics, reinforcing its status as an Olympic city\n  quote: Once an Olympic city, always an Olympic city",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b35bb390e4f3",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Lois Ann (Goldman) Weir-Jungers",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/lois-ann-goldman-weir-jungers/article_f9e7d520-ab4c-43aa-a43f-b68ba989a553.html",
+      "published": "2026-01-08T17:29:00+00:00",
+      "excerpt": "Weir-Jungers, Lois Ann (Goldman), age 80, of Kirkwood, Missouri, passed away peacefully at her home on Dec. 24, 2025, after a battle with Alzheimer’s. Lois was born in St. Louis on June 12, 1945, to Joseph and May Goldman. She attended Harris Teachers College and taught public school for many years. One of the most fulfilling chapters of her career",
+      "tags": [],
+      "ai_summary": "deceased:\n  name: Lois Ann (Goldman) Weir-Jungers\n  age: 80\n  residence: Kirkwood, Missouri\n  date_of_passing: 2025-12-24\n  cause: Alzheimer’s disease\n  birth_date: 1945-06-12\n  birth_place: St. Louis, Missouri\n  family:\n  husband: William \"Bill\" Jungers\n  former_husband: John \"Jack\" Weir\n  son: Andrew Weir\n  daughter_in_law: Jessica Weir\n  stepson: Jeffery Jungers\n  stepson_spouse: Kathy Jungers\n  grandchildren:\n  -: Calvin Weir\n  -: Eliza Weir\n  -: Ava Jungers\n  siblings:\n  -:\n  name: Stuart Goldman\n  spouse: Harriet\n  location: Yardley, Pennsylvania\n  -:\n  name: Sandra Goldman\n  relation: sister-in-law\n  location: Chatham, Massachusetts\n  deceased_sibling: Steven Goldman\n  career:\n  education: Harris Teachers College\n  professions:\n  -: Public school teacher\n  -: Director of kids marketing at KPLR-TV\n  notable_work: St. Louis 11 Kids Club\n  awards:\n  -: Emmy Award\n  personal_traits:\n  -: Outgoing\n  -: Loving\n  -: Social\n  -: Community-oriented\n  interests:\n  -: Music (supported son's musical talent)\n  -: Animals (cats and Scottish terriers)\n  -: Community engagement\n  marriage:\n  spouse: William Jungers\n  year: 2003\n  location: Chatham, Cape Cod\n  duration_years: 22\n  care:\n  caregiver: Nataly Sanchez\n  husband_care: True\nmemorial:\n  celebration_of_life:\n  planned_timeframe: Spring or Summer 2026\n  details: To be shared later\n  donation_requests:\n  -: Kids in the Middle\n  -: Alzheimer’s Association\n  -: American Diabetes Association\n  funeral_arrangements:\n  provider: Bopp Chapel\n  website: www.boppchapel.com",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:39ba4c62dc9b",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Glennon W. Travers",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/glennon-w-travers/article_c0d755e0-85d5-4039-b6d7-11855eb4488e.html",
+      "published": "2026-01-08T17:26:00+00:00",
+      "excerpt": "Travers, Glennon W., beloved husband, father, grandfather, brother, brother-in-law, uncle, nephew, cousin, mentor and friend, passed away on Saturday, Dec. 27, 2025, surrounded by the legacy of a life boldly and joyfully lived. Glen was the devoted husband of Elizabeth Ann “Libby” (Snyders) Travers and the loving son of Robert J. Travers and Regina (Charlier) Travers. He was a cherished",
+      "tags": [],
+      "ai_summary": "subject: Glennon W. Travers\nevent: Obituary\ndate_of_passing: 2025-12-27\nfamily:\n  spouse: Elizabeth Ann “Libby” (Snyders) Travers\n  parents:\n  -: Robert J. Travers\n  -: Regina (Charlier) Travers\n  siblings:\n  -: Timothy Travers\n  -: Laurie Christman\n  deceased_sibling: Robyn Bosworth\n  children:\n  -: Christopher W. Travers\n  -: John P. Travers\n  -: Michael G. Travers\n  grandchildren:\n  -: Jacob\n  -: Samuel\n  -: Holly\n  -: William\n  -: Leo\n  -: Matthew\n  -: Mary\n  -: Audrey\n  -: Josephine\n  -: Amelia\n  -: Timothy\n  -: Joseph Travers\nbiography:\n  early_life_interests:\n  -: motorcycles\n  -: sports cars\n  -: speedboats\n  -: airplanes\n  pilot: True\n  notable_incident: Survived a plane crash in 1983 (not as pilot)\n  career:\n  -: Started at Six Flags\n  -: Joined father's insurance agency in 1970s\n  -: Founded Travers & Associates Aviation Insurance in 1978\n  -: Sons joined company in 1990s\n  personal_traits:\n  -: relationship expert\n  -: generous\n  -: mentor\n  -: family-oriented\n  nicknames:\n  -: Rocket\n  -: Grumpy Grandpa Glen\n  -: GGG\nlegacy: Known for his generosity, humor, fearless approach to life, and deep family connections. Left a lasting impact on family, friends, and community.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:75d6f5e832ae",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Joan Scheidegger Todd",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/joan-scheidegger-todd/article_67f488c2-56f6-4ffb-97ef-d7ecb9611f56.html",
+      "published": "2026-01-08T17:25:00+00:00",
+      "excerpt": "Todd, Joan Scheidegger, 82, of Kirkwood, Missouri, passed away peacefully on Dec. 21, 2025. Born on Dec. 1, 1943, Joan was a lifelong resident of Kirkwood who touched the lives of all who knew her. After graduating from Kirkwood High School, Joan began her career as a clothing model for The Grove Company and a shoe model for Edison Brothers",
+      "tags": [],
+      "ai_summary": "name: Joan Scheidegger Todd\nage: 82\nresidence: Kirkwood, Missouri\ndate_of_passing: 2025-12-21\nbirth_date: 1943-12-01\nbiography:\n  education: Kirkwood High School\n  career:\n  -: Clothing model for The Grove Company\n  -: Shoe model for Edison Brothers Shoes\n  -: Receptionist at father's photography studio\n  family:\n  spouse: Lloyd Todd (married 1967)\n  children:\n  -: Stephen Todd\n  grandchildren:\n  -: Gracie Todd\n  -: Ellie Todd\n  -: Stephen Todd II\n  personal_traits:\n  -: Radiant smile\n  -: Caring spirit\n  -: Gift for conversation\n  -: Creative in handmade clothing and holiday crafts\n  parents:\n  -: Francis Scheidegger\n  -: Viola Scheidegger\nmemorial:\n  service: Private family gathering\n  donations: Alzheimers Association\n  arrangements_by: Bopp Chapel",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:adf58a45987e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Edwin Henry “Scott” Schmidt III M.D.",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/edwin-henry-scott-schmidt-iii-m-d/article_92713847-a36c-40d1-9de2-691dd88962d0.html",
+      "published": "2026-01-08T17:23:00+00:00",
+      "excerpt": "Schmidt III M.D., Edwin Henry “Scott,” age 75, of Kirkwood, Missouri, passed away on Jan. 3, 2026, at home with his family. Scott was born on May 24, 1950, in St. Louis, Missouri, the son of the late Edwin H. Jr. M.D. and the late Elizabeth Schmidt (nee Schmiemeier). He was the beloved husband of 52 years to Mary (nee",
+      "tags": [],
+      "ai_summary": "deceased:\n  full_name: Edwin Henry “Scott” Schmidt III M.D.\n  age: 75\n  residence: Kirkwood, Missouri\n  date_of_passing: 2026-01-03\n  place_of_passing: home with family\n  birth_date: 1950-05-24\n  birth_place: St. Louis, Missouri\n  parents:\n  father: Edwin H. Jr. M.D.\n  mother: Elizabeth Schmidt (nee Schmiemeier)\n  spouse:\n  name: Mary (nee Buehler)\n  years_married: 52\n  children:\n  -: Edwin IV (Anne)\n  -: Matthias (Sophia)\n  -: Paul (Colleen)\n  -: Sarah (Dan)\n  grandchildren:\n  -: Charlie\n  -: Cecilia\n  -: Viola\n  -: Josephine\n  siblings:\n  -: Steve (Teresa)\n  -: Jim (Karen)\n  -: Marty (Margaret)\n  brother_in_laws_and_sisters_in_law:\n  -: Ann Willis (John)\n  -: the late Paul Buehler\n  -: Mark Buehler (Suzy)\n  -: Barb McGauley (Pat)\n  education:\n  high_school: Lutheran South High School (1968)\n  undergraduate: Saint Louis University\n  medical_school: Saint Louis University Medical School (1975)\n  career:\n  specialty: Internal Medicine\n  practice: SSM Health system at St. Mary’s Hospital and Webster Groves\n  retirement: May 2020\n  personal_interests:\n  -: Playing and teaching piano and organ\n  -: Volunteering musical talents at St. Gerard Majella and St. Peter Catholic churches\n  -: Reading\n  -: Playing harmonica\n  health:\n  injury: Spinal cord injury from fall while hiking on 2021-12-01\n  condition: Quadriplegic for last four years\n  body_donation: Saint Louis University Medical School\nservices:\n  visitation:\n  date: 2026-01-15\n  time: 4 to 8 p.m.\n  location: Bopp Chapel, 10610 Manchester Road, Kirkwood, Missouri\n  memorial_service:\n  date: 2026-01-16\n  time: 11 a.m.\n  location: St. Lucas United Church of Christ, 11735 Denny Road, St. Louis, Missouri\ndonations:\n  in_lieu_of_flowers:\n  -: Rev. Francis Guentner, SJ Scholarship at St. Louis University\n  -: Rural Parish Clinic St. Louis\n  -: OKS Inc. (non-profit founded by Scott’s brother Marty Schmidt for malnourished children in Kenya)\narrangements_by: Bopp Chapel",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:dd7a77fe62c0",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Robert Miller",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/robert-miller/article_f42de3bb-dd9b-435c-b7ce-c84c393e1f5c.html",
+      "published": "2026-01-08T17:20:00+00:00",
+      "excerpt": "Miller, Robert. After a long and fulfilling life, Robert Miller died peacefully in his bed on Dec. 23, 2025. The cause was congestive heart failure. He was 82 years old. Robert was born on Aug. 9, 1943, in Minneapolis, Minnesota, to Mast C. and Mary A. (Rottman) Miller. Shortly after his birth, the family moved to rural Ohio, where his",
+      "tags": [],
+      "ai_summary": "subject: Robert Miller\ndate_of_death: 2025-12-23\nage: 82\ncause_of_death: congestive heart failure\nbirth:\n  date: 1943-08-09\n  place: Minneapolis, Minnesota\n  parents:\n  -: Mast C. Miller\n  -: Mary A. (Rottman) Miller\nearly_life:\n  childhood_location: Wooster, Ohio\n  family_business: tool and die company\n  musical_background:\n  instrument: trombone\n  education:\n  -: Oberlin Music Conservatory (trombone performance)\n  -: University of New Mexico (graduate degree in music)\n  -: Washington University in St. Louis (graduate degree in music)\nfamily:\n  spouse: Janet Lasley (married 1972)\n  children:\n  -: Valerie Miller\n  -: Nathan Miller\n  residence: Kirkwood, Missouri (since 1985)\n  grandchildren:\n  -: Rhys Miller\n  -: Benjamin Goldenstein\n  -: Emilia Goldenstein\n  siblings:\n  -: Sarah “Sally” Little\n  -: James L. Miller (deceased)\n  niece: Rebecca Leitschuh\ncareer:\n  music:\n  roles:\n  -: 2nd trombone in St. Louis Symphony\n  -: first-call bass trombonist in St. Louis area (1970s-80s)\n  -: trombone in Muny Opera pit orchestra (30+ years)\n  -: piano tuner\n  invention:\n  name: The Miller Valve\n  description: patented trombone valve\n  notable_use: used by St. Louis Symphony’s principal trombonist for Bolero solo\n  commercial_success: limited sales\n  law:\n  degree: Saint Louis University (1981)\n  bar_admission: Missouri Bar\n  practice: personal injury lawyer for over 40 years\n  reputation: took difficult cases, won some notable victories\npersonal_traits:\n  -: genuine\n  -: honest\n  -: committed to keeping promises\nsurvivors:\n  -: sister Sarah “Sally” Little\n  -: daughter Valerie Miller (Siome Goldenstein)\n  -: son Nathan Miller (Lauren Murphy)\n  -: grandchildren Rhys Miller, Benjamin Goldenstein, Emilia Goldenstein\n  -: niece Rebecca Leitschuh (Ben Leithschuh)\n  -: long-time partner Edwina Nygaard\npreceded_in_death_by:\n  -: parents Mast C. and Mary A. Miller\n  -: brother James L. Miller\nacknowledgments:\n  -: French Manor staff\n  -: Culver Meadows staff in Traverse City, Michigan\n  -: Hospice of Michigan",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:0a8ff3575276",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Katharine Michelle Miller",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/katharine-michelle-miller/article_4d89b263-7d13-4549-ad0d-665ae81ec021.html",
+      "published": "2026-01-08T17:18:00+00:00",
+      "excerpt": "Miller, Katharine Michelle. It is with heavy hearts that we announce the passing of Katharine Michelle Miller, known to many as Michelle. Michelle was born Oct. 21, 1969, and transitioned out of life in Dec. 2025. Michelle is survived by her beloved daughter, Katharine Diane Redington; and her former spouse, Jeff Redington. Michelle was the daughter of the late Danny",
+      "tags": [],
+      "ai_summary": "subject: Katharine Michelle Miller\ndate_of_birth: 1969-10-21\ndate_of_passing: 2025-12\nsurvivors:\n  daughter: Katharine Diane Redington\n  former_spouse: Jeff Redington\n  siblings:\n  -: Jim Miller (Janis)\n  -: Beth Ann Miller (Patrick Lauderback)\n  niece: Leslie Wainwright (the late Nelson Wainwright)\n  friends:\n  -: Glenn Giessow\npersonal_traits:\n  -: talented\n  -: compassionate\n  -: great sense of humor\n  -: playful\n  -: passion for music and dance\n  -: gifted artist and calligrapher\n  -: avid shopper\nmemorial_info:\n  celebration_of_life:\n  date: 2026-01-12\n  time: 15:30-19:30\n  location: Bopp Chapel, 10610 Manchester Road, Kirkwood, Missouri 63122\n  memorial_suggestions:\n  -: NAMI St. Louis\n  -: Susan G. Komen Breast Cancer\n  -: Alzheimer’s Association",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:1336c02a0023",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Dorothy Schinzing Miller",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/dorothy-schinzing-miller/article_eb4c923f-206d-409e-bc65-a816cc6ad964.html",
+      "published": "2026-01-08T17:17:00+00:00",
+      "excerpt": "Miller, Dorothy Schinzing, of Kirkwood, Missouri, passed away peacefully at home on Dec. 28, 2025. Born on Dec. 31, 1942, in Des Peres, Missouri, Dorothy spent her life deeply rooted in the community she loved, where she was a lifelong member of St. Paul’s Lutheran Church. She cherished her childhood in Des Peres, growing up alongside her family at the",
+      "tags": [],
+      "ai_summary": "subject: Dorothy Schinzing Miller\ndate_of_passing: 2025-12-28\nlocation: Kirkwood, Missouri\nbiography:\n  birth_date: 1942-12-31\n  birth_place: Des Peres, Missouri\n  education: Kirkwood High School, Class of 1960\n  community_involvement: Lifelong member of St. Paul’s Lutheran Church\n  personal_life:\n  roles:\n  -: wife\n  -: mother\n  -: grandmother\n  -: friend\n  hobbies:\n  -: gardening\n  -: storytelling\n  -: traveling\n  business: Co-founded and ran a computer technology business and a race car parts manufacturing business\n  affiliations:\n  -: St. Louis Street Rod Association\n  travel:\n  -: Ireland\n  -: Paris\n  -: Spain\n  -: Alaska\n  -: Naples, Florida\nfamily:\n  fiancé: David O. Guthrel\n  daughters:\n  -: Jennifer Quinn Williams (Matt)\n  -: Colleen Quinn McCune\n  -: Sarah Jean Miller\n  grandchildren:\n  -: Joseph Q. McCune\n  -: Matthew M. Williams\n  -: Hallie C. Williams\n  -: Clayton J. McCune\n  -: Maya V. Perkinson\n  step_children:\n  -: James B. Miller\n  -: Beth Ann Miller\n  -: K. Michelle Miller\n  sister: Jacqueline S. Eslinger (Bill)\n  predeceased_by:\n  -: Elmer Schinzing\n  -: Violet Schinzing\n  -: James G. Schinzing\n  -: Michael G. Quinn\n  -: J. Daniel Miller\nmemorial:\n  funeral_date: 2026-01-03\n  funeral_location: Bopp Chapel\n  visitation_date: 2026-01-02\n  arrangements_by: Bopp Chapel\n  memorial_contributions: Friends of Kids with Cancer\nlegacy: Remembered for warmth, kindness, and making everyone feel welcome and loved.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on “Once An Olympic City, Always An Olympic City” from Webster-Kirkwood Times – News."
 }
