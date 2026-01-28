@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-01-27T12:08:05.339440+00:00",
+  "generated_at": "2026-01-28T12:08:07.304357+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 4,
-  "headline": "Kirkwood Pulse • January 27, 2026",
-  "overview": "The article discusses Kirkwood's tear-down crisis, attributing it to the high cost of land. It highlights that after spending $500,000 on a lot, the additional $200,000 to demolish an existing small home and build a larger one is relatively minor, contributing to the trend of replacing starter homes with bigger ones. The article discusses Kirkwood's housing affordability crisis, focusing on the high cost of land as the main barrier to preserving starter homes for young families. It argues that simply mandating smaller, affordable homes won't solve the problem because land prices dominate property costs. The author suggests two ways to make land more affordable: increasing supply by building multi-family or multi-story buildings, and breaking land into smaller parcels to lower individual lot prices. However, Kirkwood's zoning laws, which enforce minimum lot sizes ranging from 7,500 sqft to one acre, prevent subdividing lots to create more affordable housing options. An example is given of a 10,100 sqft lot where splitting was impossible due to zoning, forcing owners to sell to developers who build larger homes. The article implies that revising zoning regulations to allow smaller lot sizes could help revive the availability of starter homes in Kirkwood. event: Kirkwood City Council unanimously voted down a contract with Fybr for a parking technology solution on September 4th.\ntechnology:\n  provider: Fybr\n  description: Sensors placed under parking spaces to provide real-time occupancy data, accessible via the Park Kirkwood app and used by police for enforcement.\n  benefits:\n  -: Real-time parking availability\n  -: Improved enforcement of parking limits\nissues:\n  -: City staff misrepresented the original Fybr contract details, incorrectly stating 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  -: This error led to confusion and misunderstandings during the contract renewal process.\n  -: Original contract expired December 2, 2021, with ownership and maintenance responsibility transferring to the city.\n  -: City did not respond to Fybr's inquiries about sensor removal until 2025, when reactivation was requested.\n  -: Many system gateways went offline due to power issues, causing sensor battery drain and reduced functionality.\n  -: Only 69 sensors had sufficient battery life for reactivation, leading to a relocation fee of $14,973.\nconsequences: Council rejected the new contract partly due to unclear information and lack of a clear alternative solution.\nauthor_opinion: The author expresses disappointment with the Council's decision and concern over the lack of understanding and alternatives.",
+  "stories_featured": 2,
+  "headline": "Kirkwood Pulse • January 28, 2026",
+  "overview": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts\n  -: Covered direct entry front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Professionally maintained grounds\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  concerns:\n  -: No hotel included despite original RFP requirement\n  -: Exclusion of ground-floor retail, disallowed by new zoning\n  -: Missed opportunity to attract trail users and boost local sales tax\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Lack of phased development by multiple entities\n  -: Uncertainty about project appearance and financial details\nadditional_notes: City aims to offset $12 million cost of new public works site through this development. More details expected in future updates. context: The City Council of Kirkwood conducted a two-stage Request for Proposals (RFP) process for the Public Works site, receiving bids from five developers: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman. The Council provided feedback emphasizing preferences for a hotel inclusion, majority owner-occupied residential units, flexible building height and density with traditional architectural design, inclusion of KPAC surface parking with maintained or increased public parking, no Tax Increment Financing (TIF), and structured parking.\nkey_points:\n  -: Keeley Properties proposed 233 homes in two stages, including townhomes, multifamily units, a 477-stall parking garage shared with KPAC patrons, public pocket parks, and an optional boutique hotel or mixed-use building on the KPAC parking lot.\n  -: Ridgehouse Development proposed 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel on the KPAC lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, and a new water feature integrated with the adjacent creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel (Marriott A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots but did not submit a revised proposal.\n  -: All three hotel-including proposals were ultimately rejected by the Council, continuing a pattern of rejecting hotel projects despite city leadership's emphasis on attracting hotels downtown.\n  -: Council feedback indicated that requiring a hotel lowered the developers' offers for the site, influencing the rejection decisions.\noverall_outcome: Double Eagle was selected as the winning proposal, with other bids rejected following Council feedback and revisions.\nadditional_resources: Full suite of submissions obtained via FOIA is available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
   "items": [
     {
-      "id": "kirkwood-gadfly:34068fd306f0",
+      "id": "kirkwood-gadfly:dbf52000fe91",
       "source": {
         "id": "kirkwood-gadfly",
         "name": "Kirkwood Gadfly"
       },
-      "title": "Kirkwood minimum lot size",
-      "link": "https://kirkwoodgadfly.com/tag/kirkwood-minimum-lot-size/",
-      "published": "2026-01-27T12:07:40.106928+00:00",
-      "excerpt": "I've long maintained that Kirkwood's tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of… Continue reading How To Revive",
+      "title": "202 Homes Proposed for Former Public Works Site",
+      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
+      "published": "2026-01-28T12:07:47.418757+00:00",
+      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
       "tags": [],
-      "ai_summary": "The article discusses Kirkwood's tear-down crisis, attributing it to the high cost of land. It highlights that after spending $500,000 on a lot, the additional $200,000 to demolish an existing small home and build a larger one is relatively minor, contributing to the trend of replacing starter homes with bigger ones.",
+      "ai_summary": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts\n  -: Covered direct entry front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Professionally maintained grounds\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  concerns:\n  -: No hotel included despite original RFP requirement\n  -: Exclusion of ground-floor retail, disallowed by new zoning\n  -: Missed opportunity to attract trail users and boost local sales tax\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Lack of phased development by multiple entities\n  -: Uncertainty about project appearance and financial details\nadditional_notes: City aims to offset $12 million cost of new public works site through this development. More details expected in future updates.",
       "sentiment": "neutral",
       "sentiment_score": 0,
       "community_impact": "Impact unclear based on automatically extracted text.",
@@ -25,53 +25,17 @@
       "suggested_action": null
     },
     {
-      "id": "kirkwood-gadfly:0d6cd5268efe",
+      "id": "kirkwood-gadfly:ebc352aa548f",
       "source": {
         "id": "kirkwood-gadfly",
         "name": "Kirkwood Gadfly"
       },
-      "title": "How To Revive the Starter Home",
-      "link": "https://kirkwoodgadfly.com/how-to-revive-the-starter-home/",
-      "published": "2026-01-27T12:07:39.649277+00:00",
-      "excerpt": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
+      "title": "Public Works Site: The Rejects",
+      "link": "https://kirkwoodgadfly.com/public-works-the-rejects/",
+      "published": "2026-01-28T12:07:45.661349+00:00",
+      "excerpt": "Last week I wrote up how Double Eagle won the Public Works sweepstakes. Ahead of this Thursday’s City Council public hearing on the Double Eagle proposal, I wanted to explore the other proposals that the Council passed up. The Public Works RFP process unfolded in two stages. Initial bids were submitted by five applicants —Double Eagle, Keeley, Ridgehouse, Savoy, and",
       "tags": [],
-      "ai_summary": "The article discusses Kirkwood's housing affordability crisis, focusing on the high cost of land as the main barrier to preserving starter homes for young families. It argues that simply mandating smaller, affordable homes won't solve the problem because land prices dominate property costs. The author suggests two ways to make land more affordable: increasing supply by building multi-family or multi-story buildings, and breaking land into smaller parcels to lower individual lot prices. However, Kirkwood's zoning laws, which enforce minimum lot sizes ranging from 7,500 sqft to one acre, prevent subdividing lots to create more affordable housing options. An example is given of a 10,100 sqft lot where splitting was impossible due to zoning, forcing owners to sell to developers who build larger homes. The article implies that revising zoning regulations to allow smaller lot sizes could help revive the availability of starter homes in Kirkwood.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:0b2d54260b53",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "String of Errors Leads to Rejection of Parking Solution",
-      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
-      "published": "2026-01-27T12:07:39.113278+00:00",
-      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
-      "tags": [],
-      "ai_summary": "event: Kirkwood City Council unanimously voted down a contract with Fybr for a parking technology solution on September 4th.\ntechnology:\n  provider: Fybr\n  description: Sensors placed under parking spaces to provide real-time occupancy data, accessible via the Park Kirkwood app and used by police for enforcement.\n  benefits:\n  -: Real-time parking availability\n  -: Improved enforcement of parking limits\nissues:\n  -: City staff misrepresented the original Fybr contract details, incorrectly stating 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  -: This error led to confusion and misunderstandings during the contract renewal process.\n  -: Original contract expired December 2, 2021, with ownership and maintenance responsibility transferring to the city.\n  -: City did not respond to Fybr's inquiries about sensor removal until 2025, when reactivation was requested.\n  -: Many system gateways went offline due to power issues, causing sensor battery drain and reduced functionality.\n  -: Only 69 sensors had sufficient battery life for reactivation, leading to a relocation fee of $14,973.\nconsequences: Council rejected the new contract partly due to unclear information and lack of a clear alternative solution.\nauthor_opinion: The author expresses disappointment with the Council's decision and concern over the lack of understanding and alternatives.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:906773a73af3",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Council Greenlights Pitman Place",
-      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
-      "published": "2026-01-27T12:07:38.588766+00:00",
-      "excerpt": "After winding itself through the approval process three times, the Council finally offered first reading approval to Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road, at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the project in early October, but instead of approving",
-      "tags": [],
-      "ai_summary": "project_name: Pitman Place\nlocation: 300 N. Kirkwood Road, former Commerce Bank site\nproject_type: 60-apartment mixed-use development\napproval_status: First reading approval granted by Kirkwood City Council on November 20th\nzoning_changes:\n  residential_on_first_floor: Approved, previously banned\n  reason: Allows preferred aesthetic design (Concept P) and larger apartments\n  impact: More family-suitable apartments, increased bedroom count\napartment_mix_changes:\n  original:\n  1_bed_1_bath: 27\n  2_bed_2_bath: 27\n  3_bed_2_bath: 6\n  new:\n  1_bed: 23\n  2_bed: 24\n  3_bed: 13\n  net_bedroom_increase: 11\nother_project_changes:\n  retail_space: Increased by a couple hundred square feet\n  clubhouse_size: Slightly smaller\n  parking_spaces: Reduced by six but still compliant with minimums\nhistorical_features:\n  plaque: To be erected next to old Pitman School fence\n  naming: Development named after historic Pitman School\ncontext_and_analysis:\n  previous_approval_attempts: Project pulled before early October vote to restart approval process\n  design_feedback: Original design criticized as flat and uninspired, leading to new facade options\n  zoning_code_note: Downtown Kirkwood zoning previously required ground-floor commercial for walkability\n  author_opinion: Relaxing ground-floor retail mandate is positive, allowing more and larger homes, improving affordability\n  developer_incentives: Retail included where financially viable; otherwise residential first floor preferred\ndeveloper: TriStar Properties with Stock & Associates\ndesign_options:\n  original: Boxy facade\n  alternatives:\n  -: Gabled facade with minimal changes\n  -: Concept P: gabled facade with balconies and direct-entrance apartments on Adams facade\n  preferred_by_council: Concept P",
+      "ai_summary": "context: The City Council of Kirkwood conducted a two-stage Request for Proposals (RFP) process for the Public Works site, receiving bids from five developers: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman. The Council provided feedback emphasizing preferences for a hotel inclusion, majority owner-occupied residential units, flexible building height and density with traditional architectural design, inclusion of KPAC surface parking with maintained or increased public parking, no Tax Increment Financing (TIF), and structured parking.\nkey_points:\n  -: Keeley Properties proposed 233 homes in two stages, including townhomes, multifamily units, a 477-stall parking garage shared with KPAC patrons, public pocket parks, and an optional boutique hotel or mixed-use building on the KPAC parking lot.\n  -: Ridgehouse Development proposed 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel on the KPAC lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, and a new water feature integrated with the adjacent creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel (Marriott A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots but did not submit a revised proposal.\n  -: All three hotel-including proposals were ultimately rejected by the Council, continuing a pattern of rejecting hotel projects despite city leadership's emphasis on attracting hotels downtown.\n  -: Council feedback indicated that requiring a hotel lowered the developers' offers for the site, influencing the rejection decisions.\noverall_outcome: Double Eagle was selected as the winning proposal, with other bids rejected following Council feedback and revisions.\nadditional_resources: Full suite of submissions obtained via FOIA is available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
       "sentiment": "neutral",
       "sentiment_score": 0,
       "community_impact": "Impact unclear based on automatically extracted text.",
@@ -82,13 +46,13 @@
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Keep an eye on Kirkwood minimum lot size from Kirkwood Gadfly."
+  "call_to_action": "Keep an eye on 202 Homes Proposed for Former Public Works Site from Kirkwood Gadfly."
 }
