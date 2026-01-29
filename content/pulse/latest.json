@@ -1,58 +1,21 @@
 {
-  "generated_at": "2026-01-28T12:08:07.304357+00:00",
+  "generated_at": "2026-01-29T12:10:40.155315+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 2,
-  "headline": "Kirkwood Pulse • January 28, 2026",
-  "overview": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts\n  -: Covered direct entry front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Professionally maintained grounds\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  concerns:\n  -: No hotel included despite original RFP requirement\n  -: Exclusion of ground-floor retail, disallowed by new zoning\n  -: Missed opportunity to attract trail users and boost local sales tax\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Lack of phased development by multiple entities\n  -: Uncertainty about project appearance and financial details\nadditional_notes: City aims to offset $12 million cost of new public works site through this development. More details expected in future updates. context: The City Council of Kirkwood conducted a two-stage Request for Proposals (RFP) process for the Public Works site, receiving bids from five developers: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman. The Council provided feedback emphasizing preferences for a hotel inclusion, majority owner-occupied residential units, flexible building height and density with traditional architectural design, inclusion of KPAC surface parking with maintained or increased public parking, no Tax Increment Financing (TIF), and structured parking.\nkey_points:\n  -: Keeley Properties proposed 233 homes in two stages, including townhomes, multifamily units, a 477-stall parking garage shared with KPAC patrons, public pocket parks, and an optional boutique hotel or mixed-use building on the KPAC parking lot.\n  -: Ridgehouse Development proposed 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel on the KPAC lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, and a new water feature integrated with the adjacent creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel (Marriott A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots but did not submit a revised proposal.\n  -: All three hotel-including proposals were ultimately rejected by the Council, continuing a pattern of rejecting hotel projects despite city leadership's emphasis on attracting hotels downtown.\n  -: Council feedback indicated that requiring a hotel lowered the developers' offers for the site, influencing the rejection decisions.\noverall_outcome: Double Eagle was selected as the winning proposal, with other bids rejected following Council feedback and revisions.\nadditional_resources: Full suite of submissions obtained via FOIA is available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:dbf52000fe91",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "202 Homes Proposed for Former Public Works Site",
-      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
-      "published": "2026-01-28T12:07:47.418757+00:00",
-      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
-      "tags": [],
-      "ai_summary": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts\n  -: Covered direct entry front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Professionally maintained grounds\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  concerns:\n  -: No hotel included despite original RFP requirement\n  -: Exclusion of ground-floor retail, disallowed by new zoning\n  -: Missed opportunity to attract trail users and boost local sales tax\n  -: Six blocky, repetitive buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Lack of phased development by multiple entities\n  -: Uncertainty about project appearance and financial details\nadditional_notes: City aims to offset $12 million cost of new public works site through this development. More details expected in future updates.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:ebc352aa548f",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Public Works Site: The Rejects",
-      "link": "https://kirkwoodgadfly.com/public-works-the-rejects/",
-      "published": "2026-01-28T12:07:45.661349+00:00",
-      "excerpt": "Last week I wrote up how Double Eagle won the Public Works sweepstakes. Ahead of this Thursday’s City Council public hearing on the Double Eagle proposal, I wanted to explore the other proposals that the Council passed up. The Public Works RFP process unfolded in two stages. Initial bids were submitted by five applicants —Double Eagle, Keeley, Ridgehouse, Savoy, and",
-      "tags": [],
-      "ai_summary": "context: The City Council of Kirkwood conducted a two-stage Request for Proposals (RFP) process for the Public Works site, receiving bids from five developers: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman. The Council provided feedback emphasizing preferences for a hotel inclusion, majority owner-occupied residential units, flexible building height and density with traditional architectural design, inclusion of KPAC surface parking with maintained or increased public parking, no Tax Increment Financing (TIF), and structured parking.\nkey_points:\n  -: Keeley Properties proposed 233 homes in two stages, including townhomes, multifamily units, a 477-stall parking garage shared with KPAC patrons, public pocket parks, and an optional boutique hotel or mixed-use building on the KPAC parking lot.\n  -: Ridgehouse Development proposed 30 for-sale townhomes, two 100-apartment buildings, 9,000 sqft retail, and a 654-space parking garage behind KPAC but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel on the KPAC lot, 62 homes (villas, townhomes, mixed-use), ~15,000 sqft commercial space, and a new water feature integrated with the adjacent creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel (Marriott A-Loft or similar), 15,000 sqft retail, 27 villas, and 148 parking spots but did not submit a revised proposal.\n  -: All three hotel-including proposals were ultimately rejected by the Council, continuing a pattern of rejecting hotel projects despite city leadership's emphasis on attracting hotels downtown.\n  -: Council feedback indicated that requiring a hotel lowered the developers' offers for the site, influencing the rejection decisions.\noverall_outcome: Double Eagle was selected as the winning proposal, with other bids rejected following Council feedback and revisions.\nadditional_resources: Full suite of submissions obtained via FOIA is available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • January 29, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on 202 Homes Proposed for Former Public Works Site from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
