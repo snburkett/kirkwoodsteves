@@ -1,94 +1,21 @@
 {
-  "generated_at": "2026-02-12T12:14:59.233686+00:00",
+  "generated_at": "2026-02-13T12:10:36.581575+00:00",
   "window_hours": 36,
-  "stories_considered": 10,
-  "stories_featured": 4,
-  "headline": "Kirkwood Pulse • February 12, 2026",
-  "overview": "event: Kirkwood City Council public hearing on Double Eagle Development’s proposal for the former public works site\ndate_of_hearing: 2026-01-08\nproposal_details:\n  developer: Double Eagle Development\n  site: former public works site\n  housing_units: 203\n  buildings: 6\n  parking_spots: 303\n  building_type: all-residential\n  architecture_style: traditional with pitched roofs, chimneys, covered porches\n  unique_features:\n  -: new through-street connecting Taylor and Fillmore\n  -: townhome style apartments with ground-floor private entrances\n  -: Breezestak layout offering varied floor plans\n  apartment_mix: similar to other Kirkwood developments (e.g., Pitman Place)\n  walkability: limited due to auto-oriented design and many curb cuts\n  parking: surface parking rather than structured parking\ncouncil_decision_factors:\n  -: likely most lucrative monetary bid\n  -: maximized number of homes to increase property value\n  -: met several RFP criteria including street connectivity\n  -: aligned with Council’s conservative aesthetic preferences\ncriticisms_and_regrets:\n  lack_of_trail_integration: Proposals did not value the upcoming Grant’s Trail extension, missing retail opportunities\n  phased_development: Suggested phased approach could yield better long-term community returns\n  walkability_and_green_space: Project too auto-oriented, lacks common green spaces\n  building_code_flexibility: Recommendation for Council to allow walk-up building layouts in future codes\nfuture_considerations:\n  -: City backed off developing KPAC parking lot, preserving prime corner for future development\n  -: Potential for phased development as trail construction progresses\noverall_sentiment: Supportive of project for better land use but with noted concerns on design and long-term planning key_events:\n  -: Kirkwood City Council abruptly ended city administrator Russ Hawes' decade-long tenure without a formal transition or successor.\n  -: The current Kirkwood City Council, elected April 2, 2024, holds a 6-1 Republican majority with strong ties to the national Conservative Movement.\n  -: This Council has shifted from traditional community-focused governance to a more overtly political agenda aimed at consolidating power and punishing Democratic opponents.\n  -: Several Council members and their spouses have made significant political donations predominantly to Republican and Trump-aligned candidates and causes.\n  -: The Council has dismissed constructive policy ideas based on political bias and is pursuing the sale of the city’s water utility, potentially increasing costs for residents.\npolitical_composition:\n  total_seats: 7\n  republican_seats: 6\n  democratic_seats: 1\nnotable_council_members:\n  -:\n  name: Mayor Gibbons\n  political_donations:\n  republican: 3150\n  democratic: 0\n  spouse:\n  name: Mike Gibbons\n  background: Former Republican state representative and lobbyist\n  donations_to_republican_causes_since_2016: 7000\n  -:\n  name: Council Member Rheinnecker\n  political_donations:\n  republican: 26525\n  democratic: 510\n  spouse_donations_to_trump_pacs: 1300\n  -:\n  name: Council Member Jaksetic\n  political_donations:\n  republican: 550\n  democratic: 0\n  -:\n  name: Council Member Luetzow\n  political_donations:\n  republican: 0\n  democratic: 200\n  spouse_donations:\n  democratic: 5\nissues_highlighted:\n  -: Abrupt termination of city administrator without transition\n  -: Politicization of local governance with national Conservative ties\n  -: Dismissal of policy ideas due to partisan bias\n  -: Plans to sell the city’s water utility, risking higher costs for residents\noverall_tone: Critical of the current Council's politicized approach and its potential negative impact on Kirkwood's governance and finances. Spring Training marks the official start of the baseball season, and fans can now purchase themed gear from a newly opened online store. Available items include Spring Training hats, tee shirts, and the popular 'Baseball Bash' tees worn annually at the Spring Training party.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:3fd14899f69d",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "How Double Eagle Won Over the Council",
-      "link": "https://kirkwoodgadfly.com/public-works-site-how-double-eagle-won/",
-      "published": "2026-02-12T12:14:20.165928+00:00",
-      "excerpt": "On January 8th, Kirkwood City Council will hold a public hearing on Double Eagle Development’s proposal for the former public works site. The proposal, the Council’s preferred response of the six they received, calls for 203 homes across six all-residential buildings and 303 surface parking spots. In reviewing each of the RFP responses, a picture of the Council’s decision-making process",
-      "tags": [],
-      "ai_summary": "event: Kirkwood City Council public hearing on Double Eagle Development’s proposal for the former public works site\ndate_of_hearing: 2026-01-08\nproposal_details:\n  developer: Double Eagle Development\n  site: former public works site\n  housing_units: 203\n  buildings: 6\n  parking_spots: 303\n  building_type: all-residential\n  architecture_style: traditional with pitched roofs, chimneys, covered porches\n  unique_features:\n  -: new through-street connecting Taylor and Fillmore\n  -: townhome style apartments with ground-floor private entrances\n  -: Breezestak layout offering varied floor plans\n  apartment_mix: similar to other Kirkwood developments (e.g., Pitman Place)\n  walkability: limited due to auto-oriented design and many curb cuts\n  parking: surface parking rather than structured parking\ncouncil_decision_factors:\n  -: likely most lucrative monetary bid\n  -: maximized number of homes to increase property value\n  -: met several RFP criteria including street connectivity\n  -: aligned with Council’s conservative aesthetic preferences\ncriticisms_and_regrets:\n  lack_of_trail_integration: Proposals did not value the upcoming Grant’s Trail extension, missing retail opportunities\n  phased_development: Suggested phased approach could yield better long-term community returns\n  walkability_and_green_space: Project too auto-oriented, lacks common green spaces\n  building_code_flexibility: Recommendation for Council to allow walk-up building layouts in future codes\nfuture_considerations:\n  -: City backed off developing KPAC parking lot, preserving prime corner for future development\n  -: Potential for phased development as trail construction progresses\noverall_sentiment: Supportive of project for better land use but with noted concerns on design and long-term planning",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:930cb43897c9",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Kirkwood’s 6-1 Republican Majority",
-      "link": "https://kirkwoodgadfly.com/kirkwoods-6-1-republican-majority/",
-      "published": "2026-02-12T12:14:18.692462+00:00",
-      "excerpt": "In a Friday evening news dump the week before Thanksgiving, Kirkwood City Council announced that they would be parting ways with city administrator Russ Hawes. There would be no formal transition to a named successor, no transfer of institutional knowledge, and no grand send-off. Instead, the end for the man who had managed the city’s day-to-day operations for more than",
-      "tags": [],
-      "ai_summary": "key_events:\n  -: Kirkwood City Council abruptly ended city administrator Russ Hawes' decade-long tenure without a formal transition or successor.\n  -: The current Kirkwood City Council, elected April 2, 2024, holds a 6-1 Republican majority with strong ties to the national Conservative Movement.\n  -: This Council has shifted from traditional community-focused governance to a more overtly political agenda aimed at consolidating power and punishing Democratic opponents.\n  -: Several Council members and their spouses have made significant political donations predominantly to Republican and Trump-aligned candidates and causes.\n  -: The Council has dismissed constructive policy ideas based on political bias and is pursuing the sale of the city’s water utility, potentially increasing costs for residents.\npolitical_composition:\n  total_seats: 7\n  republican_seats: 6\n  democratic_seats: 1\nnotable_council_members:\n  -:\n  name: Mayor Gibbons\n  political_donations:\n  republican: 3150\n  democratic: 0\n  spouse:\n  name: Mike Gibbons\n  background: Former Republican state representative and lobbyist\n  donations_to_republican_causes_since_2016: 7000\n  -:\n  name: Council Member Rheinnecker\n  political_donations:\n  republican: 26525\n  democratic: 510\n  spouse_donations_to_trump_pacs: 1300\n  -:\n  name: Council Member Jaksetic\n  political_donations:\n  republican: 550\n  democratic: 0\n  -:\n  name: Council Member Luetzow\n  political_donations:\n  republican: 0\n  democratic: 200\n  spouse_donations:\n  democratic: 5\nissues_highlighted:\n  -: Abrupt termination of city administrator without transition\n  -: Politicization of local governance with national Conservative ties\n  -: Dismissal of policy ideas due to partisan bias\n  -: Plans to sell the city’s water utility, risking higher costs for residents\noverall_tone: Critical of the current Council's politicized approach and its potential negative impact on Kirkwood's governance and finances.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:5b72512491c5",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Get your spring training gear here",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/get-your-spring-training-gear-here/article_f5e7d934-2357-5ce6-b34d-36c810afbbae.html",
-      "published": "2026-02-12T07:14:27+00:00",
-      "excerpt": "Spring Training is the official start of the baseball season and it’s more fun with Spring Training gear. We recently opened our website store and we are featuring Spring Training hats and tee shirts., We [...]The post Get your spring…",
-      "tags": [],
-      "ai_summary": "Spring Training marks the official start of the baseball season, and fans can now purchase themed gear from a newly opened online store. Available items include Spring Training hats, tee shirts, and the popular 'Baseball Bash' tees worn annually at the Spring Training party.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:64973ab36a82",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "As spring workouts begin, 20 pitchers join Cardinals major-league camp for the first time",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/as-spring-workouts-begin-20-pitchers-join-cardinals-major-league-camp-for-the-first-time/article_9697f5c0-e727-5d80-bfcd-862c88ccfd7a.html",
-      "published": "2026-02-12T00:30:42+00:00",
-      "excerpt": "As the Cardinals begin their spring training workouts, there are 20 pitchers who are in their first major-league spring camp with the team, more than half of whom were not in the organization a year ago. [...]The post As spring…",
-      "tags": [],
-      "ai_summary": "overview: The St. Louis Cardinals have 20 new pitchers joining their major-league camp for the first time in 2026, comprising more than half of the 38 pitchers in camp. These newcomers include a mix of 40-man roster and non-roster players, with 11 joining since the end of the 2025 season and two acquired during the 2025 season.\nkey_points:\n  -: Spring workouts for pitchers and catchers began in Jupiter, Florida.\n  -: 20 pitchers are newcomers to the Cardinals major-league camp.\n  -: The total pitching group includes 38 players.\n  -: New pitchers include both minor-league free agents and players acquired via trades.\n  -: Notable newcomers include Scott Blewett, Justin Bruihl, Jurrangelo Cijntje, Hunter Dobbins, Richard Fitts, and others.\n  -: Several pitchers are recovering from injuries or are expected to compete for rotation or bullpen spots.\n  -: The group features a mix of right-handed and left-handed pitchers, with some known for unique skills such as ambidextrous pitching.\nnotable_pitchers:\n  -:\n  name: Scott Blewett\n  status: Non-roster\n  background: 29-year-old right-handed reliever with 43 MLB games experience, signed as minor-league free agent.\n  -:\n  name: Justin Bruihl\n  status: 40-man roster\n  background: 28-year-old left-handed reliever acquired from Guardians, with MLB and postseason experience.\n  -:\n  name: Jurrangelo Cijntje\n  status: Non-roster\n  background: 22-year-old ambidextrous pitcher, expected to pitch right-handed, acquired in trade with Mariners.\n  -:\n  name: Hunter Dobbins\n  status: 40-man roster\n  background: 26-year-old recovering from torn ACL, acquired from Red Sox in trade.\n  -:\n  name: Richard Fitts\n  status: 40-man roster\n  background: 26-year-old right-handed starter, acquired in trade with Red Sox, competing for rotation spot.\n  -:\n  name: Luis Gastelum\n  status: Non-roster\n  background: 24-year-old right-handed reliever from Mexico, signed as free agent in 2023.\n  -:\n  name: Brycen Mautz\n  status: 40-man roster\n  background: 24-year-old left-handed pitcher, Cardinals’ minor-league pitcher of the year in 2025.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • February 13, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on How Double Eagle Won Over the Council from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
