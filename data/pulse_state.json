@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-02-13T12:10:36.581575+00:00",
+  "last_run": "2026-02-14T12:07:54.664815+00:00",
   "seen": {
     "kirkwood-gadfly:0b2d54260b53": "2026-01-27T12:08:05.339440+00:00",
     "kirkwood-gadfly:0d6cd5268efe": "2026-01-27T12:08:05.339440+00:00",
@@ -10,7 +10,12 @@
     "kirkwood-gadfly:dbf52000fe91": "2026-01-28T12:08:07.304357+00:00",
     "kirkwood-gadfly:ebc352aa548f": "2026-01-28T12:08:07.304357+00:00",
     "kirkwood-gadfly:f17f87576e5c": "2026-02-08T12:07:53.832102+00:00",
+    "webster-kirkwood-times-news:2be12bad0ce5": "2026-02-14T12:07:54.664815+00:00",
+    "webster-kirkwood-times-news:371e847c4a6e": "2026-02-14T12:07:54.664815+00:00",
+    "webster-kirkwood-times-news:5126532d708b": "2026-02-14T12:07:54.664815+00:00",
     "webster-kirkwood-times-news:5b72512491c5": "2026-02-12T12:14:59.233686+00:00",
-    "webster-kirkwood-times-news:64973ab36a82": "2026-02-12T12:14:59.233686+00:00"
+    "webster-kirkwood-times-news:64973ab36a82": "2026-02-12T12:14:59.233686+00:00",
+    "webster-kirkwood-times-news:78680a3f3d3f": "2026-02-14T12:07:54.664815+00:00",
+    "webster-kirkwood-times-news:a4a194be6cc5": "2026-02-14T12:07:54.664815+00:00"
   }
 }
