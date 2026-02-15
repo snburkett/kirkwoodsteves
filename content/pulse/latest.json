@@ -1,112 +1,21 @@
 {
-  "generated_at": "2026-02-14T12:07:54.664815+00:00",
+  "generated_at": "2026-02-15T12:07:48.893074+00:00",
   "window_hours": 36,
-  "stories_considered": 13,
-  "stories_featured": 5,
-  "headline": "Kirkwood Pulse • February 14, 2026",
-  "overview": "STL Sports Page is covering Spring Training in Jupiter, Florida, providing audio, video, photos, and updates. Cardinals manager Oli Marmol and Chaim Bloom met with the media on February 13, 2026. Fans can listen to their media sessions via audio players and follow the latest 'Rains on the Cardinals' podcasts on YouTube. This article explores the tradition of pairing wine and chocolate for Valentine's Day, highlighting local chocolatiers' expertise in matching flavors. Meggie Mobley of Bijoux Handcrafted Chocolates in Webster Groves explains that quality chocolate complements premium wines, with pairings based on shared flavor notes like fruity, spicy, and nutty. She suggests sweeter wines generally pair better with chocolate and offers specific pairing examples such as raspberry dark chocolate with cabernet sauvignon and lemon bonbon with moscato. The article also features Dan Abel Jr. of Bissinger’s and Chocolate Chocolate Chocolate Company in St. Louis, who emphasize experimentation with pairings and note their historic and regional chocolate businesses. Both chocolatiers encourage trying different combinations to enhance the Valentine's Day experience through the complementary flavors of wine and chocolate. overview: Kirkwood City Council is considering a proposed 5% water rate increase for the 2026-2027 fiscal year to fund critical infrastructure upgrades and capital projects.\nrate_increase_history: Water rates have increased over 50% in the past four years, including a 27% hike in fiscal year 2026.\ninfrastructure_needs: The increase is driven by aging water infrastructure from the 1950s requiring replacement and upgrades.\nplanned_projects:\n  water_main_replacement:\n  budget: 2400000\n  details: Replacement of 6,945 feet of water mains on Dougherty Ferry Road, Monroe Avenue, South Couch Avenue, and Bach Avenue.\n  pump_station_upgrade:\n  budget: 500000\n  details: Electrical and backup power system updates at Park No. 1 Pump Station.\n  lead_service_line_replacement:\n  budget: 800000\n  goal: Identify and replace lead water service lines by 2037 to comply with federal and state mandates.\nsystem_overview:\n  total_mains: 135 miles\n  issues: Frequent main breaks and aging infrastructure.\nlong_term_investment:\n  estimated_cost: 90000000\n  timeline: 10 years\n  annual_investment: 9000000\n  purpose: Bring the water system up to modern standards.\nfunding_options:\n  -: Possible bond issue to raise funds\n  -: Potential sale of water system to Missouri American Water (as done by neighboring Webster Groves)\ncurrent_status: The city is still studying options with no decisions made. A special committee including city council members is exploring all possibilities.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:371e847c4a6e",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Chaim Bloom, Oli Marmol meet with the media 2-13-26",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/chaim-bloom-oli-marmol-meet-with-the-media-2-13-26/article_bcb44d66-a71e-5fb9-ac3d-a7ac66afe19a.html",
-      "published": "2026-02-13T22:13:56+00:00",
-      "excerpt": "STL Sports Page has landed in Jupiter, Florida for Spring Training. We will be providing audio, video, photos ad the latest information. Once the games start we’ll have a video recao (the Jupiter Minute) and [...]The post Chaim Bloom, Oli…",
-      "tags": [],
-      "ai_summary": "STL Sports Page is covering Spring Training in Jupiter, Florida, providing audio, video, photos, and updates. Cardinals manager Oli Marmol and Chaim Bloom met with the media on February 13, 2026. Fans can listen to their media sessions via audio players and follow the latest 'Rains on the Cardinals' podcasts on YouTube.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:78680a3f3d3f",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Wine + Chocolate:  “The Valentine’s Experiment”",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/wine-chocolate-the-valentine-s-experiment/article_636439d4-a454-4844-98e0-730169751993.html",
-      "published": "2026-02-13T12:00:00+00:00",
-      "excerpt": "Although some might not be big on celebrating Valentine’s Day, it does provide a perfect excuse to indulge in a good bottle of wine and a nice chocolate pairing. Because St. Valentine lived more than 1,700 years ago, there’s aren’t too many details known about his life. It is known, however, that he was a citizen of Rome, where wine",
-      "tags": [],
-      "ai_summary": "This article explores the tradition of pairing wine and chocolate for Valentine's Day, highlighting local chocolatiers' expertise in matching flavors. Meggie Mobley of Bijoux Handcrafted Chocolates in Webster Groves explains that quality chocolate complements premium wines, with pairings based on shared flavor notes like fruity, spicy, and nutty. She suggests sweeter wines generally pair better with chocolate and offers specific pairing examples such as raspberry dark chocolate with cabernet sauvignon and lemon bonbon with moscato. The article also features Dan Abel Jr. of Bissinger’s and Chocolate Chocolate Chocolate Company in St. Louis, who emphasize experimentation with pairings and note their historic and regional chocolate businesses. Both chocolatiers encourage trying different combinations to enhance the Valentine's Day experience through the complementary flavors of wine and chocolate.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:2be12bad0ce5",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Proposed Budget Includes 5% Water Rate Increase",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/proposed-budget-includes-5-water-rate-increase/article_6a03d327-f84d-4a6a-ba47-19e73779e10e.html",
-      "published": "2026-02-13T07:00:00+00:00",
-      "excerpt": "A proposed budget for the upcoming fiscal year includes a potential hike in water rates for Kirkwood residents amid a list of planned capital improvement projects. The city’s new budget year will begin April 1, and the Kirkwood City Council reviewed the 2026-2027 budget during a special work session last week. Kirkwood is the sole municipality in St. Louis County",
-      "tags": [],
-      "ai_summary": "overview: Kirkwood City Council is considering a proposed 5% water rate increase for the 2026-2027 fiscal year to fund critical infrastructure upgrades and capital projects.\nrate_increase_history: Water rates have increased over 50% in the past four years, including a 27% hike in fiscal year 2026.\ninfrastructure_needs: The increase is driven by aging water infrastructure from the 1950s requiring replacement and upgrades.\nplanned_projects:\n  water_main_replacement:\n  budget: 2400000\n  details: Replacement of 6,945 feet of water mains on Dougherty Ferry Road, Monroe Avenue, South Couch Avenue, and Bach Avenue.\n  pump_station_upgrade:\n  budget: 500000\n  details: Electrical and backup power system updates at Park No. 1 Pump Station.\n  lead_service_line_replacement:\n  budget: 800000\n  goal: Identify and replace lead water service lines by 2037 to comply with federal and state mandates.\nsystem_overview:\n  total_mains: 135 miles\n  issues: Frequent main breaks and aging infrastructure.\nlong_term_investment:\n  estimated_cost: 90000000\n  timeline: 10 years\n  annual_investment: 9000000\n  purpose: Bring the water system up to modern standards.\nfunding_options:\n  -: Possible bond issue to raise funds\n  -: Potential sale of water system to Missouri American Water (as done by neighboring Webster Groves)\ncurrent_status: The city is still studying options with no decisions made. A special committee including city council members is exploring all possibilities.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:5126532d708b",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Shrewsbury Sweetheart Dance",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/shrewsbury-sweetheart-dance/article_56d9ecb5-cf06-40b1-8d93-ff23c41d0071.html",
-      "published": "2026-02-13T06:00:00+00:00",
-      "excerpt": "The Shrewsbury Sweetheart Dance, an annual Valentine’s Day event sponsored by the Shrewsbury Parks and Recreation Department, took place on Friday, Feb. 6, at the Shrewsbury City Center. Dads, grandpas, uncles and guardians took to the dance floor with their favorite little sweethearts. The night included a photo booth, snacks, a candy station and crafts.",
-      "tags": [],
-      "ai_summary": "The Shrewsbury Sweetheart Dance, an annual Valentine’s Day event sponsored by the Shrewsbury Parks and Recreation Department, took place on Friday, Feb. 6, at the Shrewsbury City Center. Dads, grandpas, uncles and guardians took to the dance floor with their favorite little sweethearts. The night included a photo booth, snacks, a candy station and crafts.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:a4a194be6cc5",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "City Remains Mum On Reasons Behind Peoples’ Resignation",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/city-remains-mum-on-reasons-behind-peoples-resignation/article_ea952e6f-e8f2-4858-b336-64e45387c9aa.html",
-      "published": "2026-02-13T06:00:00+00:00",
-      "excerpt": "Questions remain in the wake of Webster Groves City Manager Marie Peoples’ unexpected resignation last week. Peoples will continue as the city’s chief administrative officer until April 3, and then serve in a consulting role until June 5. Both Peoples and Mayor Laura Arnold have declined to discuss the reason, or reasons, for Peoples’ abrupt departure. The city has yet",
-      "tags": [],
-      "ai_summary": "subject: Webster Groves City Manager Marie Peoples' resignation\nkey_points:\n  -: Marie Peoples, Webster Groves City Manager since 2021, announced an unexpected resignation effective April 3, 2026, continuing as a consultant until June 5.\n  -: Neither Peoples nor Mayor Laura Arnold disclosed reasons for the resignation or details of the separation package, which is still being negotiated.\n  -: Peoples' salary increased from $177,500 in 2021 to $220,586 in 2025.\n  -: An interim city manager will be named soon.\n  -: Reports from former and current employees describe low morale and 'toxic leadership' during Peoples' tenure, including bullying and favoritism.\n  -: Complaints from two former employees were brought to city council, which referred them to human resources; the former employees declined further investigation.\n  -: The city council acknowledged the complaints but stated they lack authority to investigate directly.\n  -: Despite criticism, the city and Mayor Arnold praised Peoples for leading important projects such as Prop W, the comprehensive plan, and completing the new water park and ice rink on time and within budget.\n  -: The ice rink cost $4 million, more than double initial estimates.\n  -: Former Assistant City Manager and Director of Finance Eric Peterson, brought in by Peoples, resigned in November 2024 amid an ongoing state audit investigation into misuse of funds.\n  -: Staffing cuts under Peoples led to increased workloads and service level declines, with little support or acknowledgment from leadership.\n  -: The city has initiated programs to improve workplace relationships, communication, leadership effectiveness, and employee engagement.\nimplications: The resignation highlights ongoing internal challenges within Webster Groves city administration, including leadership issues and employee dissatisfaction, while the city attempts to maintain public confidence by emphasizing project successes.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • February 15, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 5 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 5 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Chaim Bloom, Oli Marmol meet with the media 2-13-26 from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
