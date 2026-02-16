@@ -456,11 +456,26 @@ def select_new_stories(stories: List[Story], seen: Dict[str, str]) -> List[Story
   return fresh
 
 
+def clamp_summary(text: str, *, max_words: int = 55, max_chars: int = 360) -> str:
+  cleaned = " ".join(text.split())
+  if not cleaned:
+    return ""
+  words = cleaned.split()
+  if len(words) > max_words:
+    cleaned = " ".join(words[:max_words]).rstrip(" ,;:") + "…"
+  if len(cleaned) > max_chars:
+    cleaned = cleaned[: max_chars - 1].rstrip(" ,;:") + "…"
+  return cleaned
+
+
 @retry(wait=wait_exponential(multiplier=2, min=2, max=10), stop=stop_after_attempt(3))
 def summarize_story(client: OpenAI, story: Story) -> StorySummary:
   prompt = textwrap.dedent(
     f"""
     Provide a JSON summary for the following local news item.
+    Summary must be 1-2 sentences, <= 55 words, no bullet points, no line breaks.
+    Focus on the concrete update (what happened + why it matters locally).
+    Avoid repeating the title or source name.
 
     Source: {story.source_name}
     Title: {story.title}
@@ -538,7 +553,7 @@ def summarize_story(client: OpenAI, story: Story) -> StorySummary:
 
     for key, value in summary_field.items():
       flatten(key, value)
-    summary_text = "\n".join(parts)
+    summary_text = "; ".join(parts)
   else:
     summary_text = str(summary_field).strip()
 
@@ -549,7 +564,7 @@ def summarize_story(client: OpenAI, story: Story) -> StorySummary:
   suggested_action = data.get("suggested_action", None) or None
 
   return StorySummary(
-    summary=summary_text or story.excerpt,
+    summary=clamp_summary(summary_text or story.excerpt),
     sentiment_label=sentiment_label,
     sentiment_score=sentiment_score,
     community_impact=community_impact,
@@ -566,7 +581,7 @@ def safe_summarize(client: OpenAI, story: Story) -> StorySummary:
       print(f"[debug] Exception while summarizing '{story.title}': {error}", file=sys.stderr)
       traceback.print_exc()
     fallback_summary = StorySummary(
-      summary=" ".join(story.excerpt.split()[:80]) or story.title,
+      summary=clamp_summary(story.excerpt or story.title),
       sentiment_label="neutral",
       sentiment_score=0,
       community_impact="Impact unclear based on automatically extracted text.",
@@ -578,7 +593,7 @@ def safe_summarize(client: OpenAI, story: Story) -> StorySummary:
 
 
 def summarize_without_openai(story: Story) -> StorySummary:
-  summary = " ".join(story.excerpt.split()[:80]) or story.title
+  summary = clamp_summary(story.excerpt or story.title)
   return StorySummary(
     summary=summary,
     sentiment_label="neutral",
@@ -654,6 +669,10 @@ def write_markdown(payload: Dict[str, Any], run_time: datetime) -> None:
   slug_date = run_time.strftime("%Y-%m-%d")
   filename = f"pulse-{slug_date}.mdx"
   file_path = MARKDOWN_DIR / filename
+  if not payload["items"]:
+    if file_path.exists():
+      file_path.unlink()
+    return
 
   vibe = payload["vibe"]
   sentiment = payload["sentiment"]
@@ -684,19 +703,16 @@ def write_markdown(payload: Dict[str, Any], run_time: datetime) -> None:
     "",
   ]
 
-  if not payload["items"]:
-    lines.append("_No fresh stories surfaced in this window._")
-  else:
-    for item in payload["items"]:
-      detail_parts = [
-        item["ai_summary"],
-        f"Impact: {item['community_impact']}",
-        f"Sentiment: {item['sentiment']} ({item['sentiment_score']})",
-        f"Priority: {item['priority']}",
-      ]
-      detail = " ".join(part for part in detail_parts if part)
-      link_text = f" [Read more]({item['link']})" if item.get("link") else ""
-      lines.append(f"- **{item['title']}** ({item['source']['name']}) — {detail}{link_text}")
+  for item in payload["items"]:
+    detail_parts = [
+      item["ai_summary"],
+      f"Impact: {item['community_impact']}",
+      f"Sentiment: {item['sentiment']} ({item['sentiment_score']})",
+      f"Priority: {item['priority']}",
+    ]
+    detail = " ".join(part for part in detail_parts if part)
+    link_text = f" [Read more]({item['link']})" if item.get("link") else ""
+    lines.append(f"- **{item['title']}** ({item['source']['name']}) — {detail}{link_text}")
 
   lines.extend(
     [

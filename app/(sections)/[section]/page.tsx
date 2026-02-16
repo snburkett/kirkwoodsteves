@@ -43,15 +43,20 @@ export default async function SectionPage({
   const section = assertSectionName(rawSection);
   const posts = await loadSection(section);
   const digest = section === "pulse" ? await loadPulseDigest() : null;
+  const visiblePosts =
+    section === "pulse"
+      ? posts.filter((post) => !/•\s*0\s+stories?/i.test(post.body))
+      : posts;
+  const showDigest = section === "pulse" && digest != null && digest.items.length > 0;
 
   const headerStatus =
     section === "pulse"
-      ? posts.length === 0
+      ? visiblePosts.length === 0
         ? "Daily digest + archive coming soon."
-        : `Daily digest + ${posts.length} archive entries.`
-      : posts.length === 0
+        : `Daily digest + ${visiblePosts.length} archive entries.`
+      : visiblePosts.length === 0
         ? "No entries yet. Check back soon."
-        : `${posts.length} entries`;
+        : `${visiblePosts.length} entries`;
 
   return (
     <div>
@@ -78,28 +83,28 @@ export default async function SectionPage({
       </div>
       {section === "pulse" ? (
         <div className="space-y-10">
-          {digest ? <PulseDigest digest={digest} /> : null}
+          {showDigest ? <PulseDigest digest={digest} /> : null}
           <div>
             <h3 className="text-lg font-semibold text-slate-900">Pulse archive</h3>
             <div className="mt-4 space-y-4">
-              {posts.length === 0 ? (
+              {visiblePosts.length === 0 ? (
                 <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
                   Nothing filed yet.
                 </div>
               ) : (
-                posts.map((post) => <PostCard key={post.slug} post={post} />)
+                visiblePosts.map((post) => <PostCard key={post.slug} post={post} />)
               )}
             </div>
           </div>
         </div>
       ) : (
         <div className="space-y-4">
-          {posts.length === 0 ? (
+          {visiblePosts.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
               Nothing filed yet.
             </div>
           ) : (
-            posts.map((post) => <PostCard key={post.slug} post={post} />)
+            visiblePosts.map((post) => <PostCard key={post.slug} post={post} />)
           )}
         </div>
       )}
