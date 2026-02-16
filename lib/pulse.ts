@@ -6,34 +6,42 @@ import { z } from "zod";
 
 const PULSE_JSON_PATH = path.join(process.cwd(), "content", "pulse", "latest.json");
 
+const nullableNumber = (schema: z.ZodNumber) =>
+  z.preprocess((value) => (value === null || value === "" ? undefined : value), schema);
+
 const vibeSchema = z.object({
-  score: z.coerce.number().min(0).max(100),
-  label: z.string(),
-  rationale: z.string(),
-  raw_score: z.coerce.number().min(-100).max(100).optional(),
+  score: nullableNumber(z.coerce.number().min(0).max(100)).default(55),
+  label: z.string().default("Even keel"),
+  rationale: z.string().default("Awaiting the first automated scan."),
+  raw_score: nullableNumber(z.coerce.number().min(-100).max(100)).default(0),
 });
 
 const sentimentSchema = z.object({
-  score: z.coerce.number().min(-100).max(100),
-  label: z.string(),
-  rationale: z.string(),
+  score: nullableNumber(z.coerce.number().min(-100).max(100)).default(0),
+  label: z.string().default("Even keel"),
+  rationale: z.string().default("Awaiting the first automated scan."),
 });
 
 const storySchema = z
   .object({
-    id: z.string(),
-    source: z.object({
-      id: z.string(),
-      name: z.string(),
-    }),
-    title: z.string(),
-    link: z.union([z.string().url(), z.literal("")]).default(""),
-    published: z.string(),
+    id: z.string().default(""),
+    source: z
+      .object({
+        id: z.string().default(""),
+        name: z.string().default("Kirkwood Pulse"),
+      })
+      .default({ id: "", name: "Kirkwood Pulse" }),
+    title: z.string().default("Untitled story"),
+    link: z
+      .union([z.string().url(), z.literal(""), z.null()])
+      .optional()
+      .default(""),
+    published: z.string().optional().default(""),
     excerpt: z.string().default(""),
     tags: z.array(z.string()).default([]),
     ai_summary: z.string().default(""),
     sentiment: z.enum(["positive", "neutral", "negative"]).default("neutral"),
-    sentiment_score: z.coerce.number().min(-100).max(100).default(0),
+    sentiment_score: nullableNumber(z.coerce.number().min(-100).max(100)).default(0),
     community_impact: z.string().default(""),
     priority: z.enum(["high", "medium", "low"]).default("medium"),
     suggested_action: z.string().nullable().optional(),
@@ -45,13 +53,13 @@ const storySchema = z
   }));
 
 const pulseDigestSchema = z.object({
-  generated_at: z.union([z.string(), z.null()]).nullable(),
-  window_hours: z.coerce.number().default(36),
-  stories_considered: z.coerce.number().default(0),
-  stories_featured: z.coerce.number().default(0),
+  generated_at: z.union([z.string(), z.null()]).nullable().default(null),
+  window_hours: nullableNumber(z.coerce.number().min(1).max(168)).default(36),
+  stories_considered: nullableNumber(z.coerce.number().min(0)).default(0),
+  stories_featured: nullableNumber(z.coerce.number().min(0)).default(0),
   headline: z.string().default("Kirkwood Pulse is warming up"),
   overview: z.string().default(""),
-  items: z.array(storySchema).default([]),
+  items: z.array(z.unknown()).default([]),
   vibe: vibeSchema.default({
     score: 55,
     label: "Even keel",
@@ -66,7 +74,9 @@ const pulseDigestSchema = z.object({
   call_to_action: z.string().default(""),
 });
 
-export type PulseDigest = z.infer<typeof pulseDigestSchema>;
+export type PulseDigest = Omit<z.infer<typeof pulseDigestSchema>, "items"> & {
+  items: PulseStory[];
+};
 export type PulseStory = z.infer<typeof storySchema>;
 export type PulseVibe = z.infer<typeof vibeSchema>;
 export type PulseSentiment = z.infer<typeof sentimentSchema>;
@@ -94,12 +104,37 @@ const FALLBACK_DIGEST: PulseDigest = {
   call_to_action: "Check back after the next morning run for fresh civic signals.",
 };
 
+function coerceStories(items: unknown[]): PulseStory[] {
+  const stories: PulseStory[] = [];
+  for (const item of items) {
+    const parsed = storySchema.safeParse(item);
+    if (parsed.success) {
+      stories.push(parsed.data);
+    } else {
+      console.warn(
+        `Skipping invalid pulse story: ${parsed.error.issues
+          .map((issue) => `${issue.path.join(".") || "story"}: ${issue.message}`)
+          .join(", ")}`,
+      );
+    }
+  }
+  return stories;
+}
+
 export async function loadPulseDigest(): Promise<PulseDigest> {
   noStore();
   try {
     const raw = await fs.readFile(PULSE_JSON_PATH, "utf8");
     const data = JSON.parse(raw);
-    return pulseDigestSchema.parse(data);
+    const parsed = pulseDigestSchema.parse(data);
+    const items = Array.isArray(parsed.items) ? parsed.items : [];
+    const stories = coerceStories(items);
+    return {
+      ...parsed,
+      items: stories,
+      stories_featured:
+        parsed.stories_featured > 0 ? parsed.stories_featured : stories.length,
+    };
   } catch (error) {
     console.warn(`Falling back to default pulse digest: ${String(error)}`);
     return FALLBACK_DIGEST;

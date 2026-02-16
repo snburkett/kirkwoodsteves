@@ -82,6 +82,9 @@ export default async function HomePage() {
   const topStoryLabel = topStory ? truncate(topStory.title, 32) : "AI Chat";
   const topStorySubtitle = topStory ? topStory.source?.name ?? "Pulse" : "With Steve";
   const topStoryHref = topStory?.link ?? "/ai";
+  const topStoryAriaLabel = topStory
+    ? `Read ${topStory.title}`
+    : "Catch the latest AI chatter with Steve";
 
   const rightCallouts: CalloutConfig[] = [
     {
@@ -111,10 +114,10 @@ export default async function HomePage() {
       key: "top-story",
       render: () => (
         <StarburstCallout
-          label="AI Chat"
-          subtitle="With Steve"
-          href="/ai"
-          ariaLabel="Catch the latest AI chatter with Steve"
+          label={topStoryLabel}
+          subtitle={topStorySubtitle}
+          href={topStoryHref}
+          ariaLabel={topStoryAriaLabel}
           imageSrc="/img/terminator.png"
           imageAlt="Terminator AI illustration"
           variant="punch"
@@ -215,7 +218,7 @@ export default async function HomePage() {
         </div>
       </div>
       <SpeechBubbleTooltip
-        text="100% Organic!  CMS Free!"
+        text="100% Inorganic!  CMS Free!"
         placement="right"
         className="fixed bottom-12 left-6 z-40 hidden sm:inline-block"
       >

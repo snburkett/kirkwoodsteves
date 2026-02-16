@@ -574,7 +574,19 @@ def safe_summarize(client: OpenAI, story: Story) -> StorySummary:
       suggested_action=None,
     )
     print(f"[warn] Failed to summarize {story.title}: {error}", file=sys.stderr)
-    return fallback_summary
+  return fallback_summary
+
+
+def summarize_without_openai(story: Story) -> StorySummary:
+  summary = " ".join(story.excerpt.split()[:80]) or story.title
+  return StorySummary(
+    summary=summary,
+    sentiment_label="neutral",
+    sentiment_score=0,
+    community_impact="No automated impact analysis available.",
+    priority="medium",
+    suggested_action=None,
+  )
 
 
 def compute_sentiment(items: List[Dict[str, Any]]) -> Tuple[int, str, str]:
@@ -733,20 +745,26 @@ def aggregate_overview(items: List[Dict[str, Any]]) -> str:
   return " ".join(sentences)
 
 
-def run(fetch_limit: Optional[int] = None) -> int:
+def run(
+  fetch_limit: Optional[int] = None,
+  *,
+  skip_openai: bool = False,
+  ignore_state: bool = False,
+  dry_run: bool = False,
+) -> int:
   global DEBUG
   # DEBUG value will be set in main when args are parsed.
   openai_api_key = os.environ.get("OPENAI_API_KEY")
-  if not openai_api_key:
+  if not skip_openai and not openai_api_key:
     print("OPENAI_API_KEY is not set. Aborting.", file=sys.stderr)
     return 1
 
   window_hours, _, sources = load_sources_config()
-  state = prune_state(load_state())
+  state = prune_state(load_state()) if not ignore_state else {"seen": {}, "last_run": None}
   cutoff = datetime.now(tz=UTC) - timedelta(hours=window_hours)
 
   stories, considered = collect_stories(sources, cutoff)
-  seen = state.get("seen", {})
+  seen = {} if ignore_state else state.get("seen", {})
   new_stories = select_new_stories(stories, seen)
   if fetch_limit is not None:
     new_stories = new_stories[:fetch_limit]
@@ -760,11 +778,11 @@ def run(fetch_limit: Optional[int] = None) -> int:
     f"Fresh stories selected: {len(new_stories)} (limit={fetch_limit or MAX_FEATURED_STORIES}).",
   )
 
-  client = OpenAI()
   enriched_items: List[Dict[str, Any]] = []
+  client = None if skip_openai else OpenAI()
   for story in new_stories:
     debug_log(f"Summarizing story: {story.title} ({story.source_name})")
-    summary = safe_summarize(client, story)
+    summary = summarize_without_openai(story) if skip_openai else safe_summarize(client, story)  # type: ignore[arg-type]
     enriched_items.append(build_item_payload(story, summary))
 
   sentiment_score, sentiment_label, sentiment_rationale = compute_sentiment(enriched_items)
@@ -789,6 +807,10 @@ def run(fetch_limit: Optional[int] = None) -> int:
     "call_to_action": call_to_action,
   }
 
+  if dry_run:
+    print("[dry-run] Skipping writes to latest.json, markdown, and state.")
+    return 0
+
   write_latest_json(payload)
   write_markdown(payload, generated_at)
   update_state_with_stories(state, new_stories, generated_at)
@@ -808,6 +830,21 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
   parser = argparse.ArgumentParser(description="Generate the Kirkwood Pulse daily digest.")
   parser.add_argument("--limit", type=int, default=None, help="Limit the number of stories summarized.")
   parser.add_argument(
+    "--no-openai",
+    action="store_true",
+    help="Skip OpenAI summarization and use simple excerpts instead.",
+  )
+  parser.add_argument(
+    "--ignore-state",
+    action="store_true",
+    help="Ignore seen-state and refetch items even if previously processed.",
+  )
+  parser.add_argument(
+    "--dry-run",
+    action="store_true",
+    help="Fetch and summarize but do not write latest.json/markdown or update state.",
+  )
+  parser.add_argument(
     "--debug",
     action="store_true",
     help="Print detailed progress information while fetching and summarizing stories.",
@@ -821,7 +858,12 @@ def main(argv: List[str]) -> int:
   DEBUG = args.debug
   if DEBUG:
     debug_log("Debug logging enabled.")
-  return run(fetch_limit=args.limit)
+  return run(
+    fetch_limit=args.limit,
+    skip_openai=args.no_openai,
+    ignore_state=args.ignore_state,
+    dry_run=args.dry_run,
+  )
 
 
 if __name__ == "__main__":

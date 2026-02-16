@@ -38,10 +38,11 @@ function assertSectionName(section: string): SectionName {
 export default async function PostPage({
   params,
 }: {
-  params: { section: string; slug: string };
+  params: Promise<{ section: string; slug: string }>;
 }) {
-  const section = assertSectionName(params.section);
-  const post = await loadPost(section, params.slug);
+  const { section: rawSection, slug } = await params;
+  const section = assertSectionName(rawSection);
+  const post = await loadPost(section, slug);
   const sectionTitle = sectionLabel(section);
   const parentHref = `/${section}`;
   const heroImage = post.heroImage;

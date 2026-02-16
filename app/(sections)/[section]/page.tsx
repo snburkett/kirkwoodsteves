@@ -34,8 +34,13 @@ function assertSectionName(section: string): SectionName {
   return notFound();
 }
 
-export default async function SectionPage({ params }: { params: { section: string } }) {
-  const section = assertSectionName(params.section);
+export default async function SectionPage({
+  params,
+}: {
+  params: Promise<{ section: string }>;
+}) {
+  const { section: rawSection } = await params;
+  const section = assertSectionName(rawSection);
   const posts = await loadSection(section);
   const digest = section === "pulse" ? await loadPulseDigest() : null;
 
@@ -58,8 +63,8 @@ export default async function SectionPage({ params }: { params: { section: strin
             width={320}
             height={320}
             priority
-            className="pointer-events-none fixed z-10 left-0 top-30 w-32 md:w-52 lg:w-72"
-            sizes="(max-width: 768px) rem, (max-width: 1024px) 13rem, 16rem"
+            className="pointer-events-none fixed left-0 top-[30px] z-10 w-32 md:w-52 lg:w-72"
+            sizes="(max-width: 768px) 8rem, (max-width: 1024px) 13rem, 18rem"
           />
         ) : null}
         <SectionHeader

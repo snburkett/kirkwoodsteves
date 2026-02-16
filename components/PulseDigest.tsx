@@ -48,17 +48,17 @@ export default function PulseDigest({ digest }: { digest: PulseDigest }) {
     ? digest.headline || "Fresh updates from the latest sweep."
     : "The scanner did not surface anything new this run. Check back after the next pulse.";
   const detailCopy = hasStories ? digest.overview : "";
+  const sentimentScore = digest.sentiment?.score ?? digest.vibe.raw_score ?? digest.vibe.score ?? 0;
+  const rationale = digest.sentiment?.rationale || digest.vibe.rationale;
 
   return (
     <div className="space-y-6">
       <div className="grid gap-6 lg:grid-cols-[minmax(240px,300px)_1fr]">
         <div className="space-y-4">
-          <RetroVibeGauge
-            score={digest.sentiment?.score ?? digest.vibe.raw_score ?? digest.vibe.score ?? 0}
-          />
+          <RetroVibeGauge score={sentimentScore} />
           <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-600 shadow-sm">
             <p className="font-semibold uppercase tracking-[0.25em] text-slate-500">Rationale</p>
-            <p className="mt-2 leading-relaxed">{digest.vibe.rationale}</p>
+            <p className="mt-2 leading-relaxed">{rationale}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
             <span className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2">
