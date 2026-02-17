@@ -1,21 +1,76 @@
 {
-  "generated_at": "2026-02-16T12:13:01.142813+00:00",
+  "generated_at": "2026-02-17T12:13:25.608726+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • February 16, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_featured": 3,
+  "headline": "Kirkwood Pulse • February 17, 2026",
+  "overview": "issue: Kirkwood is facing a tear-down crisis where small starter homes are being replaced by larger, more expensive homes due to high land costs.\nkey_points:\n  -: Land cost is the major factor in housing prices, often accounting for 65% to 100% of property value.\n  -: Mandating homes to stay small and affordable is insufficient without addressing land affordability.\n  -: Two ways to reduce land costs: increase supply or reduce demand; reducing demand is undesirable as high demand supports home value appreciation.\n  -: Increasing supply can be done by building multi-story, multifamily buildings to share land costs among multiple families.\n  -: Small apartment/condo buildings and townhomes offer partial solutions but don't fully meet the traditional starter home ideal.\n  -: The ideal starter home is a detached, single-family home with a backyard, owned by the family living in it.\n  -: Another approach is subdividing land into smaller lots to lower individual lot prices, making homeownership more attainable.\n  -: Kirkwood’s zoning laws impose minimum lot sizes (7,500 sqft to 1 acre), limiting the ability to split lots and build multiple smaller homes.\n  -: Example: A 10,100 sqft lot could not be split into two 7,500 sqft lots, forcing owners to sell to developers building larger homes.\n  -: Current zoning restrictions hinder the creation of affordable starter homes by preventing lot subdivision.\nimplications: To revive starter homes in Kirkwood, zoning reforms allowing smaller lot sizes or alternative housing types are needed to make land more affordable and accessible to young families. event: Kirkwood City Council unanimously voted down a contract with Fybr for a parking technology solution.\ndate_of_vote: 2025-09-04\ntechnology:\n  provider: Fybr\n  description: Sensors under parking spaces provide real-time occupancy data to a mobile app and assist parking enforcement.\n  features:\n  -: 275 sensors installed initially at no cost\n  -: Real-time parking availability via Park Kirkwood app\n  -: Alerts for parking limit violations to Kirkwood Police Department\nissues:\n  -: City staff misrepresented the original contract history, incorrectly stating 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  -: This error led to confusion and compounded misunderstandings during contract renewal discussions.\n  -: Original contract expired on 2021-12-02; ownership and maintenance responsibility transferred to the city.\n  -: City did not respond to Fybr's inquiries about sensor removal until 2025.\n  -: System degradation occurred due to offline gateways and power issues, reducing sensor battery life.\n  -: Only 69 sensors had sufficient battery life for reactivation, leading to a proposed relocation fee of $14,973.\nconsequences: Council rejected the new contract without clear understanding or alternative solutions, leaving Downtown Kirkwood without the proposed parking technology.\nstakeholders:\n  -: Kirkwood City Council\n  -: Fybr (technology provider)\n  -: Kirkwood Police Department\n  -: City staff including Mark Petty and Russ Hawes project_name: Pitman Place\nlocation: 300 N. Kirkwood Road, former Commerce Bank site\nproject_type: 60-apartment mixed-use development\napproval_status: First reading approval granted by Kirkwood City Council on November 20th\nzoning_changes:\n  residential_on_first_floor: Approved, previously banned\n  impact: Allows aesthetically preferred design (Concept P) and more lucrative project for developer\napartment_mix_changes:\n  original_plan:\n  1_bed_1_bath: 27\n  2_bed_2_bath: 27\n  3_bed_2_bath: 6\n  new_plan:\n  1_bed: 23\n  2_bed: 24\n  3_bed: 13\n  net_bedroom_increase: 11\n  notes: New plan yields bigger apartments more suitable for families\nother_changes:\n  retail_space: Increased by a couple hundred square feet\n  clubhouse_size: Slightly smaller\n  parking_spaces: Reduced by six but still compliant with minimum requirements\nhistorical_features:\n  plaque: To be erected next to old Pitman School fence\n  naming: Development named after historic Pitman School\nzoning_context:\n  previous_requirement: Mixed-use with commercial on ground floor along main streets\n  rationale: To promote active street front and walkable downtown\n  criticisms: Mandate seen as counterproductive; retail not always viable due to parking and foot traffic constraints\n  benefit_of_change: Allows more and larger homes, potentially more affordable housing\napproval_process:\n  timeline:\n  -: Original approval expected early October but proposal pulled to restart process\n  -: Planning & Zoning hearing held October 15th\n  -: Council agreed to zoning change and new design concept\n  -: First reading approval given November 20th\n  developer: TriStar Properties with Stock & Associates\n  design_revisions:\n  -: Original design criticized as flat and bulky\n  -: Two new facade options introduced with gabled approach\n  -: Concept P includes balconies and direct-entrance apartments on Adams facade",
+  "items": [
+    {
+      "id": "kirkwood-gadfly:0d6cd5268efe",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "How To Revive the Starter Home",
+      "link": "https://kirkwoodgadfly.com/how-to-revive-the-starter-home/",
+      "published": "2026-02-17T12:12:50.557589+00:00",
+      "excerpt": "I’ve long maintained that Kirkwood’s tear-down crisis is merely a symptom of how expensive our land has become. After you spend $500k to purchase the lot, spending another $200k to tear down the existing small home that sits on the lot and build a new bigger one seems like small potatoes. The Venn diagram of people who can afford to",
+      "tags": [],
+      "ai_summary": "issue: Kirkwood is facing a tear-down crisis where small starter homes are being replaced by larger, more expensive homes due to high land costs.\nkey_points:\n  -: Land cost is the major factor in housing prices, often accounting for 65% to 100% of property value.\n  -: Mandating homes to stay small and affordable is insufficient without addressing land affordability.\n  -: Two ways to reduce land costs: increase supply or reduce demand; reducing demand is undesirable as high demand supports home value appreciation.\n  -: Increasing supply can be done by building multi-story, multifamily buildings to share land costs among multiple families.\n  -: Small apartment/condo buildings and townhomes offer partial solutions but don't fully meet the traditional starter home ideal.\n  -: The ideal starter home is a detached, single-family home with a backyard, owned by the family living in it.\n  -: Another approach is subdividing land into smaller lots to lower individual lot prices, making homeownership more attainable.\n  -: Kirkwood’s zoning laws impose minimum lot sizes (7,500 sqft to 1 acre), limiting the ability to split lots and build multiple smaller homes.\n  -: Example: A 10,100 sqft lot could not be split into two 7,500 sqft lots, forcing owners to sell to developers building larger homes.\n  -: Current zoning restrictions hinder the creation of affordable starter homes by preventing lot subdivision.\nimplications: To revive starter homes in Kirkwood, zoning reforms allowing smaller lot sizes or alternative housing types are needed to make land more affordable and accessible to young families.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:0b2d54260b53",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "String of Errors Leads to Rejection of Parking Solution",
+      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
+      "published": "2026-02-17T12:12:50.033537+00:00",
+      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
+      "tags": [],
+      "ai_summary": "event: Kirkwood City Council unanimously voted down a contract with Fybr for a parking technology solution.\ndate_of_vote: 2025-09-04\ntechnology:\n  provider: Fybr\n  description: Sensors under parking spaces provide real-time occupancy data to a mobile app and assist parking enforcement.\n  features:\n  -: 275 sensors installed initially at no cost\n  -: Real-time parking availability via Park Kirkwood app\n  -: Alerts for parking limit violations to Kirkwood Police Department\nissues:\n  -: City staff misrepresented the original contract history, incorrectly stating 69 spots at a cost of $14,973 instead of 275 spots at no cost.\n  -: This error led to confusion and compounded misunderstandings during contract renewal discussions.\n  -: Original contract expired on 2021-12-02; ownership and maintenance responsibility transferred to the city.\n  -: City did not respond to Fybr's inquiries about sensor removal until 2025.\n  -: System degradation occurred due to offline gateways and power issues, reducing sensor battery life.\n  -: Only 69 sensors had sufficient battery life for reactivation, leading to a proposed relocation fee of $14,973.\nconsequences: Council rejected the new contract without clear understanding or alternative solutions, leaving Downtown Kirkwood without the proposed parking technology.\nstakeholders:\n  -: Kirkwood City Council\n  -: Fybr (technology provider)\n  -: Kirkwood Police Department\n  -: City staff including Mark Petty and Russ Hawes",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:906773a73af3",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Council Greenlights Pitman Place",
+      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
+      "published": "2026-02-17T12:12:49.551075+00:00",
+      "excerpt": "After winding itself through the approval process three times, the Council finally offered first reading approval to Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road, at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the project in early October, but instead of approving",
+      "tags": [],
+      "ai_summary": "project_name: Pitman Place\nlocation: 300 N. Kirkwood Road, former Commerce Bank site\nproject_type: 60-apartment mixed-use development\napproval_status: First reading approval granted by Kirkwood City Council on November 20th\nzoning_changes:\n  residential_on_first_floor: Approved, previously banned\n  impact: Allows aesthetically preferred design (Concept P) and more lucrative project for developer\napartment_mix_changes:\n  original_plan:\n  1_bed_1_bath: 27\n  2_bed_2_bath: 27\n  3_bed_2_bath: 6\n  new_plan:\n  1_bed: 23\n  2_bed: 24\n  3_bed: 13\n  net_bedroom_increase: 11\n  notes: New plan yields bigger apartments more suitable for families\nother_changes:\n  retail_space: Increased by a couple hundred square feet\n  clubhouse_size: Slightly smaller\n  parking_spaces: Reduced by six but still compliant with minimum requirements\nhistorical_features:\n  plaque: To be erected next to old Pitman School fence\n  naming: Development named after historic Pitman School\nzoning_context:\n  previous_requirement: Mixed-use with commercial on ground floor along main streets\n  rationale: To promote active street front and walkable downtown\n  criticisms: Mandate seen as counterproductive; retail not always viable due to parking and foot traffic constraints\n  benefit_of_change: Allows more and larger homes, potentially more affordable housing\napproval_process:\n  timeline:\n  -: Original approval expected early October but proposal pulled to restart process\n  -: Planning & Zoning hearing held October 15th\n  -: Council agreed to zoning change and new design concept\n  -: First reading approval given November 20th\n  developer: TriStar Properties with Stock & Associates\n  design_revisions:\n  -: Original design criticized as flat and bulky\n  -: Two new facade options introduced with gabled approach\n  -: Concept P includes balconies and direct-entrance apartments on Adams facade",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on How To Revive the Starter Home from Kirkwood Gadfly."
 }
