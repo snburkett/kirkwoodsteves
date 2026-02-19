@@ -1,58 +1,21 @@
 {
-  "generated_at": "2026-02-18T12:13:22.169855+00:00",
+  "generated_at": "2026-02-19T12:13:47.643172+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 2,
-  "headline": "Kirkwood Pulse • February 18, 2026",
-  "overview": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts with covered front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning code proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  negative:\n  -: No hotel included despite original RFP requirement\n  -: No ground-floor retail allowed, limiting neighborhood business opportunities\n  -: Six blocky, similar buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Missed opportunity for structured parking and community spaces like a town square\nuncertainties:\n  -: Final design details still pending\n  -: Financial terms for city not yet disclosed\n  -: Potential changes during approval process\nadditional_context: The project aims to offset the $12 million city expenditure for the new public works site. The Grant’s Trail extension nearby could increase foot traffic, but lack of retail is seen as a lost economic opportunity. context: The article discusses the proposals submitted for the Public Works site redevelopment in Kirkwood, focusing on the bids rejected by the City Council after a two-stage RFP process.\nkey_points:\n  -: Five initial applicants submitted bids: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman.\n  -: The City Council provided feedback emphasizing preferences such as including a hotel, majority owner-occupied residential units, flexible height and density with contextual design, inclusion of KPAC surface parking lot, incentives excluding TIF, structured parking, and traditional architectural design.\n  -: Keeley Properties proposed 233 homes in phases, including townhomes, multifamily units, a parking garage, and optional boutique hotel or mixed-use building, with strong integration into Kirkwood’s street grid and public parks.\n  -: Ridgehouse Development proposed 30 townhomes, two 100-apartment buildings, retail space, and a large parking garage but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel, 62 homes, mixed-use buildings with commercial space, and a water feature integrated with the creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel with retail and villas but apparently did not submit a revised proposal.\n  -: Despite multiple hotel-including proposals, the Council rejected all, partly due to concerns that hotel requirements lowered the purchase price offered to the city.\n  -: The article highlights a paradox between the Council’s stated desire to attract a hotel downtown and their rejection of hotel proposals.\nadditional_resources: Full submissions obtained via FOIA are available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:dbf52000fe91",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "202 Homes Proposed for Former Public Works Site",
-      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
-      "published": "2026-02-18T12:13:02.917086+00:00",
-      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
-      "tags": [],
-      "ai_summary": "project_overview:\n  developer: Double Eagle Development\n  location: Former Public Works site, Kirkwood\n  proposal: 202 homes in six four-story buildings with 247 parking spots\n  features:\n  -: Pedestrian-friendly streets and sidewalks\n  -: Gathering spaces and art installations\n  -: Robust trees and plantings\n  -: Ranch and townhome layouts with covered front porches\n  -: Private attached garages\n  -: State-of-the-art amenities including pool, fitness center, lounge, grill stations\n  -: Architectural elements reflecting historic Kirkwood homes with modern features\n  -: New through street connecting Taylor to Fillmore\n  zoning: New R-7 Planned Multifamily zoning code proposed for project approval\ncommunity_reactions:\n  positive:\n  -: New through street improves connectivity and walkability\n  negative:\n  -: No hotel included despite original RFP requirement\n  -: No ground-floor retail allowed, limiting neighborhood business opportunities\n  -: Six blocky, similar buildings lacking human scale\n  -: Extensive surface parking reminiscent of suburban developments\n  -: Missed opportunity for structured parking and community spaces like a town square\nuncertainties:\n  -: Final design details still pending\n  -: Financial terms for city not yet disclosed\n  -: Potential changes during approval process\nadditional_context: The project aims to offset the $12 million city expenditure for the new public works site. The Grant’s Trail extension nearby could increase foot traffic, but lack of retail is seen as a lost economic opportunity.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "kirkwood-gadfly:ebc352aa548f",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "Public Works Site: The Rejects",
-      "link": "https://kirkwoodgadfly.com/public-works-the-rejects/",
-      "published": "2026-02-18T12:13:01.282842+00:00",
-      "excerpt": "Last week I wrote up how Double Eagle won the Public Works sweepstakes. Ahead of this Thursday’s City Council public hearing on the Double Eagle proposal, I wanted to explore the other proposals that the Council passed up. The Public Works RFP process unfolded in two stages. Initial bids were submitted by five applicants —Double Eagle, Keeley, Ridgehouse, Savoy, and",
-      "tags": [],
-      "ai_summary": "context: The article discusses the proposals submitted for the Public Works site redevelopment in Kirkwood, focusing on the bids rejected by the City Council after a two-stage RFP process.\nkey_points:\n  -: Five initial applicants submitted bids: Double Eagle, Keeley, Ridgehouse, Savoy, and Mehlman.\n  -: The City Council provided feedback emphasizing preferences such as including a hotel, majority owner-occupied residential units, flexible height and density with contextual design, inclusion of KPAC surface parking lot, incentives excluding TIF, structured parking, and traditional architectural design.\n  -: Keeley Properties proposed 233 homes in phases, including townhomes, multifamily units, a parking garage, and optional boutique hotel or mixed-use building, with strong integration into Kirkwood’s street grid and public parks.\n  -: Ridgehouse Development proposed 30 townhomes, two 100-apartment buildings, retail space, and a large parking garage but did not include a through-street as requested.\n  -: Savoy Properties offered the most retail-heavy plan with a 100-room hotel, 62 homes, mixed-use buildings with commercial space, and a water feature integrated with the creek for storm runoff retention.\n  -: Mehlman Homes Reality proposed a 126-room hotel with retail and villas but apparently did not submit a revised proposal.\n  -: Despite multiple hotel-including proposals, the Council rejected all, partly due to concerns that hotel requirements lowered the purchase price offered to the city.\n  -: The article highlights a paradox between the Council’s stated desire to attract a hotel downtown and their rejection of hotel proposals.\nadditional_resources: Full submissions obtained via FOIA are available on Google Drive (link in original article). Keeley’s detailed responses to Council feedback provide insight into the decision-making process.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • February 19, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on 202 Homes Proposed for Former Public Works Site from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
