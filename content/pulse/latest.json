@@ -1,21 +1,94 @@
 {
-  "generated_at": "2026-02-26T12:14:25.507505+00:00",
+  "generated_at": "2026-02-27T12:10:59.802497+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • February 26, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 12,
+  "stories_featured": 4,
+  "headline": "Kirkwood Pulse • February 27, 2026",
+  "overview": "game_result: Cardinals 9, Astros 4\nweather: Partly cloudy, 80 degrees\nkey_player_notes:\n  -:\n  player: Thomas Saggese\n  note: Played outfield for first time since Little League to add defensive versatility; fielded one ball cleanly in left field; leaving camp Sunday to play infield for Italy in World Baseball Classic.\n  -:\n  player: Matthew Liberatore\n  note: Pitched three innings, allowing one run on two hits and a walk with three strikeouts.\n  -:\n  player: Alec Burleson\n  note: Hit a three-run home run, second consecutive game with a three-run homer.\n  -:\n  player: Yohel Pozo\n  note: Hit a home run.\n  -:\n  player: Jimmy Crooks\n  note: Hit a two-run home run.\n  -:\n  player: Jon Jon Gazdar\n  note: Minor-leaguer who hit a home run and a double, scored go-ahead run in seventh inning.\n  -:\n  player: Bryan Torres\n  note: Had two hits playing second base; leaving camp Sunday to play for Puerto Rico in WBC.\n  -:\n  player: Ivan Herrera\n  note: Played first time this spring as DH, 0-for-2; scheduled to catch first time Sunday.\n  -:\n  player: Ramon Urias\n  note: Expected to debut for Cardinals Friday, likely at third base.\n  -:\n  player: Zak Kent\n  note: Designated for assignment to make room for Urias; claimed off waivers by Twins; third team since spring training started.\nteam_notes:\n  -: Cardinals hit four home runs in the game.\n  -: Starting leadoff hitters combined 0-for-12 in first six spring games.\n  -: Quinn Mathews to start Friday against Mets; Tink Hence to make second relief appearance.\nadditional_info: Article by Rob Rains from Jupiter, Florida; follow on X @RobRains. plot: Matt Taylor, played by Kevin James, plans a dream wedding and honeymoon in Rome, but when things go awry and he can't get a refund, he embarks on the trip alone. Through this solo adventure, he experiences personal growth and new connections, discovering that heartbreak can lead to a better chapter in life.\nreview:\n  tone: Lighthearted and sentimental\n  style: A nostalgic throwback to classic romantic comedies of the 1960s, reminiscent of films like 'Come September' featuring picturesque Italian settings.\n  performances: Kevin James delivers a relatable and sincere portrayal of a middle-aged man facing emotional loss. Supporting cast includes Julie Ann Emery, Alyson Hannigan, Kim Coates, Julee Cerda, Jonathan Roumie, and Nicole Grimaudo, who adds charm as a local café owner.\n  direction: Chuck and Dan Kinnane use a familiar romantic comedy formula that is non-offensive, positive, and heartwarming.\n  cinematography: Jared Fadel captures beautiful scenes of Rome and Tuscany, enhancing the romantic and travelogue feel.\n  music: Features a soundtrack filled with familiar Italian songs.\n  audience_recommendation: A feel-good movie ideal for a winter escape, offering warmth and lighthearted entertainment without profanity or violence. Rob Rains provides a one-minute video recap of the Cardinals' game on February 26, 2026, highlighting four home runs that contributed significantly to their win at Roger Dean Stadium. The video is available on the linked page, along with a podcast titled 'Rains on the Cardinals.'",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:0a99a8d6670b",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Postcard from Cardinals spring training camp for Thursday, Feb. 26, 2026",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/postcard-from-cardinals-spring-training-camp-for-thursday-feb-26-2026/article_e89cad51-0f86-5347-ab72-88fe0a719300.html",
+      "published": "2026-02-26T22:14:11+00:00",
+      "excerpt": "News and notes on the Cardinals' 9-4 win over the Astros on Thursday that include Thomas Saggese playing left field for the first time and four home runs, including Alec Burleson's three-run shot. [...]The post Postcard from Cardinals spring training…",
+      "tags": [],
+      "ai_summary": "game_result: Cardinals 9, Astros 4\nweather: Partly cloudy, 80 degrees\nkey_player_notes:\n  -:\n  player: Thomas Saggese\n  note: Played outfield for first time since Little League to add defensive versatility; fielded one ball cleanly in left field; leaving camp Sunday to play infield for Italy in World Baseball Classic.\n  -:\n  player: Matthew Liberatore\n  note: Pitched three innings, allowing one run on two hits and a walk with three strikeouts.\n  -:\n  player: Alec Burleson\n  note: Hit a three-run home run, second consecutive game with a three-run homer.\n  -:\n  player: Yohel Pozo\n  note: Hit a home run.\n  -:\n  player: Jimmy Crooks\n  note: Hit a two-run home run.\n  -:\n  player: Jon Jon Gazdar\n  note: Minor-leaguer who hit a home run and a double, scored go-ahead run in seventh inning.\n  -:\n  player: Bryan Torres\n  note: Had two hits playing second base; leaving camp Sunday to play for Puerto Rico in WBC.\n  -:\n  player: Ivan Herrera\n  note: Played first time this spring as DH, 0-for-2; scheduled to catch first time Sunday.\n  -:\n  player: Ramon Urias\n  note: Expected to debut for Cardinals Friday, likely at third base.\n  -:\n  player: Zak Kent\n  note: Designated for assignment to make room for Urias; claimed off waivers by Twins; third team since spring training started.\nteam_notes:\n  -: Cardinals hit four home runs in the game.\n  -: Starting leadoff hitters combined 0-for-12 in first six spring games.\n  -: Quinn Mathews to start Friday against Mets; Tink Hence to make second relief appearance.\nadditional_info: Article by Rob Rains from Jupiter, Florida; follow on X @RobRains.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:e9d9533dfeb0",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Solo Mio",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/arts_and_entertainment/reel_world/solo-mio/article_9c75fcb0-a375-4881-8eb9-0b40774df982.html",
+      "published": "2026-02-26T21:53:00+00:00",
+      "excerpt": "Currently in theaters.",
+      "tags": [],
+      "ai_summary": "plot: Matt Taylor, played by Kevin James, plans a dream wedding and honeymoon in Rome, but when things go awry and he can't get a refund, he embarks on the trip alone. Through this solo adventure, he experiences personal growth and new connections, discovering that heartbreak can lead to a better chapter in life.\nreview:\n  tone: Lighthearted and sentimental\n  style: A nostalgic throwback to classic romantic comedies of the 1960s, reminiscent of films like 'Come September' featuring picturesque Italian settings.\n  performances: Kevin James delivers a relatable and sincere portrayal of a middle-aged man facing emotional loss. Supporting cast includes Julie Ann Emery, Alyson Hannigan, Kim Coates, Julee Cerda, Jonathan Roumie, and Nicole Grimaudo, who adds charm as a local café owner.\n  direction: Chuck and Dan Kinnane use a familiar romantic comedy formula that is non-offensive, positive, and heartwarming.\n  cinematography: Jared Fadel captures beautiful scenes of Rome and Tuscany, enhancing the romantic and travelogue feel.\n  music: Features a soundtrack filled with familiar Italian songs.\n  audience_recommendation: A feel-good movie ideal for a winter escape, offering warmth and lighthearted entertainment without profanity or violence.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:efa1a1893c71",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Video: Jupiter Minute– Rob Rains’ one-minute video recap of Cardinal’s game 2-26-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/video-jupiter-minute-rob-rains-one-minute-video-recap-of-cardinal-s-game-2-26/article_0837de77-d527-52a2-9128-09a5d0ef083b.html",
+      "published": "2026-02-26T21:32:42+00:00",
+      "excerpt": "Four home runs played a big part in the Cardinals win at Roger Dean Stadium on Thursday. To hear Rob Rains’ one-minute recap of the game, click the video player below. Please subscribe to [...]The post Video: Jupiter Minute– Rob…",
+      "tags": [],
+      "ai_summary": "Rob Rains provides a one-minute video recap of the Cardinals' game on February 26, 2026, highlighting four home runs that contributed significantly to their win at Roger Dean Stadium. The video is available on the linked page, along with a podcast titled 'Rains on the Cardinals.'",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:f64912b645b6",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Video: “Rains on the Cardinals Podcast” with Rob Rains and Mike Rains 2-25-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/video-rains-on-the-cardinals-podcast-with-rob-rains-and-mike-rains-2-25-26/article_eab66791-fb9d-55a3-9ad6-8db04c425a35.html",
+      "published": "2026-02-26T01:43:14+00:00",
+      "excerpt": "To hear this week’s show, click the video player below. Be sure you get in on our “Opening Day” Contest— deadline is March 1, so get your entry in. The post Video: “Rains on the Cardinals Podcast” with Rob Rains…",
+      "tags": [],
+      "ai_summary": "This week's episode of the 'Rains on the Cardinals Podcast' features Rob Rains and Mike Rains discussing the latest Cardinals news. Residents are encouraged to participate in the 'Opening Day' Contest, with a submission deadline of March 1.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Postcard from Cardinals spring training camp for Thursday, Feb. 26, 2026 from Webster-Kirkwood Times – News."
 }
