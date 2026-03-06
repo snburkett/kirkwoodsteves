@@ -1,21 +1,202 @@
 {
-  "generated_at": "2026-03-05T12:11:40.742424+00:00",
+  "generated_at": "2026-03-06T12:11:14.017371+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • March 05, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 10,
+  "headline": "Kirkwood Pulse • March 06, 2026",
+  "overview": "project:\n  developer: Double Eagle Development\n  site: Former public works site, Kirkwood\n  proposal_date: January 8th\n  proposal_details:\n  homes: 203\n  buildings: 6\n  parking_spots: 303\n  building_type: all-residential\n  architecture_style: traditional (pitched roofs, chimneys, covered porches)\n  unique_features:\n  -: new through-street connecting Taylor and Fillmore\n  -: townhome style apartments with ground-floor private entrances\n  -: Breezestak layout offering varied floor plans\n  apartment_mix:\n  1_bedroom: similar to recent developments\n  2_bedroom: similar to recent developments\n  3_bedroom: similar to recent developments\ncouncil_decision_factors:\n  preferred_response: Double Eagle’s proposal\n  likely_most_lucrative: True\n  market_value_considerations: All-residential with more homes yields higher value\n  architecture_preference: Conservative, traditional style favored over modern\n  reference_projects: Bemiston Place Apartments in Clayton\n  walk-up apartment layouts: Supported by Council\ncriticisms_and_regrets:\n  trail_integration: Lack of value placed on Grant’s Trail extension and related retail potential\n  phased_development: Suggested phased approach for better long-term community return\n  walkability: Project considered too auto-oriented with excessive asphalt and curb cuts\n  parking: Preference for structured parking to improve community space and walkability\n  building_code: Recommendation for Council to add flexibility to building codes for walk-up designs\nadditional_notes:\n  KPAC_parking_lot: Not included in current development, leaving future development options open\n  construction_timeline: Grant’s Trail construction to start in about two years overview: Kirkwood City Council, dominated by a 6-1 Republican majority, has taken a sharply partisan and conservative turn, departing from previous norms of cautious, community-focused governance.\nkey_events:\n  -:\n  event: Abrupt dismissal of city administrator Russ Hawes after more than a decade, with no formal transition or successor named.\n  -:\n  event: Conservative activists successfully installed six of seven council members in the April 2, 2024 election, pushing a unified slate aimed at removing Diversity, Equity, and Inclusion initiatives from the school district.\npolitical_context:\n  partisan_shift: Despite nonpartisan elections, council members have strong ties to the national Conservative Movement and Trump-era Republican politics.\n  donation_analysis:\n  total_republican_donations: 30225\n  total_democratic_donations: 710\n  notable_recipients:\n  -: Jason Smith (Republican House Ways & Means Chair)\n  -: Senator Eric Schmitt (MAGA-aligned)\n  -: Georgia Republicans Kelly Loeffler and David Perdue\n  -: Donald J. Trump for President, Inc.\n  spousal_donations: Also predominantly Republican-aligned, reinforcing the council's partisan commitments.\ngovernance_style:\n  description: Council appears focused on political consolidation, punishing Democratic opponents, and rewarding Republican allies rather than community-focused leadership.\n  examples:\n  -: Dismissal of infrastructure cost-saving ideas due to partisan bias.\n  -: Pursuit of selling the city’s water utility, potentially raising costs despite short-term revenue gains.\nimplications: The council's approach risks increasing costs for residents and prioritizes political agendas over long-term community welfare. new_interim_city_manager:\n  name: Scott Davis\n  previous_position: Deputy City Manager of Strategic Innovation\n  start_date_with_city: 2014\n  responsibilities:\n  -: Manages IT division\n  -: Manages parks and recreation department\n  -: Manages public works department\n  -: Oversees Prop W water park construction\n  -: Oversees ice rink renovation\n  -: Oversees city hall facility upgrades\n  salary: 137500\n  interim_period: Through April municipal election 2026\n  potential_candidacy: City council welcomes application for permanent city manager role\noutgoing_city_manager:\n  name: Marie Peoples\n  resignation_effective_date: 2026-04-03\n  consulting_period: 60 days following resignation\n  reason_for_departure: Not disclosed\n  current_work_status: Full-time until early April, then consulting\n  separation_agreement: Not disclosed\ncity_council_notes:\n  mayor: Laura Arnold\n  comments:\n  -: Appreciates Scott Davis and looks forward to working with him during transition\n  -: No search for permanent city manager planned until after new council members take office\n  -: Two new council members will participate fully in hiring process\n  search_firm_engagement: No plans to engage outside search firm at this time",
+  "items": [
+    {
+      "id": "kirkwood-gadfly:3fd14899f69d",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "How Double Eagle Won Over the Council",
+      "link": "https://kirkwoodgadfly.com/public-works-site-how-double-eagle-won/",
+      "published": "2026-03-06T12:09:49.761148+00:00",
+      "excerpt": "On January 8th, Kirkwood City Council will hold a public hearing on Double Eagle Development’s proposal for the former public works site. The proposal, the Council’s preferred response of the six they received, calls for 203 homes across six all-residential buildings and 303 surface parking spots. In reviewing each of the RFP responses, a picture of the Council’s decision-making process",
+      "tags": [],
+      "ai_summary": "project:\n  developer: Double Eagle Development\n  site: Former public works site, Kirkwood\n  proposal_date: January 8th\n  proposal_details:\n  homes: 203\n  buildings: 6\n  parking_spots: 303\n  building_type: all-residential\n  architecture_style: traditional (pitched roofs, chimneys, covered porches)\n  unique_features:\n  -: new through-street connecting Taylor and Fillmore\n  -: townhome style apartments with ground-floor private entrances\n  -: Breezestak layout offering varied floor plans\n  apartment_mix:\n  1_bedroom: similar to recent developments\n  2_bedroom: similar to recent developments\n  3_bedroom: similar to recent developments\ncouncil_decision_factors:\n  preferred_response: Double Eagle’s proposal\n  likely_most_lucrative: True\n  market_value_considerations: All-residential with more homes yields higher value\n  architecture_preference: Conservative, traditional style favored over modern\n  reference_projects: Bemiston Place Apartments in Clayton\n  walk-up apartment layouts: Supported by Council\ncriticisms_and_regrets:\n  trail_integration: Lack of value placed on Grant’s Trail extension and related retail potential\n  phased_development: Suggested phased approach for better long-term community return\n  walkability: Project considered too auto-oriented with excessive asphalt and curb cuts\n  parking: Preference for structured parking to improve community space and walkability\n  building_code: Recommendation for Council to add flexibility to building codes for walk-up designs\nadditional_notes:\n  KPAC_parking_lot: Not included in current development, leaving future development options open\n  construction_timeline: Grant’s Trail construction to start in about two years",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:930cb43897c9",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood’s 6-1 Republican Majority",
+      "link": "https://kirkwoodgadfly.com/kirkwoods-6-1-republican-majority/",
+      "published": "2026-03-06T12:09:48.501655+00:00",
+      "excerpt": "In a Friday evening news dump the week before Thanksgiving, Kirkwood City Council announced that they would be parting ways with city administrator Russ Hawes. There would be no formal transition to a named successor, no transfer of institutional knowledge, and no grand send-off. Instead, the end for the man who had managed the city’s day-to-day operations for more than",
+      "tags": [],
+      "ai_summary": "overview: Kirkwood City Council, dominated by a 6-1 Republican majority, has taken a sharply partisan and conservative turn, departing from previous norms of cautious, community-focused governance.\nkey_events:\n  -:\n  event: Abrupt dismissal of city administrator Russ Hawes after more than a decade, with no formal transition or successor named.\n  -:\n  event: Conservative activists successfully installed six of seven council members in the April 2, 2024 election, pushing a unified slate aimed at removing Diversity, Equity, and Inclusion initiatives from the school district.\npolitical_context:\n  partisan_shift: Despite nonpartisan elections, council members have strong ties to the national Conservative Movement and Trump-era Republican politics.\n  donation_analysis:\n  total_republican_donations: 30225\n  total_democratic_donations: 710\n  notable_recipients:\n  -: Jason Smith (Republican House Ways & Means Chair)\n  -: Senator Eric Schmitt (MAGA-aligned)\n  -: Georgia Republicans Kelly Loeffler and David Perdue\n  -: Donald J. Trump for President, Inc.\n  spousal_donations: Also predominantly Republican-aligned, reinforcing the council's partisan commitments.\ngovernance_style:\n  description: Council appears focused on political consolidation, punishing Democratic opponents, and rewarding Republican allies rather than community-focused leadership.\n  examples:\n  -: Dismissal of infrastructure cost-saving ideas due to partisan bias.\n  -: Pursuit of selling the city’s water utility, potentially raising costs despite short-term revenue gains.\nimplications: The council's approach risks increasing costs for residents and prioritizes political agendas over long-term community welfare.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:f75df34ff572",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Scott Davis Named Interim City Manager",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/scott-davis-named-interim-city-manager/article_28ea8a20-a72a-4777-92c2-22099098c0f1.html",
+      "published": "2026-03-06T06:05:00+00:00",
+      "excerpt": "Webster Groves has named veteran city leader Scott Davis to serve as interim city manager. City Manager Marie Peoples last month announced her resignation from the post, effective April 3, plus a 60-day consulting period with the city to follow. Davis, who has served as the city’s deputy city manager of strategic innovation since being promoted to the position that",
+      "tags": [],
+      "ai_summary": "new_interim_city_manager:\n  name: Scott Davis\n  previous_position: Deputy City Manager of Strategic Innovation\n  start_date_with_city: 2014\n  responsibilities:\n  -: Manages IT division\n  -: Manages parks and recreation department\n  -: Manages public works department\n  -: Oversees Prop W water park construction\n  -: Oversees ice rink renovation\n  -: Oversees city hall facility upgrades\n  salary: 137500\n  interim_period: Through April municipal election 2026\n  potential_candidacy: City council welcomes application for permanent city manager role\noutgoing_city_manager:\n  name: Marie Peoples\n  resignation_effective_date: 2026-04-03\n  consulting_period: 60 days following resignation\n  reason_for_departure: Not disclosed\n  current_work_status: Full-time until early April, then consulting\n  separation_agreement: Not disclosed\ncity_council_notes:\n  mayor: Laura Arnold\n  comments:\n  -: Appreciates Scott Davis and looks forward to working with him during transition\n  -: No search for permanent city manager planned until after new council members take office\n  -: Two new council members will participate fully in hiring process\n  search_firm_engagement: No plans to engage outside search firm at this time",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b9df9609b61f",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "“Wet/Wild” Watercolors Show",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/wet-wild-watercolors-show/article_4e5760ef-8700-4b70-b515-eda20fc048ca.html",
+      "published": "2026-03-06T06:00:00+00:00",
+      "excerpt": "The Old Orchard Gallery, 39 S. Old Orchard Ave., will present an art exhibit featuring the watercolors of about 20 painters from the weekly “Wet/Wild/Watercolor Wednesday” painting sessions throughout the year. The show runs March 7 to May 4, with…",
+      "tags": [],
+      "ai_summary": "event: Wet/Wild Watercolors Art Exhibit\nlocation: Old Orchard Gallery, 39 S. Old Orchard Ave.\ndates:\n  start: 2026-03-07\n  end: 2026-05-04\nopening_reception:\n  date: 2026-03-07\n  time: 17:00-19:00\ndetails:\n  artists: About 20 painters from the weekly Wet/Wild/Watercolor Wednesday sessions\n  program_leader: Local artist Marilynne Bradley\n  program_location: Green Door Art Gallery, Webster Groves\n  program_frequency: Weekly on Wednesdays\n  program_duration: 10 years with over 300 artists participating\n  exhibit_content: Each artist selected four paintings to be framed and displayed for the first time\n  sales: Many paintings will be available for purchase\n  purpose: First gallery display opportunity for many participating artists",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:2a90027a00bd",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Annual Awards Gala Set For Saturday, March 7",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/annual-awards-gala-set-for-saturday-march-7/article_8ce6d7ff-316e-4584-b139-677afcefc40d.html",
+      "published": "2026-03-06T06:00:00+00:00",
+      "excerpt": "The Kirkwood-Des Peres Area Chamber of Commerce has announced the winners of its annual awards for Businesspersons of the Year, Volunteer of the Year, Community Impact, Rising Star and Lifetime Achievement.",
+      "tags": [],
+      "ai_summary": "The Kirkwood-Des Peres Area Chamber of Commerce has announced the winners of its annual awards for Businesspersons of the Year, Volunteer of the Year, Community Impact, Rising Star and Lifetime Achievement.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:0ce1a9b56e2e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Man Charged With Sexually Abusing Child At KW Walmart",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/man-charged-with-sexually-abusing-child-at-kw-walmart/article_30290365-0b06-4581-8b7e-ef4ce20263bf.html",
+      "published": "2026-03-06T06:00:00+00:00",
+      "excerpt": "A St. Louis man has been charged with sex crimes after approaching and sexually abusing a 7-year-old child at the Kirkwood Walmart on March 1. Authorities say the man also approached three other children in the store that day, and believe there could be additional victims. Esmin Pasic, 33, of the 3200 block of Morganford Road in St. Louis, was",
+      "tags": [],
+      "ai_summary": "incident_date: 2026-03-01\nlocation: Kirkwood Walmart, 1202 S. Kirkwood Road\nsuspect:\n  name: Esmin Pasic\n  age: 33\n  address: 3200 block of Morganford Road, St. Louis\n  criminal_history: No prior charges in Missouri\ncharges:\n  -: enticement of a child\n  -: sexual abuse of a child\nbond: 250000\ndetails: Pasic approached and sexually abused a 7-year-old child inside the Kirkwood Walmart by grabbing and stroking the child's genitals and rubbing his own genitals against the child's shoulder. The child identified Pasic in a police lineup. Surveillance footage confirmed the incident and showed Pasic was in the store for hours. Authorities are aware of at least three other children approached by Pasic that day and believe there may be additional victims. Pasic also visited a nearby Target store after Walmart.\nlaw_enforcement_advice: Parents who were at the Walmart or Target stores on March 1 with children are urged to discuss the outing with their kids and contact the Kirkwood Police Department at 314-822-5858 if they have concerns.\narrest_info: Pasic was arrested at his home on March 2 and is currently held on $250,000 bond.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:9bb15de99ad9",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Video: “Rains on the Cardinals” Podcast with Rob Rains and MikeRains 3-6-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/video-rains-on-the-cardinals-podcast-with-rob-rains-and-mikerains-3-6-26/article_249e05f5-acfc-5128-859b-6ef11bca000b.html",
+      "published": "2026-03-06T03:09:39+00:00",
+      "excerpt": "For the “Rains on the Cardinals” Podcast, click the video player below: To subscribe to our YouTube: CLICK HEREThe post Video: “Rains on the Cardinals” Podcast with Rob Rains and MikeRains 3-6-26 appeared first on News from Rob Rains, STLSportsPage.com.",
+      "tags": [],
+      "ai_summary": "This news item promotes the latest episode of the “Rains on the Cardinals” podcast featuring Rob Rains and MikeRains. The article includes a video player for the podcast and provides a link to subscribe to their YouTube channel. The podcast covers topics related to the St. Louis Cardinals baseball team.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:1becc496d88e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Postcard from Cardinals spring training camp for Thursday, March 5, 2026",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/postcard-from-cardinals-spring-training-camp-for-thursday-march-5-2026/article_50802ef1-552f-5293-a6d7-4f3e3e72e29c.html",
+      "published": "2026-03-05T22:33:15+00:00",
+      "excerpt": "Dustin May worked three scoreless innings in Cardinals debut, Quinn Mathews struck out seven and Nolan Gorman homered in win over the Pirates in Bradenton. [...]The post Postcard from Cardinals spring training camp for Thursday, March 5, 2026 appeared first…",
+      "tags": [],
+      "ai_summary": "game_result: Cardinals 3, Pirates 2\nweather: Partly cloudy, 83 degrees\nkey_events:\n  -:\n  player: Dustin May\n  performance: Started and pitched 3 innings, allowing 1 hit and 1 walk with 1 strikeout\n  note: Signed as a free agent, expected to be #2 starter behind Matthew Liberatore\n  -:\n  player: Quinn Mathews\n  performance: Struck out 7 batters over 2 2/3 innings\n  note: Allowed a two-run homer in final inning, one run unearned due to error\n  -:\n  player: Nolan Gorman\n  performance: Hit his second home run of the spring\n  note: Committed a throwing error leading to an unearned run\n  -:\n  player: Masyn Winn\n  performance: 0-for-2 as designated hitter\n  note: Late addition to starting lineup\n  -:\n  players:\n  -: Pedro Pages\n  -: Jimmy Crooks\n  performance: Each had an RBI single\n  note: Crooks' hit broke 2-2 tie in eighth inning\n  -:\n  player: Victor Scott II\n  performance: Stole his second base of the spring\n  -:\n  players:\n  -: Matt Svanson\n  -: Justin Bruihl\n  -: Ryan Fernandez\n  performance: Each pitched a scoreless inning\nnotable_absence:\n  player: Konnor Griffin\n  team: Pirates\n  note: Not in lineup despite early spring success\nupcoming_games:\n  next_game: Cardinals vs Orioles\n  date: 2026-03-06\n  location: Sarasota, FL\n  starting_pitcher: Michael McGreevy\nspring_breakout_game:\n  date: 2026-03-19\n  opponent: Nationals\n  location: Jupiter, FL\n  notable_prospects:\n  -: Liam Doyle\n  -: Jerrangelo Cijntje\n  -: Tanner Franklin\n  -: Leonardo Bernal\n  -: Rainiel Rodriguez\n  -: Yairo Padilla\n  -: Jesus Baez\n  final_roster_announcement_date: 2026-03-18\nreporter:\n  name: Rob Rains\n  social_media:\n  platform: X\n  handle: @RobRains",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b6c3ec25b6a9",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Jupiter Minute for Thursday: Video recap of Cardinals Spring Training Game by Rob Rains",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/jupiter-minute-for-thursday-video-recap-of-cardinals-spring-training-game-by-rob-rains/article_ea438ef8-460e-5421-84b1-e8b3001db8c4.html",
+      "published": "2026-03-05T22:22:07+00:00",
+      "excerpt": "For the Jupiter Minute, click the video player below The post Jupiter Minute for Thursday: Video recap of Cardinals Spring Training Game by Rob Rains appeared first on News from Rob Rains, STLSportsPage.com.",
+      "tags": [],
+      "ai_summary": "This article features a video recap of the St. Louis Cardinals Spring Training game, presented by Rob Rains in the Jupiter Minute segment. The video provides highlights and insights from the game.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:66f0408d8744",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "John E. Schnoebelen",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/john-e-schnoebelen/article_c5b06b94-d2a2-40ea-aa28-d4de62026f27.html",
+      "published": "2026-03-05T16:59:00+00:00",
+      "excerpt": "Schnoebelen, John E. A Memorial Mass honoring the life of John E. Schnoebelen will be celebrated on Wed., March 11, 2026, at 10:30 a.m. at Ste. Genevieve du Bois Catholic Church.",
+      "tags": [],
+      "ai_summary": "A Memorial Mass honoring the life of John E. Schnoebelen will be held on Wednesday, March 11, 2026, at 10:30 a.m. at Ste. Genevieve du Bois Catholic Church.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 10 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 10 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on How Double Eagle Won Over the Council from Kirkwood Gadfly."
 }
