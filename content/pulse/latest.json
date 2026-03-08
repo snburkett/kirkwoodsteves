@@ -1,58 +1,21 @@
 {
-  "generated_at": "2026-03-07T12:07:25.692649+00:00",
+  "generated_at": "2026-03-08T12:07:34.364549+00:00",
   "window_hours": 36,
-  "stories_considered": 15,
-  "stories_featured": 2,
-  "headline": "Kirkwood Pulse • March 07, 2026",
-  "overview": "event_name: St. Louis Legends Games\nprevious_name: St. Louis Senior Olympics\nevent_dates: May 16 - May 31, 2026\nopening_ceremony: May 18, 2026, 5:00 - 8:00 p.m. at the Hub in Chesterfield\nclosing_ceremony: June 4, 2026, Legends Happy Hour and medaling ceremony at the Hub in Chesterfield (time TBA)\nregistration:\n  opens: March 2, 2026\n  methods:\n  -: Online at jccstl.com/legendsgames\n  -: Printed entry forms at Jewish Community Center’s Chesterfield and Creve Coeur locations\n  eligibility: Adults aged 50 and older (must turn 50 by December 31, 2026)\n  fees: Vary by event\nevent_description: A master’s-style athletic competition promoting lifelong active living for adults 50+, featuring over 90 individual and team events including swimming, softball, pinball, poker, and new team events like bowling and relays.\nparticipants:\n  expected_athletes: 1200\n  volunteers: 300\nnew_features_2026:\n  -: Expanded team and social participation opportunities\n  -: Crews competing across multiple events\n  -: Softball tournament with individual signups and blind draft teams\n  -: New events: team bowling, plank competitions, swimming relays, track and field relays\norganizer: Jewish Community Center (The J)\nsponsor: Matrix Midwest\nbranding: New name and visual identity inspired by the Gateway Arch and St. Louis sports culture to reflect active, engaged adults 50+\nlocations: Various venues throughout the St. Louis region game_result: Cardinals 10, Orioles 2\nlocation: Sarasota, Florida\nweather: Partly cloudy, 84 degrees\nkey_players:\n  Nelson Velazquez:\n  role: Left field candidate, non-roster player\n  performance: Hit first spring homer and a single\n  background: 31 career MLB homers, 25+ homers last season in Triple A and Mexican League\n  Michael McGreevy:\n  role: Pitcher\n  performance: Allowed 1 run in 4 innings, 4 strikeouts, no walks\n  Jordan Walker:\n  performance: 0-for-3 at bat, 1 RBI, spring average .118\n  Ivan Herrera:\n  performance: 2 hits, 1 RBI, caught 4 innings allowing 1 stolen base\n  Yohel Pozo:\n  performance: 2 hits including a two-run double, batting .462 for spring\n  Joshua Baez:\n  performance: First spring home run, two-run shot in 7th inning\n  Relief Pitchers:\n  -: Matt Pushard\n  -: George Soriano\n  -: Packy Naughton\n  -: Chris Roycroft\nnotable_events:\n  -: Velazquez competing for left field spot while Lars Nootbaar recovers from heel surgery\n  -: Leonard Bernal had 2 hits in Panama's 3-1 loss to Cuba in World Baseball Classic pool play\nnext_game:\n  date: 2026-03-07\n  opponent: Mets\n  location: Jupiter, Florida\n  starting_pitcher: Kyle Leahy\nreporter:\n  name: Rob Rains\n  social_media: @RobRains",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:7cf32f816a18",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Registration opens up for “Senior Olympics” which have rebranded to “Legends Games” to emphasize the  younger crowd",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/registration-opens-up-for-senior-olympics-which-have-rebranded-to-legends-games-to-emphasize-the/article_ccb92784-a7b5-5473-9126-afc3f4b0a3ec.html",
-      "published": "2026-03-07T07:18:51+00:00",
-      "excerpt": "Legends Games Week | May 18-31, 2026 Opening Ceremony | Monday, May 18 Online Registration Opens 10am March 2! The St. Louis Senior Olympics is returning to St. Louis in 2026 with a new name, [...]The post Registration opens up…",
-      "tags": [],
-      "ai_summary": "event_name: St. Louis Legends Games\nprevious_name: St. Louis Senior Olympics\nevent_dates: May 16 - May 31, 2026\nopening_ceremony: May 18, 2026, 5:00 - 8:00 p.m. at the Hub in Chesterfield\nclosing_ceremony: June 4, 2026, Legends Happy Hour and medaling ceremony at the Hub in Chesterfield (time TBA)\nregistration:\n  opens: March 2, 2026\n  methods:\n  -: Online at jccstl.com/legendsgames\n  -: Printed entry forms at Jewish Community Center’s Chesterfield and Creve Coeur locations\n  eligibility: Adults aged 50 and older (must turn 50 by December 31, 2026)\n  fees: Vary by event\nevent_description: A master’s-style athletic competition promoting lifelong active living for adults 50+, featuring over 90 individual and team events including swimming, softball, pinball, poker, and new team events like bowling and relays.\nparticipants:\n  expected_athletes: 1200\n  volunteers: 300\nnew_features_2026:\n  -: Expanded team and social participation opportunities\n  -: Crews competing across multiple events\n  -: Softball tournament with individual signups and blind draft teams\n  -: New events: team bowling, plank competitions, swimming relays, track and field relays\norganizer: Jewish Community Center (The J)\nsponsor: Matrix Midwest\nbranding: New name and visual identity inspired by the Gateway Arch and St. Louis sports culture to reflect active, engaged adults 50+\nlocations: Various venues throughout the St. Louis region",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:e46d532950ba",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Postcard from Cardinals spring training camp for Friday, March 6, 2026",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/postcard-from-cardinals-spring-training-camp-for-friday-march-6-2026/article_6cddae14-e19b-5180-a56a-58de804dc640.html",
-      "published": "2026-03-06T21:27:08+00:00",
-      "excerpt": "Michael McGreevy allowed one run over four innings and Nelson Velazquez and Joshua Baez homered to lead the Cardinals over the Orioles on Friday in Sarasota. [...]The post Postcard from Cardinals spring training camp for Friday, March 6, 2026 appeared…",
-      "tags": [],
-      "ai_summary": "game_result: Cardinals 10, Orioles 2\nlocation: Sarasota, Florida\nweather: Partly cloudy, 84 degrees\nkey_players:\n  Nelson Velazquez:\n  role: Left field candidate, non-roster player\n  performance: Hit first spring homer and a single\n  background: 31 career MLB homers, 25+ homers last season in Triple A and Mexican League\n  Michael McGreevy:\n  role: Pitcher\n  performance: Allowed 1 run in 4 innings, 4 strikeouts, no walks\n  Jordan Walker:\n  performance: 0-for-3 at bat, 1 RBI, spring average .118\n  Ivan Herrera:\n  performance: 2 hits, 1 RBI, caught 4 innings allowing 1 stolen base\n  Yohel Pozo:\n  performance: 2 hits including a two-run double, batting .462 for spring\n  Joshua Baez:\n  performance: First spring home run, two-run shot in 7th inning\n  Relief Pitchers:\n  -: Matt Pushard\n  -: George Soriano\n  -: Packy Naughton\n  -: Chris Roycroft\nnotable_events:\n  -: Velazquez competing for left field spot while Lars Nootbaar recovers from heel surgery\n  -: Leonard Bernal had 2 hits in Panama's 3-1 loss to Cuba in World Baseball Classic pool play\nnext_game:\n  date: 2026-03-07\n  opponent: Mets\n  location: Jupiter, Florida\n  starting_pitcher: Kyle Leahy\nreporter:\n  name: Rob Rains\n  social_media: @RobRains",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • March 08, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Registration opens up for “Senior Olympics” which have rebranded to “Legends Games” to emphasize the  younger crowd from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
