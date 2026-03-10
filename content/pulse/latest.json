@@ -1,166 +1,21 @@
 {
-  "generated_at": "2026-03-09T12:12:32.846711+00:00",
+  "generated_at": "2026-03-10T12:11:22.027420+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • March 09, 2026",
-  "overview": "mayor:\n  name: David Dimmitt\n  age: 61\n  background: Lawyer, began public service in 2006 on planning and zoning commission\n  tenure: Mayor since 2019, currently serving fourth two-year term\n  political_aspiration: Running in August primary for Missouri House 83rd District\nkey_accomplishments:\n  -:\n  project_name: Brentwood Bound\n  description: A $80 million self-funded infrastructure project addressing flooding and development along Manchester Road\n  components:\n  -: Flood mitigation along Deer Creek through property acquisition\n  -: Connection of city trail system north and south of Manchester Road\n  -: Installation of street lights and ADA-compliant sidewalks\n  -: Creation of a 32-acre park with a 2.7-acre ADA-compliant Destination Playground\n  completion_date: 2024\n  -:\n  redevelopment_plan: Brentwood Corridor redevelopment authorized in July 2023\n  investment: $436 million\n  controversy: Four small businesses sued over blight designation; court ruled city can label 75 properties as blighted; case on appeal\nchallenges:\n  -:\n  issue: City revenue concerns\n  details: Opposes state bill to eliminate sales tax on groceries that would reduce city revenue by $4.8 million\n  impact: Potential layoffs in police and public works due to revenue loss\n  note: Brentwood does not assess residential real estate taxes, relying heavily on sales tax\ngoals:\n  -: Focus on efficient day-to-day city operations\n  -: Maintain and deliver quality resident services\n  -: Manage city finances frugally to sustain services market_overview: Southwest St. Louis County, including Kirkwood and Webster Groves, continues to experience a low housing inventory favoring a seller's market into summer 2026. The market has shown steady price growth over the past decade, with an 80% increase in home prices within the local school districts.\nprice_trends:\n  2016_average_price: 322000\n  2025_average_price: 583298\n  2024_to_2025_increase: 10%\n  sales_volume_2021_peak: 700000000\n  sales_volume_2024: 574000000\n  sales_volume_2025: 697000000\n  sales_volume_growth_2024_to_2025: 20%\n  projection: Sales volume expected to continue increasing in 2026 barring unforeseen circumstances.\nmarket_factors:\n  -: Homeowners holding low COVID-era interest rates reducing inventory.\n  -: Agents focusing on client experience, digital marketing, proactive communication, and AI efficiency.\n  -: Interest rates expected to decline gradually, maintaining market stability.\n  -: Strong demand driven by local amenities, walkability, and quality school districts.\n  -: Relocations to St. Louis metropolitan area contributing to housing demand.\nagent_advice:\n  buyers: Persistence and time are key to securing desired properties; having an experienced agent with market knowledge and connections is crucial.\n  sellers: Hiring a real estate agent to prepare, market, negotiate, and close sales professionally is important.\nmarket_outlook: The seller's market is anticipated to continue through the spring and second quarter of 2026, with some forecasts suggesting a possible shift toward a more balanced market later in the year. location: Jefferson-Argonne Historic District, Kirkwood, Missouri\nhome_details:\n  year_built: 1905\n  style: Colonial Revival\n  original_features:\n  -: electricity\n  -: coal heating\n  -: back servant’s staircase\n  -: servant’s quarters in attic\n  -: dining room door swinging both ways\n  -: original hardwood floors\n  -: four fireplaces\n  -: arched doorways\n  -: original millwork\n  -: wavy glass windows with period hardware\nresidents:\n  names:\n  -: Dr. Sandra Hoffmann, MD\n  -: Dr. Joe Hoffmann, MD (deceased)\n  family: Raised four children, including three adopted overseas\n  tenure: 45 years\nhistorical_context:\n  construction_period: 1904 building boom during St. Louis World’s Fair\n  previous_families: Estimated five families have raised children here since 1904\nrenovation:\n  lead_contractor: Jeff Gillam of Gillam Construction\n  goals:\n  -: Restore original beauty\n  -: Incorporate modern lifestyle changes\n  -: Preserve historic details\n  updates:\n  -: Addition of grandparent suite with bedroom, accessible bathroom, and office\n  -: Kitchen expanded to more than twice original size with custom cabinetry and granite countertops\n  -: New backyard deck for outdoor living\n  -: Exterior fresh paint highlighting original architectural features\ncommunity_involvement:\n  -: Hosted annual Argonne-Jefferson Neighborhood block party\n  -: Participated in historic district Fourth of July parade\n  -: Enjoyed local amenities like Kirkwood Park, Public Library, YMCA, and Farmers’ Market\nresident_quote: Homes from this period of time are irreplaceable gems and deserve to be brought to their original grandeur again, and maintained as one of the hallmarks that make Kirkwood uniquely the ultimate family community.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:a27cc8565f60",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Mayor David Dimmitt Expresses Pride In City Accomplishments",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/mayor-david-dimmitt-expresses-pride-in-city-accomplishments/article_9b9d9302-c054-4d9c-a1c3-e364e17581da.html",
-      "published": "2026-03-09T05:05:00+00:00",
-      "excerpt": "Even after nearly 20 years in public service, Brentwood Mayor David Dimmitt maintains he did not plan for his time in local government to become such an important part of his life. Dimmitt, 61, began serving on the city’s planning and zoning commission in 2006, but the lawyer’s first involvement with the city was over a disagreement in housing design.",
-      "tags": [],
-      "ai_summary": "mayor:\n  name: David Dimmitt\n  age: 61\n  background: Lawyer, began public service in 2006 on planning and zoning commission\n  tenure: Mayor since 2019, currently serving fourth two-year term\n  political_aspiration: Running in August primary for Missouri House 83rd District\nkey_accomplishments:\n  -:\n  project_name: Brentwood Bound\n  description: A $80 million self-funded infrastructure project addressing flooding and development along Manchester Road\n  components:\n  -: Flood mitigation along Deer Creek through property acquisition\n  -: Connection of city trail system north and south of Manchester Road\n  -: Installation of street lights and ADA-compliant sidewalks\n  -: Creation of a 32-acre park with a 2.7-acre ADA-compliant Destination Playground\n  completion_date: 2024\n  -:\n  redevelopment_plan: Brentwood Corridor redevelopment authorized in July 2023\n  investment: $436 million\n  controversy: Four small businesses sued over blight designation; court ruled city can label 75 properties as blighted; case on appeal\nchallenges:\n  -:\n  issue: City revenue concerns\n  details: Opposes state bill to eliminate sales tax on groceries that would reduce city revenue by $4.8 million\n  impact: Potential layoffs in police and public works due to revenue loss\n  note: Brentwood does not assess residential real estate taxes, relying heavily on sales tax\ngoals:\n  -: Focus on efficient day-to-day city operations\n  -: Maintain and deliver quality resident services\n  -: Manage city finances frugally to sustain services",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:4e4cb57d272d",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "State Of The Real Estate Market",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/state-of-the-real-estate-market/article_eaee6228-027e-4d93-a71d-0058e9c69b90.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "Southwest St. Louis County housing inventory remains low and likely will continue to favor a seller’s market into this summer, according to three real estate agents who service the Kirkwood and Webster Groves areas.",
-      "tags": [],
-      "ai_summary": "market_overview: Southwest St. Louis County, including Kirkwood and Webster Groves, continues to experience a low housing inventory favoring a seller's market into summer 2026. The market has shown steady price growth over the past decade, with an 80% increase in home prices within the local school districts.\nprice_trends:\n  2016_average_price: 322000\n  2025_average_price: 583298\n  2024_to_2025_increase: 10%\n  sales_volume_2021_peak: 700000000\n  sales_volume_2024: 574000000\n  sales_volume_2025: 697000000\n  sales_volume_growth_2024_to_2025: 20%\n  projection: Sales volume expected to continue increasing in 2026 barring unforeseen circumstances.\nmarket_factors:\n  -: Homeowners holding low COVID-era interest rates reducing inventory.\n  -: Agents focusing on client experience, digital marketing, proactive communication, and AI efficiency.\n  -: Interest rates expected to decline gradually, maintaining market stability.\n  -: Strong demand driven by local amenities, walkability, and quality school districts.\n  -: Relocations to St. Louis metropolitan area contributing to housing demand.\nagent_advice:\n  buyers: Persistence and time are key to securing desired properties; having an experienced agent with market knowledge and connections is crucial.\n  sellers: Hiring a real estate agent to prepare, market, negotiate, and close sales professionally is important.\nmarket_outlook: The seller's market is anticipated to continue through the spring and second quarter of 2026, with some forecasts suggesting a possible shift toward a more balanced market later in the year.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:983d30c5de75",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Restoring Historic Kirkwood Home For Next Generation",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/restoring-historic-kirkwood-home-for-next-generation/article_ec2d958a-638e-4168-a195-2b7a25bddf09.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "On a wooded lot in the heart of the Jefferson-Argonne Historic District and just steps from Downtown Kirkwood, a 1905 Colonial Revival residence has been the home of Dr. Sandra Hoffmann, MD, and her late husband Dr. Joe Hoffmann, MD, for 45 years. The couple purchased the house on East Argonne Drive when their son was just 18 months old,",
-      "tags": [],
-      "ai_summary": "location: Jefferson-Argonne Historic District, Kirkwood, Missouri\nhome_details:\n  year_built: 1905\n  style: Colonial Revival\n  original_features:\n  -: electricity\n  -: coal heating\n  -: back servant’s staircase\n  -: servant’s quarters in attic\n  -: dining room door swinging both ways\n  -: original hardwood floors\n  -: four fireplaces\n  -: arched doorways\n  -: original millwork\n  -: wavy glass windows with period hardware\nresidents:\n  names:\n  -: Dr. Sandra Hoffmann, MD\n  -: Dr. Joe Hoffmann, MD (deceased)\n  family: Raised four children, including three adopted overseas\n  tenure: 45 years\nhistorical_context:\n  construction_period: 1904 building boom during St. Louis World’s Fair\n  previous_families: Estimated five families have raised children here since 1904\nrenovation:\n  lead_contractor: Jeff Gillam of Gillam Construction\n  goals:\n  -: Restore original beauty\n  -: Incorporate modern lifestyle changes\n  -: Preserve historic details\n  updates:\n  -: Addition of grandparent suite with bedroom, accessible bathroom, and office\n  -: Kitchen expanded to more than twice original size with custom cabinetry and granite countertops\n  -: New backyard deck for outdoor living\n  -: Exterior fresh paint highlighting original architectural features\ncommunity_involvement:\n  -: Hosted annual Argonne-Jefferson Neighborhood block party\n  -: Participated in historic district Fourth of July parade\n  -: Enjoyed local amenities like Kirkwood Park, Public Library, YMCA, and Farmers’ Market\nresident_quote: Homes from this period of time are irreplaceable gems and deserve to be brought to their original grandeur again, and maintained as one of the hallmarks that make Kirkwood uniquely the ultimate family community.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:50797c684cbc",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Patios More Popular Than Decks",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/patios-more-popular-than-decks/article_a376293a-7459-4ee4-9de0-e4d4f8aa841b.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "Patios continue to be more popular than decks. According to a tabulation of data from HUD/Census Bureau Survey of Construction from the National Association of Home Builders, the share of new homes with patios is on the rise while the share with decks remains low. The data found that the percentage of new homes with decks was 17.6% in 2023,",
-      "tags": [],
-      "ai_summary": "main_point: Patios are more popular than decks in new home construction.\nstatistics:\n  new_homes_with_decks_2023: 17.6%\n  new_homes_with_patios_2023: 63.7%\n  new_homes_with_both_deck_and_patio: 6%\nregional_variation:\n  New_England:\n  homes_with_decks: 76%\n  homes_with_patios: 17%\ndata_source: HUD/Census Bureau Survey of Construction from the National Association of Home Builders",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:19d1cc3d0417",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Cash Is King",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/cash-is-king/article_c33aa458-2c42-4822-a7e3-967556bd7422.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "More and more homes in St. Louis are being purchased entirely with cash, landing The Lou metro in the top six in the nation for all-cash house sales. An all-cash house purchase is a real estate transaction wherein buyers purchase a property outright using their own readily-available funds rather than securing a mortgage. Buyers typically provide proof to sellers such",
-      "tags": [],
-      "ai_summary": "overview: St. Louis metro area ranks among the top six U.S. cities for all-cash home purchases, with 38.1% of homes bought entirely with cash in the first half of 2025. Cash purchases allow faster closings and save on lender fees, though 'cash' often means offers without financing contingencies rather than literal cash payments.\nkey_points:\n  -: Nearly one in three U.S. homes (about 33%) were purchased with cash in early 2025.\n  -: Top cities for cash sales include Miami (43.0%), San Antonio (39.6%), Kansas City (39.2%), Birmingham (38.8%), Houston (38.8%), and St. Louis (38.1%).\n  -: Cash sales show a U-shaped pattern: high cash purchases for homes under $100,000 and over $1 million, reflecting investor activity and wealth concentration.\n  -: States with highest cash purchase shares include Mississippi (49.6%), Montana (46.0%), Idaho (45.0%), Hawaii (44.9%), and Maine (44.4%).\n  -: Locally, some buyers use cash from personal investments or proceeds from home sales to buy secondary homes or rental properties, often in their late 40s to retirement age.\n  -: Financial experts advise caution in using investment funds for home purchases to avoid becoming 'cash poor' and to maximize investment returns.\n  -: Cash sales in St. Louis increased from 28% in 2015 to 38.1% in 2025, reflecting a broader national trend since the 2008 financial crisis.\n  -: Sun Belt markets show particularly high rates of cash home purchases, with some metros exceeding 50%.\nlocal_expert_quotes:\n  -:\n  name: Jacque Mileusnic\n  role: Business team partner, Janet McAfee Real Estate\n  quote: Offers labeled as 'cash' often mean no financing contingencies rather than literal cash payments.\n  -:\n  name: Danny Sigman\n  role: Branch manager/vice president, Regions Bank of Webster Groves\n  quote: We recommend loans over using investment funds for property purchases to avoid taxable events and becoming cash poor.\n  -:\n  name: Nadia Evangelou\n  role: Senior economist and director of Real Estate Research, National Association of Realtors\n  quote: Nationwide, about 28% of buyers paid cash, with some metro areas having over half of buyers skip financing.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:78add76858f8",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "In A Forever Home, Or Just Staying Due To Mortgage Rate?",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/in-a-forever-home-or-just-staying-due-to-mortgage-rate/article_dad053c2-04b8-46c7-b724-2039127166fb.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "Golden handcuffs: Many home-owners feel “locked” into current homes due to pandemic-era mortgage rates, according to Emily Oliver, a global luxury certified sales specialist with Coldwell Banker Realty–Gundaker in St. Louis. Those previously attractive mortgage rates often are 3% to 4% lower than current rates, which has prompted several related outcomes in local housing buying and selling patterns. “If homeowners",
-      "tags": [],
-      "ai_summary": "key_points:\n  -: Many homeowners feel 'locked' into their current homes due to pandemic-era mortgage rates that are 3-4% lower than current rates.\n  -: Home values in the St. Louis central corridor have increased by roughly 50%, potentially balancing out higher mortgage rates through increased equity.\n  -: Homeowners waiting for mortgage rates to drop may face higher overall costs and could benefit from moving sooner if they are not in their 'forever home.'\n  -: Housing inventory has slowed as many homeowners choose to renovate or stay put rather than face higher monthly payments on new homes.\n  -: Mortgage rates around 2-3% are unlikely to return in the foreseeable future; rates in early 2026 are around 5.8%-6.2% for 30-year fixed loans.\n  -: Most homeowners currently hold mortgage rates below 6%, so selling could nearly double their interest costs on a new mortgage.\n  -: Homeowner mobility has decreased, with many staying in homes that may no longer suit their needs to avoid higher financing costs.\n  -: Locally, homeowners move every 11 years on average, but nationally, the average tenure has increased to 8.55 years, the longest in 25 years.\n  -: Some homeowners still choose to move due to life changes despite higher mortgage rates.\nexpert_quote: If homeowners know they’re not in their forever home, in the end, waiting right now could cause a home purchase to be more expensive, and they’d be better off making the move. - Emily Oliver, Coldwell Banker Realty–Gundaker",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:ae195f1ef01b",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Home Selling Checklist",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/home-selling-checklist/article_e552f679-df45-496d-92be-970c6fd39ed2.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "Today’s discerning homebuyers prioritize homes that feel turnkey, confirmed Realtor Katie Dooley Curran, founding partner of CØMPASS Realty Group-St. Louis & Beyond STL. “First impressions matter now more than ever. In the past year or two, there’s been a noticeable shift toward valuing character and personality over overly generic finishes. Buyers want homes that feel curated and warm, not just",
-      "tags": [],
-      "ai_summary": "overview: Realtor Katie Dooley Curran shares expert advice on preparing homes for sale in the current market, emphasizing the importance of turnkey, curated spaces that appeal to discerning buyers.\nkey_points:\n  -: Buyers prioritize homes with character, warmth, and quality details over generic finishes.\n  -: First impressions are critical: clean, neutral paint, intentional staging, and strong curb appeal are essential.\n  -: Modern kitchens, spa-inspired bathrooms, flexible multi-use spaces, energy efficiency, and outdoor living areas add significant value.\n  -: Odor control, decluttering, and deep cleaning improve buyer experience.\n  -: High-impact improvements include fresh paint, updated light fixtures, refreshed landscaping, granite countertops, modern hardware, and refinished hardwood floors.\n  -: Pre-listing inspections (sewer, pest, HVAC, roof) and addressing visible issues like outdated wiring help build buyer trust.\n  -: Transparency through detailed Seller’s Disclosures and documented home maintenance histories smooth the transaction process.\n  -: Working with a proactive, strategic real estate agent is crucial for maximizing sale success.\nagent_info:\n  name: Katie Dooley Curran\n  role: Founding partner, CØMPASS Realty Group-St. Louis & Beyond STL\n  experience: Specialist in central corridor St. Louis real estate since 1997\n  office_location: 1608 S. Lindbergh Blvd., Ladue\n  residence: Glendale",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:6fefd2e1feb0",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Popular Kitchen Floor Materials",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/popular-kitchen-floor-materials/article_8676973d-a7b0-4791-b849-2d566c61bd8a.html",
-      "published": "2026-03-09T05:00:00+00:00",
-      "excerpt": "It’s well documented that kitchens are popular gathering spaces in homes. Perhaps that’s one reason why homeowners looking to sell their homes direct so much attention to the kitchen before listing their properties. The real estate experts at Trulia note that emphasis is well worth it, as buyers inspect kitchens and primary bathrooms more than any other spaces in a",
-      "tags": [],
-      "ai_summary": "context: Kitchens are key gathering spaces and heavily inspected by homebuyers, making kitchen renovations important for homeowners planning to sell.\nfocus: Flooring is a critical aspect of kitchen remodels alongside cabinets and countertops.\nflooring_options:\n  -:\n  type: Ceramic tile\n  features:\n  -: Elegant and clean appearance\n  -: Durable and easy to maintain\n  -: Easy to clean spills and dirt\n  -: Available in a wide variety of colors\n  -:\n  type: Porcelain tile\n  features:\n  -: Waterproof\n  -: Easily cleaned and durable\n  -: Lifespan of 15 to 50 years\n  -: Minimal maintenance required\n  -:\n  type: Engineered hardwood\n  features:\n  -: Made with real wood reinforced for durability and water resistance\n  -: Aesthetic appeal with various shades, designs, and textures\n  -: Long-lasting if well-maintained\n  -:\n  type: Laminate flooring\n  features:\n  -: Budget-friendly\n  -: Wide range of styles, colors, and patterns\n  -: Smooth surface easy to clean\n  -: Water-resistant but vulnerable to warping and staining if moisture exposure is prolonged",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • March 10, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Mayor David Dimmitt Expresses Pride In City Accomplishments from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
