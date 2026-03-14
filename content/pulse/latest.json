@@ -1,21 +1,76 @@
 {
-  "generated_at": "2026-03-13T12:11:11.086740+00:00",
+  "generated_at": "2026-03-14T12:08:53.082595+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • March 13, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 11,
+  "stories_featured": 3,
+  "headline": "Kirkwood Pulse • March 14, 2026",
+  "overview": "This article features a one-minute video recap titled 'Jupiter Minute' by Rob Rains, summarizing the St. Louis Cardinals game from Friday, March 13, 2026. The recap is available via a video player embedded in the article. game_result: Cardinals 5, Astros 4\nweather: Overcast, 72 degrees\nkey_player:\n  name: Colton Ledbetter\n  role: Left fielder, minor leaguer recently acquired in trade\n  performance: Delivered a walk-off two-run single in the bottom of the ninth inning; also had a single, a walk, and threw out a runner at second base\n  comments: Ledbetter expressed excitement about regaining competitiveness and building confidence.\nmanager_comments:\n  name: Oli Marmol\n  remarks: Praised Ledbetter's performance and emphasized the importance of young players making their mark.\ngame_highlights:\n  batting:\n  -: Blaze Jordan and Ramon Mendoza hit back-to-back home runs in the fourth inning; Jordan's homer estimated at 422 feet\n  -: Scott drove in the first run with a bases-loaded sacrifice fly\n  -: JJ Wetherholt had a single in three at-bats\n  -: Cardinals totaled five hits\n  pitching:\n  -: Kyle Leahy pitched 74 pitches, gave up 4 runs on 6 hits, walked 1, struck out 5\n  -: Ryne Stanek struck out 3 in one inning\n  -: JoJo Romero and Riley O’Brien each pitched a scoreless inning\n  struggles: Pedro Pages went hitless in three at-bats with two strikeouts, lowering his spring average to .095\ninjuries_and_updates:\n  Ivan Herrera: Missed seventh consecutive game due to knee inflammation; expected to return as DH before catching again\n  Lars Nootbaar: No timetable for full baseball activities; undergoing diligent medical process\n  Hunter Dobbins: Scheduled minor-league start rained out; rescheduled for Saturday\nupcoming_game:\n  starter: Andre Pallante\n  opponent: Marlins\n  location: Jupiter\n  date: Saturday, March 14, 2026\n  team_status: Cardinals will be visiting team\nauthor:\n  name: Rob Rains\n  social_media: X @RobRains The Baseball Bash charity event took place at Spring Training on March 13, 2026, featuring baseball players JJ Wetherholt and Yohel Pozo. The event included photos and video coverage accessible via an audio player on the article page. The coverage was provided by Rob Rains from STLSportsPage.com.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:82764f02d27e",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "“Jupiter Minute” one-minute recap of the Cardinals game for Friday by Rob Rains 3-13-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/jupiter-minute-one-minute-recap-of-the-cardinals-game-for-friday-by-rob-rains-3/article_2e0aee0a-f0e7-5cd4-b7f5-de960480a221.html",
+      "published": "2026-03-14T02:54:05+00:00",
+      "excerpt": "For the Jupiter Minute click the video player below. The post “Jupiter Minute” one-minute recap of the Cardinals game for Friday by Rob Rains 3-13-26 appeared first on News from Rob Rains, STLSportsPage.com.",
+      "tags": [],
+      "ai_summary": "This article features a one-minute video recap titled 'Jupiter Minute' by Rob Rains, summarizing the St. Louis Cardinals game from Friday, March 13, 2026. The recap is available via a video player embedded in the article.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ba5bdeb10bc8",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Postcard from Cardinals spring training camp for Friday, March 13, 2026",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/postcard-from-cardinals-spring-training-camp-for-friday-march-13-2026/article_5939124a-76aa-5454-97c1-4f100ce5b666.html",
+      "published": "2026-03-14T02:44:10+00:00",
+      "excerpt": "Minor-leaguer Colton Ledbetter delivered his second walk-off hit of the spring to rally the Cardinals to a 5-4 win over the Astros on Friday night in Jupiter. [...]The post Postcard from Cardinals spring training camp for Friday, March 13, 2026…",
+      "tags": [],
+      "ai_summary": "game_result: Cardinals 5, Astros 4\nweather: Overcast, 72 degrees\nkey_player:\n  name: Colton Ledbetter\n  role: Left fielder, minor leaguer recently acquired in trade\n  performance: Delivered a walk-off two-run single in the bottom of the ninth inning; also had a single, a walk, and threw out a runner at second base\n  comments: Ledbetter expressed excitement about regaining competitiveness and building confidence.\nmanager_comments:\n  name: Oli Marmol\n  remarks: Praised Ledbetter's performance and emphasized the importance of young players making their mark.\ngame_highlights:\n  batting:\n  -: Blaze Jordan and Ramon Mendoza hit back-to-back home runs in the fourth inning; Jordan's homer estimated at 422 feet\n  -: Scott drove in the first run with a bases-loaded sacrifice fly\n  -: JJ Wetherholt had a single in three at-bats\n  -: Cardinals totaled five hits\n  pitching:\n  -: Kyle Leahy pitched 74 pitches, gave up 4 runs on 6 hits, walked 1, struck out 5\n  -: Ryne Stanek struck out 3 in one inning\n  -: JoJo Romero and Riley O’Brien each pitched a scoreless inning\n  struggles: Pedro Pages went hitless in three at-bats with two strikeouts, lowering his spring average to .095\ninjuries_and_updates:\n  Ivan Herrera: Missed seventh consecutive game due to knee inflammation; expected to return as DH before catching again\n  Lars Nootbaar: No timetable for full baseball activities; undergoing diligent medical process\n  Hunter Dobbins: Scheduled minor-league start rained out; rescheduled for Saturday\nupcoming_game:\n  starter: Andre Pallante\n  opponent: Marlins\n  location: Jupiter\n  date: Saturday, March 14, 2026\n  team_status: Cardinals will be visiting team\nauthor:\n  name: Rob Rains\n  social_media: X @RobRains",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:d71b8943a77a",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Video: Baseball Bash charity event at Spring Training featuring JJ Wetherholt and Yohel Pozo 3-13-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/video-baseball-bash-charity-event-at-spring-training-featuring-jj-wetherholt-and-yohel-pozo-3/article_43336c6c-2160-5a79-9732-befb04080d57.html",
+      "published": "2026-03-13T20:43:36+00:00",
+      "excerpt": "To see photos and video from the Baseball Bash, click the audio player below.The post Video: Baseball Bash charity event at Spring Training featuring JJ Wetherholt and Yohel Pozo 3-13-26 appeared first on News from Rob Rains, STLSportsPage.com.",
+      "tags": [],
+      "ai_summary": "The Baseball Bash charity event took place at Spring Training on March 13, 2026, featuring baseball players JJ Wetherholt and Yohel Pozo. The event included photos and video coverage accessible via an audio player on the article page. The coverage was provided by Rob Rains from STLSportsPage.com.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 3 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on “Jupiter Minute” one-minute recap of the Cardinals game for Friday by Rob Rains 3-13-26 from Webster-Kirkwood Times – News."
 }
