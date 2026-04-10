@@ -33,10 +33,11 @@ export default async function HomePage() {
       render: () => (
         <StarburstCallout
           id="sheila-starburst"
-          label="Contratulations"
+          label="Congratulations"
           subtitle="Sheila"
-          labelClassName="text-[14px] tracking-[0.18em]"
+          labelClassName="text-[10px]"
           subtitleClassName="text-[11px] tracking-[0.24em]"
+          labelTextLength={150}
           href="https://burkettforkcc.com/"
           ariaLabel="Visit Sheila's City Council page"
           imageSrc="/img/sheila.png"

@@ -63,6 +63,7 @@ interface StarburstCalloutProps {
   textClassName?: string;
   labelClassName?: string;
   subtitleClassName?: string;
+  labelTextLength?: number;
   children?: ReactNode;
   childClassName?: string;
   id?: string;
@@ -84,6 +85,7 @@ export default function StarburstCallout({
   textClassName = "text-black",
   labelClassName,
   subtitleClassName,
+  labelTextLength,
   children,
   childClassName,
   id,
@@ -180,7 +182,13 @@ export default function StarburstCallout({
               strokeWidth={textStrokeWidth}
               style={{ paintOrder: "stroke fill" }}
             >
-              <textPath xlinkHref="#starburst-top" startOffset="50%" textAnchor="middle">
+              <textPath
+                xlinkHref="#starburst-top"
+                startOffset="50%"
+                textAnchor="middle"
+                lengthAdjust={labelTextLength ? "spacingAndGlyphs" : undefined}
+                textLength={labelTextLength}
+              >
                 {label}
               </textPath>
             </text>
