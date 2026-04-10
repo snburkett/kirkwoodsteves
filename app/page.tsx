@@ -33,8 +33,10 @@ export default async function HomePage() {
       render: () => (
         <StarburstCallout
           id="sheila-starburst"
-          label="Sheila"
-          subtitle="For Kirkwood CC"
+          label="Contratulations"
+          subtitle="Sheila"
+          labelClassName="text-[14px] tracking-[0.18em]"
+          subtitleClassName="text-[11px] tracking-[0.24em]"
           href="https://burkettforkcc.com/"
           ariaLabel="Visit Sheila's City Council page"
           imageSrc="/img/sheila.png"
@@ -79,12 +81,10 @@ export default async function HomePage() {
     },
   ];
 
-  const topStoryLabel = topStory ? truncate(topStory.title, 32) : "AI Chat";
-  const topStorySubtitle = topStory ? topStory.source?.name ?? "Pulse" : "With Steve";
-  const topStoryHref = topStory?.link ?? "/ai";
-  const topStoryAriaLabel = topStory
-    ? `Read ${topStory.title}`
-    : "Catch the latest AI chatter with Steve";
+  const topStoryLabel = "AI Chat";
+  const topStorySubtitle = "with Steve";
+  const topStoryHref = "/ai";
+  const topStoryAriaLabel = "Catch the latest AI chatter with Steve";
 
   const rightCallouts: CalloutConfig[] = [
     {

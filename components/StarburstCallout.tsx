@@ -61,6 +61,8 @@ interface StarburstCalloutProps {
   variant?: StarburstVariant;
   backgroundColor?: string;
   textClassName?: string;
+  labelClassName?: string;
+  subtitleClassName?: string;
   children?: ReactNode;
   childClassName?: string;
   id?: string;
@@ -80,6 +82,8 @@ export default function StarburstCallout({
   variant = "sunburst",
   backgroundColor = "#f97316",
   textClassName = "text-black",
+  labelClassName,
+  subtitleClassName,
   children,
   childClassName,
   id,
@@ -171,7 +175,7 @@ export default function StarburstCallout({
               <path id="starburst-bottom-inner" d="M 26 166 Q 120 216 174 154" />
             </defs>
             <text
-              className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName}`}
+              className={`text-[18px] font-black uppercase tracking-[0.35em] ${textClassName} ${labelClassName ?? ""}`}
               stroke={textStroke}
               strokeWidth={textStrokeWidth}
               style={{ paintOrder: "stroke fill" }}
@@ -182,7 +186,7 @@ export default function StarburstCallout({
             </text>
             {subtitle ? (
               <text
-                className={`text-[12px] font-semibold uppercase tracking-[0.35em] ${textClassName}`}
+                className={`text-[12px] font-semibold uppercase tracking-[0.35em] ${textClassName} ${subtitleClassName ?? ""}`}
                 stroke={textStroke}
                 strokeWidth={textStrokeWidth}
                 style={{ paintOrder: "stroke fill" }}

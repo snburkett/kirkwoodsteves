@@ -218,3 +218,12 @@ a:hover {
   animation: bubble-pop 220ms ease-out forwards;
   transform-origin: center;
 }
+
+.temporary-closure-overlay {
+  background:
+    linear-gradient(rgba(241, 245, 249, 0.78), rgba(241, 245, 249, 0.78)),
+    radial-gradient(circle at top, rgba(100, 116, 139, 0.16), transparent 42%),
+    radial-gradient(circle at bottom, rgba(71, 85, 105, 0.12), transparent 38%);
+  backdrop-filter: grayscale(1) saturate(0.25) brightness(1.02);
+  -webkit-backdrop-filter: grayscale(1) saturate(0.25) brightness(1.02);
+}
