@@ -50,7 +50,7 @@ SUMMARY_SCHEMA = {
     "properties": {
       "summary": {
         "type": "string",
-        "description": "Concise narrative of the article (<=75 words).",
+        "description": "Concise narrative of the article (<=55 words).",
       },
       "sentiment_label": {
         "type": "string",
@@ -767,9 +767,12 @@ def run(
   skip_openai: bool = False,
   ignore_state: bool = False,
   dry_run: bool = False,
+  now: Optional[datetime] = None,
+  update_state: bool = True,
 ) -> int:
   global DEBUG
   # DEBUG value will be set in main when args are parsed.
+  now = now or datetime.now(tz=UTC)
   openai_api_key = os.environ.get("OPENAI_API_KEY")
   if not skip_openai and not openai_api_key:
     print("OPENAI_API_KEY is not set. Aborting.", file=sys.stderr)
@@ -777,7 +780,7 @@ def run(
 
   window_hours, _, sources = load_sources_config()
   state = prune_state(load_state()) if not ignore_state else {"seen": {}, "last_run": None}
-  cutoff = datetime.now(tz=UTC) - timedelta(hours=window_hours)
+  cutoff = now - timedelta(hours=window_hours)
 
   stories, considered = collect_stories(sources, cutoff)
   seen = {} if ignore_state else state.get("seen", {})
@@ -804,7 +807,7 @@ def run(
   sentiment_score, sentiment_label, sentiment_rationale = compute_sentiment(enriched_items)
   vibe = convert_sentiment_to_vibe(sentiment_score, sentiment_label, sentiment_rationale)
   call_to_action = pick_call_to_action(enriched_items)
-  generated_at = datetime.now(tz=UTC)
+  generated_at = now
 
   payload = {
     "generated_at": generated_at.isoformat(),
@@ -829,8 +832,9 @@ def run(
 
   write_latest_json(payload)
   write_markdown(payload, generated_at)
-  update_state_with_stories(state, new_stories, generated_at)
-  save_state(state)
+  if update_state:
+    update_state_with_stories(state, new_stories, generated_at)
+    save_state(state)
 
   debug_log(f"Wrote latest.json with {len(enriched_items)} items and sentiment {sentiment_score}.")
 
@@ -839,6 +843,34 @@ def run(
     f"and sentiment {sentiment_score}.",
   )
 
+  return 0
+
+
+def run_backfill(
+  days: int,
+  *,
+  fetch_limit: Optional[int] = None,
+  skip_openai: bool = False,
+  dry_run: bool = False,
+) -> int:
+  if days < 1:
+    print("Backfill days must be at least 1.", file=sys.stderr)
+    return 1
+
+  base_date = datetime.now(tz=UTC).date()
+  for offset in range(days - 1, -1, -1):
+    day = base_date - timedelta(days=offset)
+    run_time = datetime(day.year, day.month, day.day, 12, 0, 0, tzinfo=UTC)
+    status = run(
+      fetch_limit=fetch_limit,
+      skip_openai=skip_openai,
+      ignore_state=True,
+      dry_run=dry_run,
+      now=run_time,
+      update_state=False,
+    )
+    if status != 0:
+      return status
   return 0
 
 
@@ -854,6 +886,12 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
     "--ignore-state",
     action="store_true",
     help="Ignore seen-state and refetch items even if previously processed.",
+  )
+  parser.add_argument(
+    "--backfill-days",
+    type=int,
+    default=None,
+    help="Regenerate and overwrite the last N days of pulse entries (latest.json ends on the most recent day).",
   )
   parser.add_argument(
     "--dry-run",
@@ -874,6 +912,13 @@ def main(argv: List[str]) -> int:
   DEBUG = args.debug
   if DEBUG:
     debug_log("Debug logging enabled.")
+  if args.backfill_days:
+    return run_backfill(
+      args.backfill_days,
+      fetch_limit=args.limit,
+      skip_openai=args.no_openai,
+      dry_run=args.dry_run,
+    )
   return run(
     fetch_limit=args.limit,
     skip_openai=args.no_openai,
