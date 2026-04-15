@@ -1,21 +1,94 @@
 {
-  "generated_at": "2026-04-14T12:21:56.619188+00:00",
+  "generated_at": "2026-04-15T12:21:49.149564+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • April 14, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 12,
+  "stories_featured": 4,
+  "headline": "Kirkwood Pulse • April 15, 2026",
+  "overview": "Post-game interviews with Oli Marmol, Michael McGreevy, and JJ Wetherholt from the April 14 game provide local fans insights into team performance and strategies, enhancing community engagement with regional sports. The Cardinals won a tense 10-inning game against the Guardians 6-5 at Busch Stadium, overcoming late deficits with key plays including two home runs by JJ Wetherholt and capitalizing on opponent errors, improving their extra-inning record to 4-0 this season, which boosts local fan morale and team standings. Major League Baseball commemorated Jackie Robinson Day on April 15th with league-wide tributes including players wearing number 42 uniforms and a nationally televised Mets vs. Dodgers game, highlighting Robinson's historic impact on baseball and society while engaging local communities through youth events and educational programs.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:cca145ee03f0",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Post-game interviews from Tuesday: Oli Marmol, Michael McGreevy, JJ Wetherholt 4-14-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/post-game-interviews-from-tuesday-oli-marmol-michael-mcgreevy-jj-wetherholt-4-14-26/article_d93aa19d-afa6-57a7-9631-71e22acc5fdc.html",
+      "published": "2026-04-15T04:43:12+00:00",
+      "excerpt": "For Rob Rains’ game report: CLICK HERE To hear the post-game interviews, click the audio players below: Oli Marmol Michael McGreevy JJ Wetherholt The post Post-game interviews from Tuesday: Oli Marmol, Michael McGreevy, JJ Wetherholt 4-14-26 appeared first on News…",
+      "tags": [],
+      "ai_summary": "Post-game interviews with Oli Marmol, Michael McGreevy, and JJ Wetherholt from the April 14 game provide local fans insights into team performance and strategies, enhancing community engagement with regional sports.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b4a91cf005e6",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Tuesday’s Game Report: Cardinals 6, Guardians 5 (10 innings)",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/tuesday-s-game-report-cardinals-6-guardians-5-10-innings/article_0be4c243-96ea-534e-aa4d-5b7fc639b839.html",
+      "published": "2026-04-15T03:14:42+00:00",
+      "excerpt": "A two-out error and wild pitch in the ninth inning gave the Cardinals a chance to tie Tuesday night's game on a double by Yohel Pozo before they won the game in the 10th. [...]The post Tuesday’s Game Report: Cardinals…",
+      "tags": [],
+      "ai_summary": "The Cardinals won a tense 10-inning game against the Guardians 6-5 at Busch Stadium, overcoming late deficits with key plays including two home runs by JJ Wetherholt and capitalizing on opponent errors, improving their extra-inning record to 4-0 this season, which boosts local fan morale and team standings.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:5b50e0b9b4ac",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Major League Baseball Celebrates the Legacy and Social Impact of Jackie Robinson",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/major-league-baseball-celebrates-the-legacy-and-social-impact-of-jackie-robinson/article_e7936918-6a3c-5f93-8ca7-35b1db9c4754.html",
+      "published": "2026-04-14T18:00:09+00:00",
+      "excerpt": "From Press Release Annual April 15th Recognition of Jackie Robinson Day Will Highlight His Influence on the Sport and Contributions to Society CC Sabathia, Andruw Jones, Michael Harris II, Lawrence Butler, Denzel Clarke, Victor Scott II, [...]The post Major League…",
+      "tags": [],
+      "ai_summary": "Major League Baseball commemorated Jackie Robinson Day on April 15th with league-wide tributes including players wearing number 42 uniforms and a nationally televised Mets vs. Dodgers game, highlighting Robinson's historic impact on baseball and society while engaging local communities through youth events and educational programs.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:d05048fe8360",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Monday’s Game Report: Guardians 9, Cardinals 3",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/monday-s-game-report-guardians-9-cardinals-3/article_bf69e547-24e9-59f1-9b44-ed4758459b73.html",
+      "published": "2026-04-14T03:16:46+00:00",
+      "excerpt": "The Cardinals lost their third game in a row on Monday night, falling to the Cleveland Guardians at Busch Stadium, on a night when they didn't pitch well, made a key error - and got another home run from Jordan…",
+      "tags": [],
+      "ai_summary": "The Cardinals lost 9-3 to the Guardians at Busch Stadium, marking their third consecutive defeat and highlighting ongoing pitching struggles with starters failing to last beyond five innings. Jordan Walker continued his strong offensive performance with a home run, but the team's inability to capitalize on scoring opportunities remains a local concern.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Post-game interviews from Tuesday: Oli Marmol, Michael McGreevy, JJ Wetherholt 4-14-26 from Webster-Kirkwood Times – News."
 }
