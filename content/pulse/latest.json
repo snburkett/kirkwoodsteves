@@ -1,21 +1,40 @@
 {
-  "generated_at": "2026-04-22T12:22:24.836901+00:00",
+  "generated_at": "2026-04-23T12:22:11.839027+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • April 22, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 9,
+  "stories_featured": 1,
+  "headline": "Kirkwood Pulse • April 23, 2026",
+  "overview": "The Cardinals defeated the Marlins 5-3 with strong performances from lefthanded hitters and starter Dustin May, who allowed only one run over 5 1/3 innings. This win highlights the Cardinals' effective offense and pitching as they continue their road trip, with Kyle Leahy starting the next game.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:dd99eb51b3d6",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Tuesday’s Game Report: Cardinals 5, Marlins 3",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/tuesday-s-game-report-cardinals-5-marlins-3/article_f4693088-200a-57ec-8fdb-6797bd1de12b.html",
+      "published": "2026-04-22T02:48:06+00:00",
+      "excerpt": "Nathan Church hit a two-run homer and the Cardinals' lefthanded batters had a big night in leading the team over the Marlins in Miami. [...]The post Tuesday’s Game Report: Cardinals 5, Marlins 3 appeared first on News from Rob Rains,…",
+      "tags": [],
+      "ai_summary": "The Cardinals defeated the Marlins 5-3 with strong performances from lefthanded hitters and starter Dustin May, who allowed only one run over 5 1/3 innings. This win highlights the Cardinals' effective offense and pitching as they continue their road trip, with Kyle Leahy starting the next game.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Tuesday’s Game Report: Cardinals 5, Marlins 3 from Webster-Kirkwood Times – News."
 }
