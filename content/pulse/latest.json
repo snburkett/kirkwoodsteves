@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-04-25T12:13:50.011750+00:00",
+  "generated_at": "2026-04-26T12:15:42.659824+00:00",
   "window_hours": 36,
-  "stories_considered": 12,
-  "stories_featured": 4,
-  "headline": "Kirkwood Pulse • April 25, 2026",
-  "overview": "Post-game interviews with Cardinals manager Oliver Marmol and pitcher Andre Pallante from the April 24, 2026 game provide local fans with insights into team strategy and player performance, enhancing community engagement with the St. Louis Cardinals. The Mariners narrowly defeated the Cardinals 3-2 at Busch Stadium, marking the Cardinals' first one-run loss this season and highlighting Masyn Winn's RBI streak. This close game impacts the local Cardinals' playoff momentum and sets the stage for Saturday's series continuation with Matthew Liberatore starting. On April 25, local residents can safely dispose of prescription drugs at designated sites including Glendale and Kirkwood police departments and Shrewsbury Walmart from 10 a.m. to 2 p.m., promoting community health and preventing drug misuse. Webster Groves offers ongoing disposal at its police station during business hours.",
+  "stories_considered": 11,
+  "stories_featured": 2,
+  "headline": "Kirkwood Pulse • April 26, 2026",
+  "overview": "The Cardinals lost 11-9 to the Mariners at Busch Stadium despite Nathan Church's two homers and a five-homer team effort, marking only the second time in 86 years they hit five home runs at home and still lost. The bullpen's late collapse allowed the Mariners to rally, highlighting ongoing pitching concerns for the local team. The Cardinals lost their recent game despite strong performances from Nathan Church, Oli Marmol, and Matthew Liberatore, highlighting individual efforts that fell short of securing a win for the local team.",
   "items": [
     {
-      "id": "webster-kirkwood-times-news:5ed35010b105",
+      "id": "webster-kirkwood-times-news:8559773cd409",
       "source": {
         "id": "webster-kirkwood-times-news",
         "name": "Webster-Kirkwood Times – News"
       },
-      "title": "Cardinals post-game interviews: Oliver Marmol, Andre Pallante 4-24-26",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/cardinals-post-game-interviews-oliver-marmol-andre-pallante-4-24-26/article_c460e0a1-9dea-55fc-82dc-a17977938364.html",
-      "published": "2026-04-25T03:47:07+00:00",
-      "excerpt": "To hear the post-game interviews, click on the audio players below. Oli Marmol Andre PallanteThe post Cardinals post-game interviews: Oliver Marmol, Andre Pallante 4-24-26 appeared first on News from Rob Rains, STLSportsPage.com.",
+      "title": "Saturday’s Game Report: Mariners 11, Cardinals 9",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/saturday-s-game-report-mariners-11-cardinals-9/article_18d8de39-8a29-5271-a690-90c4045756b4.html",
+      "published": "2026-04-25T22:29:28+00:00",
+      "excerpt": "Nathan Church hit two of the Cardinals five home runs and robbed a would-be homer on defense but a late bullpen collapse gave the Mariners the win over the Cardinals on Saturday at Busch Stadium. [...]The post Saturday’s Game Report:…",
       "tags": [],
-      "ai_summary": "Post-game interviews with Cardinals manager Oliver Marmol and pitcher Andre Pallante from the April 24, 2026 game provide local fans with insights into team strategy and player performance, enhancing community engagement with the St. Louis Cardinals.",
+      "ai_summary": "The Cardinals lost 11-9 to the Mariners at Busch Stadium despite Nathan Church's two homers and a five-homer team effort, marking only the second time in 86 years they hit five home runs at home and still lost. The bullpen's late collapse allowed the Mariners to rally, highlighting ongoing pitching concerns for the local team.",
       "sentiment": "neutral",
       "sentiment_score": 0,
       "community_impact": "Impact unclear based on automatically extracted text.",
@@ -25,53 +25,17 @@
       "suggested_action": null
     },
     {
-      "id": "webster-kirkwood-times-news:3118a95e89b4",
+      "id": "webster-kirkwood-times-news:0991b82630db",
       "source": {
         "id": "webster-kirkwood-times-news",
         "name": "Webster-Kirkwood Times – News"
       },
-      "title": "Friday’s Game Report: Mariners 3, Cardinals 2",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/friday-s-game-report-mariners-3-cardinals-2/article_523d94dc-9694-5ec8-9f4e-27a0e34190b9.html",
-      "published": "2026-04-25T03:44:38+00:00",
-      "excerpt": "The Cardinals suffered their first one-run loss of the season on Friday night, falling to the Mariners in the opener of a three-game series at Busch Stadium. [...]The post Friday’s Game Report: Mariners 3, Cardinals 2 appeared first on News…",
+      "title": "Cardinals post-game interviews: Cards lose despite great game by Nathan Church- Marmol, Liberatore, Church  4-25-26",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/cardinals-post-game-interviews-cards-lose-despite-great-game-by-nathan-church--marmol-liberatore/article_21b9cfd1-9ab1-5dab-ade8-e1d26da50b25.html",
+      "published": "2026-04-25T22:21:51+00:00",
+      "excerpt": "For Rob Rains’ complete game report: CLICK HERE. To hear the post-game interviews, click the audio players below: Oli Marmol Matthew Liberatore Nathan Church The post Cardinals post-game interviews: Cards lose despite great game by Nathan Church- Marmol, Liberatore, Church…",
       "tags": [],
-      "ai_summary": "The Mariners narrowly defeated the Cardinals 3-2 at Busch Stadium, marking the Cardinals' first one-run loss this season and highlighting Masyn Winn's RBI streak. This close game impacts the local Cardinals' playoff momentum and sets the stage for Saturday's series continuation with Matthew Liberatore starting.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:8b630ff2944b",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Drug Take Back Day",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/drug-take-back-day/article_39520009-ce88-4813-a3fc-4024d4b52e93.html",
-      "published": "2026-04-24T05:00:00+00:00",
-      "excerpt": "National Drug Take Back Day is April 25, offering a responsible means for disposing of prescription drugs. Citizens may bring drugs for disposal to the following locations from 10 a.m. to 2 p.m. on Saturday, April 25:",
-      "tags": [],
-      "ai_summary": "On April 25, local residents can safely dispose of prescription drugs at designated sites including Glendale and Kirkwood police departments and Shrewsbury Walmart from 10 a.m. to 2 p.m., promoting community health and preventing drug misuse. Webster Groves offers ongoing disposal at its police station during business hours.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:8d82d99759ed",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Coffee Hour Showcase",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/coffee-hour-showcase/article_68fbf3f5-4119-47d1-a417-715beba1a2bc.html",
-      "published": "2026-04-24T05:00:00+00:00",
-      "excerpt": "Webster Groves community members age 60 and older are invited to Webster Groves High School’s Frick Theater at Selma and Bradford avenues from 8:30 to 9:30 a.m. on Monday, April 27, for the first Statesmen Coffee Hour Showcase. Doors open…",
-      "tags": [],
-      "ai_summary": "Webster Groves residents aged 60+ are invited to the Statesmen Coffee Hour Showcase at Webster Groves High School on April 27, offering a chance to connect with students and learn about school programs, fostering community engagement across generations.",
+      "ai_summary": "The Cardinals lost their recent game despite strong performances from Nathan Church, Oli Marmol, and Matthew Liberatore, highlighting individual efforts that fell short of securing a win for the local team.",
       "sentiment": "neutral",
       "sentiment_score": 0,
       "community_impact": "Impact unclear based on automatically extracted text.",
@@ -82,13 +46,13 @@
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 4 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "Mix of 0 positive, 2 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Keep an eye on Cardinals post-game interviews: Oliver Marmol, Andre Pallante 4-24-26 from Webster-Kirkwood Times – News."
+  "call_to_action": "Keep an eye on Saturday’s Game Report: Mariners 11, Cardinals 9 from Webster-Kirkwood Times – News."
 }
