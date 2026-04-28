@@ -1,149 +1,23 @@
 {
-  "generated_at": "2026-04-27T12:32:49.738937+00:00",
+  "generated_at": "2026-04-28T12:36:12.305298+00:00",
   "window_hours": 36,
   "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • April 27, 2026",
-  "overview": "Shrewsbury has joined a feasibility study to explore formal collaboration with nearby municipalities for fire and emergency services to improve sustainability and reduce costs amid fragmented county services and financial challenges faced by smaller departments. The Missouri History Museum in Forest Park is hosting a free four-day Route 66 centennial festival from April 30 to May 3, featuring live music, classic car displays, family activities, and historical talks that highlight the region's significant role in the highway's history, offering educational and recreational opportunities for local residents. The National Shrine of Our Lady of the Miraculous Medal in Perryville, Missouri, founded in 1818 as the first higher education institution west of the Mississippi, offers free guided tours and a serene environment for reflection, highlighting its historical and cultural significance to the local community.",
+  "stories_featured": 1,
+  "headline": "Kirkwood Pulse • April 28, 2026",
+  "overview": "Kirkwood City Council approved an $8 million certificate of participation to fund renovations and relocate public works to the former A-Mrazek property, addressing infrastructure needs without raising taxes. This move aims to facilitate the sale of the old public works site and support local development, impacting city finances and services.",
   "items": [
     {
-      "id": "webster-kirkwood-times-news:1f80bef9a061",
+      "id": "webster-kirkwood-times-news:3bc5a08caa39",
       "source": {
         "id": "webster-kirkwood-times-news",
         "name": "Webster-Kirkwood Times – News"
       },
-      "title": "Strength In Numbers",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/strength-in-numbers/article_d2e08645-f2da-428d-a42c-2295e8f9d971.html",
-      "published": "2026-04-27T05:05:00+00:00",
-      "excerpt": "Every year, the lone fire station in Shrewsbury responds to more than 2,400 emergency calls, often in support of neighboring communities in St. Louis County. Officials in the city of 6,400 residents now are exploring a more formal administrative and financial collaboration with peer municipalities as part of a feasibility study initiated by nearby Clayton. The study addresses the fragmented",
+      "title": "Kirkwood: $8 Million For Public Works Refit Passes 4-1",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-8-million-for-public-works-refit-passes-4-1/article_95df163b-38a3-4119-8ab6-8a6997d08d9d.html",
+      "published": "2026-04-27T06:00:00+00:00",
+      "excerpt": "Kirkwood will invest another $8 million into a new home for its public works departments after a final — albeit split — vote of the city council last week. Meeting in regular session for the last time before three new council members take office, the Kirkwood City Council on April 16 — in a 4-1 vote — approved the issuance",
       "tags": [],
-      "ai_summary": "Shrewsbury has joined a feasibility study to explore formal collaboration with nearby municipalities for fire and emergency services to improve sustainability and reduce costs amid fragmented county services and financial challenges faced by smaller departments.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:52926ce127df",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Route 66 Festival",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/route-66-festival/article_283775ce-ccbc-4ab3-95a8-905851ea24cf.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "The Missouri History Museum in Forest Park will host a celebration to mark the 100th anniversary of Route 66 with a four-day festival, April 30 through May 3. The festival — free and open to the public — will feature live music, classic car displays, family activities, film screenings and talks exploring the complex history of the Mother Road, which",
-      "tags": [],
-      "ai_summary": "The Missouri History Museum in Forest Park is hosting a free four-day Route 66 centennial festival from April 30 to May 3, featuring live music, classic car displays, family activities, and historical talks that highlight the region's significant role in the highway's history, offering educational and recreational opportunities for local residents.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:fd221979c083",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "A Place For Peace & Reflection",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/a-place-for-peace-reflection/article_e55d58c6-ea0a-49cb-bd85-884d4f3d1407.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "Visit Perryville, Missouri, for the National Shrine of Our Lady of the Miraculous Medal, 1805 W. Saint Joseph St. This peaceful place was founded in 1818 with the construction of a small log church and seminary, which served as the first institution for higher education west of the Mississippi River. Originally part of the Louisiana Purchase, this land grant provided",
-      "tags": [],
-      "ai_summary": "The National Shrine of Our Lady of the Miraculous Medal in Perryville, Missouri, founded in 1818 as the first higher education institution west of the Mississippi, offers free guided tours and a serene environment for reflection, highlighting its historical and cultural significance to the local community.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:146ae82ea187",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Stunning Sunset Ridge Cabin",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/stunning-sunset-ridge-cabin/article_68f3e2ef-1c0e-46c4-995c-38e65cabe7a7.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "Just a two-hour drive away from St. Louis is the perfect location for a great summer getaway or a girls’ weekend. Sunset Ridge Cabin is a three-level cabin that sleeps eight comfortably. Located on the Black River south of Farmington near Lesterville, Sunset Ridge is near many outdoor destinations including Johnson Shut-Ins, Elephant Rocks, Rocky Falls, Millstream Gardens, Pickle Springs,",
-      "tags": [],
-      "ai_summary": "Sunset Ridge Cabin near Farmington offers a spacious, fully equipped retreat for up to eight guests, providing easy access to popular outdoor sites in the Ozark Mountains, making it an ideal local getaway for St. Louis residents seeking nature and relaxation within a two-hour drive.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:e9aeb99c6560",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Spring Into Naperville, Illinois",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/spring-into-naperville-illinois/article_166f6c7f-95de-40fa-a061-6fe839a47bba.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "There’s plenty to do this spring in Naperville, Illinois. This historic town offers stunning natural scenery, fun activities, and plenty of shopping and food for the whole family. Naper Settlement is a family-friendly way to experience American history with special exhibits celebrating the 250th anniversary of America. Set across 13 acres, this interactive destination gives kids and adults room to",
-      "tags": [],
-      "ai_summary": "Naperville offers diverse spring activities including historical exhibits at Naper Settlement, unique recreation at Centennial Beach and Paddleboat Quarry, and vibrant dining at Block 59, enhancing local tourism and community engagement. Seasonal events like live music, trolley tours, and outdoor fitness classes provide residents and visitors with enriching…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:ed89288e5b15",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Art On The Square Steps Beyond The Frame In 2026",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/art-on-the-square-steps-beyond-the-frame-in-2026/article_5c4150bc-0f70-4c7e-b0b9-172ce25e3942.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "For one weekend each spring, something remarkable happens in Downtown Belleville. The streets fill with color. Conversations spark between strangers. Music drifts through the air. And art — once confined to studios and galleries — spills into the open, inviting everyone to be part of the experience. That transformation returns May 15-17, as Art on the Square celebrates its 24th",
-      "tags": [],
-      "ai_summary": "Art on the Square returns to Downtown Belleville May 15-17, 2026, featuring a new Local Artist Competition spotlighting regional talent alongside national artists, enhancing community connection and pride through diverse art forms, live music, and interactive experiences, all free and open to the public.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:b5c4f292b935",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "See The American Gothic House",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/see-the-american-gothic-house/article_1504bdff-fa3b-422e-b58e-2c059921124d.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "Less than four hours northwest of St. Louis is Eldon, Iowa, home of the famous American Gothic House. This Carpenter Gothic-style home is best known for its appearance in Grant Wood’s iconic painting, “American Gothic.” While the painting resides in Chicago, the house can be viewed all year long. The adjacent visitor’s center includes an exhibit gallery, gift shop, film",
-      "tags": [],
-      "ai_summary": "The American Gothic House in Eldon, Iowa, located less than four hours from St. Louis, is open year-round with a visitor center offering exhibits, events, and tours, providing a unique cultural experience tied to the iconic painting and enriching local tourism opportunities.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:cd37c981f180",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Lots To Do In Lexington, MO",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/lots-to-do-in-lexington-mo/article_48abee20-6800-4456-80a1-e5cee8ef59d2.html",
-      "published": "2026-04-27T05:00:00+00:00",
-      "excerpt": "With a mix of old and new, there’s plenty to see and do in Lexington, Missouri. Catch the summer living history trolley tours every second Sunday, June through September. Each month’s theme will cover a different part of Lexington’s history. While there, follow the original Santa Fe Trail through town or download an audio driving tour, which takes drivers through",
-      "tags": [],
-      "ai_summary": "Lexington, MO offers summer living history trolley tours from June to September highlighting local history, along with scenic drives on the Old Trails Road and opportunities to explore historic neighborhoods, orchards, and local businesses, enhancing community engagement and tourism.",
+      "ai_summary": "Kirkwood City Council approved an $8 million certificate of participation to fund renovations and relocate public works to the former A-Mrazek property, addressing infrastructure needs without raising taxes. This move aims to facilitate the sale of the old public works site and support local development, impacting city finances and services.",
       "sentiment": "neutral",
       "sentiment_score": 0,
       "community_impact": "Impact unclear based on automatically extracted text.",
@@ -154,13 +28,13 @@
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Keep an eye on Strength In Numbers from Webster-Kirkwood Times – News."
+  "call_to_action": "Keep an eye on Kirkwood: $8 Million For Public Works Refit Passes 4-1 from Webster-Kirkwood Times – News."
 }
