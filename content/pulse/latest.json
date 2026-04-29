@@ -1,40 +1,21 @@
 {
-  "generated_at": "2026-04-28T12:36:12.305298+00:00",
+  "generated_at": "2026-04-29T12:32:49.010064+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 1,
-  "headline": "Kirkwood Pulse • April 28, 2026",
-  "overview": "Kirkwood City Council approved an $8 million certificate of participation to fund renovations and relocate public works to the former A-Mrazek property, addressing infrastructure needs without raising taxes. This move aims to facilitate the sale of the old public works site and support local development, impacting city finances and services.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:3bc5a08caa39",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Kirkwood: $8 Million For Public Works Refit Passes 4-1",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-8-million-for-public-works-refit-passes-4-1/article_95df163b-38a3-4119-8ab6-8a6997d08d9d.html",
-      "published": "2026-04-27T06:00:00+00:00",
-      "excerpt": "Kirkwood will invest another $8 million into a new home for its public works departments after a final — albeit split — vote of the city council last week. Meeting in regular session for the last time before three new council members take office, the Kirkwood City Council on April 16 — in a 4-1 vote — approved the issuance",
-      "tags": [],
-      "ai_summary": "Kirkwood City Council approved an $8 million certificate of participation to fund renovations and relocate public works to the former A-Mrazek property, addressing infrastructure needs without raising taxes. This move aims to facilitate the sale of the old public works site and support local development, impacting city finances and services.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • April 29, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Kirkwood: $8 Million For Public Works Refit Passes 4-1 from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
