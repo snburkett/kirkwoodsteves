@@ -1,21 +1,166 @@
 {
-  "generated_at": "2026-05-01T12:21:03.357443+00:00",
+  "generated_at": "2026-05-02T12:18:19.968495+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • May 01, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • May 02, 2026",
+  "overview": "Kirkwood City Council unanimously rejected a contract renewal with Fybr for a parking sensor system due to staff errors misrepresenting past agreements, leading to confusion and no clear alternative solution. This decision stalls efforts to improve downtown parking enforcement and real-time availability tracking, impacting local traffic management and visit… The Kirkwood City Council approved first reading for Pitman Place, a 60-apartment mixed-use project with revised zoning allowing residential use on the first floor, enabling larger family-suitable apartments and increased bedrooms. This change supports more affordable, practical housing while preserving downtown walkability and honoring local history. A proposal for 202 homes in six four-story buildings on the former Public Works site includes a new through street to improve connectivity, but lacks ground-floor retail and a hotel, raising concerns about missed opportunities for local business growth and community space. The project awaits further details and city approval under a new zoning code.",
+  "items": [
+    {
+      "id": "kirkwood-gadfly:0b2d54260b53",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "String of Errors Leads to Rejection of Parking Solution",
+      "link": "https://kirkwoodgadfly.com/string-of-errors-leads-to-rejection-of-parking-solution/",
+      "published": "2026-05-02T12:18:26.515101+00:00",
+      "excerpt": "On September 4th, Kirkwood City Council unanimously voted down a contract with a local company, Fybr, for a technological solution that aimed to address the parking issue in Downtown Kirkwood. I was disappointed by that decision because I’ve long been a fan of Kirkwood’s previous adoption of the technology and especially its long-term potential. The more concerning aspect of the",
+      "tags": [],
+      "ai_summary": "Kirkwood City Council unanimously rejected a contract renewal with Fybr for a parking sensor system due to staff errors misrepresenting past agreements, leading to confusion and no clear alternative solution. This decision stalls efforts to improve downtown parking enforcement and real-time availability tracking, impacting local traffic management and visit…",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:906773a73af3",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Council Greenlights Pitman Place",
+      "link": "https://kirkwoodgadfly.com/300-n-kirkwood-two-new-looks-one-big-vote/",
+      "published": "2026-05-02T12:18:25.900400+00:00",
+      "excerpt": "After winding itself through the approval process three times, the Council finally offered first reading approval to Pitman Place, the 60-apartment mixed-use project proposed for the former Commerce Bank site at 300 N. Kirkwood Road, at their November 20th meeting. The Kirkwood City Council was supposed to issue its verdict on the project in early October, but instead of approving",
+      "tags": [],
+      "ai_summary": "The Kirkwood City Council approved first reading for Pitman Place, a 60-apartment mixed-use project with revised zoning allowing residential use on the first floor, enabling larger family-suitable apartments and increased bedrooms. This change supports more affordable, practical housing while preserving downtown walkability and honoring local history.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:dbf52000fe91",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "202 Homes Proposed for Former Public Works Site",
+      "link": "https://kirkwoodgadfly.com/202-homes-proposed-for-former-public-works-site/",
+      "published": "2026-05-02T12:18:25.264290+00:00",
+      "excerpt": "Well folks, after nearly a year of waiting, the results of the Request for Proposals on the former Public Works site have finally surfaced via this week’s Planning & Zoning agenda. The selected proposal comes from St. Louis-based Double Eagle Development and calls for 202 homes across six four-story buildings, accompanied by 247 parking spots. Double Eagle’s description of the",
+      "tags": [],
+      "ai_summary": "A proposal for 202 homes in six four-story buildings on the former Public Works site includes a new through street to improve connectivity, but lacks ground-floor retail and a hotel, raising concerns about missed opportunities for local business growth and community space. The project awaits further details and city approval under a new zoning code.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:f17f87576e5c",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood Electric’s Problem is Not Unique",
+      "link": "https://kirkwoodgadfly.com/kirkwood-electrics-problem-is-not-unique/",
+      "published": "2026-05-02T12:18:24.581589+00:00",
+      "excerpt": "A couple of weeks back, first-term Kirkwood City Council Member Al Rheinnecker alerted the public via his re-election campaign newsletter that the Council had voted to implement a 14.8% electricity rate increase for the coming year at their October 17th meeting. The department will also increase the fixed “customer charge” portion of electric bills from $8 to $10. This rate",
+      "tags": [],
+      "ai_summary": "Kirkwood City Council approved a 14.8% electricity rate increase and raised the fixed customer charge due to costly capital upgrades, rising electricity demand, and a $13.8 million cash reserve deficit in Kirkwood Electric. These changes aim to restore financial stability and ensure long-term grid reliability for residents and businesses.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:3fd14899f69d",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "How Double Eagle Won Over the Council",
+      "link": "https://kirkwoodgadfly.com/public-works-site-how-double-eagle-won/",
+      "published": "2026-05-02T12:18:23.915184+00:00",
+      "excerpt": "On January 8th, Kirkwood City Council will hold a public hearing on Double Eagle Development’s proposal for the former public works site. The proposal, the Council’s preferred response of the six they received, calls for 203 homes across six all-residential buildings and 303 surface parking spots. In reviewing each of the RFP responses, a picture of the Council’s decision-making process",
+      "tags": [],
+      "ai_summary": "Kirkwood City Council selected Double Eagle Development's proposal for 203 homes on the former public works site, favoring its traditional architecture and higher return without retail or hotels. The project includes a new through-street but remains auto-oriented, raising concerns about walkability and missed opportunities linked to the future Grant’s Trail…",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:ebc352aa548f",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Public Works Site: The Rejects",
+      "link": "https://kirkwoodgadfly.com/public-works-the-rejects/",
+      "published": "2026-05-02T12:18:23.338346+00:00",
+      "excerpt": "Last week I wrote up how Double Eagle won the Public Works sweepstakes. Ahead of this Thursday’s City Council public hearing on the Double Eagle proposal, I wanted to explore the other proposals that the Council passed up. The Public Works RFP process unfolded in two stages. Initial bids were submitted by five applicants —Double Eagle, Keeley, Ridgehouse, Savoy, and",
+      "tags": [],
+      "ai_summary": "The Kirkwood City Council rejected multiple development proposals for the Public Works site, including those featuring hotels, due to concerns over price and design alignment with downtown character. This decision impacts future downtown development and the city's efforts to attract hotel projects, reflecting a preference for owner-occupied housing and trad…",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:930cb43897c9",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood’s 6-1 Republican Majority",
+      "link": "https://kirkwoodgadfly.com/kirkwoods-6-1-republican-majority/",
+      "published": "2026-05-02T12:18:22.801927+00:00",
+      "excerpt": "In a Friday evening news dump the week before Thanksgiving, Kirkwood City Council announced that they would be parting ways with city administrator Russ Hawes. There would be no formal transition to a named successor, no transfer of institutional knowledge, and no grand send-off. Instead, the end for the man who had managed the city’s day-to-day operations for more than",
+      "tags": [],
+      "ai_summary": "Kirkwood City Council abruptly ended longtime city administrator Russ Hawes' tenure, reflecting a shift toward a politically driven, conservative majority that has prioritized partisan agendas over traditional community-focused governance, including controversial moves like pursuing the sale of the city’s water utility despite rising local water rates.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "kirkwood-gadfly:e3f4555a95f0",
+      "source": {
+        "id": "kirkwood-gadfly",
+        "name": "Kirkwood Gadfly"
+      },
+      "title": "Kirkwood Water: Selling the Farm",
+      "link": "https://kirkwoodgadfly.com/kirkwood-water-selling-the-farm/",
+      "published": "2026-05-02T12:18:22.127509+00:00",
+      "excerpt": "Kirkwood Water has a budget gap. The source of this gap is twofold. First, our water mains (the big pipes that transport water to each Kirkwood block) are at the end of their lifespan and thus have a high rate of leaks and breaks. Secondly, some of Kirkwood’s service lines (the smaller pipes that transport water from mains to individual",
+      "tags": [],
+      "ai_summary": "Kirkwood faces a $6.5 million annual funding gap to replace aging water mains and lead service lines, risking service reliability and financial losses. The city council is considering selling Kirkwood Water to Missouri American Water Company, which could provide short-term funds but likely lead to higher long-term water rates for residents.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on String of Errors Leads to Rejection of Parking Solution from Kirkwood Gadfly."
 }
