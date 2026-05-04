@@ -1,21 +1,166 @@
 {
-  "generated_at": "2026-05-03T12:17:55.581501+00:00",
+  "generated_at": "2026-05-04T12:34:25.259297+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • May 03, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • May 04, 2026",
+  "overview": "Kirkwood Public Library is celebrating its 100th anniversary in 2026 with events including an author fair, a library card design contest, and a planned December birthday celebration, highlighting its century-long role as a vital community resource and gathering place in Kirkwood. At Robinson Elementary, teacher assistant Conner Westermayer saved a choking student by promptly administering the Heimlich maneuver, highlighting the importance of CPR and first aid training provided by the Kirkwood School District to ensure student safety during emergencies. Kirkwood School District became the first in St. Louis County to earn the Heart Safe School District designation by implementing a comprehensive Cardiac Emergency Response Plan, including emergency drills and staff training, enhancing student safety and meeting upcoming Missouri state requirements.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:7e8379d70c17",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Bookmarking A Milestone",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/bookmarking-a-milestone/article_6bc6b4a1-18fc-4a9a-8f7e-d2d19fa22913.html",
+      "published": "2026-05-04T05:05:00+00:00",
+      "excerpt": "Kirkwood Public Library patrons have a hundred extra reasons to celebrate as this popular gathering place marks its 100th anniversary with a host of activities throughout the remainder of 2026. “For 100 years, Kirkwood Public Library has belonged to the community. Starting as a privately-funded institution, and then as the first tax-supported public library in St. Louis County, this current",
+      "tags": [],
+      "ai_summary": "Kirkwood Public Library is celebrating its 100th anniversary in 2026 with events including an author fair, a library card design contest, and a planned December birthday celebration, highlighting its century-long role as a vital community resource and gathering place in Kirkwood.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:9ecd9e86e40a",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Robinson Teacher Assistant “Mr. W.” Saves Student From Choking",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/robinson-teacher-assistant-mr-w-saves-student-from-choking/article_5f134d36-3561-45ba-91e7-ead41bf9cdc6.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "What began as a routine lunch period at Kirkwood’s Robinson Elementary School quickly turned into a moment that underscored the importance of preparedness, training and keeping calm under pressure. Conner Westermayer, a teacher assistant known to students as “Mr. W,” recently saved a student’s life when the student began choking during a lunch period. Westermayer was supervising lunch on April",
+      "tags": [],
+      "ai_summary": "At Robinson Elementary, teacher assistant Conner Westermayer saved a choking student by promptly administering the Heimlich maneuver, highlighting the importance of CPR and first aid training provided by the Kirkwood School District to ensure student safety during emergencies.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:39152db88115",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Kirkwood Schools Set Standard With Heart Safe Designation",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-schools-set-standard-with-heart-safe-designation/article_15ea5451-d474-49ff-bffd-07b3d984f2a1.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "The Kirkwood School District is the first school district in St. Louis County to become a “Heart Safe School District.”",
+      "tags": [],
+      "ai_summary": "Kirkwood School District became the first in St. Louis County to earn the Heart Safe School District designation by implementing a comprehensive Cardiac Emergency Response Plan, including emergency drills and staff training, enhancing student safety and meeting upcoming Missouri state requirements.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:5169d67a7751",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Revised Tree Code Aims To Re-Leaf Urban Canopy",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/revised-tree-code-aims-to-re-leaf-urban-canopy/article_13debe61-9890-43ef-b86f-a2b64da19cd4.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "Kirkwood residents and city staff have new tools to preserve and expand the city’s tree canopy with the passage of a revised tree code in April. The citizen-led Urban Forestry Commission last year reported to elected leaders on the state of the local tree canopy, identifying more than 8,300 city-owned trees along streets, right-of-ways and in public lots. But that",
+      "tags": [],
+      "ai_summary": "Kirkwood has enacted a revised tree code to protect and expand its urban canopy by designating large trees as Heritage Trees, requiring permits for tree removal during development, and empowering the city forester to plant trees on public land, supporting local environmental health and community beautification.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:d8b0212bca61",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "“They Take Good Care Of Us”",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/they-take-good-care-of-us/article_0d000e24-5f28-4473-b18d-6f4f6b2633e4.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "“Do you know someone making a difference in the community?” That was the ask at the end of my column last month. Patsy, who lives at Concordia House in Kirkwood, was quick to respond. She gave me a buzz the very same day that paper hit the streets, eager to share about the wonderful staff members who make the residents",
+      "tags": [],
+      "ai_summary": "Concordia House in Kirkwood highlights staff members Ashley and Cortez for their exceptional care and community-building efforts, enhancing the quality of life for its 76 residents through organized activities, personalized attention, and prompt maintenance support, fostering a strong sense of family and belonging locally.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:97d06c0d2605",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Pool Company Files Suit Against City",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/pool-company-files-suit-against-city/article_525be80e-bcc5-4399-a45e-9e3920044205.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "Westport Pools, LLC, has filed suit against the city of Webster Groves for a breach of contract regarding construction of the new Webster Groves Water Park, which opened Memorial Day weekend in 2025. The lawsuit, filed by the Behr, McCarter & Neely Group of Clayton, is requesting a $636,235.38 payment from the city of Webster Groves, plus interest at 1.5%",
+      "tags": [],
+      "ai_summary": "Westport Pools, LLC has sued Webster Groves for $636,235.38 over alleged contract breaches related to delays and unpaid work on the new $12.1 million municipal water park, which is part of the voter-approved Prop W initiative. The city maintains it has fulfilled its obligations and is withholding final payment until project completion.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:31d6dc9650e0",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Board Hears Overview Of Frick Forum Class",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/board-hears-overview-of-frick-forum-class/article_deb46abe-646b-4415-94ee-1d17a478e88a.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "A handful of students are wrapping up a successful pilot year of the Frick Center for Civic Engagement at Webster Groves High School. The intensive course, open to juniors and seniors, challenges students to engage with economic, social, political and moral factors and their influence on civic discourse, free speech, personal responsibility and policy-making. Students challenge their thinking, often discuss",
+      "tags": [],
+      "ai_summary": "Webster Groves High School's Frick Center for Civic Engagement completed a successful pilot year, offering juniors and seniors real-world experience through internships and projects addressing local issues like student drug use, enhancing civic understanding and career exploration. The program's growth signals expanded civic education across district school…",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:812207fbd8ec",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Area Crime Reports – Published May 1, 2026",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/area-crime-reports-published-may-1-2026/article_d9b96027-e44c-4dd0-82f3-f0911c2369cd.html",
+      "published": "2026-05-04T05:00:00+00:00",
+      "excerpt": "Des Peres",
+      "tags": [],
+      "ai_summary": "Multiple thefts at West County Center led to arrests in Des Peres, while Glendale collected 225 pounds of unused drugs during National Drug Take Back Day. Kirkwood saw catalytic converter theft and credit card fraud investigations, and Shrewsbury police made several arrests for driving without licenses and shoplifting, highlighting ongoing local crime and l…",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Bookmarking A Milestone from Webster-Kirkwood Times – News."
 }
