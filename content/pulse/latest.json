@@ -1,21 +1,40 @@
 {
-  "generated_at": "2026-05-05T12:26:15.138212+00:00",
+  "generated_at": "2026-05-06T12:37:41.266457+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • May 05, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 9,
+  "stories_featured": 1,
+  "headline": "Kirkwood Pulse • May 06, 2026",
+  "overview": "The Cardinals defeated the Brewers 6-3 at Busch Stadium, marking their seventh win in eight games, with Ivan Herrera's bases-loaded double driving in three runs. This victory highlights the Cardinals' strong recent performance and roster changes, including the recall of Cesar Prieto and the optioning of Thomas Saggese.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:988590daf38d",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Monday’s Game Report: Cardinals 6, Brewers 3",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/monday-s-game-report-cardinals-6-brewers-3/article_d635507d-7f28-5e1a-a7e1-517d766d06ce.html",
+      "published": "2026-05-05T03:01:11+00:00",
+      "excerpt": "Ivan Herrera's double with the bases loaded was the big hit for the Cardinals on Monday night, sending them to a win over the Brewers at Busch Stadium. [...]The post Monday’s Game Report: Cardinals 6, Brewers 3 appeared first on…",
+      "tags": [],
+      "ai_summary": "The Cardinals defeated the Brewers 6-3 at Busch Stadium, marking their seventh win in eight games, with Ivan Herrera's bases-loaded double driving in three runs. This victory highlights the Cardinals' strong recent performance and roster changes, including the recall of Cesar Prieto and the optioning of Thomas Saggese.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Monday’s Game Report: Cardinals 6, Brewers 3 from Webster-Kirkwood Times – News."
 }
