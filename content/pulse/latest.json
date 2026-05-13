@@ -1,166 +1,21 @@
 {
-  "generated_at": "2026-05-12T12:40:46.710137+00:00",
+  "generated_at": "2026-05-13T12:44:14.009578+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • May 12, 2026",
-  "overview": "Ann Johnstone and her children share a unique family tradition of giving birth on September 13, turning a once-feared date into a cherished local legacy that highlights the close-knit Webster Groves community and its multigenerational bonds. Webster University has ended its acclaimed chess program due to financial strains and declining international enrollment, impacting top-ranked players and students who relied on the program for scholarships and education. The decision frees funds for other educational initiatives but leaves the local chess community seeking new opportunities for its elite p… Darren Lamb, with nearly 30 years of municipal leadership experience in Missouri, has been selected as Kirkwood's new chief administrative officer, bringing local expertise and a proven record of fostering downtown investment. His appointment aims to ensure continuity and effective city management following the retirement of the previous administrator.",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:f04d04b44da6",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Lucky Number 13: Sept. 13 Birthdays Bond Mothers, Daughters",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/lucky-number-13-sept-13-birthdays-bond-mothers-daughters/article_eb4e2cbf-bc34-4b09-bfe1-a736f6a15d58.html",
-      "published": "2026-05-11T11:00:00+00:00",
-      "excerpt": "On Sept. 13, 1964, Ann Johnstone went into labor with her third child. Though she wasn’t particularly superstitious, she kept repeating the same mantra: “Please don’t let the baby be born on the 13th.” Despite her pleas, she gave birth to her son, Bradley, on Sept. 13. While the number might be considered a bad omen by some, Johnstone has",
-      "tags": [],
-      "ai_summary": "Ann Johnstone and her children share a unique family tradition of giving birth on September 13, turning a once-feared date into a cherished local legacy that highlights the close-knit Webster Groves community and its multigenerational bonds.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:4748b5ab15e4",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Check And Mate: Citing Finances, Webster University Ends Renowned Chess Program",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/check-and-mate-citing-finances-webster-university-ends-renowned-chess-program/article_1bd5ab1c-cc2e-4d02-8d11-2c452d1bd5b4.html",
-      "published": "2026-05-11T10:00:00+00:00",
-      "excerpt": "Citing a lack of funding and a decline in international student enrollment, Webster University has disbanded its top-ranking chess team and program, leaving a number of students — some of the world’s best chess players —scrambling for their next move. The Susan Polgar Institute for Chess Excellence (SPICE) came to Webster in 2012. For the next 14 years, SPICE consistently",
-      "tags": [],
-      "ai_summary": "Webster University has ended its acclaimed chess program due to financial strains and declining international enrollment, impacting top-ranked players and students who relied on the program for scholarships and education. The decision frees funds for other educational initiatives but leaves the local chess community seeking new opportunities for its elite p…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:3209e3482758",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Darren Lamb Chosen As Kirkwood's Top Administrator",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/darren-lamb-chosen-as-kirkwoods-top-administrator/article_61433359-130a-4b7f-b141-38eed651c5a7.html",
-      "published": "2026-05-11T09:30:00+00:00",
-      "excerpt": "The months-long search for a new chief administrative officer is over in Kirkwood as city officials prepare to welcome new hire Darren Lamb. Lamb brings with him nearly three decades of service as a municipal leader in Washington, Missouri. He has served in several positions since starting in 1998, becoming city administrator in 2017. Set to formally join Kirkwood’s ranks",
-      "tags": [],
-      "ai_summary": "Darren Lamb, with nearly 30 years of municipal leadership experience in Missouri, has been selected as Kirkwood's new chief administrative officer, bringing local expertise and a proven record of fostering downtown investment. His appointment aims to ensure continuity and effective city management following the retirement of the previous administrator.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:d5f7588ea757",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Historic Home Demolished In Kirkwood",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/historic-home-demolished-in-kirkwood/article_f9d8a88c-2ee8-4e2c-baac-b23d8851583c.html",
-      "published": "2026-05-11T08:21:00+00:00",
-      "excerpt": "Despite pleas from neighbors, a lawsuit and a Change.org petition with over 2,000 signatures, the nearly 200-year-old home at 751 N. Taylor Ave. in Kirkwood was demolished Wednesday morning, May 6. The home, also called the Marquitz-Garesche House, was designated as a “Local Landmark” in 1982, and was located in the North Taylor Local Historic District. After plans for its",
-      "tags": [],
-      "ai_summary": "The nearly 200-year-old Marquitz-Garesche House in Kirkwood was demolished on May 6 despite community opposition and legal challenges, raising concerns about the Kirkwood Landmarks Commission's authority. The demolition allows new construction subject to design approval to maintain neighborhood historic character.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:f44dc8c312ac",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "All About Cleaning, Inc: A Generational Cleaning Business Decades Strong",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/all-about-cleaning-inc-a-generational-cleaning-business-decades-strong/article_de7ad232-a8cc-4512-b031-7733197c4e21.html",
-      "published": "2026-05-11T05:00:00+00:00",
-      "excerpt": "Lisa O’Brien grew up in Kirkwood watching her single mother support her two girls the best she could by cleaning houses by herself. When O’Brien moved back to St. Louis from California, she went into business with her mother, and All About Cleaning eventually tripled in size. O’Brien has been running the business since 1995. “It’s a lot of work,",
-      "tags": [],
-      "ai_summary": "All About Cleaning, Inc., a family-run business in Kirkwood since 1995, has tripled in size under Lisa O’Brien's leadership, maintaining strong community ties by serving multiple generations of local clients and fostering lasting relationships through personalized service.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:5b4cafbf5c1d",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Private Therapy In A Calm, Welcoming Environment",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/private-therapy-in-a-calm-welcoming-environment/article_324af9ec-4c2e-42d7-8d6c-a8279c8811f8.html",
-      "published": "2026-05-11T05:00:00+00:00",
-      "excerpt": "Holly Winston, a licensed professional counselor, got her master’s degree in clinical mental health counseling from Webster University after feeling called to transition into a career centered on meaningful connection and helping people navigate life’s challenges. NewSpace Counseling is a solo private practice emphasizing creating a calm, welcoming environment where clients feel safe, respected and in control of their own",
-      "tags": [],
-      "ai_summary": "Holly Winston, a Webster University graduate, has opened NewSpace Counseling in downtown Kirkwood, offering private therapy that combines cognitive behavioral and neuroscience-informed techniques to help clients build emotional resilience and manage stress in a calm, welcoming setting.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:bd796a1daa8a",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Otto Orthodontics: Creating  Confident Smiles Across Five Locations!",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/otto-orthodontics-creating-confident-smiles-across-five-locations/article_84b0540b-900e-4ce5-a951-87f276fecbde.html",
-      "published": "2026-05-11T05:00:00+00:00",
-      "excerpt": "For over a decade, Dr. Genevieve Otto has been transforming smiles and boosting confidence through expert orthodontic care. In 2016, she took her passion to the next level by opening her first practice in Wentzville — and she hasn’t stopped since! Today, Otto Orthodontics proudly serves the community with five locations, including the newest office in Creve Coeur. “Our incredible",
-      "tags": [],
-      "ai_summary": "Otto Orthodontics has expanded to five locations, including a new office in Creve Coeur, enhancing access to expert orthodontic care and cosmetic dental services for local families. Their growth supports community confidence and youth empowerment through specialized treatments and outreach programs.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:79bf96cbcb99",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Private Home Care: “Relationships Are At The Heart Of Everything We Do”",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/private-home-care-relationships-are-at-the-heart-of-everything-we-do/article_23864042-803b-46b9-9042-3b2e6c568a4d.html",
-      "published": "2026-05-11T05:00:00+00:00",
-      "excerpt": "Private Home Care offers personalized, non-medical home care tailored to each client’s needs. Services include companionship, personal care assistance, dementia care, medication reminders, meal preparation, transportation, 24/7 live-in care and virtual care. “Private Home Care was founded to provide a higher standard of in-home care - — one that prioritizes dignity, consistency and truly personalized support,” said Private Home Care",
-      "tags": [],
-      "ai_summary": "Private Home Care enhances local in-home support by offering personalized, non-medical services that prioritize dignity and meaningful caregiver-client relationships, helping residents maintain independence and improve wellbeing amid growing demand for home-based care.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • May 13, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Lucky Number 13: Sept. 13 Birthdays Bond Mothers, Daughters from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
