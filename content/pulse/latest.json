@@ -1,166 +1,21 @@
 {
-  "generated_at": "2026-05-19T13:05:12.507073+00:00",
+  "generated_at": "2026-05-20T12:52:03.317403+00:00",
   "window_hours": 36,
-  "stories_considered": 16,
-  "stories_featured": 8,
-  "headline": "Kirkwood Pulse • May 19, 2026",
-  "overview": "Tanner Franklin, given a starting opportunity by the Cardinals, is excelling in high Class A Peoria with a 3.29 ERA and strong strikeout numbers, showcasing his potential as a future major league starter. His development is significant locally as it highlights the Cardinals' investment in homegrown talent and prospects from the region. The historic Lowe-Lindemann log cabin in Des Peres, dating back to the early 1800s, is being dismantled and relocated by local historians to preserve it as an educational center, highlighting the area's early settler history and fostering community heritage awareness. Kirkwood School District counselor Courtney Wilson is supporting her son Lincoln in the National Junior Ranger Competition, highlighting local efforts to encourage children to engage with nature and conservation. Lincoln's participation promotes community awareness of wildlife preservation and outdoor exploration, benefiting families and fostering environme…",
-  "items": [
-    {
-      "id": "webster-kirkwood-times-news:e86bb1094710",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Cardinals giving Tanner Franklin a chance to start – and he is making the most out of it",
-      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/cardinals-giving-tanner-franklin-a-chance-to-start-and-he-is-making-the-most-out/article_ba523dcb-191a-5b80-a1dd-55f7f139c69f.html",
-      "published": "2026-05-18T15:17:47+00:00",
-      "excerpt": "Tanner Franilin told teams before last year's draft that he wanted a chance to start after relieving in college - and the Cardinals gave it to him. Franklin is making the most out of it. [...]The post Cardinals giving Tanner…",
-      "tags": [],
-      "ai_summary": "Tanner Franklin, given a starting opportunity by the Cardinals, is excelling in high Class A Peoria with a 3.29 ERA and strong strikeout numbers, showcasing his potential as a future major league starter. His development is significant locally as it highlights the Cardinals' investment in homegrown talent and prospects from the region.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:a9970c0925df",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Preserving The Past: Historic Des Peres Log Cabin To Be Restored & Relocated",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/preserving-the-past-historic-des-peres-log-cabin-to-be-restored-relocated/article_732a59d6-67f0-49be-ad17-e5b196e3ec50.html",
-      "published": "2026-05-18T05:05:00+00:00",
-      "excerpt": "For about 200 years, the Lowe-Lindemann log cabin has sat high above the confluence of Sugar Creek and Grand Glaize Creek in Des Peres. Now, two centuries later, local historians are dismantling the cabin and working to find a new spot for the historic structure. The one-room cabin was built sometime between 1803 and 1855 along what is now 13011",
-      "tags": [],
-      "ai_summary": "The historic Lowe-Lindemann log cabin in Des Peres, dating back to the early 1800s, is being dismantled and relocated by local historians to preserve it as an educational center, highlighting the area's early settler history and fostering community heritage awareness.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:0276091794ca",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Kirkwood School District Counselor Supports Son In National Junior Ranger Contest",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-school-district-counselor-supports-son-in-national-junior-ranger-contest/article_4671f447-9c35-444c-b2b0-3977ecdbad0e.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "As a counselor for the Kirkwood School District working at Westchester Elementary School for 17 years, Courtney Wilson knows the importance of getting kids off of their screens and outside to explore nature and connect with the world around them. It’s something she practices regularly with her own family, including husband Derrick Gale, son Lincoln Wilson-Gale, 6, and daughter Alara",
-      "tags": [],
-      "ai_summary": "Kirkwood School District counselor Courtney Wilson is supporting her son Lincoln in the National Junior Ranger Competition, highlighting local efforts to encourage children to engage with nature and conservation. Lincoln's participation promotes community awareness of wildlife preservation and outdoor exploration, benefiting families and fostering environme…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:6badcf3a7093",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Kirkwood Church Launches Community Fitness Program For Aging Adults",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-church-launches-community-fitness-program-for-aging-adults/article_3ec0a89b-23ef-4bda-8b71-92e0fcce96b3.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "Kirkwood Baptist Church, 211 N. Woodlawn Ave., is expanding its commitment to community wellness with the launch of a new fitness program designed specifically for older adults.",
-      "tags": [],
-      "ai_summary": "Kirkwood Baptist Church is launching a twice-weekly fitness program starting June 1 to help aging adults improve strength, balance, and independence, addressing local demand for safe, accessible exercise options. The program, open to all ability levels, includes assessments and is offered at a suggested donation with no one turned away for inability to pay.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:93b567345831",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Kirkwood Students Win In C-SPAN Documentary Competition",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/kirkwood-students-win-in-c-span-documentary-competition/article_efb97c4f-0b45-4fd9-9ec1-550a859ed173.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "Six Kirkwood High School students earned national recognition as winners in C-SPAN’s annual StudentCam documentary competition. Tripp Somerville won second place and will receive $1,500 for the documentary “Government Compact — The Law or Threat to Universities.” The documentary aired on C-SPAN networks in April. Several students also earned third places and will receive $750: • Trip Nieman — “Who",
-      "tags": [],
-      "ai_summary": "Six Kirkwood High School students won national awards in C-SPAN’s StudentCam documentary competition, highlighting local youth engagement in civic education and storytelling. Their projects, created in AP Language Arts classes, explored historical and contemporary issues, showcasing Kirkwood’s commitment to fostering critical thinking and community awarenes…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:dfa2ef03120c",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "A Little Accountability",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/a-little-accountability/article_39b51f6f-b410-409a-8e4e-e9977340f2b7.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "While driving my car, I was hit by a kid on a dirt bike at Geyer Road and Nirk Avenue at 5:30 p.m. on May 6. He was dressed in all black clothing and was wearing a helmet. Before driving…",
-      "tags": [],
-      "ai_summary": "A 13-year-old on a dirt bike collided with a car at Geyer Road and Nirk Avenue on May 6, admitting to lacking ID before leaving the scene. The driver seeks community help for accountability and is willing to share repair costs, highlighting local concerns about youth safety and responsibility.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:77514b36022c",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "Congrats To  Kirkwood Runner",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/congrats-to-kirkwood-runner/article_10e48492-4b78-4700-aa2e-05f7a87d8dcc.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "Congratulations to my dear friend and Kirkwoodian Kaitlyn Fischer on winning second place in the Christie Clinic Illinois Half Marathon on April 25! She finished with a personal record time of 1:14:22, and an average pace of 5:41 per mile!",
-      "tags": [],
-      "ai_summary": "Kaitlyn Fischer, a local Kirkwood runner, achieved second place in the Christie Clinic Illinois Half Marathon with a personal record time of 1:14:22, highlighting her athletic dedication and bringing pride to the community.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    },
-    {
-      "id": "webster-kirkwood-times-news:39aa8aee0bb1",
-      "source": {
-        "id": "webster-kirkwood-times-news",
-        "name": "Webster-Kirkwood Times – News"
-      },
-      "title": "“Political Violence Has No Place In Our Society”",
-      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/political-violence-has-no-place-in-our-society/article_03fcb957-a398-489f-a046-74c887801225.html",
-      "published": "2026-05-18T05:00:00+00:00",
-      "excerpt": "In response to the commentary from Mr. Einspanier, Mr. VanDercamp and Mr. Perchauer (all in the May 1 Mailbag), please consider a dose of your own medicine.",
-      "tags": [],
-      "ai_summary": "A local resident emphasizes that political violence is unacceptable from any side, highlighting recent violent incidents nationwide and urging mutual accountability to maintain civil discourse in the community.",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_considered": 8,
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • May 20, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on Cardinals giving Tanner Franklin a chance to start – and he is making the most out of it from Webster-Kirkwood Times – News."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
