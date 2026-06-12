@@ -1,21 +1,166 @@
 {
-  "generated_at": "2026-06-11T13:17:49.229880+00:00",
+  "generated_at": "2026-06-12T13:08:43.725970+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • June 11, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • June 12, 2026",
+  "overview": "The Cardinals' six-game winning streak ended as the Mets defeated them 5-4, with Juan Soto delivering key hits including a go-ahead homer. This loss prevented the Cardinals from reaching 10 games above .500, a milestone not achieved since 2022, impacting their local playoff positioning. Glendale Police Chief Jeff Beaton retired after over 33 years in law enforcement, including nearly 15 years with the Glendale Police Department, marking a significant leadership transition for local law enforcement. Lunchfest at Kirkwood Park on June 28 features live music and food donations to help reduce student meal debt in the Kirkwood School District, supporting local families and community well-being.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:d9c0224f1b68",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Thursday’s Game Report: Mets 5, Cardinals 4",
+      "link": "https://www.timesnewspapers.com/southcountytimes/sports/stlsportspage/thursday-s-game-report-mets-5-cardinals-4/article_296a709c-4111-5792-b168-739b4faf8dac.html",
+      "published": "2026-06-11T20:31:25+00:00",
+      "excerpt": "Juan Soto scored the tying run then homered to break the tie in the seventh inning on Thursday to give the Mets a win over the Cardinals in New York and snap the Cardinals' six-game winning streak. [...]The post Thursday’s…",
+      "tags": [],
+      "ai_summary": "The Cardinals' six-game winning streak ended as the Mets defeated them 5-4, with Juan Soto delivering key hits including a go-ahead homer. This loss prevented the Cardinals from reaching 10 games above .500, a milestone not achieved since 2022, impacting their local playoff positioning.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:2bd916aee961",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Glendale Police Chief Retires",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/glendale-police-chief-retires/article_a695d8f8-a2ca-4c8b-b227-202c8e8a6f24.html",
+      "published": "2026-06-11T19:08:00+00:00",
+      "excerpt": "The Glendale Board of Aldermen on June 1, recognized Police Chief Jeff Beaton for his retirement after more than 33 years in law enforcement, including nearly 15 years with the Glendale Police Department. Beaton received a proclamation from the board.",
+      "tags": [],
+      "ai_summary": "Glendale Police Chief Jeff Beaton retired after over 33 years in law enforcement, including nearly 15 years with the Glendale Police Department, marking a significant leadership transition for local law enforcement.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:b65d6660b4de",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Lunchfest At Kirkwood Park",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/lunchfest-at-kirkwood-park/article_f50beb42-5e08-4c82-b40b-a17956fdeb8a.html",
+      "published": "2026-06-11T19:07:00+00:00",
+      "excerpt": "Help reduce student meal debt and enjoy live music at the Kirkwood Lions Amphitheater in Kirkwood Park from 1 to 6:30 p.m. on Sunday, June 28.",
+      "tags": [],
+      "ai_summary": "Lunchfest at Kirkwood Park on June 28 features live music and food donations to help reduce student meal debt in the Kirkwood School District, supporting local families and community well-being.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ab98d41eac83",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Old Webster Street Dance Volunteers Needed",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/old-webster-street-dance-volunteers-needed/article_9139d2da-35d7-4e7d-8f00-f0bac2eed0ec.html",
+      "published": "2026-06-11T19:07:00+00:00",
+      "excerpt": "Volunteers are needed for this year’s Old Webster Summer Night Street Dance on Saturday, June 20. The dance will be held at the corner of Gore and Lockwood avenues in Old Webster from 5:30 to 10 p.m.",
+      "tags": [],
+      "ai_summary": "Volunteers are needed for the Old Webster Summer Night Street Dance on June 20 to assist with barricade setup and cleanup, ensuring the event runs smoothly and safely for the local community.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:64703b35c3e1",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Motown Magic  In Kirkwood",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/motown-magic-in-kirkwood/article_90d4701e-2304-471f-bd78-2f3461c6fc47.html",
+      "published": "2026-06-11T19:06:00+00:00",
+      "excerpt": "Enjoy a night of talent and timeless sounds with Juneteenth Night of Motown Magic at The Kirkwood Performing Arts Center, 210 E. Monroe Ave., on Friday, June 19, at 7:30 p.m.",
+      "tags": [],
+      "ai_summary": "Kirkwood Performing Arts Center will host a Juneteenth Night of Motown Magic concert on June 19, featuring top St. Louis musicians celebrating Black artistry through iconic Motown hits, offering residents a vibrant cultural experience that honors a significant musical legacy.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:51c48e8e3542",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Free Juneteenth Concert At Ivory Crockett Park",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/free-juneteenth-concert-at-ivory-crockett-park/article_566134ad-e47c-46df-b510-78f5f9190da9.html",
+      "published": "2026-06-11T19:04:00+00:00",
+      "excerpt": "The city of Webster Groves will host a Juneteenth Concert in the Park on Thursday, June 18, 6 to 8 p.m., at Ivory Crockett Park, located at Bell and Almentor Avenues in north Webster.",
+      "tags": [],
+      "ai_summary": "Webster Groves will hold a free Juneteenth Concert at Ivory Crockett Park on June 18 from 6 to 8 p.m., featuring the Red and Black Brass Band and family-friendly activities, with local police and fire departments present, enhancing community engagement and celebration of Juneteenth.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:3872d30dbdef",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Another Successful Webster Arts Fair",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/another-successful-webster-arts-fair/article_b69556f3-0281-4b74-a15f-4ff47960c549.html",
+      "published": "2026-06-11T14:17:00+00:00",
+      "excerpt": "Sunny skies and early June heat greeted thousands of visitors at the annual Webster Arts Fair last weekend. More than 100 juried artists from across the country gathered on the grounds of Eden Theological Seminary for the three-day fair. After rains dampened last year’s attendance, organizers said this year’s fair — now in its 23rd year — drew more than",
+      "tags": [],
+      "ai_summary": "The 23rd annual Webster Arts Fair attracted over 10,000 visitors, boosting local economic and cultural activity with more than 100 juried artists and extensive volunteer support, highlighting the community's strong connection to high-quality, artist-centered events that foster personal interactions and support local creatives.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ec9f43fbda02",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "100 Years Of Route 66",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/100-years-of-route-66/article_918023c3-ba8e-4014-a825-0dbfc2f4ffcc.html",
+      "published": "2026-06-11T14:10:00+00:00",
+      "excerpt": "Thousands of people from across Missouri flooded the stretch of Downtown Kirkwood last weekend for the 8th annual Route 66 Cars & Guitars Festival. The free, outdoor festival on June 6 honored 100 years of Route 66 in Kirkwood, marking an impressive milestone for the city. Attendees rocked out to live music, explored rows of vintage cars and browsed among",
+      "tags": [],
+      "ai_summary": "The 8th annual Route 66 Cars & Guitars Festival in Downtown Kirkwood attracted nearly 17,000 attendees, celebrating 100 years of Route 66 with live music, over 100 vintage cars, and local vendors, boosting community spirit and supporting local programs through various club and service group contributions.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on Thursday’s Game Report: Mets 5, Cardinals 4 from Webster-Kirkwood Times – News."
 }
