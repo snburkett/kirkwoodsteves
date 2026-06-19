@@ -1,40 +1,21 @@
 {
-  "generated_at": "2026-06-18T13:09:09.444027+00:00",
+  "generated_at": "2026-06-19T13:11:43.448380+00:00",
   "window_hours": 36,
   "stories_considered": 8,
-  "stories_featured": 1,
-  "headline": "Kirkwood Pulse • June 18, 2026",
-  "overview": "Debrecht Properties and CORE10 Architects propose rezoning twelve parcels at Sarah Avenue and North Kirkwood Road to build 38 condos, aiming to increase housing density and improve walkability near key amenities. This project could revitalize a stalled area by replacing restrictive B-3 zoning with multifamily housing, supporting local growth and transit acc…",
-  "items": [
-    {
-      "id": "kirkwood-gadfly:afe94b9953fb",
-      "source": {
-        "id": "kirkwood-gadfly",
-        "name": "Kirkwood Gadfly"
-      },
-      "title": "38 New Condos Proposed For N. Kirkwood Rd",
-      "link": "https://kirkwoodgadfly.com/38-new-condos-proposed-for-n-kirkwood-rd/",
-      "published": "2026-06-18T13:09:11.927941+00:00",
-      "excerpt": "Thirteen years ago, an ambitious plan to turn the intersection of Manchester and Kirkwood Road into a second walkable downtown fizzled, leaving behind an auto-oriented CVS and a Fresh Thyme grocery store. Now that long-stalled neighborhood may be getting a second chance. Debrecht Properties and their partners, CORE10 Architects, will go before the Planning & Zoning Committee tonight, Wednesday, June",
-      "tags": [],
-      "ai_summary": "Debrecht Properties and CORE10 Architects propose rezoning twelve parcels at Sarah Avenue and North Kirkwood Road to build 38 condos, aiming to increase housing density and improve walkability near key amenities. This project could revitalize a stalled area by replacing restrictive B-3 zoning with multifamily housing, supporting local growth and transit acc…",
-      "sentiment": "neutral",
-      "sentiment_score": 0,
-      "community_impact": "Impact unclear based on automatically extracted text.",
-      "priority": "medium",
-      "suggested_action": null
-    }
-  ],
+  "stories_featured": 0,
+  "headline": "Kirkwood Pulse • June 19, 2026",
+  "overview": "No new items were available within the configured window.",
+  "items": [],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0.",
+    "rationale": "No new stories were summarized today.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "Mix of 0 positive, 1 neutral, and 0 negative stories. Average sentiment lands at 0."
+    "rationale": "No new stories were summarized today."
   },
-  "call_to_action": "Keep an eye on 38 New Condos Proposed For N. Kirkwood Rd from Kirkwood Gadfly."
+  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
 }
