@@ -1,21 +1,166 @@
 {
-  "generated_at": "2026-06-21T12:40:06.904138+00:00",
+  "generated_at": "2026-06-22T13:53:24.321231+00:00",
   "window_hours": 36,
-  "stories_considered": 8,
-  "stories_featured": 0,
-  "headline": "Kirkwood Pulse • June 21, 2026",
-  "overview": "No new items were available within the configured window.",
-  "items": [],
+  "stories_considered": 16,
+  "stories_featured": 8,
+  "headline": "Kirkwood Pulse • June 22, 2026",
+  "overview": "Jenna Clark of Webster Groves released a memoir honoring her late father, Jon Clark, a beloved former Webster Groves High School principal who battled brain cancer for nearly 20 years. The book highlights his impact on the community and offers a heartfelt reflection on resilience and local legacy. A local resident recalls witnessing Bob Gibson's 3,000th strikeout at Busch Memorial Stadium in 1974, a historic moment now commemorated at the Baseball Hall of Fame. This personal connection highlights the enduring local pride in the Cardinals' legacy and the significance of preserving sports history for the community. Congress approved $70 billion more for ICE, leading to the deportation of law-abiding immigrants like a custodian from the Maplewood-Richmond Heights School District, causing local families to suffer and raising concerns about the agency targeting non-criminal immigrants instead of focusing on serious offenders.",
+  "items": [
+    {
+      "id": "webster-kirkwood-times-news:5586d701c048",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "“The Parts That Stay”",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/the-parts-that-stay/article_832d739f-b2ee-473c-944c-128c7967648b.html",
+      "published": "2026-06-22T12:00:00+00:00",
+      "excerpt": "In the absence of her dad this Father’s Day, Jenna Clark is holding onto the love that remains, and finding joy in the pain. Her self-published book, “The Parts That Stay,” a memoir honoring her father that details the special relationship they shared, as well as her grief surrounding his death last year, will be released on Sunday, June 21.",
+      "tags": [],
+      "ai_summary": "Jenna Clark of Webster Groves released a memoir honoring her late father, Jon Clark, a beloved former Webster Groves High School principal who battled brain cancer for nearly 20 years. The book highlights his impact on the community and offers a heartfelt reflection on resilience and local legacy.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:f23fce83f136",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "A Chance To See History",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/a-chance-to-see-history/article_85acc37a-bafa-4f95-aed2-0413fcde1959.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "I attended my first-ever Cardinals game in the summer of 1974. It was either Girl Scout Night at the ballpark, or we had a visionary leader who serendipitously planned a troop outing on what would be one of the most…",
+      "tags": [],
+      "ai_summary": "A local resident recalls witnessing Bob Gibson's 3,000th strikeout at Busch Memorial Stadium in 1974, a historic moment now commemorated at the Baseball Hall of Fame. This personal connection highlights the enduring local pride in the Cardinals' legacy and the significance of preserving sports history for the community.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:1e7b9ff30247",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "No Point In Going After Law Abiding Immigrants",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/no-point-in-going-after-law-abiding-immigrants/article_9d5d33c6-4ff8-4413-a4ea-54ee9ad9eada.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "To no one’s surprise, Congress just passed a bill allocating an additional $70 billion for ICE funding. Does anyone really believe we need to deport thousands of immigrants who are valuable to the work force? Most immigrants are hard-working, follow…",
+      "tags": [],
+      "ai_summary": "Congress approved $70 billion more for ICE, leading to the deportation of law-abiding immigrants like a custodian from the Maplewood-Richmond Heights School District, causing local families to suffer and raising concerns about the agency targeting non-criminal immigrants instead of focusing on serious offenders.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:4f83ab088134",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Get Medicare To Pay For Alzheimer’s Screenings",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/get-medicare-to-pay-for-alzheimer-s-screenings/article_3fcecad9-b51d-454f-b5dc-abcbb7367249.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "During the first week of June, over 1,000 advocates from the Alzheimer’s Impact Movement were in Washington, D.C., to ask their representatives and senators to co-sponsor the Alzheimer’s Screening and Prevention Act (ASAP, HR 6130 and S 3267).",
+      "tags": [],
+      "ai_summary": "Advocates are urging Congress to co-sponsor the Alzheimer’s Screening and Prevention Act, which would allow Medicare to cover a blood test for early Alzheimer’s detection, enabling earlier treatment and reducing the disease's impact on local patients and caregivers.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:abe7f93abfda",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Subject Sought In West County Center Incident",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/subject-sought-in-west-county-center-incident/article_d89d5e44-00d9-43b5-a9da-470987a3fafc.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "A person of interest is being sought by the Des Peres Department of Public Safety following shots fired at West County Center last weekend. On Saturday, June 13, at 12:43 p.m., Des Peres police officers responded to reports of four to six individuals with firearms at West County Center. Officers determined a verbal altercation took place on the lower level",
+      "tags": [],
+      "ai_summary": "Following a verbal altercation at West County Center on June 13, a 23-year-old man fired shots in the parking garage, damaging vehicles and endangering bystanders. Local authorities are actively seeking the suspect and two others involved, highlighting ongoing public safety concerns in the area.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:e42f7cd4e9f8",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Public Reading Of Declaration  Of Independence",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/public-reading-of-declaration-of-independence/article_024c1bf8-1e7c-4277-96cf-236d2d134eeb.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "Celebrate America’s 250th anniversary with a special reading of the Declaration of Independence in Webster Groves.",
+      "tags": [],
+      "ai_summary": "Webster Groves will host a community event on July 1 at City Hall featuring a public reading of the Declaration of Independence, live music, a commemorative tree planting, and a community sing-along, marking America's 250th anniversary and fostering local civic pride.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:95206a7e008f",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Mayor Edward Mahan Named President Of Municipal League",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/mayor-edward-mahan-named-president-of-municipal-league/article_26a4936b-dcbf-4d8c-b6dc-681419ed37e0.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "Rock Hill Mayor Edward Mahan has been elected president of the Municipal League of Metro St. Louis. Mahan was officially installed as president during the Municipal League’s Installation and Awards Dinner on May 28. With nearly 100 years in service to promoting stronger local government, the league is the official advocacy organization for municipalities in metro St. Louis. Members represent",
+      "tags": [],
+      "ai_summary": "Rock Hill Mayor Edward Mahan was elected president of the Municipal League of Metro St. Louis, enhancing local government collaboration and advocacy for nearly all municipalities in the region, which impacts policy and services for residents across St. Louis County and the city.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    },
+    {
+      "id": "webster-kirkwood-times-news:ee5904841780",
+      "source": {
+        "id": "webster-kirkwood-times-news",
+        "name": "Webster-Kirkwood Times – News"
+      },
+      "title": "Claims No “Ballot Bait” In Missouri’s Amendment 3",
+      "link": "https://www.timesnewspapers.com/webster-kirkwoodtimes/claims-no-ballot-bait-in-missouri-s-amendment-3/article_d4b4c906-1193-4e1d-ad04-e50c7a9f2a9c.html",
+      "published": "2026-06-22T05:00:00+00:00",
+      "excerpt": "Missouri Amendment 3 has been accused of disingenuously adorning itself with “ballot bait” by including a ban on gender transition procedures on minors (Mailbag, June 12). The accuser posits that Missouri needs no such ban because we already have one.…",
+      "tags": [],
+      "ai_summary": "Missouri Amendment 3 enshrines a permanent constitutional ban on gender transition procedures for minors, addressing the expiration of the current SAFE Act in 2027 and preventing potential legal challenges that could undermine protections for children.",
+      "sentiment": "neutral",
+      "sentiment_score": 0,
+      "community_impact": "Impact unclear based on automatically extracted text.",
+      "priority": "medium",
+      "suggested_action": null
+    }
+  ],
   "vibe": {
     "score": 50,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today.",
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0.",
     "raw_score": 0
   },
   "sentiment": {
     "score": 0,
     "label": "Even Keel",
-    "rationale": "No new stories were summarized today."
+    "rationale": "Mix of 0 positive, 8 neutral, and 0 negative stories. Average sentiment lands at 0."
   },
-  "call_to_action": "Check back tomorrow for the next Kirkwood Pulse."
+  "call_to_action": "Keep an eye on “The Parts That Stay” from Webster-Kirkwood Times – News."
 }
